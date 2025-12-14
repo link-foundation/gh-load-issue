@@ -88,6 +88,7 @@ Options:
 The tool supports multiple authentication methods for accessing private issues:
 
 ### 1. GitHub CLI (Recommended)
+
 If you have [GitHub CLI](https://cli.github.com/) installed and authenticated, the script will automatically use your credentials:
 
 ```bash
@@ -99,6 +100,7 @@ gh-download-issue owner/repo#123  # Works with private issues!
 ```
 
 ### 2. Environment Variable
+
 Set the `GITHUB_TOKEN` environment variable:
 
 ```bash
@@ -107,6 +109,7 @@ gh-download-issue owner/repo#123
 ```
 
 ### 3. Command Line Token
+
 Pass the token directly with `--token`:
 
 ```bash
@@ -114,7 +117,9 @@ gh-download-issue owner/repo#123 --token ghp_your_token_here
 ```
 
 ### Authentication Priority
+
 The script uses this fallback chain:
+
 1. `--token` command line argument (highest priority)
 2. `GITHUB_TOKEN` environment variable
 3. GitHub CLI authentication (if `gh` is installed and authenticated)
@@ -172,7 +177,7 @@ Example output structure:
 
 ### Comment 1 by @user1
 
-*Posted on 1/1/2025, 2:00:00 PM*
+_Posted on 1/1/2025, 2:00:00 PM_
 
 [Comment content here]
 
@@ -180,7 +185,7 @@ Example output structure:
 
 ### Comment 2 by @user2
 
-*Posted on 1/2/2025, 3:30:00 PM*
+_Posted on 1/2/2025, 3:30:00 PM_
 
 [Comment content here]
 ```

@@ -4,76 +4,78 @@
  * Basic integration tests for gh-download-issue
  */
 
-import { execSync } from 'child_process'
-import fs from 'fs-extra'
-import path from 'path'
-import { fileURLToPath } from 'url'
+import { execSync } from 'child_process';
+import fs from 'fs-extra';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const scriptPath = path.join(__dirname, '..', 'gh-download-issue.mjs')
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const scriptPath = path.join(__dirname, '..', 'gh-download-issue.mjs');
 
 // Test colors
 const colors = {
   green: '\x1b[32m',
   red: '\x1b[31m',
   yellow: '\x1b[33m',
-  reset: '\x1b[0m'
-}
+  reset: '\x1b[0m',
+};
 
 function pass(message) {
-  console.log(`${colors.green}✓ ${message}${colors.reset}`)
+  console.log(`${colors.green}✓ ${message}${colors.reset}`);
 }
 
 function fail(message) {
-  console.log(`${colors.red}✗ ${message}${colors.reset}`)
-  process.exit(1)
+  console.log(`${colors.red}✗ ${message}${colors.reset}`);
+  process.exit(1);
 }
 
 function info(message) {
-  console.log(`${colors.yellow}ℹ ${message}${colors.reset}`)
+  console.log(`${colors.yellow}ℹ ${message}${colors.reset}`);
 }
 
 // Test 1: Check if script is executable
 function testExecutable() {
   try {
-    const stats = fs.statSync(scriptPath)
-    const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0
+    const stats = fs.statSync(scriptPath);
+    const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0;
     if (isExecutable) {
-      pass('Script is executable')
+      pass('Script is executable');
     } else {
-      fail('Script is not executable')
+      fail('Script is not executable');
     }
   } catch (error) {
-    fail(`Script not found: ${error.message}`)
+    fail(`Script not found: ${error.message}`);
   }
 }
 
 // Test 2: Check if help works
 function testHelp() {
   try {
-    const output = execSync(`${scriptPath} --help`, { encoding: 'utf8' })
+    const output = execSync(`node ${scriptPath} --help`, { encoding: 'utf8' });
     if (output.includes('--help') && output.includes('--version')) {
-      pass('Help command works')
+      pass('Help command works');
     } else {
-      fail('Help output is incomplete')
+      fail('Help output is incomplete');
     }
   } catch (error) {
-    fail(`Help command failed: ${error.message}`)
+    fail(`Help command failed: ${error.message}`);
   }
 }
 
 // Test 3: Check if version works
 function testVersion() {
   try {
-    const output = execSync(`${scriptPath} --version`, { encoding: 'utf8' })
+    const output = execSync(`node ${scriptPath} --version`, {
+      encoding: 'utf8',
+    });
     if (output.match(/\d+\.\d+\.\d+/)) {
-      pass('Version command works')
+      pass('Version command works');
     } else {
-      fail('Version output is invalid')
+      fail('Version output is invalid');
     }
   } catch (error) {
-    fail(`Version command failed: ${error.message}`)
+    fail(`Version command failed: ${error.message}`);
   }
 }
 
@@ -81,63 +83,68 @@ function testVersion() {
 function testUrlParsing() {
   // This test would require importing the parser function
   // For MVP, we'll skip this or test via actual execution
-  info('URL parsing test - skipped (requires integration test)')
+  info('URL parsing test - skipped (requires integration test)');
 }
 
 // Test 5: Test with real issue (requires network and auth)
 async function testRealIssue() {
   try {
-    const testOutputPath = path.join(__dirname, 'test-output.md')
+    const testOutputPath = path.join(__dirname, 'test-output.md');
 
     // Clean up any existing test output
     if (await fs.pathExists(testOutputPath)) {
-      await fs.remove(testOutputPath)
+      await fs.remove(testOutputPath);
     }
 
     // Try to download issue #1 from this repository
-    const issueUrl = 'https://github.com/link-foundation/gh-download-issue/issues/1'
+    const issueUrl =
+      'https://github.com/link-foundation/gh-download-issue/issues/1';
 
-    info('Testing with real issue (this may fail if gh CLI is not authenticated)...')
+    info(
+      'Testing with real issue (this may fail if gh CLI is not authenticated)...'
+    );
 
     try {
-      execSync(`${scriptPath} ${issueUrl} -o ${testOutputPath}`, {
+      execSync(`node ${scriptPath} ${issueUrl} -o ${testOutputPath}`, {
         encoding: 'utf8',
-        stdio: 'pipe'
-      })
+        stdio: 'pipe',
+      });
 
       // Check if file was created
       if (await fs.pathExists(testOutputPath)) {
-        const content = await fs.readFile(testOutputPath, 'utf8')
+        const content = await fs.readFile(testOutputPath, 'utf8');
         if (content.includes('# ') && content.includes('**Issue:**')) {
-          pass('Real issue download works')
-          await fs.remove(testOutputPath) // Clean up
+          pass('Real issue download works');
+          await fs.remove(testOutputPath); // Clean up
         } else {
-          fail('Output file has invalid format')
+          fail('Output file has invalid format');
         }
       } else {
-        fail('Output file was not created')
+        fail('Output file was not created');
       }
     } catch (error) {
-      info('Real issue test failed (this is OK if not authenticated): ' + error.message)
+      info(
+        `Real issue test failed (this is OK if not authenticated): ${error.message}`
+      );
     }
   } catch (error) {
-    info('Real issue test skipped: ' + error.message)
+    info(`Real issue test skipped: ${error.message}`);
   }
 }
 
 // Run all tests
 async function runTests() {
-  console.log('\n🧪 Running gh-download-issue tests...\n')
+  console.log('\n🧪 Running gh-download-issue tests...\n');
 
-  testExecutable()
-  testHelp()
-  testVersion()
-  testUrlParsing()
-  await testRealIssue()
+  testExecutable();
+  testHelp();
+  testVersion();
+  testUrlParsing();
+  await testRealIssue();
 
-  console.log('\n✅ All basic tests passed!\n')
+  console.log('\n✅ All basic tests passed!\n');
 }
 
-runTests().catch(error => {
-  fail(`Test suite failed: ${error.message}`)
-})
+runTests().catch((error) => {
+  fail(`Test suite failed: ${error.message}`);
+});
