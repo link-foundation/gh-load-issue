@@ -8,7 +8,7 @@
     "gh-download-issue": "./gh-download-issue.mjs"
   },
   "scripts": {
-    "test": "node --test tests/",
+    "test": "node --test tests/*.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

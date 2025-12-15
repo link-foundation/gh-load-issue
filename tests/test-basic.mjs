@@ -38,11 +38,17 @@ function info(message) {
 function testExecutable() {
   try {
     const stats = fs.statSync(scriptPath);
-    const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0;
-    if (isExecutable) {
-      pass('Script is executable');
+    // On Windows, executable bit doesn't apply, so we just check if file exists
+    const isWindows = process.platform === 'win32';
+    if (isWindows) {
+      pass('Script exists (Windows - executable bit not applicable)');
     } else {
-      fail('Script is not executable');
+      const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0;
+      if (isExecutable) {
+        pass('Script is executable');
+      } else {
+        fail('Script is not executable');
+      }
     }
   } catch (error) {
     fail(`Script not found: ${error.message}`);
