@@ -9,10 +9,26 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Download use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
+// Download use-m dynamically with Windows path fix
+const useMCode = await (await fetch('https://unpkg.com/use-m/use.js')).text();
+
+// Patch use-m to handle Windows paths correctly in ESM imports
+const patchedUseMCode = useMCode.replace(
+  /const module = await import\(modulePath\);/,
+  `// Fix Windows paths for ESM imports
+  let importPath = modulePath;
+  // Convert Windows absolute paths (C:\\...) to file:// URLs
+  if (/^[A-Za-z]:[\\\\/]/.test(modulePath)) {
+    // Windows path detected - convert backslashes to forward slashes and add file:// protocol
+    importPath = 'file:///' + modulePath.replace(/\\\\/g, '/').replace(/^([A-Za-z]):/, '$1:');
+  } else if (modulePath.startsWith('/') && !modulePath.startsWith('file://')) {
+    // Unix absolute path - ensure it's a proper file:// URL
+    importPath = 'file://' + modulePath;
+  }
+  const module = await import(importPath);`
 );
+
+const { use } = eval(patchedUseMCode);
 
 // Import modern npm libraries using use-m
 const { Octokit } = await use('@octokit/rest@22.0.0');
