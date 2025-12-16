@@ -12,19 +12,53 @@ const __dirname = path.dirname(__filename);
 // Download use-m dynamically with Windows path fix
 const useMCode = await (await fetch('https://unpkg.com/use-m/use.js')).text();
 
-// Patch use-m to handle Windows paths correctly in ESM imports
+// Patch use-m to handle Windows paths and directory imports correctly in ESM
 const patchedUseMCode = useMCode.replace(
   /const module = await import\(modulePath\);/,
-  `// Fix Windows paths for ESM imports
+  `// Fix Windows paths and directory imports for ESM
   let importPath = modulePath;
-  // Convert Windows absolute paths (C:\\...) to file:// URLs
-  if (/^[A-Za-z]:[\\\\/]/.test(modulePath)) {
-    // Windows path detected - convert backslashes to forward slashes and add file:// protocol
-    importPath = 'file:///' + modulePath.replace(/\\\\/g, '/').replace(/^([A-Za-z]):/, '$1:');
-  } else if (modulePath.startsWith('/') && !modulePath.startsWith('file://')) {
-    // Unix absolute path - ensure it's a proper file:// URL
-    importPath = 'file://' + modulePath;
+
+  // Check if modulePath is a directory by trying to read package.json
+  const fs = await import('fs');
+  const pathModule = await import('path');
+  let resolvedPath = modulePath;
+
+  try {
+    // Try to read package.json if this looks like a directory path
+    const potentialPkgPath = modulePath.endsWith('.js') || modulePath.endsWith('.mjs') || modulePath.endsWith('.cjs')
+      ? null
+      : pathModule.join(modulePath, 'package.json');
+
+    if (potentialPkgPath && fs.existsSync(potentialPkgPath)) {
+      // Read package.json to find the entry point
+      const pkgData = JSON.parse(fs.readFileSync(potentialPkgPath, 'utf8'));
+      const entryPoint = pkgData.exports?.['.']?.import || pkgData.exports?.['.']?.default ||
+                         pkgData.module || pkgData.main || 'index.js';
+      resolvedPath = pathModule.join(modulePath, entryPoint);
+    }
+  } catch (e) {
+    // If we can't read package.json, try common entry points
+    const defaultEntries = ['index.js', 'index.mjs', 'index.cjs'];
+    for (const entry of defaultEntries) {
+      const tryPath = pathModule.join(modulePath, entry);
+      if (fs.existsSync(tryPath)) {
+        resolvedPath = tryPath;
+        break;
+      }
+    }
   }
+
+  // Convert to proper file:// URL for ESM
+  if (/^[A-Za-z]:[\\\\/]/.test(resolvedPath)) {
+    // Windows path - convert backslashes to forward slashes and add file:// protocol
+    importPath = 'file:///' + resolvedPath.replace(/\\\\\\\\/g, '/').replace(/\\\\/g, '/');
+  } else if (resolvedPath.startsWith('/') && !resolvedPath.startsWith('file://')) {
+    // Unix absolute path - ensure it's a proper file:// URL
+    importPath = 'file://' + resolvedPath;
+  } else {
+    importPath = resolvedPath;
+  }
+
   const module = await import(importPath);`
 );
 
