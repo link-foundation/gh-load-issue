@@ -1,0 +1,20 @@
+{
+  "threshold": 10,
+  "reporters": ["html", "console"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/build/**",
+    "**/dist/**",
+    "**/.git/**",
+    "**/.changeset/**",
+    "**/CHANGELOG.md",
+    "**/package-lock.json",
+    "**/tests/**",
+    "**/scripts/**"
+  ],
+  "format": ["javascript", "markdown"],
+  "absolute": true,
+  "gitignore": true,
+  "minTokens": 30,
+  "minLines": 5
+}

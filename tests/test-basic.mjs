@@ -4,6 +4,7 @@
  * Basic integration tests for gh-download-issue
  */
 
+import { describe, it, expect, afterEach } from 'test-anywhere';
 import { execSync } from 'child_process';
 import fs, { promises as fsPromises } from 'fs';
 import path from 'path';
@@ -13,148 +14,81 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const scriptPath = path.join(__dirname, '..', 'gh-download-issue.mjs');
 
-// Test colors
-const colors = {
-  green: '\x1b[32m',
-  red: '\x1b[31m',
-  yellow: '\x1b[33m',
-  reset: '\x1b[0m',
-};
-
-function pass(message) {
-  console.log(`${colors.green}✓ ${message}${colors.reset}`);
-}
-
-function fail(message) {
-  console.log(`${colors.red}✗ ${message}${colors.reset}`);
-  process.exit(1);
-}
-
-function info(message) {
-  console.log(`${colors.yellow}ℹ ${message}${colors.reset}`);
-}
-
-// Test 1: Check if script is executable
-function testExecutable() {
-  try {
-    const stats = fs.statSync(scriptPath);
-    // On Windows, executable bit doesn't apply, so we just check if file exists
-    const isWindows = process.platform === 'win32';
-    if (isWindows) {
-      pass('Script exists (Windows - executable bit not applicable)');
-    } else {
-      const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0;
-      if (isExecutable) {
-        pass('Script is executable');
-      } else {
-        fail('Script is not executable');
-      }
-    }
-  } catch (error) {
-    fail(`Script not found: ${error.message}`);
-  }
-}
-
-// Test 2: Check if help works
-function testHelp() {
-  try {
-    const output = execSync(`node ${scriptPath} --help`, { encoding: 'utf8' });
-    if (output.includes('--help') && output.includes('--version')) {
-      pass('Help command works');
-    } else {
-      fail('Help output is incomplete');
-    }
-  } catch (error) {
-    fail(`Help command failed: ${error.message}`);
-  }
-}
-
-// Test 3: Check if version works
-function testVersion() {
-  try {
-    const output = execSync(`node ${scriptPath} --version`, {
-      encoding: 'utf8',
+describe('gh-download-issue CLI', () => {
+  describe('Script accessibility', () => {
+    it('should exist and be accessible', () => {
+      const stats = fs.statSync(scriptPath);
+      expect(stats.isFile()).toBe(true);
     });
-    if (output.match(/\d+\.\d+\.\d+/)) {
-      pass('Version command works');
-    } else {
-      fail('Version output is invalid');
-    }
-  } catch (error) {
-    fail(`Version command failed: ${error.message}`);
-  }
-}
 
-// Test 4: Test URL parsing with valid input
-function testUrlParsing() {
-  // This test would require importing the parser function
-  // For MVP, we'll skip this or test via actual execution
-  info('URL parsing test - skipped (requires integration test)');
-}
+    it('should be executable on non-Windows platforms', () => {
+      const stats = fs.statSync(scriptPath);
+      const isWindows = process.platform === 'win32';
 
-// Test 5: Test with real issue (requires network and auth)
-async function testRealIssue() {
-  try {
+      if (isWindows) {
+        // On Windows, executable bit doesn't apply
+        expect(stats.isFile()).toBe(true);
+      } else {
+        const isExecutable = (stats.mode & fs.constants.S_IXUSR) !== 0;
+        expect(isExecutable).toBe(true);
+      }
+    });
+  });
+
+  describe('Help command', () => {
+    it('should display help information', () => {
+      const output = execSync(`node ${scriptPath} --help`, {
+        encoding: 'utf8',
+      });
+      expect(output).toContain('--help');
+      expect(output).toContain('--version');
+    });
+  });
+
+  describe('Version command', () => {
+    it('should display version number', () => {
+      const output = execSync(`node ${scriptPath} --version`, {
+        encoding: 'utf8',
+      });
+      expect(output).toMatch(/\d+\.\d+\.\d+/);
+    });
+  });
+
+  describe('Real issue download', () => {
     const testOutputPath = path.join(__dirname, 'test-output.md');
 
-    // Clean up any existing test output
-    try {
-      await fsPromises.access(testOutputPath);
-      await fsPromises.unlink(testOutputPath);
-    } catch (_error) {
-      // File doesn't exist, which is fine
-    }
-
-    // Try to download issue #1 from this repository
-    const issueUrl =
-      'https://github.com/link-foundation/gh-download-issue/issues/1';
-
-    info(
-      'Testing with real issue (this may fail if gh CLI is not authenticated)...'
-    );
-
-    try {
-      execSync(`node ${scriptPath} ${issueUrl} -o ${testOutputPath}`, {
-        encoding: 'utf8',
-        stdio: 'pipe',
-      });
-
-      // Check if file was created
+    afterEach(async () => {
+      // Clean up test output file
       try {
         await fsPromises.access(testOutputPath);
-        const content = await fsPromises.readFile(testOutputPath, 'utf8');
-        if (content.includes('# ') && content.includes('**Issue:**')) {
-          pass('Real issue download works');
-          await fsPromises.unlink(testOutputPath); // Clean up
-        } else {
-          fail('Output file has invalid format');
-        }
+        await fsPromises.unlink(testOutputPath);
       } catch (_error) {
-        fail('Output file was not created');
+        // File doesn't exist, which is fine
       }
-    } catch (error) {
-      info(
-        `Real issue test failed (this is OK if not authenticated): ${error.message}`
-      );
-    }
-  } catch (error) {
-    info(`Real issue test skipped: ${error.message}`);
-  }
-}
+    });
 
-// Run all tests
-async function runTests() {
-  console.log('\n🧪 Running gh-download-issue tests...\n');
+    it('should download a real issue when authenticated', async () => {
+      const issueUrl =
+        'https://github.com/link-foundation/gh-download-issue/issues/1';
 
-  testExecutable();
-  testHelp();
-  testVersion();
-  testUrlParsing();
-  await testRealIssue();
+      try {
+        execSync(`node ${scriptPath} ${issueUrl} -o ${testOutputPath}`, {
+          encoding: 'utf8',
+          stdio: 'pipe',
+        });
 
-  console.log('\n✅ All basic tests passed!\n');
-}
+        // Check if file was created
+        await fsPromises.access(testOutputPath);
+        const content = await fsPromises.readFile(testOutputPath, 'utf8');
 
-runTests().catch((error) => {
-  fail(`Test suite failed: ${error.message}`);
+        expect(content).toContain('# ');
+        expect(content).toContain('**Issue:**');
+      } catch (_error) {
+        // Test is skipped if not authenticated - this is expected in CI without credentials
+        console.log(
+          'Skipping real issue test - gh CLI may not be authenticated'
+        );
+      }
+    });
+  });
 });

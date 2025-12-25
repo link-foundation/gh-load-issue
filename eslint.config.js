@@ -63,6 +63,19 @@ export default [
 
       // Comments and documentation
       'spaced-comment': ['error', 'always', { markers: ['/'] }],
+
+      // Complexity rules (matching template best practices)
+      complexity: ['warn', 15],
+      'max-lines-per-function': [
+        'warn',
+        { max: 150, skipBlankLines: true, skipComments: true },
+      ],
+      'max-params': ['warn', 6],
+      'max-statements': ['warn', 60],
+      'max-lines': [
+        'warn',
+        { max: 1500, skipBlankLines: true, skipComments: true },
+      ],
     },
   },
   {
@@ -70,6 +83,7 @@ export default [
     files: ['tests/**/*.js', 'tests/**/*.mjs', '**/*.test.js', '**/*.test.mjs'],
     rules: {
       'require-await': 'off', // Async functions without await are common in tests
+      'max-lines-per-function': 'off', // Test suites often have many tests in one describe block
     },
   },
   {
@@ -77,6 +91,7 @@ export default [
       'node_modules/**',
       'coverage/**',
       'dist/**',
+      'report/**',
       '*.min.js',
       '.eslintcache',
     ],
