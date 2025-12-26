@@ -1,5 +1,11 @@
 # gh-load-issue
 
+## 0.3.2
+
+### Patch Changes
+
+- Test patch release
+
 ## 0.3.1
 
 ### Patch Changes
