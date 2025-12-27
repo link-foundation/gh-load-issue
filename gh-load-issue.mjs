@@ -48,11 +48,13 @@ const logVerbose = (color, message) => {
   }
 };
 
-// Helper function to check if gh CLI is installed
-async function isGhInstalled() {
+// Helper function to check if gh CLI is installed and authenticated
+async function isGhAvailable() {
   try {
     const { execSync } = await import('child_process');
     execSync('gh --version', { stdio: 'pipe' });
+    // Also check if authenticated
+    execSync('gh auth status', { stdio: 'pipe' });
     return true;
   } catch (_error) {
     return false;
@@ -62,7 +64,7 @@ async function isGhInstalled() {
 // Helper function to get GitHub token from gh CLI if available
 async function getGhToken() {
   try {
-    if (!(await isGhInstalled())) {
+    if (!(await isGhAvailable())) {
       return null;
     }
 
@@ -75,6 +77,63 @@ async function getGhToken() {
   } catch (_error) {
     return null;
   }
+}
+
+// Fetch issue data using gh CLI (preferred method)
+async function fetchIssueWithGh(owner, repo, issueNumber) {
+  const { execSync } = await import('child_process');
+
+  // Fetch issue with all required fields
+  const issueJson = execSync(
+    `gh issue view ${issueNumber} --repo ${owner}/${repo} --json number,title,body,state,author,createdAt,updatedAt,labels,assignees,milestone,comments,url`,
+    { encoding: 'utf8', stdio: 'pipe', maxBuffer: 50 * 1024 * 1024 }
+  );
+
+  const ghIssue = JSON.parse(issueJson);
+
+  // Transform gh CLI format to match Octokit API format for compatibility
+  const issue = {
+    number: ghIssue.number,
+    title: ghIssue.title,
+    body: ghIssue.body,
+    state: ghIssue.state.toLowerCase(),
+    html_url: ghIssue.url,
+    user: {
+      login: ghIssue.author.login,
+      html_url: `https://github.com/${ghIssue.author.login}`,
+    },
+    created_at: ghIssue.createdAt,
+    updated_at: ghIssue.updatedAt,
+    labels: ghIssue.labels.map((l) => ({
+      name: l.name,
+      color: l.color || '',
+      description: l.description || '',
+    })),
+    assignees: ghIssue.assignees.map((a) => ({
+      login: a.login,
+      html_url: `https://github.com/${a.login}`,
+    })),
+    milestone: ghIssue.milestone
+      ? {
+          title: ghIssue.milestone.title,
+          html_url: `https://github.com/${owner}/${repo}/milestone/${ghIssue.milestone.number}`,
+        }
+      : null,
+  };
+
+  // Transform comments to match Octokit format
+  const comments = (ghIssue.comments || []).map((c) => ({
+    id: c.id,
+    body: c.body,
+    user: {
+      login: c.author.login,
+      html_url: `https://github.com/${c.author.login}`,
+    },
+    created_at: c.createdAt,
+    updated_at: c.updatedAt || c.createdAt,
+  }));
+
+  return { issue, comments };
 }
 
 // Parse GitHub issue URL to extract owner, repo, and issue number
@@ -284,111 +343,99 @@ function downloadImage(url, token, maxRedirects = 5) {
 }
 
 // Download all images from content and save to directory
-async function downloadImages(content, imageDir, token) {
+// eslint-disable-next-line complexity
+async function downloadImages(content, imageDir, token, quiet = false) {
   const images = extractImagesFromMarkdown(content);
-  const imageMap = new Map(); // Original URL -> local path
-  const results = {
-    downloaded: [],
-    failed: [],
-    skipped: [],
-  };
-
+  const imageMap = new Map();
+  const results = { downloaded: [], failed: [], skipped: [] };
   if (images.length === 0) {
     return { imageMap, results };
   }
-
-  log('blue', `📷 Found ${images.length} image(s) to download...`);
-
-  // Create image directory if needed
+  if (!quiet) {
+    log('blue', `📷 Found ${images.length} image(s) to download...`);
+  }
   await fs.ensureDir(imageDir);
 
-  let imageIndex = 0;
-  for (const image of images) {
-    imageIndex++;
-    const url = image.url;
-
-    // Skip if already processed (duplicate URL)
+  let idx = 0;
+  for (const img of images) {
+    idx++;
+    const url = img.url;
     if (imageMap.has(url)) {
-      logVerbose('dim', `  Skipping duplicate: ${url}`);
+      if (!quiet) {
+        logVerbose('dim', `  Skipping duplicate: ${url}`);
+      }
       results.skipped.push({ url, reason: 'duplicate' });
       continue;
     }
-
-    // Skip data URLs
     if (url.startsWith('data:')) {
-      logVerbose('dim', `  Skipping data URL`);
+      if (!quiet) {
+        logVerbose('dim', `  Skipping data URL`);
+      }
       results.skipped.push({ url, reason: 'data URL' });
       continue;
     }
-
-    // Skip relative URLs that don't start with http
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      logVerbose('yellow', `  Skipping non-HTTP URL: ${url}`);
+      if (!quiet) {
+        logVerbose('yellow', `  Skipping non-HTTP URL: ${url}`);
+      }
       results.skipped.push({ url, reason: 'non-HTTP URL' });
       continue;
     }
-
     try {
-      logVerbose(
-        'blue',
-        `  [${imageIndex}/${images.length}] Downloading: ${url.substring(0, 80)}...`
-      );
-
-      const buffer = await downloadImage(url, token);
-
-      // Validate the downloaded content
-      const validation = validateImageBytes(buffer);
-
-      if (!validation.valid) {
-        log(
-          'yellow',
-          `⚠️  Invalid image (${validation.reason}): ${url.substring(0, 60)}...`
+      if (!quiet) {
+        logVerbose(
+          'blue',
+          `  [${idx}/${images.length}] Downloading: ${url.substring(0, 80)}...`
         );
-        results.failed.push({ url, reason: validation.reason });
+      }
+      const buffer = await downloadImage(url, token);
+      const v = validateImageBytes(buffer);
+      if (!v.valid) {
+        if (!quiet) {
+          log(
+            'yellow',
+            `⚠️  Invalid image (${v.reason}): ${url.substring(0, 60)}...`
+          );
+        }
+        results.failed.push({ url, reason: v.reason });
         continue;
       }
-
-      // Determine filename
-      const ext = getExtensionForType(validation.type);
-      const filename = `image-${imageIndex}${ext}`;
+      const ext = getExtensionForType(v.type);
+      const filename = `image-${idx}${ext}`;
       const localPath = path.join(imageDir, filename);
-
-      // Save the image
       await fs.writeFile(localPath, buffer);
-
       imageMap.set(url, {
         localPath,
         relativePath: path.join(path.basename(imageDir), filename),
-        type: validation.type,
+        type: v.type,
         size: buffer.length,
       });
-
       results.downloaded.push({
         url,
         localPath,
-        type: validation.type,
+        type: v.type,
         size: buffer.length,
       });
-
-      logVerbose(
-        'green',
-        `  ✓ Saved as ${filename} (${validation.type}, ${buffer.length} bytes)`
-      );
-    } catch (error) {
-      log('yellow', `⚠️  Failed to download image: ${error.message}`);
-      logVerbose('dim', `     URL: ${url}`);
-      results.failed.push({ url, reason: error.message });
+      if (!quiet) {
+        logVerbose(
+          'green',
+          `  ✓ Saved as ${filename} (${v.type}, ${buffer.length} bytes)`
+        );
+      }
+    } catch (e) {
+      if (!quiet) {
+        log('yellow', `⚠️  Failed to download image: ${e.message}`);
+        logVerbose('dim', `     URL: ${url}`);
+      }
+      results.failed.push({ url, reason: e.message });
     }
   }
-
-  // Summary
-  if (results.downloaded.length > 0) {
+  if (!quiet && results.downloaded.length > 0) {
     log('green', `✅ Downloaded ${results.downloaded.length} image(s)`);
   }
-  if (results.failed.length > 0) {
+  if (!quiet && results.failed.length > 0) {
     log('yellow', `⚠️  Failed to download ${results.failed.length} image(s)`);
   }
-
   return { imageMap, results };
 }
 
@@ -426,46 +473,95 @@ function escapeRegex(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Fetch issue data from GitHub API
-async function fetchIssue(owner, repo, issueNumber, token) {
-  try {
+// Fetch issue data from GitHub API using Octokit (fallback method)
+async function fetchIssueWithOctokit(owner, repo, issueNumber, token) {
+  const octokit = new Octokit({
+    auth: token,
+    baseUrl: 'https://api.github.com',
+  });
+
+  // Fetch the issue
+  const { data: issue } = await octokit.rest.issues.get({
+    owner,
+    repo,
+    issue_number: issueNumber,
+  });
+
+  // Fetch comments
+  const { data: comments } = await octokit.rest.issues.listComments({
+    owner,
+    repo,
+    issue_number: issueNumber,
+  });
+
+  return { issue, comments };
+}
+
+// Fetch issue data - uses gh CLI by default, falls back to Octokit API
+// eslint-disable-next-line complexity
+async function fetchIssue(
+  owner,
+  repo,
+  issueNumber,
+  token,
+  useApi = false,
+  quiet = false
+) {
+  if (!quiet) {
     log('blue', `🔍 Fetching issue #${issueNumber} from ${owner}/${repo}...`);
+  }
 
-    const octokit = new Octokit({
-      auth: token,
-      baseUrl: 'https://api.github.com',
-    });
-
-    // Fetch the issue
-    const { data: issue } = await octokit.rest.issues.get({
-      owner,
-      repo,
-      issue_number: issueNumber,
-    });
-
-    // Fetch comments
-    const { data: comments } = await octokit.rest.issues.listComments({
-      owner,
-      repo,
-      issue_number: issueNumber,
-    });
-
-    log(
-      'green',
-      `✅ Successfully fetched issue with ${comments.length} comments`
-    );
-
-    return { issue, comments };
-  } catch (error) {
-    if (error.status === 404) {
-      log('red', `❌ Issue #${issueNumber} not found in ${owner}/${repo}`);
-    } else if (error.status === 401) {
-      log(
-        'red',
-        `❌ Authentication failed. Please provide a valid GitHub token`
-      );
+  try {
+    let issueData;
+    const ghAvailable = await isGhAvailable();
+    if (!useApi && ghAvailable) {
+      if (!quiet) {
+        logVerbose('cyan', '🔑 Using gh CLI for authentication');
+      }
+      issueData = await fetchIssueWithGh(owner, repo, issueNumber);
+    } else if (token) {
+      if (!quiet) {
+        logVerbose('cyan', '🔑 Using Octokit API with token');
+      }
+      issueData = await fetchIssueWithOctokit(owner, repo, issueNumber, token);
+    } else if (ghAvailable) {
+      if (!quiet) {
+        logVerbose('cyan', '🔑 Falling back to gh CLI (no token provided)');
+      }
+      issueData = await fetchIssueWithGh(owner, repo, issueNumber);
     } else {
-      log('red', `❌ Failed to fetch issue: ${error.message}`);
+      if (!quiet) {
+        logVerbose('cyan', '🔑 Using Octokit API without authentication');
+      }
+      issueData = await fetchIssueWithOctokit(
+        owner,
+        repo,
+        issueNumber,
+        undefined
+      );
+    }
+    if (!quiet) {
+      log(
+        'green',
+        `✅ Successfully fetched issue with ${issueData.comments.length} comments`
+      );
+    }
+    return issueData;
+  } catch (error) {
+    if (!quiet) {
+      const is404 =
+        error.status === 404 || error.message?.includes('not found');
+      const is401 = error.status === 401 || error.message?.includes('auth');
+      if (is404) {
+        log('red', `❌ Issue #${issueNumber} not found in ${owner}/${repo}`);
+      } else if (is401) {
+        log(
+          'red',
+          `❌ Auth failed. Run 'gh auth login' or provide a valid token`
+        );
+      } else {
+        log('red', `❌ Failed to fetch issue: ${error.message}`);
+      }
     }
     throw error;
   }
@@ -592,7 +688,7 @@ function issueToJson(issueData, imageResults = null) {
 
 /**
  * Load a GitHub issue and return structured data (library API)
- * @param {Object} opts - { issueUrl, token?, downloadImages?, imageDir?, quiet? }
+ * @param {Object} opts - { issueUrl, token?, downloadImages?, imageDir?, quiet?, useApi? }
  * @returns {Promise<Object>} Issue data with markdown and json representations
  */
 export async function loadIssue({
@@ -601,20 +697,29 @@ export async function loadIssue({
   downloadImages = false,
   imageDir = null,
   quiet = true,
+  useApi = false,
 }) {
   const parsed = parseIssueUrl(issueUrl);
   if (!parsed) {
     throw new Error(`Invalid issue URL: ${issueUrl}`);
   }
   const { owner, repo, issueNumber } = parsed;
-  if (!token) {
+  // Only get token if we need to use API and no token is provided
+  if (useApi && !token) {
     token = await getGhToken();
   }
   const oldVerbose = verboseMode;
   if (quiet) {
     verboseMode = false;
   }
-  const issueData = await fetchIssueQuiet(owner, repo, issueNumber, token);
+  const issueData = await fetchIssue(
+    owner,
+    repo,
+    issueNumber,
+    token,
+    useApi,
+    quiet
+  );
   let imageMap = null,
     imageResults = null;
   if (downloadImages && imageDir) {
@@ -622,7 +727,9 @@ export async function loadIssue({
     issueData.comments.forEach((c) => {
       content += `\n${c.body || ''}`;
     });
-    const r = await downloadImagesQuiet(content, imageDir, token);
+    // Get token for image downloads if needed
+    const imageToken = token || (await getGhToken());
+    const r = await downloadImages(content, imageDir, imageToken, true);
     imageMap = r.imageMap;
     imageResults = r.results;
   }
@@ -637,80 +744,6 @@ export async function loadIssue({
     json: issueToJson(issueData, imageResults),
     images: imageResults,
   };
-}
-
-// Quiet fetch: reuse fetchIssue logic without logging
-async function fetchIssueQuiet(owner, repo, issueNumber, token) {
-  const octokit = new Octokit({
-    auth: token,
-    baseUrl: 'https://api.github.com',
-  });
-  const { data: issue } = await octokit.rest.issues.get({
-    owner,
-    repo,
-    issue_number: issueNumber,
-  });
-  const { data: comments } = await octokit.rest.issues.listComments({
-    owner,
-    repo,
-    issue_number: issueNumber,
-  });
-  return { issue, comments };
-}
-
-// Quiet image download: reuses downloadImages logic without logging
-async function downloadImagesQuiet(content, imageDir, token) {
-  const images = extractImagesFromMarkdown(content);
-  const imageMap = new Map();
-  const results = { downloaded: [], failed: [], skipped: [] };
-  if (images.length === 0) {
-    return { imageMap, results };
-  }
-  await fs.ensureDir(imageDir);
-  let idx = 0;
-  for (const img of images) {
-    idx++;
-    const url = img.url;
-    if (imageMap.has(url)) {
-      results.skipped.push({ url, reason: 'duplicate' });
-      continue;
-    }
-    if (url.startsWith('data:')) {
-      results.skipped.push({ url, reason: 'data URL' });
-      continue;
-    }
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      results.skipped.push({ url, reason: 'non-HTTP URL' });
-      continue;
-    }
-    try {
-      const buffer = await downloadImage(url, token);
-      const v = validateImageBytes(buffer);
-      if (!v.valid) {
-        results.failed.push({ url, reason: v.reason });
-        continue;
-      }
-      const ext = getExtensionForType(v.type);
-      const filename = `image-${idx}${ext}`;
-      const localPath = path.join(imageDir, filename);
-      await fs.writeFile(localPath, buffer);
-      imageMap.set(url, {
-        localPath,
-        relativePath: path.join(path.basename(imageDir), filename),
-        type: v.type,
-        size: buffer.length,
-      });
-      results.downloaded.push({
-        url,
-        localPath,
-        type: v.type,
-        size: buffer.length,
-      });
-    } catch (e) {
-      results.failed.push({ url, reason: e.message });
-    }
-  }
-  return { imageMap, results };
 }
 
 // Export utility functions for library use
@@ -748,6 +781,8 @@ Options:
   -f, --format           Output format: markdown, json (default: markdown)
                                                                         [string]
   -v, --verbose          Enable verbose logging                        [boolean]
+      --use-api          Use GitHub API instead of gh CLI (default: false)
+                                                                       [boolean]
   -h, --help             Show help                                     [boolean]
 
 Examples:
@@ -756,7 +791,8 @@ Examples:
   ${scriptName} owner/repo#123 -o my-issue.md              Save to specific file
   ${scriptName} owner/repo#123 --token ghp_xxx             Use specific GitHub token
   ${scriptName} owner/repo#123 --format json               Export as JSON
-  ${scriptName} owner/repo#123 --no-download-images        Skip image download`);
+  ${scriptName} owner/repo#123 --no-download-images        Skip image download
+  ${scriptName} owner/repo#123 --use-api                   Use GitHub API instead of gh CLI`);
     process.exit(0);
   }
 
@@ -809,6 +845,11 @@ Examples:
       describe: 'Enable verbose logging',
       default: false,
     })
+    .option('use-api', {
+      type: 'boolean',
+      describe: 'Use GitHub API instead of gh CLI (default: false)',
+      default: false,
+    })
     .help(false) // Disable yargs built-in help since we handle it manually
     .version(false) // Disable yargs built-in version since we handle it manually
     .example(
@@ -819,18 +860,20 @@ Examples:
     .example('$0 owner/repo#123 -o my-issue.md', 'Save to specific file')
     .example('$0 owner/repo#123 --token ghp_xxx', 'Use specific GitHub token')
     .example('$0 owner/repo#123 --format json', 'Export as JSON')
-    .example('$0 owner/repo#123 --no-download-images', 'Skip image download');
+    .example('$0 owner/repo#123 --no-download-images', 'Skip image download')
+    .example('$0 owner/repo#123 --use-api', 'Use GitHub API instead of gh CLI');
 
   const argv = await yargsInstance.parseAsync();
 
   const { issue: issueInput, output, format, verbose } = argv;
   const downloadImages_flag = argv['download-images'];
+  const useApi = argv['use-api'];
   let { token } = argv;
 
   // Set verbose mode
   verboseMode = verbose;
 
-  // Check if issue URL was provided
+  // Check and parse issue URL
   if (!issueInput) {
     log('red', '❌ No issue URL provided');
     log(
@@ -840,8 +883,6 @@ Examples:
     log('yellow', '   Run with --help for more information');
     process.exit(1);
   }
-
-  // Parse the issue URL
   const parsed = parseIssueUrl(issueInput);
   if (!parsed) {
     log('red', '❌ Invalid issue URL or format');
@@ -854,19 +895,19 @@ Examples:
 
   const { owner, repo, issueNumber } = parsed;
 
-  // If no token provided, try to get it from gh CLI
-  if (!token || token === undefined) {
+  // If using API mode and no token provided, try to get it from gh CLI
+  if (useApi && (!token || token === undefined)) {
     const ghToken = await getGhToken();
     if (ghToken) {
       token = ghToken;
-      log('cyan', '🔑 Using GitHub token from gh CLI');
+      log('cyan', '🔑 Using GitHub token from gh CLI for API mode');
     }
   }
 
   // Fetch the issue
   let issueData;
   try {
-    issueData = await fetchIssue(owner, repo, issueNumber, token);
+    issueData = await fetchIssue(owner, repo, issueNumber, token, useApi);
   } catch (_error) {
     process.exit(1);
   }
@@ -911,10 +952,16 @@ Examples:
       allContent += `\n${comment.body || ''}`;
     }
 
+    // Get token for image downloads if not already available
+    let imageToken = token;
+    if (!imageToken) {
+      imageToken = await getGhToken();
+    }
+
     const { imageMap: downloadedMap, results } = await downloadImages(
       allContent,
       imageDir,
-      token
+      imageToken
     );
 
     imageMap = downloadedMap;
