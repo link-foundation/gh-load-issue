@@ -45,13 +45,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: '20.x'
+          bun-version: latest
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Check for changesets
         run: |
@@ -62,7 +62,7 @@ jobs:
           fi
 
           # Run changeset validation script
-          node scripts/validate-changeset.mjs
+          bun scripts/validate-changeset.mjs
 
   # Linting and formatting - runs after changeset check on PRs, immediately on main
   lint:
@@ -73,26 +73,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: '20.x'
+          bun-version: latest
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Run ESLint
-        run: npm run lint
+        run: bun run lint
 
       - name: Check formatting
-        run: npm run format:check
+        run: bun run format:check
 
       - name: Check file size limit
-        run: npm run check:file-size
+        run: bun run check:file-size
 
-  # Test matrix: 3 runtimes (Node.js, Bun, Deno) x 3 OS (Ubuntu, macOS, Windows)
+  # Test matrix: Bun only on 3 OS (Ubuntu, macOS, Windows)
   test:
-    name: Test (${{ matrix.runtime }} on ${{ matrix.os }})
+    name: Test (Bun on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     needs: [changeset-check]
     if: always() && (github.event_name == 'push' || needs.changeset-check.result == 'success')
@@ -100,51 +100,19 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        runtime: [node, bun, deno]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        if: matrix.runtime == 'node'
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-
-      - name: Install dependencies (Node.js)
-        if: matrix.runtime == 'node'
-        run: npm install
-
-      - name: Run tests (Node.js)
-        if: matrix.runtime == 'node'
-        run: npm test
-
       - name: Setup Bun
-        if: matrix.runtime == 'bun'
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
-      - name: Install dependencies (Bun)
-        if: matrix.runtime == 'bun'
+      - name: Install dependencies
         run: bun install
 
-      - name: Run tests (Bun)
-        if: matrix.runtime == 'bun'
-        run: bun run test
-
-      - name: Setup Deno
-        if: matrix.runtime == 'deno'
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
-
-      - name: Install dependencies (Deno)
-        if: matrix.runtime == 'deno'
-        run: deno install
-
-      - name: Run tests (Deno)
-        if: matrix.runtime == 'deno'
-        run: deno task test
+      - name: Run tests
+        run: bun test
 
   # Release - only runs on main after tests pass (for push events)
   release:
