@@ -1,32 +1,26 @@
 #!/usr/bin/env bun
+// gh-load-issue - Download GitHub issues to markdown (CLI and library)
 
-// Import built-in Node.js modules
 import path from 'path';
 import { fileURLToPath } from 'url';
 import https from 'https';
 import http from 'http';
-
-// Import npm dependencies
 import { Octokit } from '@octokit/rest';
 import fs from 'fs-extra';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
-// Get __dirname equivalent for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Get version from package.json or fallback
-let version = '0.1.0'; // Fallback version
-
+let version = '0.1.0';
 try {
-  const packagePath = path.join(__dirname, 'package.json');
-  if (await fs.pathExists(packagePath)) {
-    const packageJson = await fs.readJson(packagePath);
-    version = packageJson.version;
+  const pkgPath = path.join(__dirname, 'package.json');
+  if (await fs.pathExists(pkgPath)) {
+    version = (await fs.readJson(pkgPath)).version;
   }
-} catch (_error) {
-  // Use fallback version if package.json can't be read
+} catch (_e) {
+  /* use fallback */
 }
 
 // Colors for console output
@@ -109,89 +103,51 @@ function parseIssueUrl(url) {
   return null;
 }
 
-// Image magic bytes for validation (reference documentation)
-// PNG:  [0x89, 0x50, 0x4e, 0x47]
-// JPEG: [0xff, 0xd8, 0xff]
-// GIF:  [0x47, 0x49, 0x46]
-// WebP: [0x52, 0x49, 0x46, 0x46] (RIFF header) + WEBP at offset 8
-// BMP:  [0x42, 0x4d]
-// ICO:  [0x00, 0x00, 0x01, 0x00]
-// SVG:  starts with <?xml or <svg
-
-// Validate image by checking magic bytes
+// Validate image by checking magic bytes (PNG, JPEG, GIF, WebP, BMP, ICO, SVG)
+// eslint-disable-next-line complexity
 function validateImageBytes(buffer) {
   if (!buffer || buffer.length < 4) {
     return { valid: false, type: null, reason: 'Buffer too small' };
   }
-
-  const bytes = [...buffer.slice(0, 12)];
-
-  // Check for PNG
-  if (
-    bytes[0] === 0x89 &&
-    bytes[1] === 0x50 &&
-    bytes[2] === 0x4e &&
-    bytes[3] === 0x47
-  ) {
+  const b = [...buffer.slice(0, 12)];
+  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) {
     return { valid: true, type: 'png' };
   }
-
-  // Check for JPEG
-  if (bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) {
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) {
     return { valid: true, type: 'jpeg' };
   }
-
-  // Check for GIF
-  if (bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46) {
+  if (b[0] === 0x47 && b[1] === 0x49 && b[2] === 0x46) {
     return { valid: true, type: 'gif' };
   }
-
-  // Check for WebP (RIFF....WEBP)
   if (
-    bytes[0] === 0x52 &&
-    bytes[1] === 0x49 &&
-    bytes[2] === 0x46 &&
-    bytes[3] === 0x46
+    b[0] === 0x52 &&
+    b[1] === 0x49 &&
+    b[2] === 0x46 &&
+    b[3] === 0x46 &&
+    buffer.length >= 12 &&
+    buffer.slice(8, 12).toString('ascii') === 'WEBP'
   ) {
-    if (buffer.length >= 12) {
-      const webpCheck = buffer.slice(8, 12).toString('ascii');
-      if (webpCheck === 'WEBP') {
-        return { valid: true, type: 'webp' };
-      }
-    }
+    return { valid: true, type: 'webp' };
   }
-
-  // Check for BMP
-  if (bytes[0] === 0x42 && bytes[1] === 0x4d) {
+  if (b[0] === 0x42 && b[1] === 0x4d) {
     return { valid: true, type: 'bmp' };
   }
-
-  // Check for ICO
-  if (
-    bytes[0] === 0x00 &&
-    bytes[1] === 0x00 &&
-    bytes[2] === 0x01 &&
-    bytes[3] === 0x00
-  ) {
+  if (b[0] === 0x00 && b[1] === 0x00 && b[2] === 0x01 && b[3] === 0x00) {
     return { valid: true, type: 'ico' };
   }
-
-  // Check for SVG (text-based, check for <?xml or <svg)
-  const textStart = buffer.slice(0, 100).toString('utf8').trim().toLowerCase();
-  if (textStart.startsWith('<?xml') || textStart.startsWith('<svg')) {
+  const txt = buffer.slice(0, 100).toString('utf8').trim().toLowerCase();
+  if (txt.startsWith('<?xml') || txt.startsWith('<svg')) {
     return { valid: true, type: 'svg' };
   }
-
-  // Check if it looks like HTML (error page)
   if (
-    textStart.includes('<!doctype html') ||
-    textStart.includes('<html') ||
-    textStart.includes('404')
+    txt.includes('<!doctype html') ||
+    txt.includes('<html') ||
+    txt.includes('404')
   ) {
     return {
       valid: false,
       type: 'html',
-      reason: 'Received HTML instead of image (likely 404 page)',
+      reason: 'Received HTML instead of image',
     };
   }
 
@@ -630,9 +586,149 @@ function issueToJson(issueData, imageResults = null) {
   };
 }
 
-// Configure CLI arguments
-const scriptName = path.basename(process.argv[1]);
+// ============================================================================
+// LIBRARY API - Exported functions for programmatic use
+// ============================================================================
 
+/**
+ * Load a GitHub issue and return structured data (library API)
+ * @param {Object} opts - { issueUrl, token?, downloadImages?, imageDir?, quiet? }
+ * @returns {Promise<Object>} Issue data with markdown and json representations
+ */
+export async function loadIssue({
+  issueUrl,
+  token = null,
+  downloadImages = false,
+  imageDir = null,
+  quiet = true,
+}) {
+  const parsed = parseIssueUrl(issueUrl);
+  if (!parsed) {
+    throw new Error(`Invalid issue URL: ${issueUrl}`);
+  }
+  const { owner, repo, issueNumber } = parsed;
+  if (!token) {
+    token = await getGhToken();
+  }
+  const oldVerbose = verboseMode;
+  if (quiet) {
+    verboseMode = false;
+  }
+  const issueData = await fetchIssueQuiet(owner, repo, issueNumber, token);
+  let imageMap = null,
+    imageResults = null;
+  if (downloadImages && imageDir) {
+    let content = issueData.issue.body || '';
+    issueData.comments.forEach((c) => {
+      content += `\n${c.body || ''}`;
+    });
+    const r = await downloadImagesQuiet(content, imageDir, token);
+    imageMap = r.imageMap;
+    imageResults = r.results;
+  }
+  verboseMode = oldVerbose;
+  return {
+    owner,
+    repo,
+    issueNumber,
+    issue: issueData.issue,
+    comments: issueData.comments,
+    markdown: issueToMarkdown(issueData, imageMap),
+    json: issueToJson(issueData, imageResults),
+    images: imageResults,
+  };
+}
+
+// Quiet fetch: reuse fetchIssue logic without logging
+async function fetchIssueQuiet(owner, repo, issueNumber, token) {
+  const octokit = new Octokit({
+    auth: token,
+    baseUrl: 'https://api.github.com',
+  });
+  const { data: issue } = await octokit.rest.issues.get({
+    owner,
+    repo,
+    issue_number: issueNumber,
+  });
+  const { data: comments } = await octokit.rest.issues.listComments({
+    owner,
+    repo,
+    issue_number: issueNumber,
+  });
+  return { issue, comments };
+}
+
+// Quiet image download: reuses downloadImages logic without logging
+async function downloadImagesQuiet(content, imageDir, token) {
+  const images = extractImagesFromMarkdown(content);
+  const imageMap = new Map();
+  const results = { downloaded: [], failed: [], skipped: [] };
+  if (images.length === 0) {
+    return { imageMap, results };
+  }
+  await fs.ensureDir(imageDir);
+  let idx = 0;
+  for (const img of images) {
+    idx++;
+    const url = img.url;
+    if (imageMap.has(url)) {
+      results.skipped.push({ url, reason: 'duplicate' });
+      continue;
+    }
+    if (url.startsWith('data:')) {
+      results.skipped.push({ url, reason: 'data URL' });
+      continue;
+    }
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      results.skipped.push({ url, reason: 'non-HTTP URL' });
+      continue;
+    }
+    try {
+      const buffer = await downloadImage(url, token);
+      const v = validateImageBytes(buffer);
+      if (!v.valid) {
+        results.failed.push({ url, reason: v.reason });
+        continue;
+      }
+      const ext = getExtensionForType(v.type);
+      const filename = `image-${idx}${ext}`;
+      const localPath = path.join(imageDir, filename);
+      await fs.writeFile(localPath, buffer);
+      imageMap.set(url, {
+        localPath,
+        relativePath: path.join(path.basename(imageDir), filename),
+        type: v.type,
+        size: buffer.length,
+      });
+      results.downloaded.push({
+        url,
+        localPath,
+        type: v.type,
+        size: buffer.length,
+      });
+    } catch (e) {
+      results.failed.push({ url, reason: e.message });
+    }
+  }
+  return { imageMap, results };
+}
+
+// Export utility functions for library use
+export {
+  parseIssueUrl,
+  issueToMarkdown,
+  issueToJson,
+  extractImagesFromMarkdown,
+};
+
+// ============================================================================
+// CLI IMPLEMENTATION
+// ============================================================================
+
+// Configure CLI arguments
+const scriptName = path.basename(process.argv[1] || 'gh-load-issue');
+
+// eslint-disable-next-line complexity, max-lines-per-function, max-statements
 async function main() {
   // Check for --help or --version before yargs parsing for faster response
   const args = process.argv.slice(2);
@@ -876,7 +972,22 @@ Examples:
   }
 }
 
-main().catch((error) => {
-  log('red', `💥 Script failed: ${error.message}`);
-  process.exit(1);
-});
+// Only run CLI when invoked directly (not imported as a library)
+const currentFilePath = fileURLToPath(import.meta.url);
+const invokedPath = process.argv[1]
+  ? path.resolve(process.cwd(), process.argv[1])
+  : null;
+
+// Check if this script is being run directly
+const isDirectInvocation =
+  invokedPath &&
+  (invokedPath === currentFilePath ||
+    invokedPath.endsWith('gh-load-issue.mjs') ||
+    invokedPath.endsWith('gh-load-issue'));
+
+if (isDirectInvocation) {
+  main().catch((error) => {
+    log('red', `💥 Script failed: ${error.message}`);
+    process.exit(1);
+  });
+}
