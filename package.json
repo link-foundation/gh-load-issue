@@ -8,22 +8,22 @@
     "gh-load-issue": "./gh-load-issue.mjs"
   },
   "scripts": {
-    "test": "node --test tests/test-all.mjs",
+    "test": "bun test",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check:file-size": "node scripts/check-file-size.mjs",
+    "check:file-size": "bun scripts/check-file-size.mjs",
     "check:duplication": "jscpd .",
-    "check": "npm run lint && npm run format:check && npm run check:file-size && npm run check:duplication",
+    "check": "bun run lint && bun run format:check && bun run check:file-size && bun run check:duplication",
     "prepare": "husky || true",
     "changeset": "changeset",
-    "changeset:version": "node scripts/changeset-version.mjs",
+    "changeset:version": "bun scripts/changeset-version.mjs",
     "changeset:publish": "changeset publish",
     "changeset:status": "changeset status --since=origin/main"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "bun": ">=1.2.0"
   },
   "dependencies": {
     "@octokit/rest": "^22.0.0",

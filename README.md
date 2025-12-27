@@ -44,11 +44,7 @@ gh-load-issue owner/repo#123 --token ghp_xxx
 Install globally for system-wide access:
 
 ```bash
-# Using bun
 bun install -g gh-load-issue
-
-# Using npm
-npm install -g gh-load-issue
 
 # After installation, use anywhere:
 gh-load-issue --help
@@ -59,11 +55,7 @@ gh-load-issue --help
 Remove the global installation:
 
 ```bash
-# Using bun
 bun uninstall -g gh-load-issue
-
-# Using npm
-npm uninstall -g gh-load-issue
 ```
 
 ### Local Installation
@@ -254,7 +246,7 @@ The JSON format includes:
 
 ## Requirements
 
-- [Bun](https://bun.sh/) (>=1.2.0) or [Node.js](https://nodejs.org/) (>=20.0.0) runtime
+- [Bun](https://bun.sh/) (>=1.2.0) runtime
 - For private issues (optional):
   - [GitHub CLI](https://cli.github.com/) (recommended) OR
   - GitHub personal access token (via `--token` or `GITHUB_TOKEN` env var)
@@ -265,11 +257,11 @@ The project includes a test suite:
 
 ```bash
 # Run all tests
-npm test
+bun test
 
 # Or run directly
 cd tests
-./test-all.mjs
+./test-all.test.mjs
 ```
 
 ## Use Cases

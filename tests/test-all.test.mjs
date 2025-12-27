@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 
 /**
  * Test runner for gh-load-issue
@@ -8,5 +8,5 @@
  */
 
 // Import all test modules - they will register their tests with test-anywhere
-import './test-basic.mjs';
-import './test-image-extraction.mjs';
+import './test-basic.test.mjs';
+import './test-image-extraction.test.mjs';
