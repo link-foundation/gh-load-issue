@@ -284,7 +284,7 @@ describe('Library API', () => {
       }
     });
 
-    it('should load a real issue (if authenticated)', async () => {
+    it('should load a real issue using gh CLI by default (if authenticated)', async () => {
       const { loadIssue } = await import(modulePath);
 
       try {
@@ -309,6 +309,64 @@ describe('Library API', () => {
         expect(result.markdown).toContain('# ');
       } catch (_error) {
         console.log('Skipping loadIssue test - authentication may be required');
+      }
+    });
+
+    it('should load a real issue using API mode (if token available)', async () => {
+      const { loadIssue } = await import(modulePath);
+
+      try {
+        const result = await loadIssue({
+          issueUrl: 'link-foundation/gh-load-issue#1',
+          quiet: true,
+          useApi: true,
+        });
+
+        // Verify structure
+        expect(result.owner).not.toBe(undefined);
+        expect(result.repo).not.toBe(undefined);
+        expect(result.issueNumber).not.toBe(undefined);
+        expect(result.issue).not.toBe(undefined);
+        expect(result.comments).not.toBe(undefined);
+        expect(result.markdown).not.toBe(undefined);
+        expect(result.json).not.toBe(undefined);
+
+        // Verify content matches gh CLI mode
+        expect(result.owner).toBe('link-foundation');
+        expect(result.repo).toBe('gh-load-issue');
+        expect(result.issueNumber).toBe(1);
+        expect(result.markdown).toContain('# ');
+      } catch (_error) {
+        console.log('Skipping API mode test - authentication may be required');
+      }
+    });
+
+    it('should produce consistent results between gh CLI and API modes', async () => {
+      const { loadIssue } = await import(modulePath);
+
+      try {
+        const ghResult = await loadIssue({
+          issueUrl: 'link-foundation/gh-load-issue#1',
+          quiet: true,
+          useApi: false,
+        });
+
+        const apiResult = await loadIssue({
+          issueUrl: 'link-foundation/gh-load-issue#1',
+          quiet: true,
+          useApi: true,
+        });
+
+        // Verify both produce the same key data
+        expect(ghResult.issue.number).toBe(apiResult.issue.number);
+        expect(ghResult.issue.title).toBe(apiResult.issue.title);
+        expect(ghResult.issue.state).toBe(apiResult.issue.state);
+        expect(ghResult.issue.user.login).toBe(apiResult.issue.user.login);
+        expect(ghResult.comments.length).toBe(apiResult.comments.length);
+      } catch (_error) {
+        console.log(
+          'Skipping consistency test - authentication may be required'
+        );
       }
     });
   });

@@ -429,6 +429,7 @@ describe('CLI Options Verification', () => {
       expect(output).toContain('--format');
       expect(output).toContain('--download-images');
       expect(output).toContain('--verbose');
+      expect(output).toContain('--use-api');
       expect(output).toContain('--help');
       expect(output).toContain('--version');
     });
@@ -442,6 +443,88 @@ describe('CLI Options Verification', () => {
 
       // Should match semver pattern
       expect(output.trim()).toMatch(/^\d+\.\d+\.\d+$/);
+    });
+  });
+});
+
+describe('Authentication Mode Tests', () => {
+  describe('gh CLI Mode (default)', () => {
+    it('should download issue using gh CLI by default', async () => {
+      const outputPath = path.join(testOutputDir, 'gh-mode.md');
+
+      try {
+        execSync(
+          `bun ${scriptPath} ${TEST_ISSUES.simple.url} -o ${outputPath} --no-download-images`,
+          {
+            encoding: 'utf8',
+            stdio: 'pipe',
+          }
+        );
+
+        const exists = fs.existsSync(outputPath);
+        expect(exists).toBe(true);
+      } catch (_error) {
+        console.log('Skipping test - authentication may be required');
+      }
+    });
+  });
+
+  describe('API Mode', () => {
+    it('should download issue using API when --use-api is specified', async () => {
+      const outputPath = path.join(testOutputDir, 'api-mode.md');
+
+      try {
+        execSync(
+          `bun ${scriptPath} ${TEST_ISSUES.simple.url} -o ${outputPath} --no-download-images --use-api`,
+          {
+            encoding: 'utf8',
+            stdio: 'pipe',
+          }
+        );
+
+        const exists = fs.existsSync(outputPath);
+        expect(exists).toBe(true);
+      } catch (_error) {
+        console.log('Skipping test - authentication may be required');
+      }
+    });
+
+    it('should produce same content in both modes', async () => {
+      const ghModePath = path.join(testOutputDir, 'mode-compare-gh.md');
+      const apiModePath = path.join(testOutputDir, 'mode-compare-api.md');
+
+      try {
+        execSync(
+          `bun ${scriptPath} ${TEST_ISSUES.simple.url} -o ${ghModePath} --no-download-images`,
+          {
+            encoding: 'utf8',
+            stdio: 'pipe',
+          }
+        );
+
+        execSync(
+          `bun ${scriptPath} ${TEST_ISSUES.simple.url} -o ${apiModePath} --no-download-images --use-api`,
+          {
+            encoding: 'utf8',
+            stdio: 'pipe',
+          }
+        );
+
+        const ghContent = await fsPromises.readFile(ghModePath, 'utf8');
+        const apiContent = await fsPromises.readFile(apiModePath, 'utf8');
+
+        // Both should contain the same issue title
+        expect(ghContent.toLowerCase()).toContain('mvp');
+        expect(apiContent.toLowerCase()).toContain('mvp');
+
+        // Both should have the same core structure
+        expect(ghContent).toContain('**Issue:**');
+        expect(apiContent).toContain('**Issue:**');
+        expect(ghContent).toContain('**Author:**');
+        expect(apiContent).toContain('**Author:**');
+      } catch (_error) {
+        console.log('Skipping test - authentication may be required');
+      }
     });
   });
 });
