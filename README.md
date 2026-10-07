@@ -259,10 +259,17 @@ The project includes a test suite:
 # Run all tests
 bun test
 
+# Test the packed npm artifact through an isolated installed bin link (POSIX)
+bun run test:package
+
 # Or run directly
 cd tests
 ./test-all.test.mjs
 ```
+
+Release CI runs the package smoke test before publication, then verifies the
+published version and npm `latest` tag and repeats the executable test using
+the registry package before creating a GitHub release.
 
 ## Use Cases
 
