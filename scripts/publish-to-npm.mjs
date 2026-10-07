@@ -1,129 +1,101 @@
 #!/usr/bin/env bun
 
-/**
- * Publish to npm using OIDC trusted publishing
- * Usage: node scripts/publish-to-npm.mjs [--should-pull]
- *   should_pull: Optional flag to pull latest changes before publishing (for release job)
- *
- * IMPORTANT: Update the PACKAGE_NAME constant below to match your package.json
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- * - lino-arguments: Unified configuration from CLI args, env vars, and .lenv files
- */
+// Publish using npm OIDC, and report success only after consumer verification.
+// Usage: node scripts/publish-to-npm.mjs [--should-pull]
+import { execFileSync } from 'node:child_process';
+import { readFileSync, appendFileSync } from 'node:fs';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { NPM_REGISTRY, packAndSmokeTest } from './package-smoke-test.mjs';
+import { sleep, verifyNpmRelease } from './verify-npm-release.mjs';
 
-import { readFileSync, appendFileSync } from 'fs';
+export async function publishToNpm(
+  manifest,
+  {
+    run = execFileSync,
+    verify = verifyNpmRelease,
+    wait = sleep,
+    attempts = 3,
+    delay = 10000,
+  } = {}
+) {
+  const spec = `${manifest.name}@${manifest.version}`;
+  let alreadyPublished = false;
+  try {
+    const version = JSON.parse(
+      run(
+        'npm',
+        ['view', spec, 'version', '--json', '--registry', NPM_REGISTRY],
+        { encoding: 'utf8', stdio: 'pipe' }
+      )
+    );
+    if (version !== manifest.version) {
+      throw new Error(`Unexpected registry version: ${version}`);
+    }
+    alreadyPublished = true;
+  } catch (error) {
+    // Authentication and connection errors must not be mistaken for E404.
+    if (!`${error.message}\n${error.stderr || ''}`.includes('E404')) {
+      throw error;
+    }
+  }
 
-// TODO: Update this to match your package name in package.json
-const PACKAGE_NAME = 'gh-load-issue';
+  if (!alreadyPublished) {
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+      console.log(`Publish attempt ${attempt}/${attempts}: ${spec}`);
+      try {
+        // execFileSync throws for nonzero exits; command-stream did not.
+        run('npm', ['run', 'changeset:publish'], { stdio: 'inherit' });
+        break;
+      } catch (error) {
+        if (attempt === attempts) {
+          throw error;
+        }
+        console.log(`Publish failed: ${error.message}`);
+        await wait(delay);
+      }
+    }
+  }
 
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
-
-// Import link-foundation libraries
-const { $ } = await use('command-stream');
-const { makeConfig } = await use('lino-arguments');
-
-// Parse CLI arguments using lino-arguments
-const config = makeConfig({
-  yargs: ({ yargs, getenv }) =>
-    yargs.option('should-pull', {
-      type: 'boolean',
-      default: getenv('SHOULD_PULL', false),
-      describe: 'Pull latest changes before publishing',
-    }),
-});
-
-const { shouldPull } = config;
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 10000; // 10 seconds
-
-/**
- * Sleep for specified milliseconds
- * @param {number} ms
- */
-function sleep(ms) {
-  return new Promise((resolve) => globalThis.setTimeout(resolve, ms));
+  // Also verify reruns of releases that are already in the registry.
+  await verify(manifest);
+  return { alreadyPublished };
 }
 
-/**
- * Append to GitHub Actions output file
- * @param {string} key
- * @param {string} value
- */
 function setOutput(key, value) {
-  const outputFile = process.env.GITHUB_OUTPUT;
-  if (outputFile) {
-    appendFileSync(outputFile, `${key}=${value}\n`);
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `${key}=${value}\n`);
   }
 }
 
 async function main() {
-  try {
-    if (shouldPull) {
-      // Pull the latest changes we just pushed
-      await $`git pull origin main`;
-    }
-
-    // Get current version
-    const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
-    const currentVersion = packageJson.version;
-    console.log(`Current version to publish: ${currentVersion}`);
-
-    // Check if this version is already published on npm
-    console.log(
-      `Checking if version ${currentVersion} is already published...`
-    );
-    const checkResult =
-      await $`npm view "${PACKAGE_NAME}@${currentVersion}" version`.run({
-        capture: true,
-      });
-
-    // command-stream returns { code: 0 } on success, { code: 1 } on failure (e.g., E404)
-    // Exit code 0 means version exists, non-zero means version not found
-    if (checkResult.code === 0) {
-      console.log(`Version ${currentVersion} is already published to npm`);
-      setOutput('published', 'true');
-      setOutput('published_version', currentVersion);
-      setOutput('already_published', 'true');
-      return;
-    } else {
-      // Version not found on npm (E404), proceed with publish
-      console.log(
-        `Version ${currentVersion} not found on npm, proceeding with publish...`
-      );
-    }
-
-    // Publish to npm using OIDC trusted publishing with retry logic
-    for (let i = 1; i <= MAX_RETRIES; i++) {
-      console.log(`Publish attempt ${i} of ${MAX_RETRIES}...`);
-      try {
-        await $`npm run changeset:publish`;
-        setOutput('published', 'true');
-        setOutput('published_version', currentVersion);
-        console.log(
-          `\u2705 Published ${PACKAGE_NAME}@${currentVersion} to npm`
-        );
-        return;
-      } catch (_error) {
-        if (i < MAX_RETRIES) {
-          console.log(
-            `Publish failed, waiting ${RETRY_DELAY / 1000}s before retry...`
-          );
-          await sleep(RETRY_DELAY);
-        }
-      }
-    }
-
-    console.error(`\u274C Failed to publish after ${MAX_RETRIES} attempts`);
-    process.exit(1);
-  } catch (error) {
-    console.error('Error:', error.message);
-    process.exit(1);
+  const { shouldPull } = yargs(hideBin(process.argv))
+    .option('should-pull', {
+      type: 'boolean',
+      default: process.env.SHOULD_PULL === 'true',
+      describe: 'Pull latest changes before publishing',
+    })
+    .parse();
+  if (shouldPull) {
+    execFileSync('git', ['pull', 'origin', 'main'], { stdio: 'inherit' });
   }
+  packAndSmokeTest();
+  const { name, version } = JSON.parse(readFileSync('./package.json', 'utf8'));
+  const result = await publishToNpm({ name, version });
+  setOutput('published', 'true');
+  setOutput('published_version', version);
+  setOutput('already_published', String(result.alreadyPublished));
+  console.log(`✅ Verified ${name}@${version} published to npm`);
 }
 
-main();
+if (
+  process.argv[1] &&
+  pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url
+) {
+  main().catch((error) => {
+    console.error('Publication failed:', error.message);
+    process.exitCode = 1;
+  });
+}
