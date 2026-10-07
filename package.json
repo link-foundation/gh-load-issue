@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "bun test",
+    "test:package": "bun scripts/package-smoke-test.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
