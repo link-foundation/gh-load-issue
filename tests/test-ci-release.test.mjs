@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { describe, it } from 'test-anywhere';
 import { assertTrustedPublishingRuntime } from '../scripts/setup-npm.mjs';
 import { checkTrustedPublisher } from '../scripts/npm-preflight.mjs';
@@ -18,6 +19,34 @@ const oidcEnv = {
 };
 
 describe('CI release safeguards', () => {
+  it('requires the result of every verification job and bounds runner time', () => {
+    const { jobs } = Bun.YAML.parse(
+      readFileSync(
+        new URL('../.github/workflows/release.yml', import.meta.url),
+        'utf8'
+      )
+    );
+    const {
+      checks,
+      release,
+      'changeset-pr': changesetPr,
+      ...verification
+    } = jobs;
+    assert.deepEqual(
+      [...checks.needs].sort(),
+      Object.keys(verification).sort()
+    );
+    assert.ok(release.needs.includes('checks'));
+    assert.equal(changesetPr.needs, 'checks');
+    for (const [name, job] of Object.entries(jobs)) {
+      const minutes = job['timeout-minutes'];
+      assert.ok(
+        Number.isInteger(minutes) && minutes > 0 && minutes <= 30,
+        `Job ${name} needs a timeout of at most 30 minutes.`
+      );
+    }
+  });
+
   it('rejects the runtime that silently failed to upgrade in the October release', () => {
     assert.throws(
       () => assertTrustedPublishingRuntime('v20.20.2', '10.8.2'),
