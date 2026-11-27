@@ -2,7 +2,7 @@ Secrets and documentation	Set up job	﻿2026-11-27T07:08:41.6011123Z Current run
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6032001Z ##[group]Runner Image Provisioner
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6032683Z Hosted Compute Agent
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6033158Z Version: 20261111.635
-Secrets and documentation	Set up job	2026-11-27T07:08:41.6033627Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6033627Z Commit: b8a…2ed
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6034137Z Build Date: 2026-11-11T01:49:01Z
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6034662Z Worker ID: {60f0a064-aaa1-428d-bbe8-bc95ffb9bb4f}
 Secrets and documentation	Set up job	2026-11-27T07:08:41.6035163Z Region: us-east-1
@@ -54,7 +54,7 @@ Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c18127
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8313362Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8314085Z   HUSKY: 0
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8314875Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8315647Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8315647Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8316706Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8317483Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8318192Z ##[endgroup]
@@ -66,7 +66,7 @@ Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.0572836Z [command]/usr/bin/git version
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2503591Z git version 2.56.1
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2527721Z ##[endgroup]
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2534603Z Temporarily overriding HOME='/home/runner/work/_temp/e4df183c-bb6b-49c2-b0b5-56543a624dde' before making global git config changes
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2534603Z Temporarily overriding HOME='/ho…dde' before making global git config changes
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2538992Z Adding repository directory to the temporary git global config as a safe directory
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2539612Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2586626Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -97,9 +97,9 @@ Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6462838Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6471891Z ##[endgroup]
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6472430Z ##[group]Fetching the repository
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6477849Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2d3a38a9a11cb2aab3c73289c0b24d7459441da1:refs/remotes/pull/21/merge
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6477849Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2d3…da1:refs/remotes/pull/21/merge
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9462764Z From https://github.com/link-foundation/gh-load-issue
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9463841Z  * [new ref]         2d3a38a9a11cb2aab3c73289c0b24d7459441da1 -> pull/21/merge
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9463841Z  * [new ref]         2d3…da1 -> pull/21/merge
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9468782Z ##[endgroup]
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9469491Z ##[group]Determining the checkout info
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9470034Z ##[endgroup]
@@ -124,10 +124,10 @@ Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687717Z 
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687921Z Turn off this advice by setting config variable advice.detachedHead to false
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9688144Z 
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9688430Z HEAD is now at 2d3a38a Merge 584d41ee444cc9ab538de034863bc292727d82dd into 671340e26becb1e1b3261687ceb001ff72a919c1
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9688430Z HEAD is now at 2d3a38a Merge 584…2dd into 671…9c1
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9694929Z ##[endgroup]
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9730655Z [command]/usr/bin/git log -1 --format=%H
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9754308Z 2d3a38a9a11cb2aab3c73289c0b24d7459441da1
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9754308Z 2d3…da1
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9760944Z ##[group]Removing auth
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9761440Z Removing SSH command configuration
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9762931Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -161,7 +161,7 @@ Lint and Format Check	Set up job	﻿2026-11-27T07:08:43.6553894Z Current runner 
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6581731Z ##[group]Runner Image Provisioner
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6582758Z Hosted Compute Agent
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6583342Z Version: 20261111.635
-Lint and Format Check	Set up job	2026-11-27T07:08:43.6583986Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6583986Z Commit: b8a…2ed
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6584692Z Build Date: 2026-11-11T01:49:01Z
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6585335Z Worker ID: {02e902c8-9d16-4166-88f1-5f8e302d0755}
 Lint and Format Check	Set up job	2026-11-27T07:08:43.6586073Z Region: us-east-1
@@ -193,7 +193,7 @@ Plan checks and release	Set up job	﻿2026-11-27T07:08:44.0446738Z Current runne
 Plan checks and release	Set up job	2026-11-27T07:08:44.0467099Z ##[group]Runner Image Provisioner
 Plan checks and release	Set up job	2026-11-27T07:08:44.0467790Z Hosted Compute Agent
 Plan checks and release	Set up job	2026-11-27T07:08:44.0468264Z Version: 20261111.635
-Plan checks and release	Set up job	2026-11-27T07:08:44.0468710Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Plan checks and release	Set up job	2026-11-27T07:08:44.0468710Z Commit: b8a…2ed
 Plan checks and release	Set up job	2026-11-27T07:08:44.0469223Z Build Date: 2026-11-11T01:49:01Z
 Plan checks and release	Set up job	2026-11-27T07:08:44.0469729Z Worker ID: {148c6f66-a651-41e6-a5a5-d511e275cb7b}
 Plan checks and release	Set up job	2026-11-27T07:08:44.0470236Z Region: us-east-1
@@ -224,7 +224,7 @@ Check for Changesets	Set up job	﻿2026-11-27T07:08:44.6593528Z Current runner v
 Check for Changesets	Set up job	2026-11-27T07:08:44.6619695Z ##[group]Runner Image Provisioner
 Check for Changesets	Set up job	2026-11-27T07:08:44.6620700Z Hosted Compute Agent
 Check for Changesets	Set up job	2026-11-27T07:08:44.6621309Z Version: 20261111.635
-Check for Changesets	Set up job	2026-11-27T07:08:44.6622429Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Check for Changesets	Set up job	2026-11-27T07:08:44.6622429Z Commit: b8a…2ed
 Check for Changesets	Set up job	2026-11-27T07:08:44.6623188Z Build Date: 2026-11-11T01:49:01Z
 Check for Changesets	Set up job	2026-11-27T07:08:44.6623925Z Worker ID: {30f91d7f-c6ae-4f65-96db-b76507f46bbd}
 Check for Changesets	Set up job	2026-11-27T07:08:44.6624711Z Region: westus
@@ -255,7 +255,7 @@ Workflow validation	Set up job	﻿2026-11-27T07:08:43.8240861Z Current runner ve
 Workflow validation	Set up job	2026-11-27T07:08:43.8266771Z ##[group]Runner Image Provisioner
 Workflow validation	Set up job	2026-11-27T07:08:43.8267794Z Hosted Compute Agent
 Workflow validation	Set up job	2026-11-27T07:08:43.8268336Z Version: 20261111.635
-Workflow validation	Set up job	2026-11-27T07:08:43.8268968Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Workflow validation	Set up job	2026-11-27T07:08:43.8268968Z Commit: b8a…2ed
 Workflow validation	Set up job	2026-11-27T07:08:43.8269698Z Build Date: 2026-11-11T01:49:01Z
 Workflow validation	Set up job	2026-11-27T07:08:43.8270377Z Worker ID: {8987729a-4cd5-4d3a-9f02-d9db4c4517c1}
 Workflow validation	Set up job	2026-11-27T07:08:43.8271084Z Region: eastus3

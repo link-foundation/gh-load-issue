@@ -2,7 +2,7 @@ Check for Changesets	UNKNOWN STEP	﻿2026-10-07T02:17:59.4579254Z Current runner
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4605975Z ##[group]Runner Image Provisioner
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4606862Z Hosted Compute Agent
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4607542Z Version: 20261002.596
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4608197Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4608197Z Commit: c3d…8c0
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4608963Z Build Date: 2026-10-02T22:28:27Z
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4609669Z Worker ID: {fd0788f7-fbcb-4575-9003-3dcbf8ba78f3}
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:17:59.4610391Z Region: southcentralus
@@ -55,7 +55,7 @@ Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6439336Z Working directory
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6441688Z [command]/usr/bin/git version
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6507086Z git version 2.55.0
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6530092Z ##[endgroup]
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6545142Z Temporarily overriding HOME='/home/runner/work/_temp/4c15f9ef-ca95-4786-bb11-32b35a1b96f2' before making global git config changes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6545142Z Temporarily overriding HOME='/ho…6f2' before making global git config changes
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6547812Z Adding repository directory to the temporary git global config as a safe directory
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6550582Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:00.6622529Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -132,7 +132,7 @@ Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6366595Z   git switch -
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6367451Z 
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6368462Z Turn off this advice by setting config variable advice.detachedHead to false
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6369942Z 
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6376965Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6376965Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6383815Z ##[endgroup]
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6433849Z [command]/usr/bin/git log -1 --format=%H
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:01.6460714Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -204,7 +204,7 @@ Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.3460008Z Post job cleanup.
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.5223838Z Post job cleanup.
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6096659Z [command]/usr/bin/git version
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6139133Z git version 2.55.0
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6179177Z Temporarily overriding HOME='/home/runner/work/_temp/0bf219e3-7403-4a25-8165-d99484afb7cc' before making global git config changes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6179177Z Temporarily overriding HOME='/ho…7cc' before making global git config changes
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6180626Z Adding repository directory to the temporary git global config as a safe directory
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6186628Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:18:06.6225953Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -221,7 +221,7 @@ Test installed npm package (Linux)	UNKNOWN STEP	﻿2026-10-07T02:18:12.5592487Z 
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5617865Z ##[group]Runner Image Provisioner
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5618785Z Hosted Compute Agent
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5619473Z Version: 20260901.588
-Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5620199Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5620199Z Commit: f88…d0b
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5620946Z Build Date: 2026-09-01T19:56:44Z
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5621700Z Worker ID: {695b447a-fc2c-4435-91cd-c82844f05637}
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:12.5622475Z Azure Region: westus2
@@ -274,7 +274,7 @@ Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6546684Z Wor
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6548708Z [command]/usr/bin/git version
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6593484Z git version 2.55.0
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6637962Z ##[endgroup]
-Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6661695Z Temporarily overriding HOME='/home/runner/work/_temp/b7edf937-3e36-49cb-a770-991cce2523f7' before making global git config changes
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6661695Z Temporarily overriding HOME='/ho…3f7' before making global git config changes
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6664413Z Adding repository directory to the temporary git global config as a safe directory
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6669288Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:13.6738673Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -336,7 +336,7 @@ Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2002410Z   g
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2002726Z 
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2003165Z Turn off this advice by setting config variable advice.detachedHead to false
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2004184Z 
-Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2005485Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2005485Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2019035Z ##[endgroup]
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2062449Z [command]/usr/bin/git log -1 --format=%H
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:14.2089320Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -409,7 +409,7 @@ Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.6016664Z (Us
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.6254946Z Post job cleanup.
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7201386Z [command]/usr/bin/git version
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7241994Z git version 2.55.0
-Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7285770Z Temporarily overriding HOME='/home/runner/work/_temp/62a243aa-ddcd-4d06-b53b-5bfb4de69631' before making global git config changes
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7285770Z Temporarily overriding HOME='/ho…631' before making global git config changes
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7287272Z Adding repository directory to the temporary git global config as a safe directory
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7291344Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:18:23.7348664Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -426,7 +426,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	﻿2026-10-07T02:18:14.3480820Z Current 
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3496500Z ##[group]Runner Image Provisioner
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3497070Z Hosted Compute Agent
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3497610Z Version: 20260828.587
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3498070Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3498070Z Commit: aba…c29
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3498750Z Build Date: 2026-08-28T16:44:25Z
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3499210Z Worker ID: {5fc273a5-7335-4c10-8201-4538e85adf03}
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:14.3499710Z Azure Region: westus
@@ -479,7 +479,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:15.9560400Z [command]/o
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0098050Z git version 2.55.0
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0118730Z ##[endgroup]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0127700Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/0621c35f-b42a-47a9-aae1-f3543b727f80/.gitconfig'
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0137050Z Temporarily overriding HOME='/Users/runner/work/_temp/0621c35f-b42a-47a9-aae1-f3543b727f80' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0137050Z Temporarily overriding HOME='/Us…f80' before making global git config changes
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0139970Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0144620Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:16.0269940Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
@@ -524,7 +524,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1025790Z [command]/o
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1100740Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1155990Z ##[group]Checking out the ref
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1158220Z [command]/opt/homebrew/bin/git checkout --progress --force refs/remotes/pull/19/merge
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1302440Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1302440Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1324490Z ##[endgroup]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1392510Z [command]/opt/homebrew/bin/git log -1 --format=%H
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:17.1447990Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -608,14 +608,14 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4140770Z (pass) Libr
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4141280Z (pass) Library API > parseIssueUrl > should parse short format [0.04ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4141810Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.02ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4142260Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4142820Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.08ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4143340Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4143850Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4144400Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.02ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4144860Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.02ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4175940Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [3.40ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4176790Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.12ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4177480Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.07ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4142820Z (pass) Library API > ext…own > should extract markdown image syntax [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4143340Z (pass) Library API > ext…own > should extract HTML img tags [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4143850Z (pass) Library API > ext…own > should extract multiple images [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4144400Z (pass) Library API > ext…own > should handle empty content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4144860Z (pass) Library API > ext…own > should handle null content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4175940Z (pass) Library API > iss…own > should generate markdown from issue data [3.40ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4176790Z (pass) Library API > iss…own > should include comments in markdown [0.12ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4177480Z (pass) Library API > iss…own > should include labels in markdown [0.07ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4178450Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.09ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.4180510Z (pass) Library API > loadIssue > should throw error for invalid URL [0.20ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:26.6877130Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id A062:176EF2:41B3C5:4AAA83:6AC5ABF3 in 160ms
@@ -700,7 +700,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.7136300Z Post job cl
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8020230Z [command]/opt/homebrew/bin/git version
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8100250Z git version 2.55.0
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8119430Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/314f09f2-0484-431c-96f9-c25022b3e70e/.gitconfig'
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8127850Z Temporarily overriding HOME='/Users/runner/work/_temp/314f09f2-0484-431c-96f9-c25022b3e70e' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8127850Z Temporarily overriding HOME='/Us…70e' before making global git config changes
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8128680Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8132310Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:18:27.8206400Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -717,7 +717,7 @@ Lint and Format Check	UNKNOWN STEP	﻿2026-10-07T02:18:11.9069455Z Current runne
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9092281Z ##[group]Runner Image Provisioner
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9093106Z Hosted Compute Agent
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9093791Z Version: 20260901.588
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9094471Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9094471Z Commit: f88…d0b
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9095234Z Build Date: 2026-09-01T19:56:44Z
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9095938Z Worker ID: {6ffc7725-f8ef-48a1-84d6-59b90e7b4633}
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:11.9096914Z Azure Region: westcentralus
@@ -769,7 +769,7 @@ Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1511500Z Working director
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1513477Z [command]/usr/bin/git version
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1576818Z git version 2.55.0
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1600187Z ##[endgroup]
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1628594Z Temporarily overriding HOME='/home/runner/work/_temp/7f380092-885c-42e5-a81d-13d64eb2c565' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1628594Z Temporarily overriding HOME='/ho…565' before making global git config changes
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1630372Z Adding repository directory to the temporary git global config as a safe directory
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1633049Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.1681087Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -831,7 +831,7 @@ Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8967713Z   git switch -
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8968368Z 
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8969399Z Turn off this advice by setting config variable advice.detachedHead to false
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8970852Z 
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8972755Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8972755Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.8978163Z ##[endgroup]
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.9005973Z [command]/usr/bin/git log -1 --format=%H
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:18:13.9032890Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -910,7 +910,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	﻿2026-10-07T02:18:11.7075101Z Current
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7100373Z ##[group]Runner Image Provisioner
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7101390Z Hosted Compute Agent
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7102014Z Version: 20260901.588
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7102727Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7102727Z Commit: f88…d0b
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7103561Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7104487Z Worker ID: {fd6002ac-4164-4ed7-9239-c394059a2927}
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7105288Z Azure Region: northcentralus
@@ -1024,7 +1024,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0785098Z   git swit
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0785515Z 
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0786139Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0787091Z 
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0788165Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0788165Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0791359Z ##[endgroup]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0835735Z [command]/usr/bin/git log -1 --format=%H
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:13.0864584Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -1155,14 +1155,14 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0315186Z (pass) Lib
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0316216Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0317193Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.09ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0318066Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.09ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0319554Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.13ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0320432Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.09ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0321168Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.07ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0322437Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.05ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0323019Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.05ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0395917Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.27ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0398509Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.28ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0400012Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.17ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0319554Z (pass) Library API > ext…own > should extract markdown image syntax [0.13ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0320432Z (pass) Library API > ext…own > should extract HTML img tags [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0321168Z (pass) Library API > ext…own > should extract multiple images [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0322437Z (pass) Library API > ext…own > should handle empty content [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0323019Z (pass) Library API > ext…own > should handle null content [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0395917Z (pass) Library API > iss…own > should generate markdown from issue data [7.27ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0398509Z (pass) Library API > iss…own > should include comments in markdown [0.28ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0400012Z (pass) Library API > iss…own > should include labels in markdown [0.17ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0402726Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.22ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.0408963Z (pass) Library API > loadIssue > should throw error for invalid URL [0.61ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.2475694Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [206.43ms]
@@ -1182,7 +1182,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:22.9808913Z Post job c
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.1605321Z Post job cleanup.
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2510465Z [command]/usr/bin/git version
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2554653Z git version 2.55.0
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2592578Z Temporarily overriding HOME='/home/runner/work/_temp/02967e95-42db-42f9-9aa9-3bf8b3b39c81' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2592578Z Temporarily overriding HOME='/ho…c81' before making global git config changes
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2594102Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2599540Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:18:23.2641640Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -1199,7 +1199,7 @@ Test (Bun on windows-latest)	UNKNOWN STEP	﻿2026-10-07T02:18:11.7002083Z Curren
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7040644Z ##[group]Runner Image Provisioner
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7042331Z Hosted Compute Agent
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7043318Z Version: 20260901.588
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7044322Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7044322Z Commit: f88…d0b
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7045567Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7046695Z Worker ID: {d739e795-3b80-448b-a09d-516e36d581bc}
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:11.7047938Z Azure Region: eastus2
@@ -1300,7 +1300,7 @@ Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7873525Z   git swi
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7873656Z 
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7873884Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7874213Z 
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7874606Z HEAD is now at 13065b0 Merge 026e7b14ff856a64b39a9be6b70d317e17aa1230 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7874606Z HEAD is now at 13065b0 Merge 026…230 into e9b…277
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.7989476Z ##[endgroup]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.8452821Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:18:17.8722806Z 13065b03d3b8c58287b6a10c3d2e722ef4b9404b
@@ -1406,14 +1406,14 @@ Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5345767Z (pass) Li
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5347420Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5348898Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.12ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5350191Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.11ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5352083Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.17ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5353429Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.10ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5354923Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.13ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5356342Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.10ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5357599Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.10ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5454917Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [9.60ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5458741Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.44ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5462716Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.23ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5352083Z (pass) Library API > ext…own > should extract markdown image syntax [0.17ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5353429Z (pass) Library API > ext…own > should extract HTML img tags [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5354923Z (pass) Library API > ext…own > should extract multiple images [0.13ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5356342Z (pass) Library API > ext…own > should handle empty content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5357599Z (pass) Library API > ext…own > should handle null content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5454917Z (pass) Library API > iss…own > should generate markdown from issue data [9.60ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5458741Z (pass) Library API > iss…own > should include comments in markdown [0.44ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5462716Z (pass) Library API > iss…own > should include labels in markdown [0.23ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5464915Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.32ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.5469179Z (pass) Library API > loadIssue > should throw error for invalid URL [0.41ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:19:07.7908688Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [243.83ms]

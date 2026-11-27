@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "collectedAt": "2026-11-27T07:36:55.594Z",
+  "issueNumber": 20,
+  "prNumber": "21",
+  "branchName": "issue-20-4be44752c8ed",
+  "tool": "codex",
+  "sessionId": "01a21bbd-e15a-78b0-9bc1-b8b5ddf57748",
+  "rawCommand": "/home/box/.nvm/versions/node/v26.13.1/bin/node /home/box/.bun/install/global/node_modules/@link-assistant/hive-mind/src/solve.mjs https://github.com/link-foundation/gh-load-issue/issues/20 --development-log --deep-analysis --auto-merge --tool codex --think medium --attach-logs --verbose --no-tool-check --disable-report-issue --language en",
+  "developmentLogDirectory": "./dev/log/issues/20/pulls/21",
+  "caseStudyDirectory": "./docs/case-studies/issue-20",
+  "artifacts": {
+    "solveLog": "./dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748/solve.log",
+    "solveLogRange": {
+      "startByte": 0,
+      "endByte": 1029458
+    },
+    "sessionFiles": [
+      "./dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748/codex-01a21bbd-e15a-78b0-9bc1-b8b5ddf57748.jsonl"
+    ]
+  }
+}

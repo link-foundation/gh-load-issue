@@ -2,7 +2,7 @@ Test (Bun on windows-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:20.1163476Z Curren
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1190120Z ##[group]Runner Image Provisioner
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1191136Z Hosted Compute Agent
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1191789Z Version: 20260901.588
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1192825Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1192825Z Commit: f88…d0b
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1193632Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1194323Z Worker ID: {0ba00814-eea3-471a-a493-22b888b736ea}
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1194990Z Azure Region: centralus
@@ -193,14 +193,14 @@ Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2544212Z (pass) Li
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2545244Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2547818Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.23ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2549078Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.13ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2550496Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.13ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2551639Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.07ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2552589Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.11ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2554553Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.14ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2555995Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.10ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2648750Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [9.25ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2651467Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.32ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2654319Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2550496Z (pass) Library API > ext…own > should extract markdown image syntax [0.13ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2551639Z (pass) Library API > ext…own > should extract HTML img tags [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2552589Z (pass) Library API > ext…own > should extract multiple images [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2554553Z (pass) Library API > ext…own > should handle empty content [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2555995Z (pass) Library API > ext…own > should handle null content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2648750Z (pass) Library API > iss…own > should generate markdown from issue data [9.25ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2651467Z (pass) Library API > iss…own > should include comments in markdown [0.32ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2654319Z (pass) Library API > iss…own > should include labels in markdown [0.16ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2655304Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.19ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2658904Z (pass) Library API > loadIssue > should throw error for invalid URL [0.33ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.5789167Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [312.88ms]
@@ -262,7 +262,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:23.9819560Z Current 
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9835930Z ##[group]Runner Image Provisioner
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9836600Z Hosted Compute Agent
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837020Z Version: 20260828.587
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837440Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837440Z Commit: aba…c29
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837930Z Build Date: 2026-08-28T16:44:25Z
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9838420Z Worker ID: {dbdcde0b-0580-4705-9ace-9c3bf89287a2}
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9838960Z Azure Region: westus
@@ -315,7 +315,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.5985030Z [command]/o
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6517470Z git version 2.55.0
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6530930Z ##[endgroup]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6537200Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/da08561c-e2c6-4616-8c59-08cb227e8956/.gitconfig'
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6550410Z Temporarily overriding HOME='/Users/runner/work/_temp/da08561c-e2c6-4616-8c59-08cb227e8956' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6550410Z Temporarily overriding HOME='/Us…956' before making global git config changes
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6551700Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6554060Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6687580Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
@@ -449,14 +449,14 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9302200Z (pass) Libr
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9302780Z (pass) Library API > parseIssueUrl > should parse short format [0.04ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9303270Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.02ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9303760Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9304390Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.08ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305390Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.04ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305900Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.04ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9306440Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9307060Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.02ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9364200Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [6.39ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366090Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.23ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366880Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9304390Z (pass) Library API > ext…own > should extract markdown image syntax [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305390Z (pass) Library API > ext…own > should extract HTML img tags [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305900Z (pass) Library API > ext…own > should extract multiple images [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9306440Z (pass) Library API > ext…own > should handle empty content [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9307060Z (pass) Library API > ext…own > should handle null content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9364200Z (pass) Library API > iss…own > should generate markdown from issue data [6.39ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366090Z (pass) Library API > iss…own > should include comments in markdown [0.23ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366880Z (pass) Library API > iss…own > should include labels in markdown [0.08ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9368070Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.12ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9370560Z (pass) Library API > loadIssue > should throw error for invalid URL [0.22ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.2030760Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id BF5A:FDFE5:411F2D:4A37AD:6AC5AD27 in 154ms
@@ -558,7 +558,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:20.6550595Z Current
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6575511Z ##[group]Runner Image Provisioner
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6576409Z Hosted Compute Agent
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6577105Z Version: 20260901.588
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6577749Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6577749Z Commit: f88…d0b
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6578521Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6579270Z Worker ID: {9459ac10-5a75-4fcb-b508-2fb99e4d7e03}
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6579999Z Azure Region: westus2
@@ -610,7 +610,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6216307Z Working di
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6217980Z [command]/usr/bin/git version
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6330521Z git version 2.55.0
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6354940Z ##[endgroup]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6373608Z Temporarily overriding HOME='/home/runner/work/_temp/2cb2f931-6486-4623-b52d-795079ca0afc' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6373608Z Temporarily overriding HOME='/ho…afc' before making global git config changes
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6376013Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6380099Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6438888Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -787,14 +787,14 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6216070Z (pass) Lib
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6217327Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6218481Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.10ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6219794Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.11ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6221331Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.15ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6222940Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.10ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6224348Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.09ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6225769Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.08ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6227156Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.09ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6294578Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.02ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6296649Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.25ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6298221Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.16ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6221331Z (pass) Library API > ext…own > should extract markdown image syntax [0.15ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6222940Z (pass) Library API > ext…own > should extract HTML img tags [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6224348Z (pass) Library API > ext…own > should extract multiple images [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6225769Z (pass) Library API > ext…own > should handle empty content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6227156Z (pass) Library API > ext…own > should handle null content [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6294578Z (pass) Library API > iss…own > should generate markdown from issue data [7.02ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6296649Z (pass) Library API > iss…own > should include comments in markdown [0.25ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6298221Z (pass) Library API > iss…own > should include labels in markdown [0.16ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6300636Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.20ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6304194Z (pass) Library API > loadIssue > should throw error for invalid URL [0.36ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.7699214Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [139.40ms]
@@ -816,7 +816,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.4096139Z Post job c
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.5956868Z Post job cleanup.
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6863523Z [command]/usr/bin/git version
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6906944Z git version 2.55.0
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6951593Z Temporarily overriding HOME='/home/runner/work/_temp/617ca7ad-c934-4562-9937-359f869cdf90' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6951593Z Temporarily overriding HOME='/ho…f90' before making global git config changes
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6953309Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6958165Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7000180Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -833,7 +833,7 @@ Lint and Format Check	UNKNOWN STEP	﻿2026-10-07T02:23:20.5355657Z Current runne
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5379364Z ##[group]Runner Image Provisioner
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5380249Z Hosted Compute Agent
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5380818Z Version: 20261002.596
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5381490Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5381490Z Commit: c3d…8c0
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5382202Z Build Date: 2026-10-02T22:28:27Z
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5382898Z Worker ID: {881f83f4-64cc-419c-8327-2ec75707bf33}
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5383603Z Region: westus3
@@ -886,7 +886,7 @@ Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8238436Z Working director
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8239832Z [command]/usr/bin/git version
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8312301Z git version 2.55.0
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8330602Z ##[endgroup]
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8346648Z Temporarily overriding HOME='/home/runner/work/_temp/1f281561-c394-4215-a0f6-42a5dd670dcd' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8346648Z Temporarily overriding HOME='/ho…dcd' before making global git config changes
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8349859Z Adding repository directory to the temporary git global config as a safe directory
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8352482Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8400240Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -994,7 +994,7 @@ Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2703941Z Post job cleanup
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.4253732Z Post job cleanup.
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5065907Z [command]/usr/bin/git version
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5101560Z git version 2.55.0
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5132501Z Temporarily overriding HOME='/home/runner/work/_temp/3696f6e5-5d7c-47bc-a4a7-989c488d0c51' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5132501Z Temporarily overriding HOME='/ho…c51' before making global git config changes
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5134007Z Adding repository directory to the temporary git global config as a safe directory
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5137443Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5170074Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -1011,7 +1011,7 @@ Test installed npm package (Linux)	UNKNOWN STEP	﻿2026-10-07T02:23:21.1827150Z 
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1854568Z ##[group]Runner Image Provisioner
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1855488Z Hosted Compute Agent
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1856428Z Version: 20260901.588
-Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1857080Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1857080Z Commit: f88…d0b
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1857862Z Build Date: 2026-09-01T19:56:44Z
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1858594Z Worker ID: {968ac88f-594e-47dc-8fdf-6791cc6ba8f4}
 Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1859310Z Azure Region: westus
@@ -1200,7 +1200,7 @@ Release	UNKNOWN STEP	﻿2026-10-07T02:24:33.7024539Z Current runner version: '2.
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7051229Z ##[group]Runner Image Provisioner
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7052570Z Hosted Compute Agent
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7053956Z Version: 20260901.588
-Release	UNKNOWN STEP	2026-10-07T02:24:33.7054719Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7054719Z Commit: f88…d0b
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7055470Z Build Date: 2026-09-01T19:56:44Z
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7056188Z Worker ID: {3a35339b-8226-416e-8551-6b9a11fb8c5f}
 Release	UNKNOWN STEP	2026-10-07T02:24:33.7056945Z Azure Region: westus3
@@ -1348,7 +1348,7 @@ Release	UNKNOWN STEP	2026-10-07T02:24:41.8328101Z   no-cache: false
 Release	UNKNOWN STEP	2026-10-07T02:24:41.8330522Z   token: ***
 Release	UNKNOWN STEP	2026-10-07T02:24:41.8330739Z env:
 Release	UNKNOWN STEP	2026-10-07T02:24:41.8331048Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:24:41.8331404Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8331404Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:24:41.8331700Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:24:42.4626486Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
 Release	UNKNOWN STEP	2026-10-07T02:24:42.9332691Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/a898d32c-6c00-4bec-a4d6-5178f5137ead.zip
@@ -1359,7 +1359,7 @@ Release	UNKNOWN STEP	2026-10-07T02:24:43.5594812Z ^[[36;1mnpm install^[[0m
 Release	UNKNOWN STEP	2026-10-07T02:24:43.5864100Z shell: /usr/bin/bash -e {0}
 Release	UNKNOWN STEP	2026-10-07T02:24:43.5864452Z env:
 Release	UNKNOWN STEP	2026-10-07T02:24:43.5864766Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:24:43.5865172Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5865172Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:24:43.5865488Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:24:48.6663496Z 
 Release	UNKNOWN STEP	2026-10-07T02:24:48.6664495Z > gh-load-issue@0.3.2 prepare
@@ -1385,7 +1385,7 @@ Release	UNKNOWN STEP	2026-10-07T02:24:48.7661859Z ^[[36;1mnode scripts/setup-npm
 Release	UNKNOWN STEP	2026-10-07T02:24:48.7727686Z shell: /usr/bin/bash -e {0}
 Release	UNKNOWN STEP	2026-10-07T02:24:48.7727948Z env:
 Release	UNKNOWN STEP	2026-10-07T02:24:48.7728207Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:24:48.7728568Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7728568Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:24:48.7728849Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:24:53.1669581Z 10.8.2
 Release	UNKNOWN STEP	2026-10-07T02:24:53.1721324Z Current npm version: 10.8.2
@@ -1406,7 +1406,7 @@ Release	UNKNOWN STEP	2026-10-07T02:24:53.8068042Z ^[[36;1mecho "has_changesets=$
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8132181Z shell: /usr/bin/bash -e {0}
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8132438Z env:
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8132694Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:24:53.8133375Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8133375Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8133669Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8248260Z Found 1 changeset file(s)
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8304813Z ##[group]Run node scripts/version-and-commit.mjs --mode changeset
@@ -1414,7 +1414,7 @@ Release	UNKNOWN STEP	2026-10-07T02:24:53.8325362Z ^[[36;1mnode scripts/version-a
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8386813Z shell: /usr/bin/bash -e {0}
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8387066Z env:
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8387323Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:24:53.8387683Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8387683Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:24:53.8387971Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:24:55.9174487Z Parsed configuration: { mode: 'changeset', bumpType: '', description: '(none)' }
 Release	UNKNOWN STEP	2026-10-07T02:24:55.9396700Z Checking for remote changes...
@@ -1488,7 +1488,7 @@ Release	UNKNOWN STEP	2026-10-07T02:25:02.1218696Z ^[[36;1mnode scripts/publish-t
 Release	UNKNOWN STEP	2026-10-07T02:25:02.1281929Z shell: /usr/bin/bash -e {0}
 Release	UNKNOWN STEP	2026-10-07T02:25:02.1282176Z env:
 Release	UNKNOWN STEP	2026-10-07T02:25:02.1282429Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
-Release	UNKNOWN STEP	2026-10-07T02:25:02.1283060Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1283060Z   NODE_AUTH_TOKEN: XXX…XXX
 Release	UNKNOWN STEP	2026-10-07T02:25:02.1283582Z ##[endgroup]
 Release	UNKNOWN STEP	2026-10-07T02:25:02.7129032Z From https://github.com/link-foundation/gh-load-issue
 Release	UNKNOWN STEP	2026-10-07T02:25:02.7129550Z  * branch            main       -> FETCH_HEAD
@@ -1602,7 +1602,7 @@ Release	UNKNOWN STEP	2026-10-07T02:25:30.2771666Z ##[error]Process completed wit
 Release	UNKNOWN STEP	2026-10-07T02:25:30.2914675Z Post job cleanup.
 Release	UNKNOWN STEP	2026-10-07T02:25:30.3833859Z [command]/usr/bin/git version
 Release	UNKNOWN STEP	2026-10-07T02:25:30.3873377Z git version 2.55.0
-Release	UNKNOWN STEP	2026-10-07T02:25:30.3918328Z Temporarily overriding HOME='/home/runner/work/_temp/fea038d3-2e56-4f66-bd03-787cba361cb0' before making global git config changes
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3918328Z Temporarily overriding HOME='/ho…cb0' before making global git config changes
 Release	UNKNOWN STEP	2026-10-07T02:25:30.3919556Z Adding repository directory to the temporary git global config as a safe directory
 Release	UNKNOWN STEP	2026-10-07T02:25:30.3925731Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Release	UNKNOWN STEP	2026-10-07T02:25:30.3969346Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand

@@ -2,7 +2,7 @@ Lint and Format Check	Set up job	﻿2026-11-27T07:00:25.4803822Z Current runner 
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4824209Z ##[group]Runner Image Provisioner
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4825190Z Hosted Compute Agent
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4825667Z Version: 20261111.635
-Lint and Format Check	Set up job	2026-11-27T07:00:25.4826227Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Lint and Format Check	Set up job	2026-11-27T07:00:25.4826227Z Commit: b8a…2ed
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4826816Z Build Date: 2026-11-11T01:49:01Z
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4827405Z Worker ID: {cbf5694d-465f-4e18-9b5f-858b27a9da1b}
 Lint and Format Check	Set up job	2026-11-27T07:00:25.4827992Z Region: us-east-1
@@ -52,7 +52,7 @@ Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba9
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1898595Z   NODE_VERSION: 24.22.3
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1899439Z   HUSKY: 0
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1900224Z   GIT_CONFIG_COUNT: 1
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1901094Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1901094Z   GIT_CONFIG_KEY_0: ini…nch
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1902139Z   GIT_CONFIG_VALUE_0: main
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1903235Z   RELEASE_DEBUG: 0
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1904088Z ##[endgroup]
@@ -62,7 +62,7 @@ Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba9
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.1790476Z [command]/usr/bin/git version
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4180734Z git version 2.56.1
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4205857Z ##[endgroup]
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4211473Z Temporarily overriding HOME='/home/runner/work/_temp/3520de83-3730-4ffd-b56b-4c0d46c1b6d9' before making global git config changes
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4211473Z Temporarily overriding HOME='/ho…6d9' before making global git config changes
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4212569Z Adding repository directory to the temporary git global config as a safe directory
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4213581Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.4541076Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -93,9 +93,9 @@ Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba9
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.7620048Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d6dfcad5-67f9-4f43-a4b4-22227388344e.config
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.7640485Z ##[endgroup]
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.7640935Z ##[group]Fetching the repository
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.7645309Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.7645309Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0098609Z From https://github.com/link-foundation/gh-load-issue
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0099202Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0099202Z  * [new ref]         4da…868 -> pull/21/merge
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0104686Z ##[endgroup]
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0105139Z ##[group]Determining the checkout info
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0105557Z ##[endgroup]
@@ -120,10 +120,10 @@ Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba9
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0267360Z 
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0267544Z Turn off this advice by setting config variable advice.detachedHead to false
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0267801Z 
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0268068Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0268068Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0286293Z ##[endgroup]
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0309322Z [command]/usr/bin/git log -1 --format=%H
-Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0326992Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0326992Z 4da…868
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0332581Z ##[group]Removing auth
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0333060Z Removing SSH command configuration
 Lint and Format Check	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.0335220Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -162,7 +162,7 @@ Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c624218
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1220505Z   NODE_VERSION: 24.22.3
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1220737Z   HUSKY: 0
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1220935Z   GIT_CONFIG_COUNT: 1
-Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1221177Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1221177Z   GIT_CONFIG_KEY_0: ini…nch
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1221438Z   GIT_CONFIG_VALUE_0: main
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1221668Z   RELEASE_DEBUG: 0
 Lint and Format Check	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:31.1221909Z ##[endgroup]
@@ -178,7 +178,7 @@ Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7588264Z   NODE_VERSION: 24.22.3
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7588559Z   HUSKY: 0
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7588773Z   GIT_CONFIG_COUNT: 1
-Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7589051Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7589051Z   GIT_CONFIG_KEY_0: ini…nch
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7589317Z   GIT_CONFIG_VALUE_0: main
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7589549Z   RELEASE_DEBUG: 0
 Lint and Format Check	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:32.7589787Z ##[endgroup]
@@ -210,7 +210,7 @@ Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0946433Z   BUN_VERSI
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0946670Z   NODE_VERSION: 24.22.3
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0946892Z   HUSKY: 0
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0947114Z   GIT_CONFIG_COUNT: 1
-Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0947370Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0947370Z   GIT_CONFIG_KEY_0: ini…nch
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0947628Z   GIT_CONFIG_VALUE_0: main
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0947900Z   RELEASE_DEBUG: 0
 Lint and Format Check	Run bun run check	2026-11-27T07:00:33.0948112Z ##[endgroup]
@@ -352,7 +352,7 @@ Lint and Format Check	Post Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c6
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:00:38.4493763Z Post job cleanup.
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5152867Z [command]/usr/bin/git version
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5182769Z git version 2.56.1
-Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5205519Z Temporarily overriding HOME='/home/runner/work/_temp/75987e2d-55ca-468f-a493-b63b0f86ab5c' before making global git config changes
+Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5205519Z Temporarily overriding HOME='/ho…b5c' before making global git config changes
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5206491Z Adding repository directory to the temporary git global config as a safe directory
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5209743Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Lint and Format Check	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:38.5232194Z Removing SSH command configuration
@@ -369,7 +369,7 @@ Workflow validation	Set up job	﻿2026-11-27T07:00:25.8789499Z Current runner ve
 Workflow validation	Set up job	2026-11-27T07:00:25.8809047Z ##[group]Runner Image Provisioner
 Workflow validation	Set up job	2026-11-27T07:00:25.8809813Z Hosted Compute Agent
 Workflow validation	Set up job	2026-11-27T07:00:25.8810221Z Version: 20261111.635
-Workflow validation	Set up job	2026-11-27T07:00:25.8810660Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Workflow validation	Set up job	2026-11-27T07:00:25.8810660Z Commit: b8a…2ed
 Workflow validation	Set up job	2026-11-27T07:00:25.8811290Z Build Date: 2026-11-11T01:49:01Z
 Workflow validation	Set up job	2026-11-27T07:00:25.8811759Z Worker ID: {a7db5808-546b-41ba-a3e7-31a4bef9bf65}
 Workflow validation	Set up job	2026-11-27T07:00:25.8812305Z Region: us-east-1
@@ -445,7 +445,7 @@ Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6484979Z   NODE_VERSION: 24.22.3
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6485193Z   HUSKY: 0
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6485511Z   GIT_CONFIG_COUNT: 1
-Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6485741Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6485741Z   GIT_CONFIG_KEY_0: ini…nch
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6486011Z   GIT_CONFIG_VALUE_0: main
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6486233Z   RELEASE_DEBUG: 0
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:29.6486426Z ##[endgroup]
@@ -486,9 +486,9 @@ Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6300181Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-75d18385-9772-47cc-b9e6-e4ee7fd183da.config
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6301780Z ##[endgroup]
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6302272Z ##[group]Fetching the repository
-Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6317371Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6317371Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9658092Z From https://github.com/link-foundation/gh-load-issue
-Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9658800Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9658800Z  * [new ref]         4da…868 -> pull/21/merge
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9666651Z ##[endgroup]
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9667430Z ##[group]Determining the checkout info
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9670662Z ##[endgroup]
@@ -513,10 +513,10 @@ Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9827551Z 
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9827767Z Turn off this advice by setting config variable advice.detachedHead to false
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9828033Z 
-Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9828314Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9828314Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9835773Z ##[endgroup]
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9876080Z [command]/usr/bin/git log -1 --format=%H
-Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9896374Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9896374Z 4da…868
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9903401Z ##[group]Removing auth
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9903765Z Removing SSH command configuration
 Workflow validation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.9907039Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -553,7 +553,7 @@ Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0763691Z   NODE_VERSION: 24.22.3
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0763938Z   HUSKY: 0
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0764149Z   GIT_CONFIG_COUNT: 1
-Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0764383Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0764383Z   GIT_CONFIG_KEY_0: ini…nch
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0764637Z   GIT_CONFIG_VALUE_0: main
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0764903Z   RELEASE_DEBUG: 0
 Workflow validation	Run rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667	2026-11-27T07:00:33.0765107Z ##[endgroup]
@@ -576,7 +576,7 @@ Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd648
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6349538Z   NODE_VERSION: 24.22.3
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6349752Z   HUSKY: 0
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6349960Z   GIT_CONFIG_COUNT: 1
-Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6350188Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6350188Z   GIT_CONFIG_KEY_0: ini…nch
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6350461Z   GIT_CONFIG_VALUE_0: main
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6350786Z   RELEASE_DEBUG: 0
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.6351000Z ##[endgroup]
@@ -589,7 +589,7 @@ Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd648
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7409779Z   NODE_VERSION: 24.22.3
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7409992Z   HUSKY: 0
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7410214Z   GIT_CONFIG_COUNT: 1
-Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7410452Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7410452Z   GIT_CONFIG_KEY_0: ini…nch
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7410767Z   GIT_CONFIG_VALUE_0: main
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7410994Z   RELEASE_DEBUG: 0
 Workflow validation	Run zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1	2026-11-27T07:00:33.7411192Z   GHA_ZIZMOR_INPUTS: .
@@ -634,7 +634,7 @@ Plan checks and release	Set up job	﻿2026-11-27T07:00:25.8035613Z Current runne
 Plan checks and release	Set up job	2026-11-27T07:00:25.8056390Z ##[group]Runner Image Provisioner
 Plan checks and release	Set up job	2026-11-27T07:00:25.8057163Z Hosted Compute Agent
 Plan checks and release	Set up job	2026-11-27T07:00:25.8057717Z Version: 20261111.635
-Plan checks and release	Set up job	2026-11-27T07:00:25.8058242Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Plan checks and release	Set up job	2026-11-27T07:00:25.8058242Z Commit: b8a…2ed
 Plan checks and release	Set up job	2026-11-27T07:00:25.8058829Z Build Date: 2026-11-11T01:49:01Z
 Plan checks and release	Set up job	2026-11-27T07:00:25.8059445Z Worker ID: {92a6f591-4dc3-49bc-9b85-8dc191b14b8b}
 Plan checks and release	Set up job	2026-11-27T07:00:25.8060062Z Region: eastus2
@@ -683,7 +683,7 @@ Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273b
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3473645Z   NODE_VERSION: 24.22.3
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3474039Z   HUSKY: 0
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3474450Z   GIT_CONFIG_COUNT: 1
-Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3474870Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3474870Z   GIT_CONFIG_KEY_0: ini…nch
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3475374Z   GIT_CONFIG_VALUE_0: main
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3475794Z   RELEASE_DEBUG: 0
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.3476293Z ##[endgroup]
@@ -724,7 +724,7 @@ Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273b
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.7745403Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-37df2cf2-a13d-43fb-a393-b9ce8bf6284f.config
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.7784072Z ##[endgroup]
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.7786186Z ##[group]Fetching the repository
-Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.7791302Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:26.7791302Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +4da…868:refs/remotes/pull/21/merge
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1415299Z From https://github.com/link-foundation/gh-load-issue
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1417667Z  * [new branch]      issue-1-943fc4ad                         -> origin/issue-1-943fc4ad
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1420265Z  * [new branch]      issue-10-f1387537ff20                    -> origin/issue-10-f1387537ff20
@@ -742,7 +742,7 @@ Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273b
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1444916Z  * [new tag]         v0.3.0                                   -> v0.3.0
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1446832Z  * [new tag]         v0.3.1                                   -> v0.3.1
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1448684Z  * [new tag]         v0.3.2                                   -> v0.3.2
-Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1450914Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1450914Z  * [new ref]         4da…868 -> pull/21/merge
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1455137Z ##[endgroup]
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1456962Z ##[group]Determining the checkout info
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1458900Z ##[endgroup]
@@ -767,10 +767,10 @@ Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273b
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1628132Z 
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1628817Z Turn off this advice by setting config variable advice.detachedHead to false
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1629837Z 
-Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1631183Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1631183Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1634343Z ##[endgroup]
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1668276Z [command]/usr/bin/git log -1 --format=%H
-Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1699855Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1699855Z 4da…868
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1708019Z ##[group]Removing auth
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1708886Z Removing SSH command configuration
 Plan checks and release	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.1711530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -839,10 +839,10 @@ Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.30
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3082309Z   NODE_VERSION: 24.22.3
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3083080Z   HUSKY: 0
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3083735Z   GIT_CONFIG_COUNT: 1
-Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3084520Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3084520Z   GIT_CONFIG_KEY_0: ini…nch
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3085432Z   GIT_CONFIG_VALUE_0: main
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3086214Z   RELEASE_DEBUG: 0
-Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3153459Z   PR_BASE_SHA: 671340e26becb1e1b3261687ceb001ff72a919c1
+Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3153459Z   PR_BASE_SHA: 671…9c1
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3154774Z   EVENT_NAME: pull_request
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3155607Z   RELEASE_MODE: 
 Plan checks and release	Plan from the tested merge result	2026-11-27T07:00:27.3156307Z ##[endgroup]
@@ -869,7 +869,7 @@ Check for Changesets	Set up job	﻿2026-11-27T07:00:25.8289517Z Current runner v
 Check for Changesets	Set up job	2026-11-27T07:00:25.8317307Z ##[group]Runner Image Provisioner
 Check for Changesets	Set up job	2026-11-27T07:00:25.8318265Z Hosted Compute Agent
 Check for Changesets	Set up job	2026-11-27T07:00:25.8318885Z Version: 20261111.635
-Check for Changesets	Set up job	2026-11-27T07:00:25.8319627Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Check for Changesets	Set up job	2026-11-27T07:00:25.8319627Z Commit: b8a…2ed
 Check for Changesets	Set up job	2026-11-27T07:00:25.8320307Z Build Date: 2026-11-11T01:49:01Z
 Check for Changesets	Set up job	2026-11-27T07:00:25.8321015Z Worker ID: {ed7264dc-9d7a-4352-ac89-487a83c6b211}
 Check for Changesets	Set up job	2026-11-27T07:00:25.8321743Z Region: us-east-1
@@ -919,7 +919,7 @@ Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9887089Z   NODE_VERSION: 24.22.3
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9887866Z   HUSKY: 0
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9888684Z   GIT_CONFIG_COUNT: 1
-Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9889523Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9889523Z   GIT_CONFIG_KEY_0: ini…nch
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9890425Z   GIT_CONFIG_VALUE_0: main
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9891252Z   RELEASE_DEBUG: 0
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:27.9891975Z ##[endgroup]
@@ -960,7 +960,7 @@ Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6398740Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-465a0ab8-4a47-442a-8363-f3941ec77505.config
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6418684Z ##[endgroup]
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6419133Z ##[group]Fetching the repository
-Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6424218Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6424218Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +4da…868:refs/remotes/pull/21/merge
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0488613Z From https://github.com/link-foundation/gh-load-issue
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0489386Z  * [new branch]      issue-1-943fc4ad                         -> origin/issue-1-943fc4ad
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0490188Z  * [new branch]      issue-10-f1387537ff20                    -> origin/issue-10-f1387537ff20
@@ -978,7 +978,7 @@ Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0497823Z  * [new tag]         v0.3.0                                   -> v0.3.0
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0498243Z  * [new tag]         v0.3.1                                   -> v0.3.1
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0498683Z  * [new tag]         v0.3.2                                   -> v0.3.2
-Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0499183Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0499183Z  * [new ref]         4da…868 -> pull/21/merge
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0568815Z ##[endgroup]
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0569307Z ##[group]Determining the checkout info
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0569679Z ##[endgroup]
@@ -1003,10 +1003,10 @@ Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0668057Z 
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0668263Z Turn off this advice by setting config variable advice.detachedHead to false
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0668522Z 
-Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0668790Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0668790Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0675554Z ##[endgroup]
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0713161Z [command]/usr/bin/git log -1 --format=%H
-Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0732833Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0732833Z 4da…868
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0741580Z ##[group]Removing auth
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0742061Z Removing SSH command configuration
 Check for Changesets	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.0743181Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -1045,7 +1045,7 @@ Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c6242185
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1640103Z   NODE_VERSION: 24.22.3
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1640308Z   HUSKY: 0
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1640532Z   GIT_CONFIG_COUNT: 1
-Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1640775Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1640775Z   GIT_CONFIG_KEY_0: ini…nch
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1641033Z   GIT_CONFIG_VALUE_0: main
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1641272Z   RELEASE_DEBUG: 0
 Check for Changesets	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.1641474Z ##[endgroup]
@@ -1061,7 +1061,7 @@ Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4237413Z   NODE_VERSION: 24.22.3
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4237668Z   HUSKY: 0
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4237856Z   GIT_CONFIG_COUNT: 1
-Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4238114Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4238114Z   GIT_CONFIG_KEY_0: ini…nch
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4238379Z   GIT_CONFIG_VALUE_0: main
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4238635Z   RELEASE_DEBUG: 0
 Check for Changesets	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:35.4238854Z ##[endgroup]
@@ -1093,10 +1093,10 @@ Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7501466Z   BUN_V
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7501737Z   NODE_VERSION: 24.22.3
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7501979Z   HUSKY: 0
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7502178Z   GIT_CONFIG_COUNT: 1
-Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7502449Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7502449Z   GIT_CONFIG_KEY_0: ini…nch
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7502718Z   GIT_CONFIG_VALUE_0: main
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7503000Z   RELEASE_DEBUG: 0
-Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7503282Z   PR_BASE_SHA: 671340e26becb1e1b3261687ceb001ff72a919c1
+Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7503282Z   PR_BASE_SHA: 671…9c1
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7503649Z ##[endgroup]
 Check for Changesets	Validate PR changesets	2026-11-27T07:00:35.7754330Z Validated .changeset/reliable-ci-release.md
 Check for Changesets	Post Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	﻿2026-11-27T07:00:35.7851755Z Post job cleanup.
@@ -1105,7 +1105,7 @@ Check for Changesets	Post Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:00:37.2211083Z Post job cleanup.
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2836597Z [command]/usr/bin/git version
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2865372Z git version 2.56.1
-Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2888219Z Temporarily overriding HOME='/home/runner/work/_temp/e4d4e5bf-0ce1-4039-8923-4cfd5ff0b78a' before making global git config changes
+Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2888219Z Temporarily overriding HOME='/ho…78a' before making global git config changes
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2889294Z Adding repository directory to the temporary git global config as a safe directory
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2892064Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Check for Changesets	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.2916252Z Removing SSH command configuration
@@ -1122,7 +1122,7 @@ Secrets and documentation	Set up job	﻿2026-11-27T07:00:26.8360997Z Current run
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8380011Z ##[group]Runner Image Provisioner
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8380672Z Hosted Compute Agent
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8381201Z Version: 20261111.635
-Secrets and documentation	Set up job	2026-11-27T07:00:26.8381663Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Secrets and documentation	Set up job	2026-11-27T07:00:26.8381663Z Commit: b8a…2ed
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8382162Z Build Date: 2026-11-11T01:49:01Z
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8382669Z Worker ID: {2557f76c-de0b-46d1-933d-8ac9fb531926}
 Secrets and documentation	Set up job	2026-11-27T07:00:26.8383187Z Region: us-west-2
@@ -1174,7 +1174,7 @@ Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c18127
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7302033Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7302309Z   HUSKY: 0
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7302681Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7302984Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7302984Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7303286Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7303556Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:28.7303813Z ##[endgroup]
@@ -1184,7 +1184,7 @@ Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c18127
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:30.9732560Z [command]/usr/bin/git version
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1184050Z git version 2.56.1
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1197595Z ##[endgroup]
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1205561Z Temporarily overriding HOME='/home/runner/work/_temp/5de263d8-6779-4a0a-be05-4b37f4e27790' before making global git config changes
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1205561Z Temporarily overriding HOME='/ho…790' before making global git config changes
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1206575Z Adding repository directory to the temporary git global config as a safe directory
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1209326Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.1259226Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -1215,9 +1215,9 @@ Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c18127
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.5637085Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-dcb12961-9a94-44e3-9860-781ced3643c9.config
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.5653867Z ##[endgroup]
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.5654248Z ##[group]Fetching the repository
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.5660555Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.5660555Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9929081Z From https://github.com/link-foundation/gh-load-issue
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9929848Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9929848Z  * [new ref]         4da…868 -> pull/21/merge
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9932687Z ##[endgroup]
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9933403Z ##[group]Determining the checkout info
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:31.9934155Z ##[endgroup]
@@ -1242,10 +1242,10 @@ Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c18127
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0106649Z 
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0106943Z Turn off this advice by setting config variable advice.detachedHead to false
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0107270Z 
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0107552Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0107552Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0112749Z ##[endgroup]
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0147325Z [command]/usr/bin/git log -1 --format=%H
-Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0166172Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0166172Z 4da…868
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0171922Z ##[group]Removing auth
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0172299Z Removing SSH command configuration
 Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0174750Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -1285,7 +1285,7 @@ Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babb
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1094136Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1094369Z   HUSKY: 0
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1094586Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1094819Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1094819Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1095130Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1095783Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.1096055Z ##[endgroup]
@@ -1305,7 +1305,7 @@ Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3994684Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3994937Z   HUSKY: 0
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3995147Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3995805Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3995805Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3996102Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3996332Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:36.3996545Z ##[endgroup]
@@ -1321,7 +1321,7 @@ Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2594342Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2594707Z   HUSKY: 0
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2594916Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2595197Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2595197Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2595673Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2595964Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:38.2596188Z ##[endgroup]
@@ -1336,7 +1336,7 @@ Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-on
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3963548Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3963823Z   HUSKY: 0
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3964033Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3964268Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3964268Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3964579Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3964807Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run npm audit --audit-level=moderate --package-lock-only	2026-11-27T07:00:41.3965040Z ##[endgroup]
@@ -1349,7 +1349,7 @@ Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6784144Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6784484Z   HUSKY: 0
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6784712Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6784976Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6784976Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6785396Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6785647Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run bun audit --audit-level moderate	2026-11-27T07:00:41.6785867Z ##[endgroup]
@@ -1364,7 +1364,7 @@ Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secret
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7446531Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7446754Z   HUSKY: 0
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7446949Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7447188Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7447188Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7447447Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7447692Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github	2026-11-27T07:00:41.7447893Z ##[endgroup]
@@ -1386,7 +1386,7 @@ Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0494696Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0494923Z   HUSKY: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0495153Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0495789Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0495789Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0496123Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0496468Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0496904Z ##[endgroup]
@@ -1404,7 +1404,7 @@ Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0599746Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0599987Z   HUSKY: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0600190Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0600434Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0600434Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0600693Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0600928Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0601158Z ##[endgroup]
@@ -1456,7 +1456,7 @@ Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0714981Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0715222Z   HUSKY: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0715634Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0715898Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0715898Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0716153Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0716364Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.0716596Z   LYCHEE_VERSION: v0.24.2
@@ -1488,7 +1488,7 @@ Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3387755Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3387993Z   HUSKY: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3388227Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3388462Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3388462Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3388725Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3388966Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3389192Z ##[endgroup]
@@ -1502,7 +1502,7 @@ Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3581204Z   NODE_VERSION: 24.22.3
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3581430Z   HUSKY: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3581633Z   GIT_CONFIG_COUNT: 1
-Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3581879Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3581879Z   GIT_CONFIG_KEY_0: ini…nch
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3582151Z   GIT_CONFIG_VALUE_0: main
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3582422Z   RELEASE_DEBUG: 0
 Secrets and documentation	Run lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8	2026-11-27T07:00:42.3584432Z   INPUT_TOKEN: ***
@@ -1540,7 +1540,7 @@ Secrets and documentation	Post Run actions/setup-node@949feb2413d6458794dcd2491c
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:00:43.3682562Z Post job cleanup.
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4398668Z [command]/usr/bin/git version
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4418579Z git version 2.56.1
-Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4442625Z Temporarily overriding HOME='/home/runner/work/_temp/c9fbd77e-32c9-4306-9594-f25f133be247' before making global git config changes
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4442625Z Temporarily overriding HOME='/ho…247' before making global git config changes
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4443962Z Adding repository directory to the temporary git global config as a safe directory
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4446210Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:43.4470848Z Removing SSH command configuration
@@ -1557,7 +1557,7 @@ Test (Bun on macos-15)	Set up job	﻿2026-11-27T07:00:32.9355640Z Current runner
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9437910Z ##[group]Runner Image Provisioner
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9439740Z Hosted Compute Agent
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9440930Z Version: 20261111.635
-Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9442380Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9442380Z Commit: b8a…2ed
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9443950Z Build Date: 2026-11-11T01:49:01Z
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9445340Z Worker ID: {1401107a-8197-4976-88fc-217c47e48bfc}
 Test (Bun on macos-15)	Set up job	2026-11-27T07:00:32.9446810Z Region: westus
@@ -1607,7 +1607,7 @@ Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8545600Z   NODE_VERSION: 24.22.3
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8546020Z   HUSKY: 0
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8546520Z   GIT_CONFIG_COUNT: 1
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8564480Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8564480Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8565090Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8565450Z   RELEASE_DEBUG: 0
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:34.8565770Z ##[endgroup]
@@ -1618,7 +1618,7 @@ Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6564910Z git version 2.56.1
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6610180Z ##[endgroup]
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6617200Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/d3c6f0a4-7af3-49d0-950f-bedb9e2b9755/.gitconfig'
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6621380Z Temporarily overriding HOME='/Users/runner/work/_temp/d3c6f0a4-7af3-49d0-950f-bedb9e2b9755' before making global git config changes
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6621380Z Temporarily overriding HOME='/Us…755' before making global git config changes
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6633950Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6638980Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.6833530Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
@@ -1649,9 +1649,9 @@ Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4037880Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e579dd06-dc4a-45d0-bb97-e5eec7bf1679.config
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4134330Z ##[endgroup]
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4135610Z ##[group]Fetching the repository
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4143090Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4143090Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9660040Z From https://github.com/link-foundation/gh-load-issue
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9661780Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9661780Z  * [new ref]         4da…868 -> pull/21/merge
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9684640Z ##[endgroup]
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9685500Z ##[group]Determining the checkout info
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9686170Z ##[endgroup]
@@ -1659,10 +1659,10 @@ Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9862340Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9978140Z ##[group]Checking out the ref
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.9987720Z [command]/opt/homebrew/bin/git checkout --progress --force refs/remotes/pull/21/merge
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0221770Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0221770Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0534910Z ##[endgroup]
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0599470Z [command]/opt/homebrew/bin/git log -1 --format=%H
-Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0600280Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0600280Z 4da…868
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0601830Z ##[group]Removing auth
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0602500Z Removing SSH command configuration
 Test (Bun on macos-15)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.0603290Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -1701,7 +1701,7 @@ Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5964920Z   NODE_VERSION: 24.22.3
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5965190Z   HUSKY: 0
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5965400Z   GIT_CONFIG_COUNT: 1
-Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5965660Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5965660Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5965880Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5966040Z   RELEASE_DEBUG: 0
 Test (Bun on macos-15)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:37.5966180Z ##[endgroup]
@@ -1717,7 +1717,7 @@ Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-1
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0373170Z   NODE_VERSION: 24.22.3
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0373450Z   HUSKY: 0
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0373640Z   GIT_CONFIG_COUNT: 1
-Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0373960Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0373960Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0374340Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0374650Z   RELEASE_DEBUG: 0
 Test (Bun on macos-15)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:40.0374900Z ##[endgroup]
@@ -1749,7 +1749,7 @@ Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0054660Z   NODE_VERSION: 24.22.3
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0054870Z   HUSKY: 0
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0055120Z   GIT_CONFIG_COUNT: 1
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0055370Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0055370Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0055650Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0055870Z   RELEASE_DEBUG: 0
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:00:42.0058450Z   GH_TOKEN: ***
@@ -1787,14 +1787,14 @@ Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2548210Z (pass) Library API > parseIssueUrl > should parse short format [0.05ms]
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2548790Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.03ms]
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2549310Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2550070Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.08ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2551210Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.03ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2553400Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.03ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2555090Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.02ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2560150Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.02ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2622160Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.75ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2626910Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.40ms]
-Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2635580Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.73ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2550070Z (pass) Library API > ext…own > should extract markdown image syntax [0.08ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2551210Z (pass) Library API > ext…own > should extract HTML img tags [0.03ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2553400Z (pass) Library API > ext…own > should extract multiple images [0.03ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2555090Z (pass) Library API > ext…own > should handle empty content [0.02ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2560150Z (pass) Library API > ext…own > should handle null content [0.02ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2622160Z (pass) Library API > iss…own > should generate markdown from issue data [7.75ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2626910Z (pass) Library API > iss…own > should include comments in markdown [0.40ms]
+Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2635580Z (pass) Library API > iss…own > should include labels in markdown [0.73ms]
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2636390Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.25ms]
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:00.2665140Z (pass) Library API > loadIssue > should throw error for invalid URL [2.39ms]
 Test (Bun on macos-15)	Run unit and GitHub integration tests	2026-11-27T07:01:01.2626070Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default [996.53ms]
@@ -1885,7 +1885,7 @@ Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9007950Z [command]/opt/homebrew/bin/git version
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9267780Z git version 2.56.1
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9365450Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/6c45bea4-ede0-4e60-928a-6af8c091565d/.gitconfig'
-Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9393040Z Temporarily overriding HOME='/Users/runner/work/_temp/6c45bea4-ede0-4e60-928a-6af8c091565d' before making global git config changes
+Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9393040Z Temporarily overriding HOME='/Us…65d' before making global git config changes
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9400060Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9404560Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-15)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:01:10.9546040Z Removing SSH command configuration
@@ -1902,7 +1902,7 @@ Test (Bun on windows-2025)	Set up job	﻿2026-11-27T07:00:31.9422957Z Current ru
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9658445Z ##[group]Runner Image Provisioner
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9659440Z Hosted Compute Agent
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9659776Z Version: 20261111.635
-Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9660163Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9660163Z Commit: b8a…2ed
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9660633Z Build Date: 2026-11-11T01:49:01Z
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9661049Z Worker ID: {2abe16cb-cf4d-4a97-b09c-e01bd55871c6}
 Test (Bun on windows-2025)	Set up job	2026-11-27T07:00:31.9661458Z Region: centralus
@@ -1952,7 +1952,7 @@ Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5762044Z   NODE_VERSION: 24.22.3
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5762276Z   HUSKY: 0
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5762519Z   GIT_CONFIG_COUNT: 1
-Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5762766Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5762766Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5763055Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5763300Z   RELEASE_DEBUG: 0
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:33.5763524Z ##[endgroup]
@@ -1993,9 +1993,9 @@ Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.4846389Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-4a970531-2b2e-4ae0-98a2-4cd001b1eb6c.config
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.5124465Z ##[endgroup]
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.5124847Z ##[group]Fetching the repository
-Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.5134258Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:36.5134258Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4176371Z From https://github.com/link-foundation/gh-load-issue
-Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4176986Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4176986Z  * [new ref]         4da…868 -> pull/21/merge
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4220997Z ##[endgroup]
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4221352Z ##[group]Determining the checkout info
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.4221856Z ##[endgroup]
@@ -2020,10 +2020,10 @@ Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5542350Z 
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5542486Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5542668Z 
-Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5542875Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5542875Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5599712Z ##[endgroup]
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.5948280Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
-Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.6243623Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.6243623Z 4da…868
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.6285414Z ##[group]Removing auth
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.6285732Z Removing SSH command configuration
 Test (Bun on windows-2025)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:37.6296034Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
@@ -2062,7 +2062,7 @@ Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c6
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708322Z   NODE_VERSION: 24.22.3
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708439Z   HUSKY: 0
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708551Z   GIT_CONFIG_COUNT: 1
-Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708710Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708710Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708860Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5708983Z   RELEASE_DEBUG: 0
 Test (Bun on windows-2025)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:39.5709091Z ##[endgroup]
@@ -2078,7 +2078,7 @@ Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	20
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185162Z   NODE_VERSION: 24.22.3
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185278Z   HUSKY: 0
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185376Z   GIT_CONFIG_COUNT: 1
-Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185505Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185505Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185654Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185776Z   RELEASE_DEBUG: 0
 Test (Bun on windows-2025)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:42.3185894Z ##[endgroup]
@@ -2110,7 +2110,7 @@ Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:0
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9240908Z   NODE_VERSION: 24.22.3
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241021Z   HUSKY: 0
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241138Z   GIT_CONFIG_COUNT: 1
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241269Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241269Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241423Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9241545Z   RELEASE_DEBUG: 0
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:00:50.9244191Z   GH_TOKEN: ***
@@ -2188,14 +2188,14 @@ Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:0
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6498046Z (pass) Library API > parseIssueUrl > should parse short format [0.08ms]
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6498509Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.04ms]
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6499020Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.06ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6499609Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.10ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6500203Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.05ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6500763Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.04ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6501305Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.03ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6501949Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.03ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6572923Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.20ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6576363Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.27ms]
-Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6577839Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.22ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6499609Z (pass) Library API > ext…own > should extract markdown image syntax [0.10ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6500203Z (pass) Library API > ext…own > should extract HTML img tags [0.05ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6500763Z (pass) Library API > ext…own > should extract multiple images [0.04ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6501305Z (pass) Library API > ext…own > should handle empty content [0.03ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6501949Z (pass) Library API > ext…own > should handle null content [0.03ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6572923Z (pass) Library API > iss…own > should generate markdown from issue data [7.20ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6576363Z (pass) Library API > iss…own > should include comments in markdown [0.27ms]
+Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6577839Z (pass) Library API > iss…own > should include labels in markdown [0.22ms]
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6579148Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.13ms]
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:12.6581967Z (pass) Library API > loadIssue > should throw error for invalid URL [0.27ms]
 Test (Bun on windows-2025)	Run unit and GitHub integration tests	2026-11-27T07:01:13.8011255Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default [1142.78ms]
@@ -2262,7 +2262,7 @@ Test installed npm package (Linux)	Set up job	﻿2026-11-27T07:00:31.2039969Z Cu
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2075036Z ##[group]Runner Image Provisioner
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2076576Z Hosted Compute Agent
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2077515Z Version: 20261111.635
-Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2078686Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2078686Z Commit: b8a…2ed
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2079919Z Build Date: 2026-11-11T01:49:01Z
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2081056Z Worker ID: {2790b684-4127-4355-9e72-b7048004789f}
 Test installed npm package (Linux)	Set up job	2026-11-27T07:00:31.2082269Z Region: eastus
@@ -2313,7 +2313,7 @@ Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0151185Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0151629Z   HUSKY: 0
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0152063Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0152552Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0152552Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0153098Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0153569Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.0153982Z ##[endgroup]
@@ -2323,7 +2323,7 @@ Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3041637Z [command]/usr/bin/git version
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3159657Z git version 2.56.1
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3183870Z ##[endgroup]
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3195725Z Temporarily overriding HOME='/home/runner/work/_temp/b748c960-dd9b-4a78-82a3-425c29c3e826' before making global git config changes
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3195725Z Temporarily overriding HOME='/ho…826' before making global git config changes
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3199132Z Adding repository directory to the temporary git global config as a safe directory
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3202791Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.3255468Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -2354,9 +2354,9 @@ Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4813793Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-79f3caa5-93c1-4495-9bb6-7c8b21b92673.config
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4855398Z ##[endgroup]
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4857019Z ##[group]Fetching the repository
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4863707Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4863707Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6808058Z From https://github.com/link-foundation/gh-load-issue
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6810430Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6810430Z  * [new ref]         4da…868 -> pull/21/merge
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6815208Z ##[endgroup]
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6816981Z ##[group]Determining the checkout info
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.6818756Z ##[endgroup]
@@ -2381,10 +2381,10 @@ Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7128891Z 
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7129944Z Turn off this advice by setting config variable advice.detachedHead to false
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7131518Z 
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7133248Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7133248Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7138368Z ##[endgroup]
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7140043Z [command]/usr/bin/git log -1 --format=%H
-Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7142720Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7142720Z 4da…868
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7152971Z ##[group]Removing auth
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7153787Z Removing SSH command configuration
 Test installed npm package (Linux)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.7157575Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -2424,7 +2424,7 @@ Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8744499Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8745114Z   HUSKY: 0
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8745632Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8746416Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8746416Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8747250Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8747944Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1	2026-11-27T07:00:32.8748500Z ##[endgroup]
@@ -2444,7 +2444,7 @@ Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5037432Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5038322Z   HUSKY: 0
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5039178Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5040109Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5040109Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5041074Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5041961Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:33.5042793Z ##[endgroup]
@@ -2460,7 +2460,7 @@ Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-f
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0202566Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0202790Z   HUSKY: 0
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0202984Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0203218Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0203218Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0203775Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0204020Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Run npm ci --ignore-scripts --no-audit --no-fund	2026-11-27T07:00:35.0204262Z ##[endgroup]
@@ -2481,7 +2481,7 @@ Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8377825Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378062Z   HUSKY: 0
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378245Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378465Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378465Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378735Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8378955Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Exercise Changesets before release	2026-11-27T07:00:39.8379148Z ##[endgroup]
@@ -2503,7 +2503,7 @@ Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5565118Z   NODE_VERSION: 24.22.3
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5565329Z   HUSKY: 0
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5565525Z   GIT_CONFIG_COUNT: 1
-Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5565748Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5565748Z   GIT_CONFIG_KEY_0: ini…nch
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5566015Z   GIT_CONFIG_VALUE_0: main
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5566471Z   RELEASE_DEBUG: 0
 Test installed npm package (Linux)	Run bun run test:package	2026-11-27T07:00:41.5566675Z ##[endgroup]
@@ -2517,7 +2517,7 @@ Test installed npm package (Linux)	Post Run actions/setup-node@949feb2413d645879
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:00:44.2383203Z Post job cleanup.
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3338492Z [command]/usr/bin/git version
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3381370Z git version 2.56.1
-Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3421411Z Temporarily overriding HOME='/home/runner/work/_temp/5aaf3f3f-9632-4744-892b-5664068bece8' before making global git config changes
+Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3421411Z Temporarily overriding HOME='/ho…ce8' before making global git config changes
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3423192Z Adding repository directory to the temporary git global config as a safe directory
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3427916Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test installed npm package (Linux)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:44.3466384Z Removing SSH command configuration
@@ -2534,7 +2534,7 @@ Test (Bun on ubuntu-24.04)	Set up job	﻿2026-11-27T07:00:30.9566024Z Current ru
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9586086Z ##[group]Runner Image Provisioner
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9586779Z Hosted Compute Agent
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9587178Z Version: 20261111.635
-Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9587665Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9587665Z Commit: b8a…2ed
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9588176Z Build Date: 2026-11-11T01:49:01Z
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9588678Z Worker ID: {fdd4f879-99c2-4aa1-8be9-8641a38e8f4d}
 Test (Bun on ubuntu-24.04)	Set up job	2026-11-27T07:00:30.9589185Z Region: us-east-1
@@ -2584,7 +2584,7 @@ Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4385852Z   NODE_VERSION: 24.22.3
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4386648Z   HUSKY: 0
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4387466Z   GIT_CONFIG_COUNT: 1
-Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4388264Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4388264Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4389215Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4390004Z   RELEASE_DEBUG: 0
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:32.4390711Z ##[endgroup]
@@ -2625,9 +2625,9 @@ Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.0728727Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d3835415-3cbc-4aaa-a392-ff9cbc184526.config
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.0748886Z ##[endgroup]
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.0749274Z ##[group]Fetching the repository
-Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.0753337Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da1ce5620c71ef68a50e37002c95fd24d8aa868:refs/remotes/pull/21/merge
+Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.0753337Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4da…868:refs/remotes/pull/21/merge
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3066993Z From https://github.com/link-foundation/gh-load-issue
-Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3067581Z  * [new ref]         4da1ce5620c71ef68a50e37002c95fd24d8aa868 -> pull/21/merge
+Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3067581Z  * [new ref]         4da…868 -> pull/21/merge
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3097249Z ##[endgroup]
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3097827Z ##[group]Determining the checkout info
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3098222Z ##[endgroup]
@@ -2652,10 +2652,10 @@ Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c1812
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3219543Z 
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3219733Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3219994Z 
-Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3220254Z HEAD is now at 4da1ce5 Merge c786d0189a68d00e5ee8c80adb682bb5814182ec into 671340e26becb1e1b3261687ceb001ff72a919c1
+Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3220254Z HEAD is now at 4da1ce5 Merge c78…2ec into 671…9c1
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3227333Z ##[endgroup]
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3261085Z [command]/usr/bin/git log -1 --format=%H
-Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3280484Z 4da1ce5620c71ef68a50e37002c95fd24d8aa868
+Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3280484Z 4da…868
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3287165Z ##[group]Removing auth
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3287952Z Removing SSH command configuration
 Test (Bun on ubuntu-24.04)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:35.3290527Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
@@ -2694,7 +2694,7 @@ Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c6
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4194853Z   NODE_VERSION: 24.22.3
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4195072Z   HUSKY: 0
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4195280Z   GIT_CONFIG_COUNT: 1
-Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4195929Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4195929Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4196255Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4196539Z   RELEASE_DEBUG: 0
 Test (Bun on ubuntu-24.04)	Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6	2026-11-27T07:00:35.4196754Z ##[endgroup]
@@ -2710,7 +2710,7 @@ Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	20
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7835634Z   NODE_VERSION: 24.22.3
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7835895Z   HUSKY: 0
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7836086Z   GIT_CONFIG_COUNT: 1
-Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7836354Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7836354Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7836618Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7836862Z   RELEASE_DEBUG: 0
 Test (Bun on ubuntu-24.04)	Run bun install --frozen-lockfile --ignore-scripts	2026-11-27T07:00:36.7837078Z ##[endgroup]
@@ -2742,7 +2742,7 @@ Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:0
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0921864Z   NODE_VERSION: 24.22.3
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0922113Z   HUSKY: 0
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0922319Z   GIT_CONFIG_COUNT: 1
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0922545Z   GIT_CONFIG_KEY_0: init.defaultBranch
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0922545Z   GIT_CONFIG_KEY_0: ini…nch
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0922834Z   GIT_CONFIG_VALUE_0: main
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0923067Z   RELEASE_DEBUG: 0
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.0925021Z   GH_TOKEN: ***
@@ -2790,14 +2790,14 @@ Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:0
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1459150Z (pass) Library API > parseIssueUrl > should parse short format [0.08ms]
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1459834Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.04ms]
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1460494Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.05ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1461224Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.14ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1462001Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.05ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1462738Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.04ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1463393Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.03ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1464059Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.03ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1515230Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [5.23ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1517206Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.24ms]
-Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1518901Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.15ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1461224Z (pass) Library API > ext…own > should extract markdown image syntax [0.14ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1462001Z (pass) Library API > ext…own > should extract HTML img tags [0.05ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1462738Z (pass) Library API > ext…own > should extract multiple images [0.04ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1463393Z (pass) Library API > ext…own > should handle empty content [0.03ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1464059Z (pass) Library API > ext…own > should handle null content [0.03ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1515230Z (pass) Library API > iss…own > should generate markdown from issue data [5.23ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1517206Z (pass) Library API > iss…own > should include comments in markdown [0.24ms]
+Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1518901Z (pass) Library API > iss…own > should include labels in markdown [0.15ms]
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1520428Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.15ms]
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:37.1523239Z (pass) Library API > loadIssue > should throw error for invalid URL [0.27ms]
 Test (Bun on ubuntu-24.04)	Run unit and GitHub integration tests	2026-11-27T07:00:38.9823938Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default [1829.99ms]
@@ -2876,7 +2876,7 @@ Test (Bun on ubuntu-24.04)	Post Run oven-sh/setup-bun@0c5077e51419868618aeaa5fe8
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:00:54.4416288Z Post job cleanup.
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5099365Z [command]/usr/bin/git version
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5134894Z git version 2.56.1
-Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5176543Z Temporarily overriding HOME='/home/runner/work/_temp/b7c566b0-ae92-4936-906b-0f8e71631371' before making global git config changes
+Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5176543Z Temporarily overriding HOME='/ho…371' before making global git config changes
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5177212Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5177852Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on ubuntu-24.04)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:00:54.5196851Z Removing SSH command configuration

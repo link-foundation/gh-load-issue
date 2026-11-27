@@ -2,7 +2,7 @@ Check for Changesets	Set up job	﻿2026-11-27T06:42:22.4190959Z Current runner v
 Check for Changesets	Set up job	2026-11-27T06:42:22.4226285Z ##[group]Runner Image Provisioner
 Check for Changesets	Set up job	2026-11-27T06:42:22.4227629Z Hosted Compute Agent
 Check for Changesets	Set up job	2026-11-27T06:42:22.4228636Z Version: 20261111.635
-Check for Changesets	Set up job	2026-11-27T06:42:22.4229937Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Check for Changesets	Set up job	2026-11-27T06:42:22.4229937Z Commit: b8a…2ed
 Check for Changesets	Set up job	2026-11-27T06:42:22.4231353Z Build Date: 2026-11-11T01:49:01Z
 Check for Changesets	Set up job	2026-11-27T06:42:22.4232749Z Worker ID: {59ec2dff-28fd-4358-b2e3-c3cbd541d0b0}
 Check for Changesets	Set up job	2026-11-27T06:42:22.4234357Z Region: centralus
@@ -133,7 +133,7 @@ Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4181244Z   git 
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4181634Z 
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4182299Z Turn off this advice by setting config variable advice.detachedHead to false
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4183715Z 
-Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4184894Z HEAD is now at d93fbc7 Merge 0d619eceb453db512dc3eca26e2314de37e22071 into 671340e26becb1e1b3261687ceb001ff72a919c1
+Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4184894Z HEAD is now at d93fbc7 Merge 0d6…071 into 671…9c1
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4188220Z ##[endgroup]
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4227988Z [command]/usr/bin/git log -1 --format=%H
 Check for Changesets	Run actions/checkout@v4	2026-11-27T06:42:24.4251873Z d93fbc79fa123435f3acf0beb38c2ad5d8d5ee4f
@@ -186,7 +186,7 @@ Check for Changesets	Check for changesets	2026-11-27T06:42:27.0927128Z ##[error]
 Check for Changesets	Post Run actions/checkout@v4	﻿2026-11-27T06:42:27.1083853Z Post job cleanup.
 Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.1947529Z [command]/usr/bin/git version
 Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.1991465Z git version 2.56.1
-Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.2033366Z Temporarily overriding HOME='/home/runner/work/_temp/5db6a79d-0ed5-49a8-a8c8-f34c20d16b97' before making global git config changes
+Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.2033366Z Temporarily overriding HOME='/ho…b97' before making global git config changes
 Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.2035275Z Adding repository directory to the temporary git global config as a safe directory
 Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.2039041Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Check for Changesets	Post Run actions/checkout@v4	2026-11-27T06:42:27.2141309Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand

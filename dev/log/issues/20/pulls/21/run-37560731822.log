@@ -2,7 +2,7 @@ Check for Changesets	UNKNOWN STEP	﻿2026-10-07T02:10:53.9226660Z Current runner
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9247039Z ##[group]Runner Image Provisioner
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9247783Z Hosted Compute Agent
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9248273Z Version: 20260901.588
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9248772Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9248772Z Commit: f88…d0b
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9249506Z Build Date: 2026-09-01T19:56:44Z
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9250065Z Worker ID: {151b0613-024d-4fba-90a6-60c3a6eaf4f8}
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9250847Z Azure Region: eastus
@@ -54,7 +54,7 @@ Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5710774Z Working directory
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5712083Z [command]/usr/bin/git version
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5793677Z git version 2.55.0
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5813687Z ##[endgroup]
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5819650Z Temporarily overriding HOME='/home/runner/work/_temp/a8a143e8-6f91-4217-b012-b5949c6087ef' before making global git config changes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5819650Z Temporarily overriding HOME='/ho…7ef' before making global git config changes
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5821450Z Adding repository directory to the temporary git global config as a safe directory
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5823251Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5867739Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -131,7 +131,7 @@ Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0442044Z   git switch -
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0442668Z 
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0443420Z Turn off this advice by setting config variable advice.detachedHead to false
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0444286Z 
-Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0445221Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0445221Z HEAD is now at 5120e3d Merge 57b…514 into e9b…277
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0448061Z ##[endgroup]
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0480191Z [command]/usr/bin/git log -1 --format=%H
 Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0502137Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
@@ -211,7 +211,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:06.8717760Z Current 
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8732310Z ##[group]Runner Image Provisioner
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8732910Z Hosted Compute Agent
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8733290Z Version: 20260828.587
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8733860Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8733860Z Commit: aba…c29
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8734380Z Build Date: 2026-08-28T16:44:25Z
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8735000Z Worker ID: {8e96aa69-fa7b-4067-9cb4-036134d90c1d}
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8735510Z Azure Region: westus
@@ -264,7 +264,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7756950Z [command]/o
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8349730Z git version 2.55.0
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8555340Z ##[endgroup]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8594150Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/c0e2d2b8-793c-4106-9ba3-4b4be2ab3c70/.gitconfig'
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8672120Z Temporarily overriding HOME='/Users/runner/work/_temp/c0e2d2b8-793c-4106-9ba3-4b4be2ab3c70' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8672120Z Temporarily overriding HOME='/Us…c70' before making global git config changes
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8674190Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8675600Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8679330Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
@@ -309,7 +309,7 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7377840Z [command]/o
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7454330Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7510490Z ##[group]Checking out the ref
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7512680Z [command]/opt/homebrew/bin/git checkout --progress --force refs/remotes/pull/19/merge
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7656400Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7656400Z HEAD is now at 5120e3d Merge 57b…514 into e9b…277
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7663990Z ##[endgroup]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7746130Z [command]/opt/homebrew/bin/git log -1 --format=%H
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7804080Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
@@ -383,14 +383,14 @@ Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4617830Z (pass) Libr
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4618290Z (pass) Library API > parseIssueUrl > should parse short format [0.05ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4618710Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.03ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4620050Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4620760Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.09ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621280Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.04ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621770Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622330Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.02ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622840Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.03ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4660590Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [3.90ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662030Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.21ms]
-Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662830Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4620760Z (pass) Library API > ext…own > should extract markdown image syntax [0.09ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621280Z (pass) Library API > ext…own > should extract HTML img tags [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621770Z (pass) Library API > ext…own > should extract multiple images [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622330Z (pass) Library API > ext…own > should handle empty content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622840Z (pass) Library API > ext…own > should handle null content [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4660590Z (pass) Library API > iss…own > should generate markdown from issue data [3.90ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662030Z (pass) Library API > iss…own > should include comments in markdown [0.21ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662830Z (pass) Library API > iss…own > should include labels in markdown [0.08ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4663930Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.10ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4666240Z (pass) Library API > loadIssue > should throw error for invalid URL [0.21ms]
 Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.6614330Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [194.71ms]
@@ -461,7 +461,7 @@ Lint and Format Check	UNKNOWN STEP	﻿2026-10-07T02:11:04.3784676Z Current runne
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3805643Z ##[group]Runner Image Provisioner
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3806886Z Hosted Compute Agent
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3807606Z Version: 20260901.588
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3808369Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3808369Z Commit: f88…d0b
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3809370Z Build Date: 2026-09-01T19:56:44Z
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3810220Z Worker ID: {5bffad0d-aab1-4118-a126-0f8c7aa0545b}
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3811190Z Azure Region: westus3
@@ -575,7 +575,7 @@ Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9384619Z   git switch -
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9385225Z 
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9386437Z Turn off this advice by setting config variable advice.detachedHead to false
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9387715Z 
-Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9388944Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9388944Z HEAD is now at 5120e3d Merge 57b…514 into e9b…277
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9392821Z ##[endgroup]
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9765612Z [command]/usr/bin/git log -1 --format=%H
 Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9790226Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
@@ -654,7 +654,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:04.1758227Z Current
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1791162Z ##[group]Runner Image Provisioner
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1792553Z Hosted Compute Agent
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1793546Z Version: 20260901.588
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1794636Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1794636Z Commit: f88…d0b
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1795813Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1796938Z Worker ID: {eb105cdf-7fb6-4a36-b96e-b3cfed3f10d4}
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1798301Z Azure Region: eastus
@@ -706,7 +706,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9534042Z Working di
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9535599Z [command]/usr/bin/git version
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9603673Z git version 2.55.0
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9627461Z ##[endgroup]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9645682Z Temporarily overriding HOME='/home/runner/work/_temp/b203460c-0cf2-4c27-94fc-c83a749fdc3d' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9645682Z Temporarily overriding HOME='/ho…c3d' before making global git config changes
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9648303Z Adding repository directory to the temporary git global config as a safe directory
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9652239Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9706928Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
@@ -768,7 +768,7 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307239Z   git swit
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307537Z 
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307969Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3308577Z 
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3309260Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3309260Z HEAD is now at 5120e3d Merge 57b…514 into e9b…277
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3311779Z ##[endgroup]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3348024Z [command]/usr/bin/git log -1 --format=%H
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3375191Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
@@ -870,14 +870,14 @@ Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9334546Z (pass) Lib
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9335374Z (pass) Library API > parseIssueUrl > should parse short format [0.13ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9336345Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.11ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9337389Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.10ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9339018Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.15ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9340562Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.13ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9341636Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.09ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9342650Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.08ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9343604Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.08ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9415556Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.17ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9417620Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.23ms]
-Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9419522Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.18ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9339018Z (pass) Library API > ext…own > should extract markdown image syntax [0.15ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9340562Z (pass) Library API > ext…own > should extract HTML img tags [0.13ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9341636Z (pass) Library API > ext…own > should extract multiple images [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9342650Z (pass) Library API > ext…own > should handle empty content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9343604Z (pass) Library API > ext…own > should handle null content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9415556Z (pass) Library API > iss…own > should generate markdown from issue data [7.17ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9417620Z (pass) Library API > iss…own > should include comments in markdown [0.23ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9419522Z (pass) Library API > iss…own > should include labels in markdown [0.18ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9422582Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.26ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9426341Z (pass) Library API > loadIssue > should throw error for invalid URL [0.38ms]
 Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.0823667Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [139.57ms]
@@ -914,7 +914,7 @@ Test (Bun on windows-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:04.5184592Z Curren
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5216307Z ##[group]Runner Image Provisioner
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5217231Z Hosted Compute Agent
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5217815Z Version: 20260901.588
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5218407Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5218407Z Commit: f88…d0b
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5219148Z Build Date: 2026-09-01T19:56:44Z
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5219846Z Worker ID: {7bced7d6-7fcb-4f10-ae90-13d77269d1ff}
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5220537Z Azure Region: centralus
@@ -1015,7 +1015,7 @@ Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117588Z   git swi
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117720Z 
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117985Z Turn off this advice by setting config variable advice.detachedHead to false
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5118360Z 
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5118814Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5118814Z HEAD is now at 5120e3d Merge 57b…514 into e9b…277
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5253565Z ##[endgroup]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5696741Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5986998Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
@@ -1127,14 +1127,14 @@ Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6311199Z (pass) Li
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6313260Z (pass) Library API > parseIssueUrl > should parse short format [0.16ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6314760Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.11ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6317351Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.17ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6319726Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.22ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6320928Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.14ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6322060Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.11ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6324676Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.10ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6325821Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.08ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6416057Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [9.08ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6419617Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.34ms]
-Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6422453Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.26ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6319726Z (pass) Library API > ext…own > should extract markdown image syntax [0.22ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6320928Z (pass) Library API > ext…own > should extract HTML img tags [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6322060Z (pass) Library API > ext…own > should extract multiple images [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6324676Z (pass) Library API > ext…own > should handle empty content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6325821Z (pass) Library API > ext…own > should handle null content [0.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6416057Z (pass) Library API > iss…own > should generate markdown from issue data [9.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6419617Z (pass) Library API > iss…own > should include comments in markdown [0.34ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6422453Z (pass) Library API > iss…own > should include labels in markdown [0.26ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6424892Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.25ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6429349Z (pass) Library API > loadIssue > should throw error for invalid URL [0.42ms]
 Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.9270185Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id 9405:CFE81:DB2A66:2D01DDA:6AC5AA5A in 94ms
