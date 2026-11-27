@@ -126,11 +126,13 @@ describe('GitHub release metadata', () => {
     let created = false;
     const run = (_command, args, options) => {
       calls.push(args[1]);
-      if (args[1].endsWith('/commits/v1.0.0')) {
+      if (args[1].endsWith('/git/ref/tags/v1.0.0')) {
         if (!created) {
           throw Object.assign(new Error('gh failed'), { stderr: 'HTTP 404' });
         }
-        return JSON.stringify({ sha: release.commit });
+        return JSON.stringify({
+          object: { type: 'commit', sha: release.commit },
+        });
       }
       if (args[1].endsWith('/pulls')) {
         return JSON.stringify([{ title: 'Fix CI', number: 21 }]);
@@ -150,7 +152,11 @@ describe('GitHub release metadata', () => {
 
   it('fails if the release tag points to an unrelated commit', () => {
     assert.throws(
-      () => ensureGitHubRelease(release, () => '{"sha":"different-commit"}'),
+      () =>
+        ensureGitHubRelease(
+          release,
+          () => '{"object":{"type":"commit","sha":"different-commit"}}'
+        ),
       /Tag v1\.0\.0 points to different-commit/
     );
   });

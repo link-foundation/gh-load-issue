@@ -46,13 +46,19 @@ export function ensureGitHubRelease(
       return null;
     }
   };
-  const taggedCommit = lookup(`commits/${tag}`);
-  if (taggedCommit && taggedCommit.sha !== commit) {
-    throw new Error(
-      `Tag ${tag} points to ${taggedCommit.sha}, expected ${commit}.`
-    );
+  const ref = lookup(`git/ref/tags/${tag}`);
+  if (ref) {
+    const taggedCommit =
+      ref.object.type === 'commit'
+        ? ref.object.sha
+        : JSON.parse(api(`commits/${tag}`)).sha;
+    if (taggedCommit !== commit) {
+      throw new Error(
+        `Tag ${tag} points to ${taggedCommit}, expected ${commit}.`
+      );
+    }
   }
-  if (taggedCommit && lookup(`releases/tags/${tag}`)) {
+  if (ref && lookup(`releases/tags/${tag}`)) {
     console.log(`GitHub Release ${tag} already exists.`);
     return;
   }
