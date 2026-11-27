@@ -35,7 +35,6 @@
     "@changesets/cli": "^2.29.7",
     "@changesets/parse": "^0.4.2",
     "@eslint/js": "^9.39.2",
-    "@secretlint/secretlint-rule-preset-recommend": "13.1.0",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

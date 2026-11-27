@@ -13,7 +13,6 @@
         "@changesets/cli": "^2.29.7",
         "@changesets/parse": "^0.4.2",
         "@eslint/js": "^9.39.2",
-        "@secretlint/secretlint-rule-preset-recommend": "13.1.0",
         "eslint": "^9.38.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.4",
@@ -160,8 +159,6 @@
     "@secretlint/profiler": ["@secretlint/profiler@14.1.0", "", {}, "sha512-TWia4qNyW3aUTR5nMcGhu3tc7qFHMBA9U16PB/sCCqZwuuc8tyvggqRNiPr/FUOzFCZsnCwL69tu8k5z+O9svQ=="],
 
     "@secretlint/resolver": ["@secretlint/resolver@14.1.0", "", {}, "sha512-R8dVmWYFnNg1U8IG1zb96LgCegBf5kC62jQcH73ZzeW9l8Wgs5XgVr2T86A5S7jv7de2wKtHsYZx4hZ6H2mmSw=="],
-
-    "@secretlint/secretlint-rule-preset-recommend": ["@secretlint/secretlint-rule-preset-recommend@13.1.0", "", {}, "sha512-dPnplMyjJYpVCJDNTjpUA8c/AfoHbWANJJJWKroK50DGGhAB4Oumzk+XinBMyMMAwgOsjU9CB9lUHXDvObMVCg=="],
 
     "@secretlint/source-creator": ["@secretlint/source-creator@14.1.0", "", { "dependencies": { "@secretlint/types": "14.1.0", "istextorbinary": "^9.5.0" } }, "sha512-YX0CcN+CsXj8LsAu+yzxG2Wfu+lDmiatzgA7MF6SxRGcsNOJPTcTHycDoH/M7lNEzdBgohGlThIosx/KeHH6PQ=="],
 

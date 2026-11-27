@@ -30,10 +30,9 @@ on:
 permissions:
   contents: read
 
-# Main never cancels an active publication.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}-${{ github.event_name }}-${{ github.event.action || 'run' }}-${{ (github.event_name == 'pull_request' && github.event.action == 'synchronize' && 'latest') || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' && github.event.action == 'synchronize' }}
 
 env:
   BUN_VERSION: '1.4.5'
@@ -142,6 +141,8 @@ jobs:
       - uses: docker://rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 # v1.7.12
         with:
           args: -color
+      - run: shellcheck --shell=sh .husky/pre-commit
+      - run: shellcheck experiments/reproduce-release-recovery.sh
       - uses: zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1 # v0.9.2
         with:
           advanced-security: false
@@ -173,8 +174,8 @@ jobs:
     name: Test (Bun on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
-    needs: [plan, release-preflight]
-    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
+    needs: [plan, lint, release-preflight]
+    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && needs.lint.result == 'success' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
     strategy:
       fail-fast: false
       matrix:
@@ -196,8 +197,8 @@ jobs:
     name: Test installed npm package (Linux)
     runs-on: ubuntu-24.04
     timeout-minutes: 10
-    needs: [plan, release-preflight]
-    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
+    needs: [plan, lint, release-preflight]
+    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && needs.lint.result == 'success' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -240,10 +241,32 @@ jobs:
       - run: npm audit --audit-level=moderate --package-lock-only
       - run: bun audit --audit-level moderate
       - run: git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github
+      - name: Validate primary documentation
+        run: |
+          for file in README.md REQUIREMENTS.md CHANGELOG.md; do
+            if [[ $(wc -l < "$file") -gt 2500 ]]; then
+              echo "::error file=$file::Documentation exceeds 2500 lines."
+              exit 1
+            fi
+          done
+          grep -qFx '## Installation' README.md
+          grep -qFx '## Core Functionality' REQUIREMENTS.md
+          grep -qE '^## [0-9]+\.[0-9]+\.[0-9]+' CHANGELOG.md
       - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
         with:
           lycheeVersion: v0.24.2
           args: --offline README.md REQUIREMENTS.md CHANGELOG.md
+          fail: true
+      - name: Verify the npm package linked from the README
+        if: github.event_name == 'schedule'
+        run: npm view gh-load-issue version --registry https://registry.npmjs.org/
+      - name: Check public documentation links
+        if: github.event_name == 'schedule'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          lycheeVersion: v0.24.2
+          # The npm website rejects automated requests. The preceding step checks its registry metadata.
+          args: --max-retries 2 --exclude '^https://www.npmjs.com/package/gh-load-issue$' README.md REQUIREMENTS.md CHANGELOG.md
           fail: true
 
   checks:
@@ -302,6 +325,9 @@ jobs:
     name: Release
     needs: [plan, checks]
     if: needs.plan.outputs.release == 'true' && github.ref == 'refs/heads/main'
+    concurrency:
+      group: npm-release-main
+      cancel-in-progress: false
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
