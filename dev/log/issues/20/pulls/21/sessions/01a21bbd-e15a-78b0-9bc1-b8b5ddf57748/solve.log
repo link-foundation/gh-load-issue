@@ -1503,3 +1503,405 @@ remote:
 [2026-11-27T07:36:55.575Z] [INFO]    Solve resume mode:   "/home/box/.nvm/versions/node/v26.13.1/bin/node" "/home/box/.bun/install/global/node_modules/@link-assistant/hive-mind/src/solve.mjs" "https://github.com/link-foundation/gh-load-issue/issues/20" --resume "01a21bbd-e15a-78b0-9bc1-b8b5ddf57748" --tool "codex" --model "gpt-6.2-sol" --working-directory "/tmp/gh-issue-solver-1795761721018"
 [2026-11-27T07:36:55.579Z] [INFO] 
 [2026-11-27T07:36:55.592Z] [INFO] 🔍 Development log finalize: issue #20, PR #21, branch issue-20-4be44752c8ed, session 01a21bbd-e15a-78b0-9bc1-b8b5ddf57748, log slice from byte 0
+[2026-11-27T07:37:00.359Z] [INFO]   🔒 Sanitized 4 secrets:
+[2026-11-27T07:37:00.370Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:37:00.377Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:37:00.380Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 0 detections
+[2026-11-27T07:37:00.383Z] [INFO]       • Hex tokens: 4
+[2026-11-27T07:37:32.546Z] [INFO]   🔒 Sanitized 61 secrets:
+[2026-11-27T07:37:32.557Z] [INFO]       • Known tokens: 1
+[2026-11-27T07:37:32.562Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:37:32.567Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 60 detections
+[2026-11-27T07:37:32.570Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:38:25.262Z] [INFO]   🔒 Sanitized 46 secrets:
+[2026-11-27T07:38:25.290Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:38:25.297Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:38:25.306Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 38 detections
+[2026-11-27T07:38:25.311Z] [INFO]       • Hex tokens: 8
+[2026-11-27T07:39:07.023Z] [INFO]   🔒 Sanitized 22 secrets:
+[2026-11-27T07:39:07.025Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:07.028Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:07.030Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 22 detections
+[2026-11-27T07:39:07.032Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:19.806Z] [INFO]   🔒 Sanitized 2 secrets:
+[2026-11-27T07:39:19.810Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:19.813Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:19.816Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 2 detections
+[2026-11-27T07:39:19.821Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:21.666Z] [INFO] 🧾 Development log artifacts written to dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748 (log bytes 0-1029458)
+[2026-11-27T07:39:21.669Z] [INFO] 🧾 Development log artifacts written to ./dev/log/issues/20/pulls/21
+[2026-11-27T07:39:21.928Z] [INFO]   🔒 Sanitized 3 secrets:
+[2026-11-27T07:39:21.930Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:21.933Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:21.937Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 3 detections
+[2026-11-27T07:39:21.944Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:22.180Z] [INFO]   🔒 Sanitized 3 secrets:
+[2026-11-27T07:39:22.184Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:22.187Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:22.190Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 3 detections
+[2026-11-27T07:39:22.194Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:22.582Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:39:22.588Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:22.590Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:22.594Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:22.597Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:22.630Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:39:22.632Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:22.636Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:22.642Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:22.646Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:22.870Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:39:22.874Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:22.875Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:22.878Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:22.882Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:22.911Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:39:22.915Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:22.921Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:22.923Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:22.926Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:39:23.605Z] [INFO]   🔒 Sanitized 42 secrets:
+[2026-11-27T07:39:23.609Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:23.612Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:23.615Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 27 detections
+[2026-11-27T07:39:23.617Z] [INFO]       • Hex tokens: 15
+[2026-11-27T07:39:24.504Z] [INFO]   🔒 Sanitized 42 secrets:
+[2026-11-27T07:39:24.512Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:24.514Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:24.517Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 27 detections
+[2026-11-27T07:39:24.520Z] [INFO]       • Hex tokens: 15
+[2026-11-27T07:39:25.682Z] [INFO]   🔒 Sanitized 50 secrets:
+[2026-11-27T07:39:25.685Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:25.688Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:25.690Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 32 detections
+[2026-11-27T07:39:25.692Z] [INFO]       • Hex tokens: 18
+[2026-11-27T07:39:26.826Z] [INFO]   🔒 Sanitized 50 secrets:
+[2026-11-27T07:39:26.828Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:26.830Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:26.831Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 32 detections
+[2026-11-27T07:39:26.834Z] [INFO]       • Hex tokens: 18
+[2026-11-27T07:39:28.393Z] [INFO]   🔒 Sanitized 42 secrets:
+[2026-11-27T07:39:28.396Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:28.399Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:28.408Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 36 detections
+[2026-11-27T07:39:28.411Z] [INFO]       • Hex tokens: 6
+[2026-11-27T07:39:29.940Z] [INFO]   🔒 Sanitized 42 secrets:
+[2026-11-27T07:39:29.943Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:29.946Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:29.949Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 36 detections
+[2026-11-27T07:39:29.952Z] [INFO]       • Hex tokens: 6
+[2026-11-27T07:39:30.907Z] [INFO]   🔒 Sanitized 4 secrets:
+[2026-11-27T07:39:30.910Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:30.912Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:30.916Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:30.918Z] [INFO]       • Hex tokens: 3
+[2026-11-27T07:39:31.051Z] [INFO]   🔒 Sanitized 4 secrets:
+[2026-11-27T07:39:31.056Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:31.061Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:31.067Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:39:31.072Z] [INFO]       • Hex tokens: 3
+[2026-11-27T07:39:33.450Z] [INFO]   🔒 Sanitized 125 secrets:
+[2026-11-27T07:39:33.459Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:33.467Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:33.474Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 78 detections
+[2026-11-27T07:39:33.483Z] [INFO]       • Hex tokens: 47
+[2026-11-27T07:39:37.441Z] [INFO]   🔒 Sanitized 125 secrets:
+[2026-11-27T07:39:37.445Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:37.449Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:37.452Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 78 detections
+[2026-11-27T07:39:37.454Z] [INFO]       • Hex tokens: 47
+[2026-11-27T07:39:41.796Z] [INFO]   🔒 Sanitized 126 secrets:
+[2026-11-27T07:39:41.802Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:41.807Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:41.810Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 78 detections
+[2026-11-27T07:39:41.818Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:39:45.489Z] [INFO]   🔒 Sanitized 126 secrets:
+[2026-11-27T07:39:45.494Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:45.498Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:45.502Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 78 detections
+[2026-11-27T07:39:45.506Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:39:47.834Z] [INFO]   🔒 Sanitized 11 secrets:
+[2026-11-27T07:39:47.838Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:47.840Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:47.841Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 2 detections
+[2026-11-27T07:39:47.843Z] [INFO]       • Hex tokens: 9
+[2026-11-27T07:39:48.071Z] [INFO]   🔒 Sanitized 11 secrets:
+[2026-11-27T07:39:48.074Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:48.078Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:48.083Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 2 detections
+[2026-11-27T07:39:48.085Z] [INFO]       • Hex tokens: 9
+[2026-11-27T07:39:50.709Z] [INFO]   🔒 Sanitized 131 secrets:
+[2026-11-27T07:39:50.716Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:50.718Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:50.721Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 83 detections
+[2026-11-27T07:39:50.723Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:39:54.539Z] [INFO]   🔒 Sanitized 131 secrets:
+[2026-11-27T07:39:54.549Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:54.555Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:54.560Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 83 detections
+[2026-11-27T07:39:54.567Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:39:59.100Z] [INFO]   🔒 Sanitized 128 secrets:
+[2026-11-27T07:39:59.105Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:39:59.113Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:39:59.119Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 80 detections
+[2026-11-27T07:39:59.122Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:40:03.841Z] [INFO]   🔒 Sanitized 128 secrets:
+[2026-11-27T07:40:03.863Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:03.870Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:03.873Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 80 detections
+[2026-11-27T07:40:03.877Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:40:09.209Z] [INFO]   🔒 Sanitized 108 secrets:
+[2026-11-27T07:40:09.217Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:09.220Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:09.223Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 76 detections
+[2026-11-27T07:40:09.227Z] [INFO]       • Hex tokens: 32
+[2026-11-27T07:40:13.109Z] [INFO]   🔒 Sanitized 108 secrets:
+[2026-11-27T07:40:13.117Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:13.123Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:13.127Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 76 detections
+[2026-11-27T07:40:13.130Z] [INFO]       • Hex tokens: 32
+[2026-11-27T07:40:17.747Z] [INFO]   🔒 Sanitized 132 secrets:
+[2026-11-27T07:40:17.758Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:17.764Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:17.770Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 84 detections
+[2026-11-27T07:40:17.772Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:40:21.868Z] [INFO]   🔒 Sanitized 132 secrets:
+[2026-11-27T07:40:21.878Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:21.883Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:21.887Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 84 detections
+[2026-11-27T07:40:21.894Z] [INFO]       • Hex tokens: 48
+[2026-11-27T07:40:24.425Z] [INFO]   🔒 Sanitized 607 secrets:
+[2026-11-27T07:40:24.427Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:24.429Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:24.430Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 0 detections
+[2026-11-27T07:40:24.433Z] [INFO]       • Hex tokens: 607
+[2026-11-27T07:40:24.628Z] [INFO]   🔒 Sanitized 607 secrets:
+[2026-11-27T07:40:24.631Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:24.633Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:24.635Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 0 detections
+[2026-11-27T07:40:24.637Z] [INFO]       • Hex tokens: 607
+[2026-11-27T07:40:25.141Z] [INFO]   🔒 Sanitized 5 secrets:
+[2026-11-27T07:40:25.144Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:25.147Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:25.149Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 5 detections
+[2026-11-27T07:40:25.155Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:40:25.523Z] [INFO]   🔒 Sanitized 5 secrets:
+[2026-11-27T07:40:25.526Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:25.530Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:25.534Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 5 detections
+[2026-11-27T07:40:25.540Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:40:25.955Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:40:25.959Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:25.965Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:25.968Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:40:25.972Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:40:26.018Z] [INFO]   🔒 Sanitized 1 secrets:
+[2026-11-27T07:40:26.022Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:40:26.024Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:40:26.026Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 1 detections
+[2026-11-27T07:40:26.029Z] [INFO]       • Hex tokens: 0
+[2026-11-27T07:41:08.864Z] [STDERR] [STARTED] Backing up original state...
+[2026-11-27T07:41:08.922Z] [STDERR] [COMPLETED] Backed up original state in git stash (e1b9294)
+[2026-11-27T07:41:08.923Z] [STDERR] [STARTED] Running tasks for staged files...
+[STARTED] package.json — 23 files
+[STARTED] *.{js,mjs,cjs} — 0 files
+[STARTED] *.md — 1 file
+[SKIPPED] *.{js,mjs,cjs} — no files
+[STARTED] prettier --write
+[2026-11-27T07:41:09.093Z] [STDERR] [COMPLETED] prettier --write
+[2026-11-27T07:41:09.094Z] [STDERR] [STARTED] prettier --check
+[2026-11-27T07:41:09.263Z] [STDERR] [COMPLETED] prettier --check
+[2026-11-27T07:41:09.265Z] [STDERR] [COMPLETED] *.md — 1 file
+[COMPLETED] package.json — 23 files
+[COMPLETED] Running tasks for staged files...
+[STARTED] Applying modifications from tasks...
+[2026-11-27T07:41:09.284Z] [STDERR] [COMPLETED] Applying modifications from tasks...
+[2026-11-27T07:41:09.285Z] [STDERR] [STARTED] Cleaning up temporary files...
+[2026-11-27T07:41:09.310Z] [STDERR] [COMPLETED] Cleaning up temporary files...
+[2026-11-27T07:41:09.438Z] [STDOUT] [issue-20-4be44752c8ed 31aa6d8] Add development log for issue #20 PR #21
+ 23 files changed, 7019 insertions(+), 1352 deletions(-)
+ create mode 100644 dev/log/issues/20/pulls/21/final-pr-status.log
+ create mode 100644 dev/log/issues/20/pulls/21/final-review-app-status.log
+ create mode 100644 dev/log/issues/20/pulls/21/run-45957888107-metadata.log
+ create mode 100644 dev/log/issues/20/pulls/21/run-45957888107.log
+ create mode 100644 dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748/codex-01a21bbd-e15a-78b0-9bc1-b8b5ddf57748.jsonl
+ create mode 100644 dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748/metadata.json
+ create mode 100644 dev/log/issues/20/pulls/21/sessions/01a21bbd-e15a-78b0-9bc1-b8b5ddf57748/solve.log
+[2026-11-27T07:41:09.440Z] [INFO] ✅ Development log committed
+[2026-11-27T07:41:12.402Z] [STDERR] To https://github.com/link-foundation/gh-load-issue.git
+   91b994c..31aa6d8  issue-20-4be44752c8ed -> issue-20-4be44752c8ed
+[2026-11-27T07:41:12.411Z] [INFO] ✅ Development log pushed
+[2026-11-27T07:41:12.414Z] [INFO] 🔍 Checking if AI created any comments during session (--auto-attach-solution-summary)...
+[2026-11-27T07:41:12.929Z] [INFO] 🔎 Checking comments by 'konard' after session start 2026-11-27T06:42:21.384Z (PR #21, issue #20)
+[2026-11-27T07:41:13.474Z] [INFO]    📨 PR conversation comments after session start by 'konard' (excluding tool-generated): 0
+[2026-11-27T07:41:13.985Z] [INFO]    📝 PR review (inline) comments after session start by 'konard': 0
+[2026-11-27T07:41:14.548Z] [INFO]    📝 PR reviews after session start by 'konard': 0
+[2026-11-27T07:41:15.064Z] [INFO]    📨 Issue comments after session start by 'konard' (excluding tool-generated): 0
+[2026-11-27T07:41:15.065Z] [INFO] 📝 No AI comments detected, attaching working session summary...
+[2026-11-27T07:41:17.470Z] [WARNING] ⚠️  Pull request #21 diff is 8.2 MB - measuring it is slow and memory-hungry; check whether logs or build output were committed to the branch
+[2026-11-27T07:41:18.840Z] [INFO] ✅ Working session summary attached to pr #21 (id=7212718303)
+[2026-11-27T07:41:18.901Z] [INFO] 
+[2026-11-27T07:41:18.901Z] [INFO] 🔍 Searching for created pull requests or comments...
+[2026-11-27T07:41:19.385Z] [INFO] 
+[2026-11-27T07:41:19.385Z] [INFO] 🔍 Checking for pull requests from branch issue-20-4be44752c8ed...
+[2026-11-27T07:41:19.894Z] [INFO]   ✅ Found pull request #21: "Fix CI checks and make npm releases verifiable"
+[2026-11-27T07:41:23.496Z] [WARNING] ⚠️  Pull request #21 diff is 8.2 MB - measuring it is slow and memory-hungry; check whether logs or build output were committed to the branch
+[2026-11-27T07:41:24.061Z] [STDOUT] {"url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20","repository_url":"https://api.github.com/repos/link-foundation/gh-load-issue","labels_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20/labels{/name}","comments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20/comments","events_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20/events","html_url":"https://github.com/link-foundation/gh-load-issue/issues/20","id":6641446464,"node_id":"I_kwDOQIEzhM8AAAABi9xuQA","number":20,"title":"Check for all false positives, false negatives, warnings and errors in CI/CD and fix them all","user":{"login":"konard","id":1431904,"node_id":"MDQ6VXNlcjE0MzE5MDQ=","avatar_url":"https://avatars.githubusercontent.com/u/1431904?v=4","gravatar_id":"","url":"https://api.github.com/users/konard","html_url":"https://github.com/konard","followers_url":"https://api.github.com/users/konard/followers","following_url":"https://api.github.com/users/konard/following{/other_user}","gists_url":"https://api.github.com/users/konard/gists{/gist_id}","starred_url":"https://api.github.com/users/konard/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/konard/subscriptions","organizations_url":"https://api.github.com/users/konard/orgs","repos_url":"https://api.github.com/users/konard/repos","events_url":"https://api.github.com/users/konard/events{/privacy}","received_events_url":"https://api.github.com/users/konard/received_events","type":"User","user_view_type":"public","site_admin":false},"labels":[{"id":9515753794,"node_id":"LA_kwDOQIEzhM8AAAACNy7hQg","url":"https://api.github.com/repos/link-foundation/gh-load-issue/labels/bug","name":"bug","color":"d73a4a","default":true,"description":"Something isn't working","archived_at":null,"archived_by":null}],"state":"open","locked":false,"assignees":[],"milestone":null,"comments":0,"created_at":"2026-11-27T06:41:37Z","updated_at":"2026-11-27T07:07:46Z","closed_at":null,"assignee":null,"author_association":"MEMBER","issue_field_values":[],"type":{"id":22969356,"node_id":"IT_kwDOCoAzvc4BXnwM","name":"Bug","description":"An unexpected problem or behavior","color":"red","created_at":"2024-07-20T19:06:39Z","updated_at":"2024-07-20T19:06:39Z","is_enabled":true},"status":{"id":8,"name":"In review","category":"started"},"active_lock_reason":null,"sub_issues_summary":{"total":0,"completed":0,"percent_completed":0},"issue_dependencies_summary":{"blocked_by":0,"total_blocked_by":0,"blocking":0,"total_blocking":0},"body":"### Recent CI/CD runs on `main`\n\n| Workflow | Status | Conclusion | Commit | Run |\n| --- | --- | --- | --- | --- |\n| Checks and release | completed | failure | `73976e1` | [run](https://github.com/link-foundation/gh-load-issue/actions/runs/37561736761) |\n\nUse all the best practices from CI/CD templates (check full file tree to compare for all GitHub workflow and CI/CD scripts file), if the same issue is found in template report issue also in templates:\n\n- https://github.com/link-foundation/js-ai-driven-development-pipeline-template\n\nWe should compare all files, so we don't have more CI/CD errors in the future and reuse all the best practices from these templates.\n\nFollow the CI/CD best practices collected in [https://github.com/link-assistant/hive-mind/blob/main/docs/CI-CD-BEST-PRACTICES.md](https://github.com/link-assistant/hive-mind/blob/main/docs/CI-CD-BEST-PRACTICES.md).\n\nPlease plan and execute everything in this single pull request, you have unlimited time and context, as context auto-compacts and you can continue indefinitely, until it is each and every requirement fully addressed, and everything is totally done.\n\n---\n\n<details>\n<summary>Context collected by <code>/fix --ci-cd</code></summary>\n\n- **Repository:** [link-foundation/gh-load-issue](https://github.com/link-foundation/gh-load-issue)\n- **Default branch:** `main`\n- **Latest commit:** `671340e` ([commit](https://github.com/link-foundation/gh-load-issue/commit/671340e26becb1e1b3261687ceb001ff72a919c1)) — 0.4.0\n- **CI/CD runs found:** 1 (1 not passing)\n\n**Detected languages**\n\n- **JavaScript** — 100.0%\n\n**Recommended CI/CD templates**\n\nApply the best practices from these templates, in priority order (most-used language first):\n\n1. **JavaScript / TypeScript** — [link-foundation/js-ai-driven-development-pipeline-template](https://github.com/link-foundation/js-ai-driven-development-pipeline-template) _(detected: JavaScript)_\n\n</details>","closed_by":null,"reactions":{"url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/20/timeline","performed_via_github_app":null,"state_reason":null,"pinned_comment":null}[[]]{"url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21","id":5522429541,"node_id":"PR_kwDOQIEzhM8AAAABSSmWZQ","html_url":"https://github.com/link-foundation/gh-load-issue/pull/21","diff_url":"https://github.com/link-foundation/gh-load-issue/pull/21.diff","patch_url":"https://github.com/link-foundation/gh-load-issue/pull/21.patch","issue_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/21","number":21,"state":"open","locked":false,"title":"Fix CI checks and make npm releases verifiable","user":{"login":"konard","id":1431904,"node_id":"MDQ6VXNlcjE0MzE5MDQ=","avatar_url":"https://avatars.githubusercontent.com/u/1431904?v=4","gravatar_id":"","url":"https://api.github.com/users/konard","html_url":"https://github.com/konard","followers_url":"https://api.github.com/users/konard/followers","following_url":"https://api.github.com/users/konard/following{/other_user}","gists_url":"https://api.github.com/users/konard/gists{/gist_id}","starred_url":"https://api.github.com/users/konard/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/konard/subscriptions","organizations_url":"https://api.github.com/users/konard/orgs","repos_url":"https://api.github.com/users/konard/repos","events_url":"https://api.github.com/users/konard/events{/privacy}","received_events_url":"https://api.github.com/users/konard/received_events","type":"User","user_view_type":"public","site_admin":false},"body":"## Summary\n\nFixes #20.\n\n- Require the applicable checks on the PR merge result. Run authenticated GitHub integration on Linux, macOS and Windows, and use a deterministic local image fixture to verify image download and opt-out.\n- Validate changesets against the base diff, exercise versioning and both lockfiles, and install and run the actual npm tarball before publishing.\n- Pin a supported npm publishing runtime, verify the package's trusted publisher before versioning, and verify the public registry version, latest tag and installed executable before creating the GitHub Release. An interrupted release can retry the same version commit.\n- Validate workflows, dependency locks, secrets, documentation and file limits. The evidence folder contains the historical logs, incident timeline, requirement-by-requirement analysis and a complete file-tree comparison with the JavaScript template.\n- Reported the shared distinction between an accepted npm OIDC exchange and direct publish authorization in [template issue #323](https://github.com/link-foundation/js-ai-driven-development-pipeline-template/issues/323).\n\n## Reproduction\n\n[Main run 37561736761](https://github.com/link-foundation/gh-load-issue/actions/runs/37561736761) accepted a failed npm upgrade on Node 20, continued on npm 10, and pushed version 0.4.0 before npm returned E404. [Placeholder run 45953561496](https://github.com/link-foundation/gh-load-issue/actions/runs/45953561496) incorrectly required a changeset for a placeholder-only edit and skipped downstream checks.\n\n[The earlier ready-for-review run](https://github.com/link-foundation/gh-load-issue/actions/runs/45956341596) timed out before Changesets reported a result. Version preparation now calls the installed CLI directly, updates the npm lock version without re-resolving dependencies, and emits separate, bounded phases.\n\n[Investigation and archived logs](https://github.com/link-foundation/gh-load-issue/tree/issue-20-4be44752c8ed/dev/log/issues/20/pulls/21)\n\n## Verification\n\n- `bun test tests/test-ci-release.test.mjs tests/test-npm-release.test.mjs` reproduces the runtime, authorization, changeset, required-gate and release errors with bounded fixtures.\n- `bash experiments/reproduce-release-recovery.sh` uses a disposable Git remote to exercise the real 0.4.1 version bump, fresh install, retry and recovery without registry writes.\n- [GitHub Actions on the current PR head](https://github.com/link-foundation/gh-load-issue/actions/runs/45957888107) passed 78 tests on each of Linux, macOS and Windows, installed the 0.4.1 npm tarball, and passed lint, workflow, lockfile, secret, documentation and required-result checks.\n\n- [Manual checks-only dispatch](https://github.com/link-foundation/gh-load-issue/actions/runs/45956811255) passed before the versioning follow-up and skipped the release jobs.\n\nProduction publication and GitHub Release creation run from trusted main only. The package's current trusted publisher settings are visible to npm package maintainers. A repository owner must configure `RELEASE_PR_TOKEN` to exercise the optional manual draft-Changeset PR workflow.\n","created_at":"2026-11-27T06:42:15Z","updated_at":"2026-11-27T07:41:18Z","closed_at":null,"merged_at":null,"merge_commit_sha":"58821a16e2a991e2cffd61cd874e8d72d9f3662f","assignees":[{"login":"konard","id":1431904,"node_id":"MDQ6VXNlcjE0MzE5MDQ=","avatar_url":"https://avatars.githubusercontent.com/u/1431904?v=4","gravatar_id":"","url":"https://api.github.com/users/konard","html_url":"https://github.com/konard","followers_url":"https://api.github.com/users/konard/followers","following_url":"https://api.github.com/users/konard/following{/other_user}","gists_url":"https://api.github.com/users/konard/gists{/gist_id}","starred_url":"https://api.github.com/users/konard/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/konard/subscriptions","organizations_url":"https://api.github.com/users/konard/orgs","repos_url":"https://api.github.com/users/konard/repos","events_url":"https://api.github.com/users/konard/events{/privacy}","received_events_url":"https://api.github.com/users/konard/received_events","type":"User","user_view_type":"public","site_admin":false}],"requested_reviewers":[],"requested_teams":[],"labels":[],"milestone":null,"draft":false,"commits_url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21/commits","review_comments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21/comments","review_comment_url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/comments{/number}","comments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/21/comments","statuses_url":"https://api.github.com/repos/link-foundation/gh-load-issue/statuses/31aa6d81793a0f9de38d415e7732b098b29521f9","head":{"label":"link-foundation:issue-20-4be44752c8ed","ref":"issue-20-4be44752c8ed","sha":"31aa6d81793a0f9de38d415e7732b098b29521f9","user":{"login":"link-foundation","id":176174013,"node_id":"O_kgDOCoAzvQ","avatar_url":"https://avatars.githubusercontent.com/u/176174013?v=4","gravatar_id":"","url":"https://api.github.com/users/link-foundation","html_url":"https://github.com/link-foundation","followers_url":"https://api.github.com/users/link-foundation/followers","following_url":"https://api.github.com/users/link-foundation/following{/other_user}","gists_url":"https://api.github.com/users/link-foundation/gists{/gist_id}","starred_url":"https://api.github.com/users/link-foundation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/link-foundation/subscriptions","organizations_url":"https://api.github.com/users/link-foundation/orgs","repos_url":"https://api.github.com/users/link-foundation/repos","events_url":"https://api.github.com/users/link-foundation/events{/privacy}","received_events_url":"https://api.github.com/users/link-foundation/received_events","type":"Organization","user_view_type":"public","site_admin":false},"repo":{"id":1082209156,"node_id":"R_kgDOQIEzhA","name":"gh-load-issue","full_name":"link-foundation/gh-load-issue","private":false,"owner":{"login":"link-foundation","id":176174013,"node_id":"O_kgDOCoAzvQ","avatar_url":"https://avatars.githubusercontent.com/u/176174013?v=4","gravatar_id":"","url":"https://api.github.com/users/link-foundation","html_url":"https://github.com/link-foundation","followers_url":"https://api.github.com/users/link-foundation/followers","following_url":"https://api.github.com/users/link-foundation/following{/other_user}","gists_url":"https://api.github.com/users/link-foundation/gists{/gist_id}","starred_url":"https://api.github.com/users/link-foundation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/link-foundation/subscriptions","organizations_url":"https://api.github.com/users/link-foundation/orgs","repos_url":"https://api.github.com/users/link-foundation/repos","events_url":"https://api.github.com/users/link-foundation/events{/privacy}","received_events_url":"https://api.github.com/users/link-foundation/received_events","type":"Organization","user_view_type":"public","site_admin":false},"html_url":"https://github.com/link-foundation/gh-load-issue","description":"A tool to download GitHub issue for AI to solve","fork":false,"url":"https://api.github.com/repos/link-foundation/gh-load-issue","forks_url":"https://api.github.com/repos/link-foundation/gh-load-issue/forks","keys_url":"https://api.github.com/repos/link-foundation/gh-load-issue/keys{/key_id}","collaborators_url":"https://api.github.com/repos/link-foundation/gh-load-issue/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/link-foundation/gh-load-issue/teams","hooks_url":"https://api.github.com/repos/link-foundation/gh-load-issue/hooks","issue_events_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/events{/number}","events_url":"https://api.github.com/repos/link-foundation/gh-load-issue/events","assignees_url":"https://api.github.com/repos/link-foundation/gh-load-issue/assignees{/user}","branches_url":"https://api.github.com/repos/link-foundation/gh-load-issue/branches{/branch}","tags_url":"https://api.github.com/repos/link-foundation/gh-load-issue/tags","blobs_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/refs{/sha}","trees_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/trees{/sha}","statuses_url":"https://api.github.com/repos/link-foundation/gh-load-issue/statuses/{sha}","languages_url":"https://api.github.com/repos/link-foundation/gh-load-issue/languages","stargazers_url":"https://api.github.com/repos/link-foundation/gh-load-issue/stargazers","contributors_url":"https://api.github.com/repos/link-foundation/gh-load-issue/contributors","subscribers_url":"https://api.github.com/repos/link-foundation/gh-load-issue/subscribers","subscription_url":"https://api.github.com/repos/link-foundation/gh-load-issue/subscription","commits_url":"https://api.github.com/repos/link-foundation/gh-load-issue/commits{/sha}","git_commits_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/commits{/sha}","comments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/comments{/number}","issue_comment_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/comments{/number}","contents_url":"https://api.github.com/repos/link-foundation/gh-load-issue/contents/{+path}","compare_url":"https://api.github.com/repos/link-foundation/gh-load-issue/compare/{base}...{head}","merges_url":"https://api.github.com/repos/link-foundation/gh-load-issue/merges","archive_url":"https://api.github.com/repos/link-foundation/gh-load-issue/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/link-foundation/gh-load-issue/downloads","issues_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues{/number}","pulls_url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls{/number}","milestones_url":"https://api.github.com/repos/link-foundation/gh-load-issue/milestones{/number}","notifications_url":"https://api.github.com/repos/link-foundation/gh-load-issue/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/link-foundation/gh-load-issue/labels{/name}","releases_url":"https://api.github.com/repos/link-foundation/gh-load-issue/releases{/id}","deployments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/deployments","created_at":"2025-10-23T22:35:21Z","updated_at":"2026-10-07T02:25:05Z","pushed_at":"2026-11-27T07:41:12Z","git_url":"git://github.com/link-foundation/gh-load-issue.git","ssh_url":"git@github.com:link-foundation/gh-load-issue.git","clone_url":"https://github.com/link-foundation/gh-load-issue.git","svn_url":"https://github.com/link-foundation/gh-load-issue","homepage":null,"size":206,"stargazers_count":0,"watchers_count":0,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":false,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":2,"license":{"key":"unlicense","name":"The Unlicense","spdx_id":"Unlicense","url":"https://api.github.com/licenses/unlicense","node_id":"MDc6TGljZW5zZTE1"},"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"has_pull_requests":true,"pull_request_creation_policy":"all","topics":[],"visibility":"public","forks":0,"open_issues":2,"watchers":0,"default_branch":"main"}},"base":{"label":"link-foundation:main","ref":"main","sha":"671340e26becb1e1b3261687ceb001ff72a919c1","user":{"login":"link-foundation","id":176174013,"node_id":"O_kgDOCoAzvQ","avatar_url":"https://avatars.githubusercontent.com/u/176174013?v=4","gravatar_id":"","url":"https://api.github.com/users/link-foundation","html_url":"https://github.com/link-foundation","followers_url":"https://api.github.com/users/link-foundation/followers","following_url":"https://api.github.com/users/link-foundation/following{/other_user}","gists_url":"https://api.github.com/users/link-foundation/gists{/gist_id}","starred_url":"https://api.github.com/users/link-foundation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/link-foundation/subscriptions","organizations_url":"https://api.github.com/users/link-foundation/orgs","repos_url":"https://api.github.com/users/link-foundation/repos","events_url":"https://api.github.com/users/link-foundation/events{/privacy}","received_events_url":"https://api.github.com/users/link-foundation/received_events","type":"Organization","user_view_type":"public","site_admin":false},"repo":{"id":1082209156,"node_id":"R_kgDOQIEzhA","name":"gh-load-issue","full_name":"link-foundation/gh-load-issue","private":false,"owner":{"login":"link-foundation","id":176174013,"node_id":"O_kgDOCoAzvQ","avatar_url":"https://avatars.githubusercontent.com/u/176174013?v=4","gravatar_id":"","url":"https://api.github.com/users/link-foundation","html_url":"https://github.com/link-foundation","followers_url":"https://api.github.com/users/link-foundation/followers","following_url":"https://api.github.com/users/link-foundation/following{/other_user}","gists_url":"https://api.github.com/users/link-foundation/gists{/gist_id}","starred_url":"https://api.github.com/users/link-foundation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/link-foundation/subscriptions","organizations_url":"https://api.github.com/users/link-foundation/orgs","repos_url":"https://api.github.com/users/link-foundation/repos","events_url":"https://api.github.com/users/link-foundation/events{/privacy}","received_events_url":"https://api.github.com/users/link-foundation/received_events","type":"Organization","user_view_type":"public","site_admin":false},"html_url":"https://github.com/link-foundation/gh-load-issue","description":"A tool to download GitHub issue for AI to solve","fork":false,"url":"https://api.github.com/repos/link-foundation/gh-load-issue","forks_url":"https://api.github.com/repos/link-foundation/gh-load-issue/forks","keys_url":"https://api.github.com/repos/link-foundation/gh-load-issue/keys{/key_id}","collaborators_url":"https://api.github.com/repos/link-foundation/gh-load-issue/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/link-foundation/gh-load-issue/teams","hooks_url":"https://api.github.com/repos/link-foundation/gh-load-issue/hooks","issue_events_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/events{/number}","events_url":"https://api.github.com/repos/link-foundation/gh-load-issue/events","assignees_url":"https://api.github.com/repos/link-foundation/gh-load-issue/assignees{/user}","branches_url":"https://api.github.com/repos/link-foundation/gh-load-issue/branches{/branch}","tags_url":"https://api.github.com/repos/link-foundation/gh-load-issue/tags","blobs_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/refs{/sha}","trees_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/trees{/sha}","statuses_url":"https://api.github.com/repos/link-foundation/gh-load-issue/statuses/{sha}","languages_url":"https://api.github.com/repos/link-foundation/gh-load-issue/languages","stargazers_url":"https://api.github.com/repos/link-foundation/gh-load-issue/stargazers","contributors_url":"https://api.github.com/repos/link-foundation/gh-load-issue/contributors","subscribers_url":"https://api.github.com/repos/link-foundation/gh-load-issue/subscribers","subscription_url":"https://api.github.com/repos/link-foundation/gh-load-issue/subscription","commits_url":"https://api.github.com/repos/link-foundation/gh-load-issue/commits{/sha}","git_commits_url":"https://api.github.com/repos/link-foundation/gh-load-issue/git/commits{/sha}","comments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/comments{/number}","issue_comment_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/comments{/number}","contents_url":"https://api.github.com/repos/link-foundation/gh-load-issue/contents/{+path}","compare_url":"https://api.github.com/repos/link-foundation/gh-load-issue/compare/{base}...{head}","merges_url":"https://api.github.com/repos/link-foundation/gh-load-issue/merges","archive_url":"https://api.github.com/repos/link-foundation/gh-load-issue/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/link-foundation/gh-load-issue/downloads","issues_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues{/number}","pulls_url":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls{/number}","milestones_url":"https://api.github.com/repos/link-foundation/gh-load-issue/milestones{/number}","notifications_url":"https://api.github.com/repos/link-foundation/gh-load-issue/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/link-foundation/gh-load-issue/labels{/name}","releases_url":"https://api.github.com/repos/link-foundation/gh-load-issue/releases{/id}","deployments_url":"https://api.github.com/repos/link-foundation/gh-load-issue/deployments","created_at":"2025-10-23T22:35:21Z","updated_at":"2026-10-07T02:25:05Z","pushed_at":"2026-11-27T07:41:12Z","git_url":"git://github.com/link-foundation/gh-load-issue.git","ssh_url":"git@github.com:link-foundation/gh-load-issue.git","clone_url":"https://github.com/link-foundation/gh-load-issue.git","svn_url":"https://github.com/link-foundation/gh-load-issue","homepage":null,"size":206,"stargazers_count":0,"watchers_count":0,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":false,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":2,"license":{"key":"unlicense","name":"The Unlicense","spdx_id":"Unlicense","url":"https://api.github.com/licenses/unlicense","node_id":"MDc6TGljZW5zZTE1"},"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"has_pull_requests":true,"pull_request_creation_policy":"all","topics":[],"visibility":"public","forks":0,"open_issues":2,"watchers":0,"default_branch":"main"}},"_links":{"self":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21"},"html":{"href":"https://github.com/link-foundation/gh-load-issue/pull/21"},"issue":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/21"},"comments":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/21/comments"},"review_comments":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21/comments"},"review_comment":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/comments{/number}"},"commits":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/pulls/21/commits"},"statuses":{"href":"https://api.github.com/repos/link-foundation/gh-load-issue/statuses/31aa6d81793a0f9de38d415e7732b098b29521f9"}},"author_association":"MEMBER","auto_merge":null,"assignee":{"login":"konard","id":1431904,"node_id":"MDQ6VXNlcjE0MzE5MDQ=","avatar_url":"https://avatars.githubusercontent.com/u/1431904?v=4","gravatar_id":"","url":"https://api.github.com/users/konard","html_url":"https://github.com/konard","followers_url":"https://api.github.com/users/konard/followers","following_url":"https://api.github.com/users/konard/following{/other_user}","gists_url":"https://api.github.com/users/konard/gists{/gist_id}","starred_url":"https://api.github.com/users/konard/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/konard/subscriptions","organizations_url":"https://api.github.com/users/konard/orgs","repos_url":"https://api.github.com/users/konard/repos","events_url":"https://api.github.com/users/konard/events{/privacy}","received_events_url":"https://api.github.com/users/konard/received_events","type":"User","user_view_type":"public","site_admin":false},"active_lock_reason":null,"merged":false,"mergeable":true,"rebaseable":true,"mergeable_state":"unstable","merged_by":null,"comments":1,"review_comments":0,"maintainer_can_modify":false,"commits":10,"additions":29095,"deletions":1754,"changed_files":87}{"isDraft":false,"state":"OPEN"}
+[2026-11-27T07:41:24.063Z] [INFO]    🔍 PR #21 draft state: isDraft=false, state=OPEN
+[2026-11-27T07:41:24.065Z] [INFO] ✅ PR status: Already in ready for review
+[2026-11-27T07:41:24.070Z] [INFO] 
+[2026-11-27T07:41:24.070Z] [INFO] 📎 Uploading solution draft log to Pull Request...
+[2026-11-27T07:41:24.074Z] [STDOUT] [HIVE-MIND SOLVE] {"phase":"uploading-log","since":"2026-11-27T07:41:24.072Z","at":"2026-11-27T07:41:24.072Z"}
+[2026-11-27T07:41:24.078Z] [STDERR] [use-m] use('fs') joined an in-flight load (alias fs-v-latest)
+[2026-11-27T07:41:24.116Z] [INFO] 📈 Resource usage (log upload start, 1MB log):
+[2026-11-27T07:41:24.116Z] [INFO]    CPU load: 1.13 1.37 2.03 (6 CPUs)
+[2026-11-27T07:41:24.116Z] [INFO]    Memory: 9.5 GB available / 11.7 GB total (2.2 GB used)
+[2026-11-27T07:41:24.116Z] [INFO]    Process RSS: 278 MB, V8 heap: 65 MB used of 1.6 GB limit (4.1%)
+[2026-11-27T07:41:24.116Z] [INFO]    Disk (/): 125.6 GB available / 192.7 GB total (34.8% used)
+[2026-11-27T07:41:24.116Z] [INFO]    Container memory (cgroup v2): 644 MB used of 2.9 GB limit, peak 1.7 GB; processes killed by the OOM killer so far: 0
+[2026-11-27T07:41:24.116Z] [INFO] 📈 [RESOURCES] phase=log_upload_start ts=2026-11-27T07%3A41%3A24.111Z load1=1.13 load5=1.37 load15=2.03 cpuCount=6 memTotalBytes=12541464576 memAvailableBytes=10191147008 memUsedBytes=2350317568 processRssBytes=291135488 processHeapUsedBytes=68620784 processHeapTotalBytes=135688192 processExternalBytes=6138678 processHeapLimitBytes=1668546560 processHeapUsedPercent=4.112608281065888 diskPath=%2F diskTotalBytes=206900281344 diskAvailableBytes=134836043776 diskUsedBytes=72047460352 diskUsedPercent=34.82231144587534 mem=9.5%20GB%20available%20%2F%2011.7%20GB%20total heap=65%20MB%20used%20of%201.6%20GB%20limit%20(4.1%25) disk=125.6%20GB%20available%20%2F%20192.7%20GB%20total cgroupVersion=2 cgroupMemLimitBytes=3135365120 cgroupMemCurrentBytes=675053568 cgroupMemPeakBytes=1779965952 cgroupOomEvents=0 cgroupOomKills=0
+[2026-11-27T07:41:24.122Z] [INFO]   🤖 Using result JSON modelUsage (1 models): gpt-6.2-sol
+[2026-11-27T07:41:24.125Z] [STDERR] [use-m] use('https') loading (alias https-v-latest)
+[2026-11-27T07:41:24.127Z] [STDERR] [use-m] use('https') loaded in 1ms
+[2026-11-27T07:41:24.496Z] [INFO]   🤖 Model info fetched for comment
+[2026-11-27T07:41:24.501Z] [INFO]   ⏭️  Log is 1MB — skipping inline comment construction, the log goes straight to gh-upload-log
+[2026-11-27T07:41:24.505Z] [INFO]   📁 Log file too large for inline comment (1MB), using gh-upload-log
+[2026-11-27T07:41:24.510Z] [INFO]   📎 Uploading log using gh-upload-log...
+[2026-11-27T07:41:25.094Z] [INFO]   🔍 Repository visibility: public, log upload will be public
+[2026-11-27T07:41:28.980Z] [INFO]   🔒 Sanitized 4 secrets:
+[2026-11-27T07:41:28.986Z] [INFO]       • Known tokens: 0
+[2026-11-27T07:41:28.990Z] [INFO]       • Secretlint: 0 detections
+[2026-11-27T07:41:28.996Z] [INFO]       • @link-foundation/sensitive-data-sanitizer: 0 detections
+[2026-11-27T07:41:28.999Z] [INFO]       • Hex tokens: 4
+[2026-11-27T07:41:32.753Z] [INFO]   🧼 Streamed sanitize: 1076990 bytes in 2 block(s)
+[2026-11-27T07:41:32.761Z] [INFO]   📤 Running: gh-upload-log /tmp/hive-mind-log-upload-RgxQ9i/sanitized.log --public --description "Solution draft log for https://github.com/link-foundation/gh-load-issue/pull/21" --verbose
+[2026-11-27T07:41:32.766Z] [STDERR] [use-m] use('child_process') loading (alias child_process-v-latest)
+[2026-11-27T07:41:32.768Z] [STDERR] [use-m] use('child_process') loaded in 2ms
+[2026-11-27T07:41:46.810Z] [INFO]   🔍 Fetching gist metadata for raw URL resolution (gistId=04359c9b1d357b22da5c55877ca9f433)
+[2026-11-27T07:41:47.407Z] [INFO]   📥 Gist metadata fetch completed (code=0)
+[2026-11-27T07:41:47.411Z] [INFO]   🧩 Gist metadata resolved owner=konard, commitSha=a15a6024a46a4bf689ca5e9e859e53351a7c1984, fileName=tmp-hive-mind-log-upload-RgxQ9i-sanitized.log.txt
+[2026-11-27T07:41:47.415Z] [INFO]   ✅ Upload successful: https://gist.github.com/konard/04359c9b1d357b22da5c55877ca9f433
+[2026-11-27T07:41:47.419Z] [INFO]   📊 Type: gist, Chunks: 1
+[2026-11-27T07:41:47.422Z] [INFO]   🔗 Raw URL: https://gist.githubusercontent.com/konard/04359c9b1d357b22da5c55877ca9f433/raw/a15a6024a46a4bf689ca5e9e859e53351a7c1984/tmp-hive-mind-log-upload-RgxQ9i-sanitized.log.txt
+[2026-11-27T07:41:47.464Z] [STDERR] [use-m] use('fs') joined an in-flight load (alias fs-v-latest)
+[2026-11-27T07:41:48.478Z] [INFO]   ✅ Solution draft log uploaded to Pull Request as public Gist (comment id=7212726529)
+[2026-11-27T07:41:48.487Z] [INFO]   🔗 Log URL: https://gist.githubusercontent.com/konard/04359c9b1d357b22da5c55877ca9f433/raw/a15a6024a46a4bf689ca5e9e859e53351a7c1984/tmp-hive-mind-log-upload-RgxQ9i-sanitized.log.txt
+[2026-11-27T07:41:48.489Z] [INFO]   📊 Log size: 1050KB
+[2026-11-27T07:41:48.497Z] [INFO] 📈 Resource usage (log upload end):
+[2026-11-27T07:41:48.497Z] [INFO]    CPU load: 1.29 1.40 2.02 (6 CPUs)
+[2026-11-27T07:41:48.497Z] [INFO]    Memory: 9.2 GB available / 11.7 GB total (2.4 GB used)
+[2026-11-27T07:41:48.497Z] [INFO]    Process RSS: 466 MB, V8 heap: 244 MB used of 1.6 GB limit (15.3%)
+[2026-11-27T07:41:48.497Z] [INFO]    Disk (/): 125.6 GB available / 192.7 GB total (34.8% used)
+[2026-11-27T07:41:48.497Z] [INFO]    Container memory (cgroup v2): 841 MB used of 2.9 GB limit, peak 1.7 GB; processes killed by the OOM killer so far: 0
+[2026-11-27T07:41:48.497Z] [INFO] 📈 [RESOURCES] phase=log_upload_end ts=2026-11-27T07%3A41%3A48.490Z load1=1.29 load5=1.4 load15=2.02 cpuCount=6 memTotalBytes=12541464576 memAvailableBytes=9919266816 memUsedBytes=2622197760 processRssBytes=488378368 processHeapUsedBytes=255390608 processHeapTotalBytes=331051008 processExternalBytes=17252722 processHeapLimitBytes=1668546560 processHeapUsedPercent=15.30617209746907 diskPath=%2F diskTotalBytes=206900281344 diskAvailableBytes=134829379584 diskUsedBytes=72054124544 diskUsedPercent=34.82553241394591 mem=9.2%20GB%20available%20%2F%2011.7%20GB%20total heap=244%20MB%20used%20of%201.6%20GB%20limit%20(15.3%25) disk=125.6%20GB%20available%20%2F%20192.7%20GB%20total cgroupVersion=2 cgroupMemLimitBytes=3135365120 cgroupMemCurrentBytes=881328128 cgroupMemPeakBytes=1779965952 cgroupOomEvents=0 cgroupOomKills=0
+[2026-11-27T07:41:48.506Z] [INFO] 
+[2026-11-27T07:41:48.506Z] [INFO] 🎉 SUCCESS: A solution draft has been prepared as a pull request
+[2026-11-27T07:41:48.553Z] [INFO] 📍 URL: https://github.com/link-foundation/gh-load-issue/pull/21
+[2026-11-27T07:41:48.568Z] [INFO] 📎 Solution draft log has been attached to the Pull Request
+[2026-11-27T07:41:48.573Z] [INFO] 
+[2026-11-27T07:41:48.573Z] [INFO] ✨ Please review the pull request for the proposed solution draft.
+[2026-11-27T07:41:48.577Z] [INFO] 
+[2026-11-27T07:41:48.577Z] [INFO] 🔄 Auto-merge mode enabled - will merge the pull request once CI passes and it is mergeable
+[2026-11-27T07:41:48.590Z] [INFO]    Completion restarts skipped: the requirements report is experimental and off by default (--requirements-report enables it)
+[2026-11-27T07:41:48.595Z] [INFO] 
+[2026-11-27T07:41:48.597Z] [INFO] 🔍 Auto-restart debug:
+[2026-11-27T07:41:48.602Z] [INFO]    argv.watch (user flag): false
+[2026-11-27T07:41:48.606Z] [INFO]    shouldRestart (auto-detected): false
+[2026-11-27T07:41:48.608Z] [INFO]    temporaryWatch (will be enabled): false
+[2026-11-27T07:41:48.662Z] [INFO]    prNumber: 21
+[2026-11-27T07:41:48.665Z] [INFO]    prBranch: null
+[2026-11-27T07:41:48.668Z] [INFO]    branchName: issue-20-4be44752c8ed
+[2026-11-27T07:41:48.670Z] [INFO]    isContinueMode: false
+[2026-11-27T07:41:48.676Z] [INFO] 
+[2026-11-27T07:41:48.678Z] [INFO] 📊 startWatchMode called with:
+[2026-11-27T07:41:48.683Z] [INFO]    argv.watch: false
+[2026-11-27T07:41:48.686Z] [INFO]    params.prNumber: 21
+[2026-11-27T07:41:48.688Z] [INFO]    Watch mode not enabled - exiting startWatchMode
+[2026-11-27T07:41:48.716Z] [STDOUT] Initial commit with task details
+
+Adding .gitkeep for PR creation (default mode).
+This file will be removed when the task is complete.
+
+Issue: https://github.com/link-foundation/gh-load-issue/issues/20
+
+[2026-11-27T07:41:48.718Z] [INFO] 🔄 Cleanup:                  Reverting .gitkeep commit
+[2026-11-27T07:41:48.721Z] [INFO]    Using saved commit hash: 0d619ec...
+[2026-11-27T07:41:49.209Z] [STDOUT] From https://github.com/link-foundation/gh-load-issue
+ * branch            issue-20-4be44752c8ed -> FETCH_HEAD
+[2026-11-27T07:41:49.228Z] [STDOUT] Already up to date.
+[2026-11-27T07:41:49.230Z] [INFO]    Synced local branch before cleanup
+[2026-11-27T07:41:49.257Z] [INFO]    .gitkeep changed after the initial auto-commit; leaving PR changes untouched
+[2026-11-27T07:41:49.772Z] [STDOUT] {"isDraft":false,"state":"OPEN"}
+[2026-11-27T07:41:49.786Z] [INFO]    🔍 PR #21 draft state: isDraft=false, state=OPEN
+[2026-11-27T07:41:49.793Z] [INFO]   ✅ PR status:              Already in ready for review
+[2026-11-27T07:41:50.380Z] [VERBOSE] [VERBOSE] /merge: Merge permissions for link-foundation/gh-load-issue: push=true, admin=true, maintain=true
+[2026-11-27T07:41:50.381Z] [VERBOSE] [VERBOSE] /merge: Can merge: true
+[2026-11-27T07:41:50.392Z] [INFO] 
+[2026-11-27T07:41:50.394Z] [INFO] 🔄 AUTO-RESTART-UNTIL-MERGEABLE MODE ACTIVE 
+[2026-11-27T07:41:50.396Z] [INFO]    Monitoring PR:          #21
+[2026-11-27T07:41:50.397Z] [INFO]    Mode:                   Auto-merge (will merge when ready)
+[2026-11-27T07:41:50.401Z] [INFO]    Checking interval:      120 seconds (minimum: 120s)
+[2026-11-27T07:41:50.403Z] [INFO]    Initial cooldown:       120 seconds
+[2026-11-27T07:41:50.405Z] [INFO]    Max restart iterations: 5
+[2026-11-27T07:41:50.406Z] [INFO]    Max limit resumes:      5
+[2026-11-27T07:41:50.417Z] [INFO]    Watch timeout:          24 hour(s)
+[2026-11-27T07:41:50.419Z] [INFO]    Wait for all repo actions: No (PR-scoped CI only)
+[2026-11-27T07:41:50.427Z] [INFO]    Stop conditions:        PR merged, PR closed, or becomes mergeable
+[2026-11-27T07:41:50.430Z] [INFO]    Restart triggers:       New comments and reviews, unresolved review threads, review bot findings, issue title/description edits, CI failures, merge conflicts
+[2026-11-27T07:41:50.443Z] [INFO]    Review bots:            chatgpt-codex-connector[bot], coderabbitai[bot], copilot-pull-request-reviewer[bot], gemini-code-assist[bot], sourcery-ai[bot], qodo-merge-pro[bot], cursor[bot], greptile-apps[bot] (wait up to 15 minute(s) for their review of the head commit)
+[2026-11-27T07:41:50.446Z] [INFO] 
+[2026-11-27T07:41:50.449Z] [INFO] Press Ctrl+C to stop watching manually
+[2026-11-27T07:41:50.451Z] [INFO] 
+[2026-11-27T07:41:50.454Z] [INFO] ⏳ Initial cooldown:         Waiting 120s before first check...
+[2026-11-27T07:41:50.459Z] [STDOUT] [HIVE-MIND SOLVE] {"phase":"watch","check":0,"blocker":"checking","blockerLabel":"the next GitHub check","detail":null,"since":"2026-11-27T07:41:50.382Z","deadline":"2026-11-28T07:41:50.382Z","at":"2026-11-27T07:41:50.458Z"}
+[2026-11-27T07:43:50.471Z] [INFO] ✅ Cooldown complete:        Starting monitoring loop
+[2026-11-27T07:43:50.480Z] [INFO] 
+[2026-11-27T07:43:50.488Z] [STDOUT] [HIVE-MIND SOLVE] {"phase":"watch","check":1,"blocker":"checking","blockerLabel":"the next GitHub check","detail":null,"since":"2026-11-27T07:41:50.382Z","deadline":"2026-11-28T07:41:50.382Z","at":"2026-11-27T07:43:50.485Z"}
+[2026-11-27T07:43:53.379Z] [INFO] 🔍 Check #1:                 2026-11-27T07:43:50.485Z
+[2026-11-27T07:43:55.006Z] [VERBOSE] [VERBOSE] /merge: PR #21 detailed CI status: success
+[2026-11-27T07:43:55.033Z] [VERBOSE] [VERBOSE] /merge:   Total: 13, Passed: 13, Failed: 0, Cancelled: 0, Stale: 0, Pending: 0, Queued: 0
+[2026-11-27T07:43:55.622Z] [VERBOSE] [VERBOSE] /merge: Found 1 workflow run(s) for https://github.com/link-foundation/gh-load-issue/commit/31aa6d81793a0f9de38d415e7732b098b29521f9
+[2026-11-27T07:43:55.623Z] [VERBOSE] [VERBOSE] /merge:   - Checks and release [completed/success]: https://github.com/link-foundation/gh-load-issue/actions/runs/45960180154
+[2026-11-27T07:43:56.201Z] [VERBOSE] [VERBOSE] /merge: PR #21 mergeable: true, state: CLEAN, isDraft: false
+[2026-11-27T07:43:56.204Z] [STDOUT] [HIVE-MIND SOLVE] {"phase":"watch","check":1,"blocker":"none","blockerLabel":"nothing (no merge blockers)","detail":null,"since":"2026-11-27T07:41:50.382Z","deadline":"2026-11-28T07:41:50.382Z","at":"2026-11-27T07:43:56.203Z"}
+[2026-11-27T07:44:04.116Z] [WARNING] ⚠️  Pull request #21 diff is 8.2 MB - measuring it is slow and memory-hungry; check whether logs or build output were committed to the branch
+[2026-11-27T07:44:04.119Z] [INFO]   🔍 Multi-mechanism CI consensus check: Waiting 10s then verifying...
+[2026-11-27T07:44:15.832Z] [VERBOSE] [VERBOSE] /merge: PR #21 detailed CI status: success
+[2026-11-27T07:44:15.835Z] [VERBOSE] [VERBOSE] /merge:   Total: 13, Passed: 13, Failed: 0, Cancelled: 0, Stale: 0, Pending: 0, Queued: 0
+[2026-11-27T07:44:16.416Z] [VERBOSE] [VERBOSE] /merge: Found 1 workflow run(s) for https://github.com/link-foundation/gh-load-issue/commit/31aa6d81793a0f9de38d415e7732b098b29521f9
+[2026-11-27T07:44:16.420Z] [VERBOSE] [VERBOSE] /merge:   - Checks and release [completed/success]: https://github.com/link-foundation/gh-load-issue/actions/runs/45960180154
+[2026-11-27T07:44:16.422Z] [VERBOSE] [VERBOSE] consensus: CheckRuns=true(success), WorkflowRuns=true(1), AllCommits=skip, RepoActions=skip → AGREE
+[2026-11-27T07:44:16.424Z] [INFO]   ✅ All CI mechanisms agree: CheckRuns=success, WorkflowRuns=complete(1), RepoActions=skipped
+[2026-11-27T07:44:16.426Z] [INFO] ✅ PR IS MERGEABLE!          
+[2026-11-27T07:44:17.581Z] [INFO] 🔗 Ensuring PR #21 links issue #20 before merging...
+[2026-11-27T07:44:21.849Z] [INFO] Issue links verified for 1 issue(s) on PR #21
+[2026-11-27T07:44:21.952Z] [INFO] Requirements report check skipped: it is experimental and off by default (--requirements-report or HIVE_MIND_REQUIREMENTS_REPORT=true enables it)
+[2026-11-27T07:44:21.955Z] [INFO] 🔀 Auto-merging PR...        
+[2026-11-27T07:44:24.687Z] [STDOUT] Issue links verified for 1 issue(s) on PR #21
+[2026-11-27T07:44:24.689Z] [STDOUT] Requirements report check skipped: it is experimental and off by default (--requirements-report or HIVE_MIND_REQUIREMENTS_REPORT=true enables it)
+[2026-11-27T07:44:30.513Z] [STDOUT] 🔒 Closed by GitHub: link-foundation/gh-load-issue#20
+[2026-11-27T07:44:30.514Z] [VERBOSE] [VERBOSE] /merge: Successfully merged PR #21
+[2026-11-27T07:44:30.520Z] [INFO] 🎉 PR MERGED SUCCESSFULLY!   
+[2026-11-27T07:44:30.526Z] [INFO]    Pull request:           #21 has been auto-merged
+[2026-11-27T07:44:30.548Z] [INFO]    Linked issues:          🔒 Closed by GitHub: link-foundation/gh-load-issue#20
+[2026-11-27T07:44:31.735Z] [STDOUT] {"url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/comments/7212771875","html_url":"https://github.com/link-foundation/gh-load-issue/pull/21#issuecomment-7212771875","issue_url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/21","id":7212771875,"node_id":"IC_kwDOQIEzhM8AAAABreoqIw","user":{"login":"konard","id":1431904,"node_id":"MDQ6VXNlcjE0MzE5MDQ=","avatar_url":"https://avatars.githubusercontent.com/u/1431904?u=eef2c91c80a671714d3fd8c08ef91b297840056b&v=4","gravatar_id":"","url":"https://api.github.com/users/konard","html_url":"https://github.com/konard","followers_url":"https://api.github.com/users/konard/followers","following_url":"https://api.github.com/users/konard/following{/other_user}","gists_url":"https://api.github.com/users/konard/gists{/gist_id}","starred_url":"https://api.github.com/users/konard/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/konard/subscriptions","organizations_url":"https://api.github.com/users/konard/orgs","repos_url":"https://api.github.com/users/konard/repos","events_url":"https://api.github.com/users/konard/events{/privacy}","received_events_url":"https://api.github.com/users/konard/received_events","type":"User","user_view_type":"public","site_admin":false},"created_at":"2026-11-27T07:44:31Z","updated_at":"2026-11-27T07:44:31Z","author_association":"MEMBER","body":"## 🎉 Auto-merged\n\nThis pull request has been automatically merged by hive-mind.\n- All CI checks have passed\n\n### Linked issues\n\n- 🔒 Closed by GitHub: link-foundation/gh-load-issue#20","reactions":{"url":"https://api.github.com/repos/link-foundation/gh-load-issue/issues/comments/7212771875/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null,"minimized":null,"pin":null}[HIVE-MIND SOLVE] {"phase":"finished","decision":"success","reason":"auto-merged","check":1,"since":"2026-11-27T07:41:50.382Z","at":"2026-11-27T07:44:31.728Z"}
+[2026-11-27T07:44:31.739Z] [INFO] 
+[2026-11-27T07:44:31.739Z] [INFO] 📁 Keeping directory (auto-cleanup is off by default for public repositories): /tmp/gh-issue-solver-1795761721018
+[2026-11-27T07:44:31.945Z] [INFO] 
+[2026-11-27T07:44:31.945Z] [INFO] 📁 Complete log file: /home/box/solve-2026-11-27T06-41-42-245Z.log
+[2026-11-27T07:44:31.950Z] [INFO] 
+[2026-11-27T07:44:31.950Z] [INFO] 🔍 Active Node.js handles at exit (2 handles, 1 requests):
+[2026-11-27T07:44:31.957Z] [INFO]    Handle: Socket (fd=2)
+[2026-11-27T07:44:31.959Z] [INFO]    Handle: Socket (fd=1)
+[2026-11-27T07:44:31.966Z] [INFO]    Request: FSReqPromise
+[2026-11-27T07:44:31.978Z] [INFO] 📈 Resource usage (solve exit 0):
+[2026-11-27T07:44:31.978Z] [INFO]    CPU load: 0.43 0.94 1.74 (6 CPUs)
+[2026-11-27T07:44:31.978Z] [INFO]    Memory: 9.5 GB available / 11.7 GB total (2.2 GB used)
+[2026-11-27T07:44:31.978Z] [INFO]    Process RSS: 224 MB, V8 heap: 74 MB used of 1.6 GB limit (4.6%)
+[2026-11-27T07:44:31.978Z] [INFO]    Disk (/): 125.6 GB available / 192.7 GB total (34.8% used)
+[2026-11-27T07:44:31.978Z] [INFO]    Container memory (cgroup v2): 596 MB used of 2.9 GB limit, peak 1.7 GB; processes killed by the OOM killer so far: 0
+[2026-11-27T07:44:31.978Z] [INFO] 📈 [RESOURCES] phase=solve_exit ts=2026-11-27T07%3A44%3A31.969Z load1=0.43 load5=0.94 load15=1.74 cpuCount=6 memTotalBytes=12541464576 memAvailableBytes=10218123264 memUsedBytes=2323341312 processRssBytes=234606592 processHeapUsedBytes=77435016 processHeapTotalBytes=82223104 processExternalBytes=31962121 processHeapLimitBytes=1668546560 processHeapUsedPercent=4.640866359761636 diskPath=%2F diskTotalBytes=206900281344 diskAvailableBytes=134850396160 diskUsedBytes=72033107968 diskUsedPercent=34.81537458532264 mem=9.5%20GB%20available%20%2F%2011.7%20GB%20total heap=74%20MB%20used%20of%201.6%20GB%20limit%20(4.6%25) disk=125.6%20GB%20available%20%2F%20192.7%20GB%20total cgroupVersion=2 cgroupMemLimitBytes=3135365120 cgroupMemCurrentBytes=624988160 cgroupMemPeakBytes=1779965952 cgroupOomEvents=0 cgroupOomKills=0
+[2026-11-27T07:44:31.990Z] [INFO] 
+[2026-11-27T07:44:31.992Z] [INFO] ✅ Process completed
+[2026-11-27T07:44:31.998Z] [INFO] 📁 Full log file: /home/box/solve-2026-11-27T06-41-42-245Z.log
+[2026-11-27T07:44:32.002Z] [INFO] 🔍 Development log finalize: issue #20, PR #21, branch issue-20-4be44752c8ed, session 01a21bbd-e15a-78b0-9bc1-b8b5ddf57748, log slice from byte 0
