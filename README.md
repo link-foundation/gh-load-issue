@@ -262,9 +262,8 @@ bun test
 # Test the packed npm artifact through an isolated installed bin link (POSIX)
 bun run test:package
 
-# Or run directly
-cd tests
-./test-all.test.mjs
+# Run a focused test file
+bun test tests/test-ci-release.test.mjs
 ```
 
 Release CI runs the package smoke test before publication, then verifies the
