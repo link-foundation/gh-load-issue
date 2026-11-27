@@ -1,93 +1,99 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 
-/**
- * Create GitHub Release from CHANGELOG.md
- * Usage: node scripts/create-github-release.mjs --release-version <version> --repository <repository>
- *   release-version: Version number (e.g., 1.0.0)
- *   repository: GitHub repository (e.g., owner/repo)
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- * - lino-arguments: Unified configuration from CLI args, env vars, and .lenv files
- */
+import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
-import { readFileSync } from 'fs';
-
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
-
-// Import link-foundation libraries
-const { $ } = await use('command-stream');
-const { makeConfig } = await use('lino-arguments');
-
-// Parse CLI arguments using lino-arguments
-// Note: Using --release-version instead of --version to avoid conflict with yargs' built-in --version flag
-const config = makeConfig({
-  yargs: ({ yargs, getenv }) =>
-    yargs
-      .option('release-version', {
-        type: 'string',
-        default: getenv('VERSION', ''),
-        describe: 'Version number (e.g., 1.0.0)',
-      })
-      .option('repository', {
-        type: 'string',
-        default: getenv('REPOSITORY', ''),
-        describe: 'GitHub repository (e.g., owner/repo)',
-      }),
-});
-
-const { releaseVersion: version, repository } = config;
-
-if (!version || !repository) {
-  console.error('Error: Missing required arguments');
-  console.error(
-    'Usage: node scripts/create-github-release.mjs --release-version <version> --repository <repository>'
+export function releaseNotes(changelog, { name, version }, prNumber) {
+  const lines = changelog.replace(/\r\n/g, '\n').split('\n');
+  const start = lines.indexOf(`## ${version}`);
+  if (start === -1) {
+    throw new Error(`CHANGELOG.md is missing the ${version} heading.`);
+  }
+  const end = lines.findIndex(
+    (line, index) => index > start && line.startsWith('## ')
   );
-  process.exit(1);
+  const notes = lines
+    .slice(start + 1, end === -1 ? undefined : end)
+    .join('\n')
+    .trim();
+  if (!notes) {
+    throw new Error(`CHANGELOG.md has an empty ${version} entry.`);
+  }
+  const pr = prNumber ? `\n\n**Related Pull Request:** #${prNumber}` : '';
+  const npmBadge = `[![npm version](https://img.shields.io/badge/npm-${version}-blue.svg)](https://www.npmjs.com/package/${name}/v/${version})`;
+  return `${notes}${pr}\n\n---\n\n${npmBadge}\n`;
 }
 
-const tag = `v${version}`;
+export function ensureGitHubRelease(
+  { repository, commit, trigger, manifest, changelog },
+  run = execFileSync
+) {
+  const tag = `v${manifest.version}`;
+  const api = (route, args = [], options = {}) =>
+    run('gh', ['api', `repos/${repository}/${route}`, ...args], {
+      encoding: 'utf8',
+      ...options,
+    });
 
-console.log(`Creating GitHub release for ${tag}...`);
-
-try {
-  // Read CHANGELOG.md
-  const changelog = readFileSync('./CHANGELOG.md', 'utf8');
-
-  // Extract changelog entry for this version
-  // Read from CHANGELOG.md between this version header and the next version header
-  const versionHeaderRegex = new RegExp(`## ${version}[\\s\\S]*?(?=## \\d|$)`);
-  const match = changelog.match(versionHeaderRegex);
-
-  let releaseNotes = '';
-  if (match) {
-    // Remove the version header itself and trim
-    releaseNotes = match[0].replace(`## ${version}`, '').trim();
+  const lookup = (route) => {
+    try {
+      return JSON.parse(api(route));
+    } catch (error) {
+      if (!String(error.stderr).includes('HTTP 404')) {
+        throw error;
+      }
+      return null;
+    }
+  };
+  const ref = lookup(`git/ref/tags/${tag}`);
+  if (ref) {
+    const taggedCommit =
+      ref.object.type === 'commit'
+        ? ref.object.sha
+        : JSON.parse(api(`commits/${tag}`)).sha;
+    if (taggedCommit !== commit) {
+      throw new Error(
+        `Tag ${tag} points to ${taggedCommit}, expected ${commit}.`
+      );
+    }
   }
-
-  if (!releaseNotes) {
-    releaseNotes = `Release ${version}`;
+  if (ref && lookup(`releases/tags/${tag}`)) {
+    console.log(`GitHub Release ${tag} already exists.`);
+    return;
   }
-
-  // Create release using GitHub API with JSON input
-  // This avoids shell escaping issues that occur when passing text via command-line arguments
-  // (Previously caused apostrophes like "didn't" to appear as "didn'''" in releases)
-  const payload = JSON.stringify({
-    tag_name: tag,
-    name: version,
-    body: releaseNotes,
+  const prs = JSON.parse(api(`commits/${trigger}/pulls`));
+  const pr = prs.find(({ title }) => !title.includes('version packages'));
+  api('releases', ['--method', 'POST', '--input', '-'], {
+    input: JSON.stringify({
+      tag_name: tag,
+      target_commitish: commit,
+      name: manifest.version,
+      body: releaseNotes(changelog, manifest, pr?.number),
+    }),
   });
+  console.log(`Created GitHub Release ${tag} from ${commit}.`);
+}
 
-  await $`gh api repos/${repository}/releases -X POST --input -`.run({
-    stdin: payload,
+if (
+  process.argv[1] &&
+  pathToFileURL(process.argv[1]).href === import.meta.url
+) {
+  const {
+    GITHUB_REPOSITORY: repository,
+    RELEASE_COMMIT: commit,
+    GITHUB_SHA: trigger,
+  } = process.env;
+  if (!repository || !commit || !trigger) {
+    throw new Error(
+      'Set GITHUB_REPOSITORY, RELEASE_COMMIT, and GITHUB_SHA to create a GitHub release.'
+    );
+  }
+  ensureGitHubRelease({
+    repository,
+    commit,
+    trigger,
+    manifest: JSON.parse(readFileSync('package.json', 'utf8')),
+    changelog: readFileSync('CHANGELOG.md', 'utf8'),
   });
-
-  console.log(`\u2705 Created GitHub release: ${tag}`);
-} catch (error) {
-  console.error('Error creating release:', error.message);
-  process.exit(1);
 }

@@ -1,0 +1,285 @@
+Secrets and documentation	Set up job	﻿2026-11-27T07:08:41.6011123Z Current runner version: '2.338.2'
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6032001Z ##[group]Runner Image Provisioner
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6032683Z Hosted Compute Agent
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6033158Z Version: 20261111.635
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6033627Z Commit: b8a…2ed
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6034137Z Build Date: 2026-11-11T01:49:01Z
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6034662Z Worker ID: {60f0a064-aaa1-428d-bbe8-bc95ffb9bb4f}
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6035163Z Region: us-east-1
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6035560Z Cloud: AWS
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6036173Z ##[endgroup]
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6037221Z ##[group]Operating System
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6037702Z Ubuntu
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6038069Z 24.04.5
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6038433Z LTS
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6038810Z ##[endgroup]
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6039190Z ##[group]Runner Image
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6039638Z Image: ubuntu-24.04
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6040058Z Version: 20261122.23.1
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6040811Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261122.23/images/ubuntu/Ubuntu2404-Readme.md
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6042102Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261122.23
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6042807Z ##[endgroup]
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6043580Z ##[group]GITHUB_TOKEN Permissions
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6045072Z Contents: read
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6045472Z Metadata: read
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6046195Z ##[endgroup]
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6047777Z Secret source: Actions
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6048423Z Cache mode: write
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6048900Z Prepare workflow directory
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6402124Z Prepare all required actions
+Secrets and documentation	Set up job	2026-11-27T07:08:41.6439990Z Getting action download info
+Secrets and documentation	Set up job	2026-11-27T07:08:41.8357415Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Secrets and documentation	Set up job	2026-11-27T07:08:43.2194606Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Secrets and documentation	Set up job	2026-11-27T07:08:43.3863140Z Download action repository 'oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Secrets and documentation	Set up job	2026-11-27T07:08:43.5043321Z Download action repository 'lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8' (SHA:e7477775783ea5526144ba13e8db5eec57747ce8)
+Secrets and documentation	Set up job	2026-11-27T07:08:43.7555862Z Complete job name: Secrets and documentation
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:08:43.8291205Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8292767Z with:
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8293476Z   persist-credentials: false
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8294623Z   repository: link-foundation/gh-load-issue
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8302007Z   token: ***
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8302742Z   ssh-strict: true
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8303486Z   ssh-user: git
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8304225Z   clean: true
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8304953Z   sparse-checkout-cone-mode: true
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8305814Z   fetch-depth: 1
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8306914Z   fetch-tags: false
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8307688Z   show-progress: true
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8308458Z   lfs: false
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8309132Z   submodules: false
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8309860Z   set-safe-directory: true
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8310775Z   allow-unsafe-pr-checkout: false
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8311947Z env:
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8312623Z   BUN_VERSION: 1.4.5
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8313362Z   NODE_VERSION: 24.22.3
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8314085Z   HUSKY: 0
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8314875Z   GIT_CONFIG_COUNT: 1
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8315647Z   GIT_CONFIG_KEY_0: ini…nch
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8316706Z   GIT_CONFIG_VALUE_0: main
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8317483Z   RELEASE_DEBUG: 0
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:43.8318192Z ##[endgroup]
+Secrets and documentation	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:44.1510410Z ##[error]The operation was canceled.
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-11-27T07:08:44.1672377Z Post job cleanup.
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.0570222Z Syncing repository: link-foundation/gh-load-issue
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.0571487Z ##[group]Getting Git version info
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.0571870Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.0572836Z [command]/usr/bin/git version
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2503591Z git version 2.56.1
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2527721Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2534603Z Temporarily overriding HOME='/ho…dde' before making global git config changes
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2538992Z Adding repository directory to the temporary git global config as a safe directory
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2539612Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2586626Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2588746Z ##[group]Determining repository object format
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2589611Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2590215Z ##[group]Initializing the repository
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.2593194Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3043382Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3050309Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3103665Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3104344Z ##[group]Disabling automatic garbage collection
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3106604Z [command]/usr/bin/git config --local gc.auto 0
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3130030Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3130464Z ##[group]Setting up auth
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3130847Z Removing SSH command configuration
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3135121Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.3160975Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.5990275Z Removing HTTP extra header
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.5996716Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6025770Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6175183Z Removing includeIf entries pointing to credentials config files
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6179954Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6215398Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6355106Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6386993Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git.path /home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6404764Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6427564Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6462838Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6471891Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6472430Z ##[group]Fetching the repository
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.6477849Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2d3…da1:refs/remotes/pull/21/merge
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9462764Z From https://github.com/link-foundation/gh-load-issue
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9463841Z  * [new ref]         2d3…da1 -> pull/21/merge
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9468782Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9469491Z ##[group]Determining the checkout info
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9470034Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9472734Z [command]/usr/bin/git sparse-checkout disable
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9533968Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9556244Z ##[group]Checking out the ref
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9559430Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/21/merge
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9683484Z Note: switching to 'refs/remotes/pull/21/merge'.
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9684348Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9684588Z You are in 'detached HEAD' state. You can look around, make experimental
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9685198Z changes and commit them, and you can discard any commits you make in this
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9685663Z state without impacting any branches by switching back to a branch.
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9686109Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9686302Z If you want to create a new branch to retain commits you create, you may
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9686683Z do so (now or later) by using -c with the switch command. Example:
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9686919Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687045Z   git switch -c <new-branch-name>
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687231Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687328Z Or undo this operation with:
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687490Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687561Z   git switch -
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687717Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9687921Z Turn off this advice by setting config variable advice.detachedHead to false
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9688144Z 
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9688430Z HEAD is now at 2d3a38a Merge 584…2dd into 671…9c1
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9694929Z ##[endgroup]
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9730655Z [command]/usr/bin/git log -1 --format=%H
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9754308Z 2d3…da1
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9760944Z ##[group]Removing auth
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9761440Z Removing SSH command configuration
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9762931Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9784868Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9940402Z Removing HTTP extra header
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9942462Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:46.9963339Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0111456Z Removing includeIf entries pointing to credentials config files
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0114288Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0133820Z includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0134583Z includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git/worktrees/*.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0135194Z includeif.gitdir:/github/workspace/.git.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0135584Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0139374Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0157109Z /home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0163519Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-2def91a0\-c3fc\-4c8d\-87b6\-cf073fbb0102\.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0195279Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git/worktrees/*.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0212232Z /home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0217520Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gh-load-issue/gh-load-issue/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-2def91a0\-c3fc\-4c8d\-87b6\-cf073fbb0102\.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0240957Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0258598Z /github/runner_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0263793Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-2def91a0\-c3fc\-4c8d\-87b6\-cf073fbb0102\.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0289057Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0306343Z /github/runner_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0311052Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-2def91a0\-c3fc\-4c8d\-87b6\-cf073fbb0102\.config
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0334940Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0480715Z Removing credentials config '/home/runner/work/_temp/git-credentials-2def91a0-c3fc-4c8d-87b6-cf073fbb0102.config'
+Secrets and documentation	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-11-27T07:08:47.0486227Z ##[endgroup]
+Secrets and documentation	Complete job	﻿2026-11-27T07:08:47.0598920Z Cleaning up orphan processes
+Lint and Format Check	Set up job	﻿2026-11-27T07:08:43.6553894Z Current runner version: '2.338.2'
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6581731Z ##[group]Runner Image Provisioner
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6582758Z Hosted Compute Agent
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6583342Z Version: 20261111.635
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6583986Z Commit: b8a…2ed
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6584692Z Build Date: 2026-11-11T01:49:01Z
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6585335Z Worker ID: {02e902c8-9d16-4166-88f1-5f8e302d0755}
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6586073Z Region: us-east-1
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6586621Z Cloud: AWS
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6587183Z ##[endgroup]
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6588608Z ##[group]Operating System
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6589239Z Ubuntu
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6590006Z 24.04.5
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6590533Z LTS
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6591050Z ##[endgroup]
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6591550Z ##[group]Runner Image
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6592132Z Image: ubuntu-24.04
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6592704Z Version: 20261116.133.1
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6593779Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6595511Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6596477Z ##[endgroup]
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6597610Z ##[group]GITHUB_TOKEN Permissions
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6600343Z Contents: read
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6600972Z Metadata: read
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6601489Z ##[endgroup]
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6603796Z Secret source: Actions
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6604697Z Cache mode: write
+Lint and Format Check	Set up job	2026-11-27T07:08:43.6605397Z Prepare workflow directory
+Lint and Format Check	Set up job	2026-11-27T07:08:43.7138739Z Prepare all required actions
+Lint and Format Check	Set up job	2026-11-27T07:08:43.7195024Z Getting action download info
+Lint and Format Check	Set up job	2026-11-27T07:08:43.8704343Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Lint and Format Check	Set up job	2026-11-27T07:08:44.9654987Z ##[error]The operation was canceled.
+Plan checks and release	Set up job	﻿2026-11-27T07:08:44.0446738Z Current runner version: '2.338.2'
+Plan checks and release	Set up job	2026-11-27T07:08:44.0467099Z ##[group]Runner Image Provisioner
+Plan checks and release	Set up job	2026-11-27T07:08:44.0467790Z Hosted Compute Agent
+Plan checks and release	Set up job	2026-11-27T07:08:44.0468264Z Version: 20261111.635
+Plan checks and release	Set up job	2026-11-27T07:08:44.0468710Z Commit: b8a…2ed
+Plan checks and release	Set up job	2026-11-27T07:08:44.0469223Z Build Date: 2026-11-11T01:49:01Z
+Plan checks and release	Set up job	2026-11-27T07:08:44.0469729Z Worker ID: {148c6f66-a651-41e6-a5a5-d511e275cb7b}
+Plan checks and release	Set up job	2026-11-27T07:08:44.0470236Z Region: us-east-1
+Plan checks and release	Set up job	2026-11-27T07:08:44.0470623Z Cloud: AWS
+Plan checks and release	Set up job	2026-11-27T07:08:44.0470990Z ##[endgroup]
+Plan checks and release	Set up job	2026-11-27T07:08:44.0471882Z ##[group]Operating System
+Plan checks and release	Set up job	2026-11-27T07:08:44.0472380Z Ubuntu
+Plan checks and release	Set up job	2026-11-27T07:08:44.0472745Z 24.04.5
+Plan checks and release	Set up job	2026-11-27T07:08:44.0473125Z LTS
+Plan checks and release	Set up job	2026-11-27T07:08:44.0473497Z ##[endgroup]
+Plan checks and release	Set up job	2026-11-27T07:08:44.0473868Z ##[group]Runner Image
+Plan checks and release	Set up job	2026-11-27T07:08:44.0474295Z Image: ubuntu-24.04
+Plan checks and release	Set up job	2026-11-27T07:08:44.0474944Z Version: 20261116.133.1
+Plan checks and release	Set up job	2026-11-27T07:08:44.0475746Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+Plan checks and release	Set up job	2026-11-27T07:08:44.0477037Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+Plan checks and release	Set up job	2026-11-27T07:08:44.0477731Z ##[endgroup]
+Plan checks and release	Set up job	2026-11-27T07:08:44.0478514Z ##[group]GITHUB_TOKEN Permissions
+Plan checks and release	Set up job	2026-11-27T07:08:44.0480320Z Contents: read
+Plan checks and release	Set up job	2026-11-27T07:08:44.0480719Z Metadata: read
+Plan checks and release	Set up job	2026-11-27T07:08:44.0481111Z ##[endgroup]
+Plan checks and release	Set up job	2026-11-27T07:08:44.0482700Z Secret source: Actions
+Plan checks and release	Set up job	2026-11-27T07:08:44.0483387Z Cache mode: write
+Plan checks and release	Set up job	2026-11-27T07:08:44.0483881Z Prepare workflow directory
+Plan checks and release	Set up job	2026-11-27T07:08:44.0843634Z Prepare all required actions
+Plan checks and release	Set up job	2026-11-27T07:08:44.0882186Z Getting action download info
+Plan checks and release	Set up job	2026-11-27T07:08:44.1311481Z ##[error]A task was canceled.
+Check for Changesets	Set up job	﻿2026-11-27T07:08:44.6593528Z Current runner version: '2.338.2'
+Check for Changesets	Set up job	2026-11-27T07:08:44.6619695Z ##[group]Runner Image Provisioner
+Check for Changesets	Set up job	2026-11-27T07:08:44.6620700Z Hosted Compute Agent
+Check for Changesets	Set up job	2026-11-27T07:08:44.6621309Z Version: 20261111.635
+Check for Changesets	Set up job	2026-11-27T07:08:44.6622429Z Commit: b8a…2ed
+Check for Changesets	Set up job	2026-11-27T07:08:44.6623188Z Build Date: 2026-11-11T01:49:01Z
+Check for Changesets	Set up job	2026-11-27T07:08:44.6623925Z Worker ID: {30f91d7f-c6ae-4f65-96db-b76507f46bbd}
+Check for Changesets	Set up job	2026-11-27T07:08:44.6624711Z Region: westus
+Check for Changesets	Set up job	2026-11-27T07:08:44.6625264Z Cloud: Azure
+Check for Changesets	Set up job	2026-11-27T07:08:44.6625889Z ##[endgroup]
+Check for Changesets	Set up job	2026-11-27T07:08:44.6627400Z ##[group]Operating System
+Check for Changesets	Set up job	2026-11-27T07:08:44.6628106Z Ubuntu
+Check for Changesets	Set up job	2026-11-27T07:08:44.6628684Z 24.04.5
+Check for Changesets	Set up job	2026-11-27T07:08:44.6629197Z LTS
+Check for Changesets	Set up job	2026-11-27T07:08:44.6629770Z ##[endgroup]
+Check for Changesets	Set up job	2026-11-27T07:08:44.6630337Z ##[group]Runner Image
+Check for Changesets	Set up job	2026-11-27T07:08:44.6630917Z Image: ubuntu-24.04
+Check for Changesets	Set up job	2026-11-27T07:08:44.6631746Z Version: 20261122.23.1
+Check for Changesets	Set up job	2026-11-27T07:08:44.6632833Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261122.23/images/ubuntu/Ubuntu2404-Readme.md
+Check for Changesets	Set up job	2026-11-27T07:08:44.6634719Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261122.23
+Check for Changesets	Set up job	2026-11-27T07:08:44.6635671Z ##[endgroup]
+Check for Changesets	Set up job	2026-11-27T07:08:44.6636908Z ##[group]GITHUB_TOKEN Permissions
+Check for Changesets	Set up job	2026-11-27T07:08:44.6638788Z Contents: read
+Check for Changesets	Set up job	2026-11-27T07:08:44.6639602Z Metadata: read
+Check for Changesets	Set up job	2026-11-27T07:08:44.6640165Z ##[endgroup]
+Check for Changesets	Set up job	2026-11-27T07:08:44.6642779Z Secret source: Actions
+Check for Changesets	Set up job	2026-11-27T07:08:44.6643786Z Cache mode: write
+Check for Changesets	Set up job	2026-11-27T07:08:44.6644529Z Prepare workflow directory
+Check for Changesets	Set up job	2026-11-27T07:08:44.7247881Z Prepare all required actions
+Check for Changesets	Set up job	2026-11-27T07:08:44.7297047Z Getting action download info
+Check for Changesets	Set up job	2026-11-27T07:08:44.7998480Z ##[error]A task was canceled.
+Workflow validation	Set up job	﻿2026-11-27T07:08:43.8240861Z Current runner version: '2.338.2'
+Workflow validation	Set up job	2026-11-27T07:08:43.8266771Z ##[group]Runner Image Provisioner
+Workflow validation	Set up job	2026-11-27T07:08:43.8267794Z Hosted Compute Agent
+Workflow validation	Set up job	2026-11-27T07:08:43.8268336Z Version: 20261111.635
+Workflow validation	Set up job	2026-11-27T07:08:43.8268968Z Commit: b8a…2ed
+Workflow validation	Set up job	2026-11-27T07:08:43.8269698Z Build Date: 2026-11-11T01:49:01Z
+Workflow validation	Set up job	2026-11-27T07:08:43.8270377Z Worker ID: {8987729a-4cd5-4d3a-9f02-d9db4c4517c1}
+Workflow validation	Set up job	2026-11-27T07:08:43.8271084Z Region: eastus3
+Workflow validation	Set up job	2026-11-27T07:08:43.8271586Z Cloud: Azure
+Workflow validation	Set up job	2026-11-27T07:08:43.8272108Z ##[endgroup]
+Workflow validation	Set up job	2026-11-27T07:08:43.8273667Z ##[group]Operating System
+Workflow validation	Set up job	2026-11-27T07:08:43.8274241Z Ubuntu
+Workflow validation	Set up job	2026-11-27T07:08:43.8274762Z 24.04.5
+Workflow validation	Set up job	2026-11-27T07:08:43.8275230Z LTS
+Workflow validation	Set up job	2026-11-27T07:08:43.8275708Z ##[endgroup]
+Workflow validation	Set up job	2026-11-27T07:08:43.8276249Z ##[group]Runner Image
+Workflow validation	Set up job	2026-11-27T07:08:43.8276822Z Image: ubuntu-24.04
+Workflow validation	Set up job	2026-11-27T07:08:43.8277389Z Version: 20261122.23.1
+Workflow validation	Set up job	2026-11-27T07:08:43.8278363Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261122.23/images/ubuntu/Ubuntu2404-Readme.md
+Workflow validation	Set up job	2026-11-27T07:08:43.8279996Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261122.23
+Workflow validation	Set up job	2026-11-27T07:08:43.8280923Z ##[endgroup]
+Workflow validation	Set up job	2026-11-27T07:08:43.8282171Z ##[group]GITHUB_TOKEN Permissions
+Workflow validation	Set up job	2026-11-27T07:08:43.8284681Z Contents: read
+Workflow validation	Set up job	2026-11-27T07:08:43.8285259Z Metadata: read
+Workflow validation	Set up job	2026-11-27T07:08:43.8285768Z ##[endgroup]
+Workflow validation	Set up job	2026-11-27T07:08:43.8288208Z Secret source: Actions
+Workflow validation	Set up job	2026-11-27T07:08:43.8289182Z Cache mode: write
+Workflow validation	Set up job	2026-11-27T07:08:43.8289827Z Prepare workflow directory
+Workflow validation	Set up job	2026-11-27T07:08:43.9001614Z Prepare all required actions
+Workflow validation	Set up job	2026-11-27T07:08:43.9082764Z Getting action download info
+Workflow validation	Set up job	2026-11-27T07:08:44.1355746Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Workflow validation	Set up job	2026-11-27T07:08:44.2846524Z ##[error]The operation was canceled.

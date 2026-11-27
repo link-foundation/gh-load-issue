@@ -1,320 +1,407 @@
 name: Checks and release
 
 on:
+  schedule:
+    - cron: '0 6 * * 1'
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened]
-  # Manual release support - consolidated here to work with npm trusted publishing
-  # npm only allows ONE workflow file as trusted publisher, so all publishing
-  # must go through this workflow (release.yml)
+    types: [opened, reopened, synchronize, ready_for_review]
   workflow_dispatch:
     inputs:
       release_mode:
-        description: 'Manual release mode'
-        required: true
+        description: Release mode
         type: choice
-        default: 'instant'
-        options:
-          - instant
-          - changeset-pr
+        default: checks
+        options: [checks, instant, changeset-pr, recover]
       bump_type:
-        description: 'Manual release type'
-        required: true
+        description: Version bump for instant and changeset-pr modes
         type: choice
-        options:
-          - patch
-          - minor
-          - major
+        default: patch
+        options: [patch, minor, major]
       description:
-        description: 'Manual release description (optional)'
-        required: false
+        description: Manual release description
         type: string
+      verbose:
+        description: Print additional release diagnostics
+        type: boolean
+        default: false
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}-${{ github.event_name }}-${{ github.event.action || 'run' }}-${{ (github.event_name == 'pull_request' && github.event.action == 'synchronize' && 'latest') || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' && github.event.action == 'synchronize' }}
+
+env:
+  BUN_VERSION: '1.4.5'
+  NODE_VERSION: '24.22.3'
+  HUSKY: '0'
+  GIT_CONFIG_COUNT: '1'
+  GIT_CONFIG_KEY_0: init.defaultBranch
+  GIT_CONFIG_VALUE_0: main
+  RELEASE_DEBUG: ${{ inputs.verbose && '1' || '0' }}
 
 jobs:
-  # Changeset check - only runs on PRs
-  changeset-check:
-    name: Check for Changesets
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+  plan:
+    name: Plan checks and release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      code: ${{ steps.plan.outputs.code }}
+      release: ${{ steps.plan.outputs.release }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Check for changesets
+          persist-credentials: false
+      - name: Plan from the tested merge result
+        id: plan
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          RELEASE_MODE: ${{ inputs.release_mode }}
         run: |
-          # Skip changeset check for automated version PRs
-          if [[ "${{ github.head_ref }}" == "changeset-release/"* ]]; then
-            echo "Skipping changeset check for automated release PR"
-            exit 0
+          if [[ "$RELEASE_MODE" != "" && "$RELEASE_MODE" != "checks" && "$GITHUB_REF" != "refs/heads/main" ]]; then
+            echo "::error::Run release modes from main. Use checks mode to test a branch."
+            exit 1
           fi
+          code=true
+          if [[ "$EVENT_NAME" == "schedule" ]]; then
+            code=false
+          fi
+          if [[ -n "$PR_BASE_SHA" ]]; then
+            git diff --name-only -z "$PR_BASE_SHA" HEAD > "$RUNNER_TEMP/pr-paths"
+            code=false
+            while IFS= read -r -d '' file; do
+              case "$file" in
+                dev/log/*) ;;
+                .github/*|scripts/*|.changeset/*.md|*.mjs|*.js|*.json|*.lock|*.toml|.husky/*) code=true; break ;;
+                *.md|.gitkeep) ;;
+                *) code=true; break ;;
+              esac
+            done < "$RUNNER_TEMP/pr-paths"
+          fi
+          release=false
+          if [[ "$RELEASE_MODE" == "instant" || "$RELEASE_MODE" == "recover" ]]; then
+            release=true
+          elif [[ "$EVENT_NAME" == "push" && "$GITHUB_REF" == "refs/heads/main" ]]; then
+            shopt -s nullglob
+            for path in .changeset/*.md; do
+              if [[ "$path" != ".changeset/README.md" ]]; then
+                release=true
+                break
+              fi
+            done
+          fi
+          printf 'code=%s\nrelease=%s\n' "$code" "$release" >> "$GITHUB_OUTPUT"
 
-          # Run changeset validation script
-          bun scripts/validate-changeset.mjs
+  changeset-check:
+    name: Check for Changesets
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: bun install --frozen-lockfile --ignore-scripts
+      - name: Validate PR changesets
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: bun scripts/validate-changeset.mjs
 
-  # Linting and formatting - runs after changeset check on PRs, immediately on main
   lint:
     name: Lint and Format Check
-    runs-on: ubuntu-latest
-    needs: [changeset-check]
-    if: always() && (github.event_name == 'push' || needs.changeset-check.result == 'success')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          bun-version: latest
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: bun install --frozen-lockfile --ignore-scripts
+      - run: bun run check
 
-      - name: Install dependencies
-        run: bun install
+  workflows:
+    name: Workflow validation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: docker://rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 # v1.7.12
+        with:
+          args: -color
+      - run: shellcheck --shell=sh .husky/pre-commit
+      - run: shellcheck experiments/reproduce-release-recovery.sh
+      - uses: zizmorcore/zizmor-action@1b4550e929643b8b26a62303c6bd64814271a4f1 # v0.9.2
+        with:
+          advanced-security: false
+          version: v1.33.1
+          strict-collection: true
+          online-audits: false
 
-      - name: Run ESLint
-        run: bun run lint
+  release-preflight:
+    name: Verify npm publishing authorization
+    needs: plan
+    if: needs.plan.outputs.release == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - run: node scripts/setup-npm.mjs
+      - run: node scripts/npm-preflight.mjs
 
-      - name: Check formatting
-        run: bun run format:check
-
-      - name: Check file size limit
-        run: bun run check:file-size
-
-  # Test matrix: Bun only on 3 OS (Ubuntu, macOS, Windows)
   test:
     name: Test (Bun on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    needs: [changeset-check]
-    if: always() && (github.event_name == 'push' || needs.changeset-check.result == 'success')
+    timeout-minutes: 10
+    needs: [plan, lint, release-preflight]
+    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && needs.lint.result == 'success' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-24.04, macos-15, windows-2025]
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          bun-version: latest
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Run tests
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: bun install --frozen-lockfile --ignore-scripts
+      - name: Run unit and GitHub integration tests
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: bun test
 
-  # Exercise the consumer entry point on POSIX, where the old launcher failed.
   package-smoke-test:
     name: Test installed npm package (Linux)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
-    needs: [changeset-check]
-    if: always() && (github.event_name == 'push' || needs.changeset-check.result == 'success')
+    needs: [plan, lint, release-preflight]
+    if: ${{ !cancelled() && needs.plan.outputs.code == 'true' && needs.lint.result == 'success' && (needs.plan.outputs.release != 'true' || needs.release-preflight.result == 'success') }}
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js for npm packaging
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: '20.x'
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          bun-version: latest
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Exercise Changesets before release
+        run: |
+          shopt -s nullglob
+          for path in .changeset/*.md; do
+            if [[ "$path" != ".changeset/README.md" ]]; then
+              npm run changeset:version
+              break
+            fi
+          done
+      - run: bun run test:package
 
-      - name: Install dependencies
-        run: bun install
+  security-docs:
+    name: Secrets and documentation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm audit --audit-level=moderate --package-lock-only
+      - run: bun audit --audit-level moderate
+      - run: git ls-files -z | xargs -0 npm exec --no -- secretlint --no-glob --no-gitignore --format github
+      - name: Validate primary documentation
+        run: |
+          for file in README.md REQUIREMENTS.md CHANGELOG.md; do
+            if [[ $(wc -l < "$file") -gt 2500 ]]; then
+              echo "::error file=$file::Documentation exceeds 2500 lines."
+              exit 1
+            fi
+          done
+          grep -qFx '## Installation' README.md
+          grep -qFx '## Core Functionality' REQUIREMENTS.md
+          grep -qE '^## [0-9]+\.[0-9]+\.[0-9]+' CHANGELOG.md
+      - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          lycheeVersion: v0.24.2
+          args: --offline README.md REQUIREMENTS.md CHANGELOG.md
+          fail: true
+      - name: Verify the npm package linked from the README
+        if: github.event_name == 'schedule'
+        run: npm view gh-load-issue version --registry https://registry.npmjs.org/
+      - name: Check public documentation links
+        if: github.event_name == 'schedule'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          lycheeVersion: v0.24.2
+          # The npm website rejects automated requests. The preceding step checks its registry metadata.
+          args: --max-retries 2 --exclude '^https://www.npmjs.com/package/gh-load-issue$' README.md REQUIREMENTS.md CHANGELOG.md
+          fail: true
 
-      - name: Pack, install, and test the executable
-        run: bun run test:package
+  checks:
+    name: Required CI checks
+    if: ${{ !cancelled() }}
+    needs:
+      [
+        plan,
+        changeset-check,
+        lint,
+        workflows,
+        test,
+        package-smoke-test,
+        security-docs,
+        release-preflight,
+      ]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Require all applicable jobs to succeed
+        env:
+          PLAN: ${{ needs.plan.result }}
+          CHANGESETS: ${{ needs.changeset-check.result }}
+          LINT: ${{ needs.lint.result }}
+          WORKFLOWS: ${{ needs.workflows.result }}
+          TEST: ${{ needs.test.result }}
+          PACKAGE: ${{ needs.package-smoke-test.result }}
+          SECURITY_DOCS: ${{ needs.security-docs.result }}
+          PREFLIGHT: ${{ needs.release-preflight.result }}
+          CODE: ${{ needs.plan.outputs.code }}
+          RELEASE: ${{ needs.plan.outputs.release }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          require_result() {
+            if [[ "$2" != "success" ]]; then
+              echo "::error::$1 concluded $2, expected success."
+              return 1
+            fi
+          }
+          require_result plan "$PLAN"
+          require_result lint "$LINT"
+          require_result workflows "$WORKFLOWS"
+          require_result security-docs "$SECURITY_DOCS"
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            require_result changeset "$CHANGESETS"
+          fi
+          if [[ "$RELEASE" == "true" ]]; then
+            require_result preflight "$PREFLIGHT"
+          fi
+          if [[ "$CODE" == "true" ]]; then
+            require_result tests "$TEST"
+            require_result package "$PACKAGE"
+          fi
 
-  # Release - only runs on main after tests pass (for push events)
   release:
     name: Release
-    needs: [lint, test, package-smoke-test]
-    # Use always() to ensure this job runs even if changeset-check was skipped
-    # This is needed because lint/test jobs have a transitive dependency on changeset-check
-    if: always() && github.ref == 'refs/heads/main' && github.event_name == 'push' && needs.lint.result == 'success' && needs.test.result == 'success' && needs.package-smoke-test.result == 'success'
-    runs-on: ubuntu-latest
+    needs: [plan, checks]
+    if: needs.plan.outputs.release == 'true' && github.ref == 'refs/heads/main'
+    concurrency:
+      group: npm-release-main
+      cancel-in-progress: false
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
-    # Permissions required for npm OIDC trusted publishing
     permissions:
       contents: write
-      pull-requests: write
       id-token: write
+      pull-requests: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          persist-credentials: true # zizmor: ignore[artipacked] The version commit must be pushed.
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Setup Bun for versioning and executable verification
-        uses: oven-sh/setup-bun@v2
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
         with:
-          bun-version: latest
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Update npm for OIDC trusted publishing
-        run: node scripts/setup-npm.mjs
-
-      - name: Check for changesets
-        id: check_changesets
-        run: |
-          # Count changeset files (excluding README.md and config.json)
-          CHANGESET_COUNT=$(find .changeset -name "*.md" ! -name "README.md" | wc -l)
-          echo "Found $CHANGESET_COUNT changeset file(s)"
-          echo "has_changesets=$([[ $CHANGESET_COUNT -gt 0 ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
-
-      - name: Version packages and commit to main
-        if: steps.check_changesets.outputs.has_changesets == 'true'
+          bun-version: ${{ env.BUN_VERSION }}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: node scripts/setup-npm.mjs
+      - name: Prepare verified version commit
         id: version
-        run: node scripts/version-and-commit.mjs --mode changeset
-
-      - name: Test packed executable, publish, and verify npm registry
-        # Run if version was committed OR if a previous attempt already committed (for re-runs)
-        if: steps.version.outputs.version_committed == 'true' || steps.version.outputs.already_released == 'true'
-        id: publish
-        run: node scripts/publish-to-npm.mjs --should-pull
-
-      - name: Create GitHub Release
-        if: steps.publish.outputs.published == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/create-github-release.mjs --release-version "${{ steps.publish.outputs.published_version }}" --repository "${{ github.repository }}"
-
-      - name: Format GitHub release notes
-        if: steps.publish.outputs.published == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/format-github-release.mjs --release-version "${{ steps.publish.outputs.published_version }}" --repository "${{ github.repository }}" --commit-sha "${{ github.sha }}"
-
-  # Manual Instant Release - triggered via workflow_dispatch with instant mode
-  # This job is in release.yml because npm trusted publishing
-  # only allows one workflow file to be registered as a trusted publisher
-  instant-release:
-    name: Instant Release
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.release_mode == 'instant'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    # Permissions required for npm OIDC trusted publishing
-    permissions:
-      contents: write
-      pull-requests: write
-      id-token: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Setup Bun for versioning and executable verification
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Update npm for OIDC trusted publishing
-        run: node scripts/setup-npm.mjs
-
-      - name: Version packages and commit to main
-        id: version
-        run: node scripts/version-and-commit.mjs --mode instant --bump-type "${{ github.event.inputs.bump_type }}" --description "${{ github.event.inputs.description }}"
-
-      - name: Test packed executable, publish, and verify npm registry
-        # Run if version was committed OR if a previous attempt already committed (for re-runs)
-        if: steps.version.outputs.version_committed == 'true' || steps.version.outputs.already_released == 'true'
-        id: publish
+          RELEASE_MODE: ${{ inputs.release_mode || 'changeset' }}
+          BUMP_TYPE: ${{ inputs.bump_type }}
+          DESCRIPTION: ${{ inputs.description }}
+        run: node scripts/version-and-commit.mjs --mode "$RELEASE_MODE"
+      - name: Publish the tested npm artifact and verify it from the registry
         run: node scripts/publish-to-npm.mjs
-
-      - name: Create GitHub Release
-        if: steps.publish.outputs.published == 'true'
+      - name: Create GitHub Release for the published commit
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/create-github-release.mjs --release-version "${{ steps.publish.outputs.published_version }}" --repository "${{ github.repository }}"
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_COMMIT: ${{ steps.version.outputs.commit }}
+        run: node scripts/create-github-release.mjs
 
-      - name: Format GitHub release notes
-        if: steps.publish.outputs.published == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/format-github-release.mjs --release-version "${{ steps.publish.outputs.published_version }}" --repository "${{ github.repository }}" --commit-sha "${{ github.sha }}"
-
-  # Manual Changeset PR - creates a pull request with the changeset for review
   changeset-pr:
     name: Create Changeset PR
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.release_mode == 'changeset-pr'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    needs: checks
+    if: github.event_name == 'workflow_dispatch' && inputs.release_mode == 'changeset-pr' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '20.x'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Create changeset file
-        run: node scripts/create-manual-changeset.mjs --bump-type "${{ github.event.inputs.bump_type }}" --description "${{ github.event.inputs.description }}"
-
-      - name: Format changeset with Prettier
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Create and format the changeset
+        env:
+          BUMP_TYPE: ${{ inputs.bump_type }}
+          DESCRIPTION: ${{ inputs.description }}
+        run: node scripts/create-manual-changeset.mjs
+      - name: Verify pull request credentials
+        env:
+          RELEASE_PR_TOKEN: ${{ secrets.RELEASE_PR_TOKEN }}
         run: |
-          # Run Prettier on the changeset file to ensure it matches project style
-          npx prettier --write ".changeset/*.md" || true
-
-          echo "Formatted changeset files"
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+          if [[ -z "$RELEASE_PR_TOKEN" ]]; then
+            echo "::error::Set RELEASE_PR_TOKEN to a repository-scoped token with write access to Contents and Pull requests, or add a changeset in a regular pull request."
+            exit 1
+          fi
+      - name: Create draft pull request
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore: add changeset for manual ${{ github.event.inputs.bump_type }} release'
+          token: ${{ secrets.RELEASE_PR_TOKEN }}
+          add-paths: .changeset/
+          commit-message: 'chore: add changeset for manual release'
           branch: changeset-manual-release-${{ github.run_id }}
           delete-branch: true
-          title: 'chore: manual ${{ github.event.inputs.bump_type }} release'
+          draft: true
+          title: 'chore: manual ${{ inputs.bump_type }} release'
           body: |
-            ## Manual Release Request
+            This PR prepares a **${{ inputs.bump_type }}** release.
 
-            This PR was created by a manual workflow trigger to prepare a **${{ github.event.inputs.bump_type }}** release.
-
-            ### Release Details
-            - **Type:** ${{ github.event.inputs.bump_type }}
-            - **Description:** ${{ github.event.inputs.description || 'Manual release' }}
-            - **Triggered by:** @${{ github.actor }}
-
-            ### Next Steps
-            1. Review the changeset in this PR
-            2. Merge this PR to main
-            3. The automated release workflow will create a version PR
-            4. Merge the version PR to publish to npm and create a GitHub release
+            Mark it ready for review to validate the merge result. Merging it to main runs the npm release workflow.

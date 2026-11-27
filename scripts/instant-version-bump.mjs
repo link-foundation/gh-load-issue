@@ -5,40 +5,27 @@
  * Bypasses the changeset workflow and directly updates version and changelog
  *
  * Usage: node scripts/instant-version-bump.mjs --bump-type <major|minor|patch> [--description <description>]
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- * - lino-arguments: Unified configuration from CLI args, env vars, and .lenv files
  */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { execFileSync } from 'node:child_process';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { readFileSync, writeFileSync } from 'node:fs';
 
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
-
-// Import link-foundation libraries
-const { $ } = await use('command-stream');
-const { makeConfig } = await use('lino-arguments');
-
-// Parse CLI arguments using lino-arguments
-const config = makeConfig({
-  yargs: ({ yargs, getenv }) =>
-    yargs
-      .option('bump-type', {
-        type: 'string',
-        default: getenv('BUMP_TYPE', ''),
-        describe: 'Version bump type: major, minor, or patch',
-        choices: ['major', 'minor', 'patch'],
-      })
-      .option('description', {
-        type: 'string',
-        default: getenv('DESCRIPTION', ''),
-        describe: 'Description for the version bump',
-      }),
-});
+const config = yargs(hideBin(process.argv))
+  .option('bump-type', {
+    type: 'string',
+    default: process.env.BUMP_TYPE || '',
+    describe: 'Version bump type: major, minor, or patch',
+    choices: ['major', 'minor', 'patch'],
+  })
+  .option('description', {
+    type: 'string',
+    default: process.env.DESCRIPTION || '',
+    describe: 'Description for the version bump',
+  })
+  .strict()
+  .parse();
 
 try {
   const { bumpType, description } = config;
@@ -59,7 +46,11 @@ try {
   console.log(`Current version: ${oldVersion}`);
 
   // Bump version using npm version (doesn't create git tag)
-  await $`npm version ${bumpType} --no-git-tag-version`;
+  execFileSync(
+    'npm',
+    ['version', bumpType, '--no-git-tag-version', '--ignore-scripts'],
+    { stdio: 'inherit' }
+  );
 
   // Get new version
   const updatedPackageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
@@ -108,13 +99,15 @@ try {
 
   // Synchronize package-lock.json
   console.log('\nSynchronizing package-lock.json...');
-  await $`npm install --package-lock-only`;
+  execFileSync('bun', ['install', '--lockfile-only', '--ignore-scripts'], {
+    stdio: 'inherit',
+  });
 
   console.log('\n✅ Instant version bump complete');
   console.log(`Version: ${oldVersion} → ${newVersion}`);
 } catch (error) {
   console.error('Error during instant version bump:', error.message);
-  if (process.env.DEBUG) {
+  if (process.env.RELEASE_DEBUG === '1') {
     console.error('Stack trace:', error.stack);
   }
   process.exit(1);

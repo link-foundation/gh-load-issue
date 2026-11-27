@@ -5,6 +5,7 @@ import { describe, it } from 'test-anywhere';
 import { verifyNpmRelease } from '../scripts/verify-npm-release.mjs';
 import { publishToNpm } from '../scripts/publish-to-npm.mjs';
 
+const tarball = 'verified.tgz';
 const manifest = { name: 'gh-load-issue', version: '0.4.0' };
 
 function verificationOptions(run) {
@@ -110,6 +111,7 @@ describe('npm publication', () => {
     await assert.rejects(
       publishToNpm(
         manifest,
+        tarball,
         options(run, async () => {
           throw new Error('Version missing from npm');
         })
@@ -124,13 +126,14 @@ describe('npm publication', () => {
     await assert.rejects(
       publishToNpm(
         manifest,
+        tarball,
         options(
           (_command, args) => {
             if (args[0] === 'view') {
               throw new Error('E404');
             }
             publishes++;
-            throw new Error('npm publish failed');
+            throw new Error('npm publish failed: E503');
           },
           async () => {
             verifications++;
@@ -143,10 +146,30 @@ describe('npm publication', () => {
     assert.equal(verifications, 0);
   });
 
+  it('fails fast with setup instructions when npm rejects authorization', async () => {
+    let publishes = 0;
+    await assert.rejects(
+      publishToNpm(
+        manifest,
+        tarball,
+        options((_command, args) => {
+          if (args[0] === 'view') {
+            throw new Error('E404');
+          }
+          publishes++;
+          throw new Error('E404');
+        })
+      ),
+      /trusted publisher.*release.yml/
+    );
+    assert.equal(publishes, 1);
+  });
+
   it('verifies an already published version before reporting success', async () => {
     let verified = false;
     const result = await publishToNpm(
       manifest,
+      tarball,
       options(
         () => '"0.4.0"',
         async () => {
@@ -162,6 +185,7 @@ describe('npm publication', () => {
     await assert.rejects(
       publishToNpm(
         manifest,
+        tarball,
         options(
           () => '"0.4.0"',
           async () => {
@@ -178,6 +202,7 @@ describe('npm publication', () => {
     await assert.rejects(
       publishToNpm(
         manifest,
+        tarball,
         options(() => {
           calls++;
           throw new Error('ECONNREFUSED');
@@ -192,6 +217,7 @@ describe('npm publication', () => {
     const commands = [];
     const result = await publishToNpm(
       manifest,
+      tarball,
       options((_command, args) => {
         commands.push(args);
         if (args[0] === 'view') {
@@ -199,7 +225,15 @@ describe('npm publication', () => {
         }
       })
     );
-    assert.deepEqual(commands[1], ['run', 'changeset:publish']);
+    assert.deepEqual(commands[1], [
+      'publish',
+      tarball,
+      '--access',
+      'public',
+      '--provenance',
+      '--registry',
+      'https://registry.npmjs.org',
+    ]);
     assert.equal(result.alreadyPublished, false);
   });
 });

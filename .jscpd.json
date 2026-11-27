@@ -9,12 +9,12 @@
     "**/.changeset/**",
     "**/CHANGELOG.md",
     "**/package-lock.json",
-    "**/tests/**",
-    "**/scripts/**"
+    "**/dev/log/**"
   ],
   "format": ["javascript", "markdown"],
   "absolute": true,
   "gitignore": true,
   "minTokens": 30,
-  "minLines": 5
+  "minLines": 5,
+  "maxLines": 1100
 }

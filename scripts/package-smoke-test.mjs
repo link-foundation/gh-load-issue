@@ -47,7 +47,7 @@ export function smokeTestPackage(packageSpec, { name, version }) {
   }
 }
 
-export function packAndSmokeTest() {
+export async function packAndSmokeTest(useTarball = () => {}) {
   const destination = mkdtempSync(path.join(tmpdir(), 'gh-load-issue-pack-'));
   try {
     const output = execFileSync(
@@ -59,6 +59,7 @@ export function packAndSmokeTest() {
     const tarball = path.join(destination, packed.filename);
     console.log(`Testing packed artifact: ${packed.filename}`);
     smokeTestPackage(tarball, packed);
+    return await useTarball(tarball, packed);
   } finally {
     rmSync(destination, { recursive: true, force: true });
   }
@@ -76,7 +77,7 @@ if (
       );
       smokeTestPackage(packageSpec, manifest);
     } else {
-      packAndSmokeTest();
+      await packAndSmokeTest();
     }
   } catch (error) {
     console.error(error.message);

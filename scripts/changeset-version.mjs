@@ -1,38 +1,43 @@
 #!/usr/bin/env bun
 
-/**
- * Custom changeset version script that ensures package-lock.json is synchronized
- * with package.json after version bumps.
- *
- * This script:
- * 1. Runs `changeset version` to update package versions
- * 2. Runs `npm install` to synchronize package-lock.json with the new versions
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- */
+import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
 
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
-
-// Import command-stream for shell command execution
-const { $ } = await use('command-stream');
+const require = createRequire(import.meta.url);
+const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
+const run = (command, args) =>
+  execFileSync(command, args, { stdio: 'inherit', timeout: 120_000 });
 
 try {
-  console.log('Running changeset version...');
-  await $`npx changeset version`;
+  console.log('Apply pending changesets with the installed Changesets CLI.');
+  run('node', [require.resolve('@changesets/cli/bin.js'), 'version']);
 
-  console.log('\nSynchronizing package-lock.json...');
-  await $`npm install --package-lock-only`;
-
-  console.log('\n✅ Version bump complete with synchronized package-lock.json');
-} catch (error) {
-  console.error('Error during version bump:', error.message);
-  if (process.env.DEBUG) {
-    console.error('Stack trace:', error.stack);
+  const { version } = readJson('package.json');
+  console.log(`Synchronize package-lock.json with version ${version}.`);
+  run('npm', [
+    'version',
+    version,
+    '--allow-same-version',
+    '--no-git-tag-version',
+    '--ignore-scripts',
+  ]);
+  const lock = readJson('package-lock.json');
+  if (lock.version !== version || lock.packages?.['']?.version !== version) {
+    throw new Error(`package-lock.json did not record version ${version}.`);
   }
-  process.exit(1);
+
+  console.log('Confirm the Bun dependency lock still matches the manifest.');
+  run('bun', [
+    'install',
+    '--lockfile-only',
+    '--frozen-lockfile',
+    '--ignore-scripts',
+  ]);
+} catch (error) {
+  console.error(`Changesets versioning failed: ${error.message}`);
+  if (process.env.RELEASE_DEBUG === '1') {
+    console.error(error.stack);
+  }
+  process.exitCode = 1;
 }

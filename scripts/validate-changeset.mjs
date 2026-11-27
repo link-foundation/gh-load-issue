@@ -1,107 +1,90 @@
 #!/usr/bin/env bun
 
-/**
- * Validate changeset for CI - ensures exactly one valid changeset exists
- *
- * IMPORTANT: Update the package name below to match your package.json
- */
+import { execFileSync } from 'node:child_process';
+import { readdirSync, readFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
+import changesets from '@changesets/parse';
 
-import { readdirSync, readFileSync } from 'fs';
-import { join } from 'path';
+const { default: parseChangeset = changesets } = changesets;
 
-// TODO: Update this to match your package name in package.json
-const PACKAGE_NAME = 'gh-load-issue';
-
-try {
-  // Count changeset files (excluding README.md and config.json)
-  const changesetDir = '.changeset';
-  const changesetFiles = readdirSync(changesetDir).filter(
-    (file) => file.endsWith('.md') && file !== 'README.md'
+export function needsChangeset(paths) {
+  return paths.some(
+    (file) =>
+      /^(?:(?:package(?:-lock)?\.json|bun\.lock|gh-load-issue\.mjs)$|\.github\/|scripts\/)/.test(
+        file
+      ) && !file.endsWith('.md')
   );
+}
 
-  const changesetCount = changesetFiles.length;
-  console.log(`Found ${changesetCount} changeset file(s)`);
-
-  // Ensure exactly one changeset file exists
-  if (changesetCount === 0) {
-    console.error(
-      "::error::No changeset found. Please add a changeset by running 'npm run changeset' and commit the result."
+export function validateChangeset(name, filename, contents) {
+  let parsed;
+  try {
+    parsed = parseChangeset(contents);
+  } catch {
+    throw new Error(
+      `${filename} must begin with valid Changesets frontmatter.`
     );
-    process.exit(1);
-  } else if (changesetCount > 1) {
-    console.error(
-      `::error::Multiple changesets found (${changesetCount}). Each PR should have exactly ONE changeset.`
-    );
-    console.error('::error::Found changeset files:');
-    changesetFiles.forEach((file) => console.error(`  ${file}`));
-    process.exit(1);
   }
-
-  // Get the changeset file
-  const changesetFile = join(changesetDir, changesetFiles[0]);
-  console.log(`Validating changeset: ${changesetFile}`);
-
-  // Read the changeset file
-  const content = readFileSync(changesetFile, 'utf-8');
-
-  // Check if changeset has a valid type (major, minor, or patch)
-  const versionTypeRegex = new RegExp(
-    `^['"]${PACKAGE_NAME}['"]:\\s+(major|minor|patch)`,
-    'm'
-  );
-  if (!versionTypeRegex.test(content)) {
-    console.error(
-      '::error::Changeset must specify a version type: major, minor, or patch'
+  if (
+    !/^---\r?\n/.test(contents) ||
+    parsed.releases.length !== 1 ||
+    parsed.releases[0].name !== name ||
+    !['major', 'minor', 'patch'].includes(parsed.releases[0].type) ||
+    !parsed.summary
+  ) {
+    throw new Error(
+      `${filename} must declare one major, minor, or patch bump for ${name} and include a description.`
     );
-    console.error(`::error::Expected format in ${changesetFile}:`);
-    console.error('::error::---');
-    console.error(`::error::'${PACKAGE_NAME}': patch`);
-    console.error('::error::---');
-    console.error('::error::');
-    console.error('::error::Your description here');
-    console.error('\nFile content:');
-    console.error(content);
-    process.exit(1);
   }
+}
 
-  // Extract description (everything after the closing ---) and check it's not empty
-  const parts = content.split('---');
-  if (parts.length < 3) {
-    console.error(
-      '::error::Changeset must include a description of the changes'
-    );
-    console.error(
-      "::error::The description should appear after the closing '---' in the changeset file"
-    );
-    console.error(`::error::Current content of ${changesetFile}:`);
-    console.error(content);
-    process.exit(1);
+export function pendingChangesets() {
+  return readdirSync('.changeset', { withFileTypes: true })
+    .filter(
+      (entry) =>
+        entry.isFile() &&
+        entry.name.endsWith('.md') &&
+        entry.name !== 'README.md'
+    )
+    .map((entry) => `.changeset/${entry.name}`);
+}
+
+if (
+  process.argv[1] &&
+  pathToFileURL(process.argv[1]).href === import.meta.url
+) {
+  try {
+    const base = process.env.PR_BASE_SHA;
+    const git = (args) =>
+      execFileSync('git', args, { encoding: 'utf8' })
+        .split('\0')
+        .filter(Boolean);
+    const changes = base
+      ? git(['diff', '--name-only', '-z', base, 'HEAD', '--'])
+      : [];
+    const present = pendingChangesets();
+    const candidates = base
+      ? present.filter((file) => changes.includes(file))
+      : present;
+
+    if (candidates.length === 0 && (!base || needsChangeset(changes))) {
+      throw new Error(
+        "Add a changeset by running 'bun run changeset' and commit the result."
+      );
+    }
+
+    const { name } = JSON.parse(readFileSync('package.json', 'utf8'));
+    for (const file of candidates) {
+      validateChangeset(name, file, readFileSync(file, 'utf8'));
+      console.log(`Validated ${file}`);
+    }
+    if (candidates.length === 0) {
+      console.log(
+        'Changeset is optional for documentation, tests, and other non-release changes.'
+      );
+    }
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
   }
-
-  const description = parts.slice(2).join('---').trim();
-  if (!description) {
-    console.error(
-      '::error::Changeset must include a description of the changes'
-    );
-    console.error(
-      "::error::The description should appear after the closing '---' in the changeset file"
-    );
-    console.error(`::error::Current content of ${changesetFile}:`);
-    console.error(content);
-    process.exit(1);
-  }
-
-  // Extract version type
-  const versionTypeMatch = content.match(versionTypeRegex);
-  const versionType = versionTypeMatch ? versionTypeMatch[1] : 'unknown';
-
-  console.log('✅ Changeset validation passed');
-  console.log(`   Type: ${versionType}`);
-  console.log(`   Description: ${description}`);
-} catch (error) {
-  console.error('Error during changeset validation:', error.message);
-  if (process.env.DEBUG) {
-    console.error('Stack trace:', error.stack);
-  }
-  process.exit(1);
 }

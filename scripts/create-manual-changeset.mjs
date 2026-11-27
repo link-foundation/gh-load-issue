@@ -5,44 +5,30 @@
  * Usage: node scripts/create-manual-changeset.mjs --bump-type <major|minor|patch> [--description <description>]
  *
  * IMPORTANT: Update the PACKAGE_NAME constant below to match your package.json
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- * - lino-arguments: Unified configuration from CLI args, env vars, and .lenv files
  */
 
-import { writeFileSync } from 'fs';
-import { randomBytes } from 'crypto';
+import { execFileSync } from 'node:child_process';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { randomBytes } from 'node:crypto';
 
-// TODO: Update this to match your package name in package.json
-const PACKAGE_NAME = 'gh-load-issue';
+const { name: packageName } = JSON.parse(readFileSync('package.json', 'utf8'));
 
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
-
-// Import link-foundation libraries
-const { $ } = await use('command-stream');
-const { makeConfig } = await use('lino-arguments');
-
-// Parse CLI arguments using lino-arguments
-const config = makeConfig({
-  yargs: ({ yargs, getenv }) =>
-    yargs
-      .option('bump-type', {
-        type: 'string',
-        default: getenv('BUMP_TYPE', ''),
-        describe: 'Version bump type: major, minor, or patch',
-        choices: ['major', 'minor', 'patch'],
-      })
-      .option('description', {
-        type: 'string',
-        default: getenv('DESCRIPTION', ''),
-        describe: 'Description for the changeset',
-      }),
-});
+const config = yargs(hideBin(process.argv))
+  .option('bump-type', {
+    type: 'string',
+    default: process.env.BUMP_TYPE || '',
+    describe: 'Version bump type: major, minor, or patch',
+    choices: ['major', 'minor', 'patch'],
+  })
+  .option('description', {
+    type: 'string',
+    default: process.env.DESCRIPTION || '',
+    describe: 'Description for the changeset',
+  })
+  .strict()
+  .parse();
 
 try {
   const { bumpType, description: descriptionArg } = config;
@@ -63,7 +49,7 @@ try {
 
   // Create the changeset file with single quotes to match Prettier config
   const content = `---
-'${PACKAGE_NAME}': ${bumpType}
+'${packageName}': ${bumpType}
 ---
 
 ${description}
@@ -77,12 +63,16 @@ ${description}
 
   // Format with Prettier
   console.log('\nFormatting with Prettier...');
-  await $`npx prettier --write "${changesetFile}"`;
+  execFileSync(
+    'npm',
+    ['exec', '--no', '--', 'prettier', '--write', changesetFile],
+    { stdio: 'inherit' }
+  );
 
   console.log('\n✅ Changeset created and formatted successfully');
 } catch (error) {
   console.error('Error creating changeset:', error.message);
-  if (process.env.DEBUG) {
+  if (process.env.RELEASE_DEBUG === '1') {
     console.error('Stack trace:', error.stack);
   }
   process.exit(1);

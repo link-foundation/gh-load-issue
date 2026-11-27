@@ -1,37 +1,39 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 
-/**
- * Update npm for OIDC trusted publishing
- * npm trusted publishing requires npm >= 11.5.1
- * Node.js 20.x ships with npm 10.x, so we need to update
- *
- * Uses link-foundation libraries:
- * - use-m: Dynamic package loading without package.json dependencies
- * - command-stream: Modern shell command execution with streaming support
- */
+import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
-// Load use-m dynamically
-const { use } = eval(
-  await (await fetch('https://unpkg.com/use-m/use.js')).text()
-);
+export function assertTrustedPublishingRuntime(nodeVersion, npmVersion) {
+  const [nodeMajor, nodeMinor] = nodeVersion
+    .replace(/^v/, '')
+    .split('.')
+    .map(Number);
+  const [npmMajor, npmMinor, npmPatch] = npmVersion.split('.').map(Number);
+  const stableVersions = /^v?\d+\.\d+\.\d+$/;
+  if (
+    !stableVersions.test(nodeVersion) ||
+    !(nodeMajor > 22 || (nodeMajor === 22 && nodeMinor >= 14)) ||
+    !stableVersions.test(npmVersion) ||
+    !(
+      npmMajor > 11 ||
+      (npmMajor === 11 && (npmMinor > 5 || (npmMinor === 5 && npmPatch >= 1)))
+    )
+  ) {
+    throw new Error(
+      `npm trusted publishing requires Node.js >=22.14.0 and npm >=11.5.1. Found Node.js ${nodeVersion} and npm ${npmVersion}. Update actions/setup-node before releasing.`
+    );
+  }
+}
 
-// Import command-stream for shell command execution
-const { $ } = await use('command-stream');
-
-try {
-  // Get current npm version
-  const currentResult = await $`npm --version`.run({ capture: true });
-  const currentVersion = currentResult.stdout.trim();
-  console.log(`Current npm version: ${currentVersion}`);
-
-  // Update npm to latest
-  await $`npm install -g npm@latest`;
-
-  // Get updated npm version
-  const updatedResult = await $`npm --version`.run({ capture: true });
-  const updatedVersion = updatedResult.stdout.trim();
-  console.log(`Updated npm version: ${updatedVersion}`);
-} catch (error) {
-  console.error('Error updating npm:', error.message);
-  process.exit(1);
+if (
+  process.argv[1] &&
+  pathToFileURL(process.argv[1]).href === import.meta.url
+) {
+  const npmVersion = execFileSync('npm', ['--version'], {
+    encoding: 'utf8',
+  }).trim();
+  assertTrustedPublishingRuntime(process.version, npmVersion);
+  console.log(
+    `Trusted publishing runtime: Node.js ${process.version}, npm ${npmVersion}`
+  );
 }

@@ -1,0 +1,29 @@
+
+added 381 packages in 6s
+
+> gh-load-issue@0.4.0 changeset:version
+> bun scripts/changeset-version.mjs
+
+Apply pending changesets with the installed Changesets CLI.
+🦋  All files have been updated. Review them and commit at your leisure
+Synchronize package-lock.json with version 0.4.1.
+v0.4.1
+Confirm the Bun dependency lock still matches the manifest.
+bun install v1.4.5 (a7733435c)
+Testing packed artifact: gh-load-issue-0.4.1.tgz
+Verified installed gh-load-issue@0.4.1: --version and --help
+[main 548dcf1] 0.4.1
+ 4 files changed, 9 insertions(+), 8 deletions(-)
+ delete mode 100644 .changeset/reliable-ci-release.md
+To /tmp/tmp.0KN64NdIRr/remote.git
+   b6414a3..548dcf1  HEAD -> main
+Release 0.4.1 from 548dcf1261bf53f6a240f2451aec06b50eb27159.
+bun install v1.4.5 (a7733435c)
+
+19 packages installed [52.00ms]
+Previous HEAD position was b6414a3 release trigger
+HEAD is now at 548dcf1 0.4.1
+Resuming release of committed version 0.4.1.
+Release 0.4.1 from 548dcf1261bf53f6a240f2451aec06b50eb27159.
+Release 0.4.1 from 548dcf1261bf53f6a240f2451aec06b50eb27159.
+Verified version 0.4.1, retry and recovery at the same commit 548dcf1261bf53f6a240f2451aec06b50eb27159
