@@ -1,0 +1,45 @@
+bun test v1.4.5 (a7733435c)
+
+tests/test-npm-release.test.mjs:
+Verified npm registry release: gh-load-issue@0.4.0 (latest)
+(pass) npm release postconditions > verifies the exact version, latest tag, and installed executable [1.30ms]
+Registry verification 1/2: E404: package not found
+(pass) npm release postconditions > rejects a missing published version [1.14ms]
+Registry verification 1/2: npm latest is 0.3.2; expected 0.4.0
+
+'0.3.2' !== '0.4.0'
+
+(pass) npm release postconditions > rejects a stale latest tag [28.00ms]
+Registry verification 1/2: E404
+Verified npm registry release: gh-load-issue@0.4.0 (latest)
+(pass) npm release postconditions > waits for registry propagation before testing the executable [0.25ms]
+Registry verification 1/2: Syntax error: "(" unexpected
+(pass) npm release postconditions > rejects a registry artifact whose installed bin cannot start [0.38ms]
+Publish attempt 1/2: gh-load-issue@0.4.0
+(pass) npm publication > requires registry verification even when the publish command exits zero [1.09ms]
+Publish attempt 1/2: gh-load-issue@0.4.0
+Transient npm failure while publishing gh-load-issue@0.4.0. Retrying.
+Publish attempt 2/2: gh-load-issue@0.4.0
+(pass) npm publication > propagates publish command failures after bounded retries [0.39ms]
+Publish attempt 1/2: gh-load-issue@0.4.0
+(pass) npm publication > fails fast with setup instructions when npm rejects authorization [0.38ms]
+(pass) npm publication > verifies an already published version before reporting success [0.16ms]
+(pass) npm publication > rejects an already published broken executable [0.17ms]
+(pass) npm publication > does not treat registry connection errors as an unpublished version [0.30ms]
+Publish attempt 1/2: gh-load-issue@0.4.0
+(pass) npm publication > reports success after publishing and verifying a new version [0.37ms]
+
+tests/test-ci-release.test.mjs:
+(pass) CI release safeguards > requires the result of every verification job and bounds runner time [11.14ms]
+(pass) CI release safeguards > rejects the runtime that silently failed to upgrade in the October release [0.92ms]
+(pass) CI release safeguards > requires the registry to accept the OIDC token for this exact package [2.90ms]
+(pass) CI release safeguards > validates release changes with the same parser as Changesets [14.55ms]
+(pass) GitHub release metadata > keeps complete changelog sections together with the PR and npm badge [2.80ms]
+Created GitHub Release v1.0.0 from version-commit.
+GitHub Release v1.0.0 already exists.
+(pass) GitHub release metadata > targets the checked version commit and makes an existing release a safe rerun [3.06ms]
+(pass) GitHub release metadata > fails if the release tag points to an unrelated commit [0.23ms]
+
+ 19 pass
+ 0 fail
+Ran 19 tests across 2 files. [137.00ms]

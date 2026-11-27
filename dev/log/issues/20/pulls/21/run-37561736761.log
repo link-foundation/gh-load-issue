@@ -1,0 +1,1617 @@
+Test (Bun on windows-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:20.1163476Z Current runner version: '2.337.0'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1190120Z ##[group]Runner Image Provisioner
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1191136Z Hosted Compute Agent
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1191789Z Version: 20260901.588
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1192825Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1193632Z Build Date: 2026-09-01T19:56:44Z
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1194323Z Worker ID: {0ba00814-eea3-471a-a493-22b888b736ea}
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1194990Z Azure Region: centralus
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1195591Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1196992Z ##[group]Operating System
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1197607Z Microsoft Windows Server 2025
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1198385Z 10.0.26100
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1198900Z Datacenter
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1199407Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1199934Z ##[group]Runner Image
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1200479Z Image: windows-2025-vs2026
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1201132Z Version: 20260925.250.1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1202994Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260925.250/images/windows/Windows2025-VS2026-Readme.md
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1204703Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260925.250
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1205817Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1207038Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1209383Z Contents: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1209979Z Metadata: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1210489Z Packages: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1211015Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1213168Z Secret source: Actions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1213987Z Cache mode: write
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1214653Z Prepare workflow directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1566419Z Prepare all required actions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.1623706Z Getting action download info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.3862829Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:20.5078174Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.0042283Z Complete job name: Test (Bun on windows-latest)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1597095Z ##[group]Run actions/checkout@v4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1598509Z with:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1599097Z   repository: link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1603399Z   token: ***
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1603937Z   ssh-strict: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1604442Z   ssh-user: git
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1604931Z   persist-credentials: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1605471Z   clean: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1605971Z   sparse-checkout-cone-mode: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1606577Z   fetch-depth: 1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1607073Z   fetch-tags: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1607565Z   show-progress: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1608052Z   lfs: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1608513Z   submodules: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1609048Z   set-safe-directory: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1609644Z   allow-unsafe-pr-checkout: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1610598Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.3203740Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.3205854Z ##[group]Getting Git version info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.3206539Z Working directory is 'D:\a\gh-load-issue\gh-load-issue'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.3985838Z [command]"C:\Program Files\Git\bin\git.exe" version
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7641333Z git version 2.55.0.windows.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7691285Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7713024Z Temporarily overriding HOME='D:\a\_temp\0f088f8a-c091-46a5-a837-d30b607b5447' before making global git config changes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7716803Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7725618Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.8912097Z Deleting the contents of 'D:\a\gh-load-issue\gh-load-issue'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.8918920Z ##[group]Initializing the repository
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.8928614Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:21.9971566Z Initialized empty Git repository in D:/a/gh-load-issue/gh-load-issue/.git/
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0029508Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2077601Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2080075Z ##[group]Disabling automatic garbage collection
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2088929Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2423558Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2424799Z ##[group]Setting up auth
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2438174Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:22.2740175Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:23.6958001Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:23.7262411Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.2935295Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.3240032Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.8736459Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.9046181Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.9046943Z ##[group]Fetching the repository
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:24.9067541Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73976e1caacfed46f29ed870e20446d764a9e2a9:refs/remotes/origin/main
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9359657Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9360645Z  * [new ref]         73976e1caacfed46f29ed870e20446d764a9e2a9 -> origin/main
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9414881Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9415654Z ##[group]Determining the checkout info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9416502Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9427379Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9863511Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0189916Z ##[group]Checking out the ref
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0200462Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0867567Z Switched to a new branch 'main'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0934796Z branch 'main' set up to track 'origin/main'.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0985150Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.1403782Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.1883655Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2374317Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2374824Z with:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2375189Z   bun-version: latest
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2375492Z   no-cache: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2377858Z   token: ***
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.2378160Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8476430Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64.zip
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:27.6493905Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { [System.IO.Compression.ZipFile]::ExtractToDirectory('D:\a\_temp\596131fe-3697-47fe-8c0f-802312b8f2e4.zip', 'D:\a\_temp\879596f7-18a8-4dd6-8237-13e240f7ed73', $true) } catch { if (($_.Exception.GetType().FullName -eq 'System.Management.Automation.MethodException') -or ($_.Exception.GetType().FullName -eq 'System.Management.Automation.RuntimeException') ){ Expand-Archive -LiteralPath 'D:\a\_temp\596131fe-3697-47fe-8c0f-802312b8f2e4.zip' -DestinationPath 'D:\a\_temp\879596f7-18a8-4dd6-8237-13e240f7ed73' -Force } else { throw $_ } } ;"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:28.4096356Z [command]C:\Users\runneradmin\.bun\bin\bun.exe --revision
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:29.7435907Z 1.4.2+744846f84
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:29.7788721Z ##[group]Run bun install
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:29.7789339Z ^[[36;1mbun install^[[0m
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:29.8180216Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:29.8180720Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1093610Z bun install v1.4.2 (744846f84)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:57.4118926Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:23:57.4382607Z $ husky || true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4821327Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4822329Z + @changesets/cli@2.29.8
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4823831Z + eslint@9.39.2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4824699Z + eslint-config-prettier@10.1.8
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4825989Z + eslint-plugin-prettier@5.5.4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4826481Z + husky@9.1.7
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4826848Z + jscpd@4.0.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4827365Z + lint-staged@16.2.7
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4827757Z + prettier@3.7.4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4828133Z + test-anywhere@0.8.50
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4829065Z + @octokit/rest@22.0.1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4829488Z + fs-extra@11.3.3
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4829867Z + yargs@17.7.2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4830344Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.4830764Z 325 packages installed [39.37s]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.5965189Z ##[group]Run bun test
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.5965631Z ^[[36;1mbun test^[[0m
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.6033738Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.6034111Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.8792625Z bun test v1.4.2 (744846f84)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.8882760Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.8883754Z ##[group]tests\test-all.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.9027811Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.20ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:09.9029200Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:10.0488233Z (pass) gh-load-issue CLI > Help command > should display help information [145.91ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:10.1377985Z (pass) gh-load-issue CLI > Version command > should display version number [88.90ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9982065Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [4860.44ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9986704Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.40ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9988037Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9989081Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.04ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9990212Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.03ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9991282Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.03ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9992289Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9993316Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.04ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9994744Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.03ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9995780Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.04ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9996717Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [0.43ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9997643Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9998989Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.04ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:14.9999868Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0000860Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.23ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0001867Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.24ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0002374Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0003779Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0004064Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0004605Z ##[group]tests\test-basic.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0004996Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0005421Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0005598Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.0006112Z ##[group]tests\test-e2e.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:15.6900075Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [684.06ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:16.3620518Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [671.99ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:17.2737875Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [911.74ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:17.8922581Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [618.43ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:18.5791778Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [686.91ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:19.2347841Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [655.42ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:19.8931386Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [658.46ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:20.3424048Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [449.27ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:20.9811190Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [638.73ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:21.8084136Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [827.24ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:22.6944150Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [886.03ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:22.7947690Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [100.33ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:22.8947655Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [99.93ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:22.9855863Z (pass) CLI Options Verification > Help Option > should display comprehensive help [90.87ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:23.0719899Z (pass) CLI Options Verification > Version Option > should display version in semver format [86.38ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:23.5148279Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [442.80ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:24.1260978Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [611.25ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1937226Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [1067.62ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1937973Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1938864Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1939063Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1939468Z ##[group]tests\test-image-extraction.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1939801Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1940113Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1940246Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.1940579Z ##[group]tests\test-library.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2538954Z (pass) Library API > Module Imports > should export loadIssue function [54.57ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2540065Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2541475Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2542324Z (pass) Library API > Module Imports > should export issueToJson function [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2543295Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2544212Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.21ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2545244Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2547818Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.23ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2549078Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.13ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2550496Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.13ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2551639Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2552589Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2554553Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2555995Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2648750Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [9.25ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2651467Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.32ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2654319Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2655304Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.19ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.2658904Z (pass) Library API > loadIssue > should throw error for invalid URL [0.33ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:25.5789167Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [312.88ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.0113590Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [432.45ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6802485Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [668.79ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6803259Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6804021Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6804241Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6804825Z ##[group]tests\test-npm-release.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6871588Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6872709Z (pass) npm release postconditions > verifies the exact version, latest tag, and installed executable [0.59ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6873663Z Registry verification 1/2: E404: package not found
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6880464Z (pass) npm release postconditions > rejects a missing published version [0.81ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6900899Z Registry verification 1/2: npm latest is 0.3.2; expected 0.4.0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6901254Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6901416Z '0.3.2' !== '0.4.0'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6901604Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6901984Z (pass) npm release postconditions > rejects a stale latest tag [2.17ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6903469Z Registry verification 1/2: E404
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6904497Z (pass) npm release postconditions > waits for registry propagation before testing the executable [0.20ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6905977Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6906602Z (pass) npm release postconditions > rejects a registry artifact whose installed bin cannot start [0.18ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6907207Z Registry verification 1/2: Syntax error: "(" unexpected
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6909982Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6911513Z (pass) npm publication > requires registry verification even when the publish command exits zero [0.49ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6912545Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6914183Z (pass) npm publication > propagates publish command failures after bounded retries [0.22ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6916591Z Publish failed: npm publish failed
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6916974Z Publish attempt 2/2: gh-load-issue@0.4.0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6917493Z (pass) npm publication > verifies an already published version before reporting success [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6918162Z (pass) npm publication > rejects an already published broken executable [0.15ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6919488Z (pass) npm publication > does not treat registry connection errors as an unpublished version [0.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6921230Z (pass) npm publication > reports success after publishing and verifying a new version [0.22ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6922228Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6922713Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6923011Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6923291Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6923439Z  71 pass
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6923703Z  0 fail
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.6923998Z Ran 71 tests across 6 files. [16.81s]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:26.8236112Z Post job cleanup.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.0849966Z Post job cleanup.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.2631642Z [command]"C:\Program Files\Git\bin\git.exe" version
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.2966887Z git version 2.55.0.windows.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.3034053Z Temporarily overriding HOME='D:\a\_temp\5e88c748-c805-40d4-8a66-0a17fe89b5f0' before making global git config changes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.3035396Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.3049215Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.3390337Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.3735607Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.9525897Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.9785857Z http.https://github.com/.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:27.9830980Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:28.0139881Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:28.5800634Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:28.6165801Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:29.2217153Z Cleaning up orphan processes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:24:29.2946729Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test (Bun on macos-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:23.9819560Z Current runner version: '2.337.0'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9835930Z ##[group]Runner Image Provisioner
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9836600Z Hosted Compute Agent
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837020Z Version: 20260828.587
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837440Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9837930Z Build Date: 2026-08-28T16:44:25Z
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9838420Z Worker ID: {dbdcde0b-0580-4705-9ace-9c3bf89287a2}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9838960Z Azure Region: westus
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9839330Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9840380Z ##[group]Operating System
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9840780Z macOS
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9841190Z 26.6.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9841640Z 25G83
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9841970Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9842350Z ##[group]Runner Image
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9842730Z Image: macos-26-arm64
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9843120Z Version: 20260907.0351.1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9844010Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9845110Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9845850Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9846740Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9848040Z Contents: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9848410Z Metadata: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9848800Z Packages: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9849170Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9850820Z Secret source: Actions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9851400Z Cache mode: write
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9851850Z Prepare workflow directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:24.0078550Z Prepare all required actions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:24.0124530Z Getting action download info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:24.1463080Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:24.3740620Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2102130Z Complete job name: Test (Bun on macos-latest)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2548560Z ##[group]Run actions/checkout@v4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2549150Z with:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2549610Z   repository: link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2552610Z   token: ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2552960Z   ssh-strict: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2553320Z   ssh-user: git
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2553680Z   persist-credentials: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2554070Z   clean: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2554450Z   sparse-checkout-cone-mode: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2554870Z   fetch-depth: 1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2555240Z   fetch-tags: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2555650Z   show-progress: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2556010Z   lfs: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2556360Z   submodules: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2556740Z   set-safe-directory: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2557150Z   allow-unsafe-pr-checkout: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.2557920Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.5981700Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.5983340Z ##[group]Getting Git version info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.5984040Z Working directory is '/Users/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.5985030Z [command]/opt/homebrew/bin/git version
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6517470Z git version 2.55.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6530930Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6537200Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/da08561c-e2c6-4616-8c59-08cb227e8956/.gitconfig'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6550410Z Temporarily overriding HOME='/Users/runner/work/_temp/da08561c-e2c6-4616-8c59-08cb227e8956' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6551700Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6554060Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6687580Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6690470Z ##[group]Initializing the repository
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6694300Z [command]/opt/homebrew/bin/git init /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6946170Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6947550Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6951680Z hint: to use in all of your new repositories, which will suppress this warning,
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6952390Z hint: call:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6952830Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6953280Z hint: 	git config --global init.defaultBranch <name>
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6953780Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6954400Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6955330Z hint: 'development'. The just-created branch can be renamed via this command:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6956010Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6956360Z hint: 	git branch -m <name>
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6956790Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6957290Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6971910Z Initialized empty Git repository in /Users/runner/work/gh-load-issue/gh-load-issue/.git/
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.6973640Z [command]/opt/homebrew/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7058590Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7059470Z ##[group]Disabling automatic garbage collection
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7060800Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7186370Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7187160Z ##[group]Setting up auth
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7190540Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7285740Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.8702860Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.8762050Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9560380Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:25.9612250Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.0990380Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.1100570Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.1101330Z ##[group]Fetching the repository
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.1102530Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73976e1caacfed46f29ed870e20446d764a9e2a9:refs/remotes/origin/main
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8164390Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8165670Z  * [new ref]         73976e1caacfed46f29ed870e20446d764a9e2a9 -> origin/main
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8167960Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8168870Z ##[group]Determining the checkout info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8169790Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8170970Z [command]/opt/homebrew/bin/git sparse-checkout disable
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8240860Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8301020Z ##[group]Checking out the ref
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8302030Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8464710Z Switched to a new branch 'main'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8467380Z branch 'main' set up to track 'origin/main'.
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8471950Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8549710Z [command]/opt/homebrew/bin/git log -1 --format=%H
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8611300Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8864570Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8865380Z with:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8865950Z   bun-version: latest
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8866610Z   no-cache: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8873040Z   token: ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:26.8873610Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:27.5170160Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.0117340Z [command]/usr/bin/unzip -o -q /Users/runner/work/_temp/ac81b405-9871-49d6-8691-ce5786ba404a.zip
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.4896900Z [command]/Users/runner/.bun/bin/bun --revision
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.4962470Z 1.4.2+744846f84
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5068300Z ##[group]Run bun install
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5069010Z ^[[36;1mbun install^[[0m
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5109450Z shell: /bin/bash -e {0}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5110210Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5411340Z bun install v1.4.2 (744846f84)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.1569010Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.1573940Z $ husky || true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4601020Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4601670Z + @changesets/cli@2.29.8
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4602090Z + eslint@9.39.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4602390Z + eslint-config-prettier@10.1.8
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4602740Z + eslint-plugin-prettier@5.5.4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4603090Z + husky@9.1.7
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4603360Z + jscpd@4.0.5
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4603640Z + lint-staged@16.2.7
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4603900Z + prettier@3.7.4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4604180Z + test-anywhere@0.8.50
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4604480Z + @octokit/rest@22.0.1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4604750Z + fs-extra@11.3.3
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4605020Z + yargs@17.7.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4605200Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4605440Z 325 packages installed [920.00ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4660860Z ##[group]Run bun test
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4661120Z ^[[36;1mbun test^[[0m
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4690780Z shell: /bin/bash -e {0}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.4690970Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.5019880Z bun test v1.4.2 (744846f84)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.5060590Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:29.5072990Z ##[group]tests/test-e2e.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1220510Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [605.22ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1222020Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5062550Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5063570Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [385.28ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.8369110Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [324.32ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:30.8369680Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.1736370Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.1838380Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [342.51ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.5738500Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.5840510Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [400.69ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.9455310Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [365.97ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:31.9455930Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.2822810Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [339.58ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.2823400Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.6365690Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [356.77ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.6368040Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.9695000Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:32.9799110Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [335.50ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.3280130Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.3386710Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [356.33ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.6701650Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.6702760Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [342.15ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.7121410Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [41.78ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.7525960Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [40.44ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.7880640Z (pass) CLI Options Verification > Help Option > should display comprehensive help [35.46ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:33.8242480Z (pass) CLI Options Verification > Version Option > should display version in semver format [36.17ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.1520760Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [327.80ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.1521460Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.5762920Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [424.22ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.5763480Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9002930Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [323.90ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9003500Z Skipping test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9103870Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9204240Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9278520Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9279370Z ##[group]tests/test-library.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9293430Z (pass) Library API > Module Imports > should export loadIssue function [25.74ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9294000Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9294700Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.05ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9295480Z (pass) Library API > Module Imports > should export issueToJson function [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9301130Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9302200Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.09ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9302780Z (pass) Library API > parseIssueUrl > should parse short format [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9303270Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9303760Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9304390Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305390Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9305900Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9306440Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9307060Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9364200Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [6.39ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366090Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.23ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9366880Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9368070Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.12ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:34.9370560Z (pass) Library API > loadIssue > should throw error for invalid URL [0.22ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.2030760Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id BF5A:FDFE5:411F2D:4A37AD:6AC5AD27 in 154ms
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.2032040Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [266.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.2032570Z Skipping loadIssue test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.4665540Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id BF5A:FDFE5:411F5B:4A37DB:6AC5AD27 in 53ms
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.4666060Z Skipping API mode test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.4765840Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [263.44ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6368420Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id BF5A:FDFE5:411F7A:4A3804:6AC5AD27 in 51ms
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6369020Z Skipping consistency test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6369690Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [170.25ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6370150Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6370590Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6370750Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6371040Z ##[group]tests/test-image-extraction.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6382970Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.29ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6383680Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6384310Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6384930Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6385840Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6386470Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6387200Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6387950Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6401230Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6402010Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [0.38ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6402650Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6404580Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6405590Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6406220Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.32ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6406820Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.13ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6407180Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6407540Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6407650Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6407940Z ##[group]tests/test-npm-release.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6450430Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6450960Z (pass) npm release postconditions > verifies the exact version, latest tag, and installed executable [1.68ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6451440Z Registry verification 1/2: E404: package not found
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6454440Z (pass) npm release postconditions > rejects a missing published version [0.39ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6477450Z Registry verification 1/2: npm latest is 0.3.2; expected 0.4.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6477760Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6477880Z '0.3.2' !== '0.4.0'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6478000Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6478180Z (pass) npm release postconditions > rejects a stale latest tag [2.36ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6478590Z Registry verification 1/2: E404
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6479070Z (pass) npm release postconditions > waits for registry propagation before testing the executable [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6480020Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6480520Z (pass) npm release postconditions > rejects a registry artifact whose installed bin cannot start [0.07ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6481210Z Registry verification 1/2: Syntax error: "(" unexpected
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6481600Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6482230Z (pass) npm publication > requires registry verification even when the publish command exits zero [0.24ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6482680Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6482950Z Publish failed: npm publish failed
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6483350Z (pass) npm publication > propagates publish command failures after bounded retries [0.09ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6483780Z Publish attempt 2/2: gh-load-issue@0.4.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6484200Z (pass) npm publication > verifies an already published version before reporting success [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6484690Z (pass) npm publication > rejects an already published broken executable [0.06ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6485240Z (pass) npm publication > does not treat registry connection errors as an unpublished version [0.06ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6485640Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6487260Z (pass) npm publication > reports success after publishing and verifying a new version [0.23ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6487630Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6488040Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6488130Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6488350Z ##[group]tests/test-all.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6496620Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.06ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6497270Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.6842950Z (pass) gh-load-issue CLI > Help command > should display help information [34.55ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:35.7171910Z (pass) gh-load-issue CLI > Version command > should display version number [32.89ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0354680Z Skipping real issue test - gh CLI may not be authenticated
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0455870Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [318.88ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0487970Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0503470Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0518890Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0519340Z ##[group]tests/test-basic.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0519770Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0520310Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0520750Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0521150Z  71 pass
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0521720Z  0 fail
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0522020Z Ran 71 tests across 6 files. [6.53s]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.0597330Z Post job cleanup.
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.2166690Z Post job cleanup.
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.2962020Z [command]/opt/homebrew/bin/git version
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3031230Z git version 2.55.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3052990Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/294033c2-5d60-4102-ad03-0db4ebe2016c/.gitconfig'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3059190Z Temporarily overriding HOME='/Users/runner/work/_temp/294033c2-5d60-4102-ad03-0db4ebe2016c' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3059910Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3063320Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3126680Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3183370Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3869510Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3915470Z http.https://github.com/.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3923590Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.3982710Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.4690080Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.4752200Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:36.5779310Z Cleaning up orphan processes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:23:37.1573840Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	﻿2026-10-07T02:23:20.6550595Z Current runner version: '2.337.0'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6575511Z ##[group]Runner Image Provisioner
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6576409Z Hosted Compute Agent
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6577105Z Version: 20260901.588
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6577749Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6578521Z Build Date: 2026-09-01T19:56:44Z
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6579270Z Worker ID: {9459ac10-5a75-4fcb-b508-2fb99e4d7e03}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6579999Z Azure Region: westus2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6580630Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6582234Z ##[group]Operating System
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6583670Z Ubuntu
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6584265Z 24.04.5
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6584789Z LTS
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6585350Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6585920Z ##[group]Runner Image
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6586510Z Image: ubuntu-24.04
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6587180Z Version: 20260927.320.1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6588436Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6590091Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6591101Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6592372Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6594676Z Contents: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6595398Z Metadata: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6595985Z Packages: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6596653Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6598747Z Secret source: Actions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6599753Z Cache mode: write
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6600731Z Prepare workflow directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.6981049Z Prepare all required actions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:20.7040150Z Getting action download info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.0626209Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.1550791Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.4303863Z Complete job name: Test (Bun on ubuntu-latest)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5167043Z ##[group]Run actions/checkout@v4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5167942Z with:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5168425Z   repository: link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5172295Z   token: ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5173036Z   ssh-strict: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5173486Z   ssh-user: git
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5173931Z   persist-credentials: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5174418Z   clean: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5174866Z   sparse-checkout-cone-mode: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5175391Z   fetch-depth: 1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5175839Z   fetch-tags: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5176290Z   show-progress: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5176745Z   lfs: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5177164Z   submodules: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5177617Z   set-safe-directory: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5178134Z   allow-unsafe-pr-checkout: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.5178942Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6212090Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6214969Z ##[group]Getting Git version info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6216307Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6217980Z [command]/usr/bin/git version
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6330521Z git version 2.55.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6354940Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6373608Z Temporarily overriding HOME='/home/runner/work/_temp/2cb2f931-6486-4623-b52d-795079ca0afc' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6376013Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6380099Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6438888Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6443180Z ##[group]Initializing the repository
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6454064Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6574930Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6576784Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6578610Z hint: to use in all of your new repositories, which will suppress this warning,
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6579865Z hint: call:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6580953Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6581848Z hint: 	git config --global init.defaultBranch <name>
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6583123Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6584135Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6585668Z hint: 'development'. The just-created branch can be renamed via this command:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6586931Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6587625Z hint: 	git branch -m <name>
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6588382Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6589376Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6591165Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6594299Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6649652Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6650831Z ##[group]Disabling automatic garbage collection
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6653623Z [command]/usr/bin/git config --local gc.auto 0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6691459Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6693084Z ##[group]Setting up auth
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6699705Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.6735804Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7145924Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7194645Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7455451Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7502112Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7772359Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7814896Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7815748Z ##[group]Fetching the repository
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:21.7825586Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73976e1caacfed46f29ed870e20446d764a9e2a9:refs/remotes/origin/main
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0867009Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0868458Z  * [new ref]         73976e1caacfed46f29ed870e20446d764a9e2a9 -> origin/main
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0872207Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0873620Z ##[group]Determining the checkout info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0875411Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0881862Z [command]/usr/bin/git sparse-checkout disable
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0937820Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0971276Z ##[group]Checking out the ref
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.0982911Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1079416Z Switched to a new branch 'main'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1085727Z branch 'main' set up to track 'origin/main'.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1090560Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1134397Z [command]/usr/bin/git log -1 --format=%H
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1161148Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1446449Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1447049Z with:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1447467Z   bun-version: latest
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1447929Z   no-cache: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1451693Z   token: ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.1452122Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:22.9981916Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.3176449Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/09fec66d-83d3-40ac-bcf7-b69b0244dec4.zip
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9213835Z [command]/home/runner/.bun/bin/bun --revision
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9262145Z 1.4.2+744846f84
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9433582Z ##[group]Run bun install
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9434052Z ^[[36;1mbun install^[[0m
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9705930Z shell: /usr/bin/bash -e {0}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9706426Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:23.9899261Z bun install v1.4.2 (744846f84)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.3836423Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.3839693Z $ husky || true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6283498Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6284090Z + @changesets/cli@2.29.8
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6284630Z + eslint@9.39.2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6285028Z + eslint-config-prettier@10.1.8
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6285453Z + eslint-plugin-prettier@5.5.4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6285808Z + husky@9.1.7
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6286106Z + jscpd@4.0.5
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6286462Z + lint-staged@16.2.7
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6286775Z + prettier@3.7.4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6287079Z + test-anywhere@0.8.50
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6287418Z + @octokit/rest@22.0.1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6287752Z + fs-extra@11.3.3
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6288042Z + yargs@17.7.2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6288260Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6288455Z 325 packages installed [638.00ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6350867Z ##[group]Run bun test
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6351213Z ^[[36;1mbun test^[[0m
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6418319Z shell: /usr/bin/bash -e {0}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6418683Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6517297Z bun test v1.4.2 (744846f84)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6542364Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:24.6544046Z ##[group]tests/test-e2e.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:25.4399083Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [775.90ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:25.7704956Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [330.62ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:26.3314885Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [560.96ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:26.6519465Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [320.55ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:26.9742232Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [322.20ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:27.3116954Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [337.37ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:27.6383768Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [326.75ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:27.8511000Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [212.72ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:28.1770799Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [326.02ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:28.5117409Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [334.65ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:28.8407579Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [328.94ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:28.9027613Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [62.00ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:28.9641878Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [61.43ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:29.0186935Z (pass) CLI Options Verification > Help Option > should display comprehensive help [54.51ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:29.0695777Z (pass) CLI Options Verification > Version Option > should display version in semver format [50.85ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:29.2835179Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [213.92ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:29.6128735Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [329.33ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1408299Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [527.97ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1409162Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1410073Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1410518Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1411166Z ##[group]tests/test-all.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1424750Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1426178Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.1945676Z (pass) gh-load-issue CLI > Help command > should display help information [51.93ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.2458704Z (pass) gh-load-issue CLI > Version command > should display version number [51.30ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5721365Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [326.24ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5724543Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.39ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5729097Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5731526Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.06ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5734596Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.04ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5748064Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.03ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5749799Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5751423Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.03ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5753476Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.02ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5755065Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.03ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5758452Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [0.32ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5759816Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.06ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5761291Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.06ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5770526Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5771779Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.22ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5773345Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.11ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5774082Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5774931Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5775173Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5775794Z ##[group]tests/test-image-extraction.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5776206Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5776624Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5776822Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5777287Z ##[group]tests/test-npm-release.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5923902Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5925455Z (pass) npm release postconditions > verifies the exact version, latest tag, and installed executable [0.53ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5926661Z Registry verification 1/2: E404: package not found
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5931649Z (pass) npm release postconditions > rejects a missing published version [0.64ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5946303Z Registry verification 1/2: npm latest is 0.3.2; expected 0.4.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5946783Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5946909Z '0.3.2' !== '0.4.0'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5947164Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5947665Z (pass) npm release postconditions > rejects a stale latest tag [1.63ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5948706Z Registry verification 1/2: E404
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5949948Z (pass) npm release postconditions > waits for registry propagation before testing the executable [0.18ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5950938Z Verified npm registry release: gh-load-issue@0.4.0 (latest)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5951922Z (pass) npm release postconditions > rejects a registry artifact whose installed bin cannot start [0.16ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5953094Z Registry verification 1/2: Syntax error: "(" unexpected
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5955170Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5956206Z (pass) npm publication > requires registry verification even when the publish command exits zero [0.48ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5957365Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5957873Z Publish failed: npm publish failed
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5958635Z (pass) npm publication > propagates publish command failures after bounded retries [0.22ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5959457Z Publish attempt 2/2: gh-load-issue@0.4.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5960273Z (pass) npm publication > verifies an already published version before reporting success [0.12ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5961356Z (pass) npm publication > rejects an already published broken executable [0.14ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5963159Z (pass) npm publication > does not treat registry connection errors as an unpublished version [0.16ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5964533Z Publish attempt 1/2: gh-load-issue@0.4.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5965371Z (pass) npm publication > reports success after publishing and verifying a new version [0.20ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5966041Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5966628Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5966831Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.5967286Z ##[group]tests/test-library.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6208323Z (pass) Library API > Module Imports > should export loadIssue function [23.29ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6209793Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6211263Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6212989Z (pass) Library API > Module Imports > should export issueToJson function [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6214559Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6216070Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.21ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6217327Z (pass) Library API > parseIssueUrl > should parse short format [0.14ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6218481Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6219794Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.11ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6221331Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.15ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6222940Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6224348Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6225769Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6227156Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6294578Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.02ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6296649Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.25ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6298221Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.16ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6300636Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.20ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.6304194Z (pass) Library API > loadIssue > should throw error for invalid URL [0.36ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:30.7699214Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [139.40ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.0200735Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [250.18ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3971406Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id A050:24E4D3:15EA1E:1ED7FD:6AC5AD23 in 4ms
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3973229Z Skipping consistency test - authentication may be required
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3974842Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [377.26ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3993210Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3993957Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3994168Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3995047Z ##[group]tests/test-basic.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3995361Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3995751Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3995943Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3996077Z  71 pass
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3996402Z  0 fail
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.3996725Z Ran 71 tests across 6 files. [6.75s]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.4096139Z Post job cleanup.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.5956868Z Post job cleanup.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6863523Z [command]/usr/bin/git version
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6906944Z git version 2.55.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6951593Z Temporarily overriding HOME='/home/runner/work/_temp/617ca7ad-c934-4562-9937-359f869cdf90' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6953309Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.6958165Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7000180Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7039784Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7368945Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7413018Z http.https://github.com/.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7428574Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7488293Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7739115Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.7777080Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.8174331Z Cleaning up orphan processes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:23:31.8530823Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint and Format Check	UNKNOWN STEP	﻿2026-10-07T02:23:20.5355657Z Current runner version: '2.337.0'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5379364Z ##[group]Runner Image Provisioner
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5380249Z Hosted Compute Agent
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5380818Z Version: 20261002.596
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5381490Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5382202Z Build Date: 2026-10-02T22:28:27Z
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5382898Z Worker ID: {881f83f4-64cc-419c-8327-2ec75707bf33}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5383603Z Region: westus3
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5384144Z Cloud: Azure
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5385029Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5386482Z ##[group]Operating System
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5387279Z Ubuntu
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5387838Z 24.04.5
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5388350Z LTS
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5388871Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5389598Z ##[group]Runner Image
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5390189Z Image: ubuntu-24.04
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5390780Z Version: 20261004.327.1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5391993Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5393543Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5394462Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5395664Z ##[group]GITHUB_TOKEN Permissions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5397980Z Contents: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5398670Z Metadata: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5399224Z Packages: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5399786Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5401755Z Secret source: Actions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5402615Z Cache mode: write
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5403567Z Prepare workflow directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5700852Z Prepare all required actions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.5760797Z Getting action download info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.8791763Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:20.9620421Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.6551520Z Complete job name: Lint and Format Check
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7241345Z ##[group]Run actions/checkout@v4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7242272Z with:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7242896Z   repository: link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7247586Z   token: ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7248189Z   ssh-strict: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7248808Z   ssh-user: git
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7249470Z   persist-credentials: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7250136Z   clean: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7250769Z   sparse-checkout-cone-mode: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7251453Z   fetch-depth: 1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7252048Z   fetch-tags: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7252656Z   show-progress: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7253268Z   lfs: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7253839Z   submodules: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7254427Z   set-safe-directory: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7255043Z   allow-unsafe-pr-checkout: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.7255941Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8234517Z Syncing repository: link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8236929Z ##[group]Getting Git version info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8238436Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8239832Z [command]/usr/bin/git version
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8312301Z git version 2.55.0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8330602Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8346648Z Temporarily overriding HOME='/home/runner/work/_temp/1f281561-c394-4215-a0f6-42a5dd670dcd' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8349859Z Adding repository directory to the temporary git global config as a safe directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8352482Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8400240Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8403423Z ##[group]Initializing the repository
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8406527Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8540154Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8544094Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8548132Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8550014Z hint: call:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8552413Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8553800Z hint: 	git config --global init.defaultBranch <name>
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8555116Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8556477Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8558859Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8560219Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8561004Z hint: 	git branch -m <name>
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8561776Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8562748Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8564163Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8567721Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8608550Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8610006Z ##[group]Disabling automatic garbage collection
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8611272Z [command]/usr/bin/git config --local gc.auto 0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8641042Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8642788Z ##[group]Setting up auth
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8646543Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.8676784Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9018856Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9049504Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9237961Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9267549Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9446221Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9481531Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9482637Z ##[group]Fetching the repository
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:21.9490415Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73976e1caacfed46f29ed870e20446d764a9e2a9:refs/remotes/origin/main
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7025509Z From https://github.com/link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7028037Z  * [new ref]         73976e1caacfed46f29ed870e20446d764a9e2a9 -> origin/main
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7032713Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7034872Z ##[group]Determining the checkout info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7037514Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7039168Z [command]/usr/bin/git sparse-checkout disable
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7085676Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7114609Z ##[group]Checking out the ref
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7117780Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7222162Z Switched to a new branch 'main'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7227739Z branch 'main' set up to track 'origin/main'.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7234839Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7269220Z [command]/usr/bin/git log -1 --format=%H
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7289444Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7635339Z ##[group]Run oven-sh/setup-bun@v2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7636612Z with:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7637864Z   bun-version: latest
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7638962Z   no-cache: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7648453Z   token: ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:22.7649445Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:23.4029005Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:23.8294901Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/cd7887a4-6b4e-4e4a-ad87-7de97290e13e.zip
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.4901469Z [command]/home/runner/.bun/bin/bun --revision
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.4941061Z 1.4.2+744846f84
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.5072692Z ##[group]Run bun install
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.5073232Z ^[[36;1mbun install^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.5344205Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.5344815Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.5444766Z bun install v1.4.2 (744846f84)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.8827478Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:24.8829335Z $ husky || true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8588054Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8590301Z + @changesets/cli@2.29.8
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8590922Z + eslint@9.39.2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8591283Z + eslint-config-prettier@10.1.8
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8591715Z + eslint-plugin-prettier@5.5.4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8592048Z + husky@9.1.7
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8592325Z + jscpd@4.0.5
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8592744Z + lint-staged@16.2.7
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8593033Z + prettier@3.7.4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8593328Z + test-anywhere@0.8.50
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8593623Z + @octokit/rest@22.0.1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8593883Z + fs-extra@11.3.3
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8594176Z + yargs@17.7.2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8594386Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8594613Z 325 packages installed [2.31s]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8645882Z ##[group]Run bun run lint
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8646283Z ^[[36;1mbun run lint^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8688758Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8689176Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:26.8778323Z $ eslint .
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.4280245Z ##[group]Run bun run format:check
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.4280635Z ^[[36;1mbun run format:check^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.4319181Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.4319630Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.4389003Z $ prettier --check .
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:28.5403400Z Checking formatting...
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2043902Z All matched files use Prettier code style!
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2319460Z ##[group]Run bun run check:file-size
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2320034Z ^[[36;1mbun run check:file-size^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2375630Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2376162Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2472815Z $ bun scripts/check-file-size.mjs
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2555808Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2556392Z Checking JavaScript files for maximum 1100 lines...
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2556824Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2596324Z ✓ All files are within the line limit
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2596783Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.2703941Z Post job cleanup.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.4253732Z Post job cleanup.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5065907Z [command]/usr/bin/git version
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5101560Z git version 2.55.0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5132501Z Temporarily overriding HOME='/home/runner/work/_temp/3696f6e5-5d7c-47bc-a4a7-989c488d0c51' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5134007Z Adding repository directory to the temporary git global config as a safe directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5137443Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5170074Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5200207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5403845Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5426580Z http.https://github.com/.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5435991Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5465798Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5660550Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.5688611Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.6019103Z Cleaning up orphan processes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:23:29.6241462Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test installed npm package (Linux)	UNKNOWN STEP	﻿2026-10-07T02:23:21.1827150Z Current runner version: '2.337.0'
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1854568Z ##[group]Runner Image Provisioner
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1855488Z Hosted Compute Agent
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1856428Z Version: 20260901.588
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1857080Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1857862Z Build Date: 2026-09-01T19:56:44Z
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1858594Z Worker ID: {968ac88f-594e-47dc-8fdf-6791cc6ba8f4}
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1859310Z Azure Region: westus
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1860268Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1862063Z ##[group]Operating System
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1863246Z Ubuntu
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1863783Z 24.04.5
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1864335Z LTS
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1864908Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1865457Z ##[group]Runner Image
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1866103Z Image: ubuntu-24.04
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1866678Z Version: 20260927.320.1
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1868044Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1869611Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1871062Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1872288Z ##[group]GITHUB_TOKEN Permissions
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1874562Z Contents: read
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1875183Z Metadata: read
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1875861Z Packages: read
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1876448Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1878622Z Secret source: Actions
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1879669Z Cache mode: write
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.1880868Z Prepare workflow directory
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.2231490Z Prepare all required actions
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.2282524Z Getting action download info
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.6063918Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.7359472Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:21.8252386Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.3255017Z Complete job name: Test installed npm package (Linux)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4215085Z ##[group]Run actions/checkout@v4
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4216102Z with:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4216646Z   repository: link-foundation/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4221198Z   token: ***
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4221697Z   ssh-strict: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4222178Z   ssh-user: git
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4222674Z   persist-credentials: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4223203Z   clean: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4223697Z   sparse-checkout-cone-mode: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4224271Z   fetch-depth: 1
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4224742Z   fetch-tags: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4225236Z   show-progress: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4225717Z   lfs: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4226217Z   submodules: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4226727Z   set-safe-directory: true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4227275Z   allow-unsafe-pr-checkout: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.4228169Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5305024Z Syncing repository: link-foundation/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5308237Z ##[group]Getting Git version info
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5309768Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5312263Z [command]/usr/bin/git version
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5371942Z git version 2.55.0
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5397086Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5416815Z Temporarily overriding HOME='/home/runner/work/_temp/088d29b3-f1e4-48a3-8d9c-6c18ca8ed1da' before making global git config changes
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5420629Z Adding repository directory to the temporary git global config as a safe directory
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5424482Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5483089Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5488491Z ##[group]Initializing the repository
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5493945Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5607998Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5610238Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5611916Z hint: to use in all of your new repositories, which will suppress this warning,
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5613227Z hint: call:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5614145Z hint:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5615243Z hint: 	git config --global init.defaultBranch <name>
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5616386Z hint:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5617431Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5619114Z hint: 'development'. The just-created branch can be renamed via this command:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5620839Z hint:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5621611Z hint: 	git branch -m <name>
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5622452Z hint:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5623557Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5625984Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5629430Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5678482Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5680119Z ##[group]Disabling automatic garbage collection
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5682397Z [command]/usr/bin/git config --local gc.auto 0
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5737072Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5738546Z ##[group]Setting up auth
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5743972Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.5785850Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6173726Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6217642Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6455921Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6496796Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6732811Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6778071Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6779076Z ##[group]Fetching the repository
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:22.6789212Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73976e1caacfed46f29ed870e20446d764a9e2a9:refs/remotes/origin/main
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3800382Z From https://github.com/link-foundation/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3803655Z  * [new ref]         73976e1caacfed46f29ed870e20446d764a9e2a9 -> origin/main
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3809088Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3812275Z ##[group]Determining the checkout info
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3815218Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3817035Z [command]/usr/bin/git sparse-checkout disable
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3876313Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3914695Z ##[group]Checking out the ref
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.3918903Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4016736Z Switched to a new branch 'main'
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4021872Z branch 'main' set up to track 'origin/main'.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4029797Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4076069Z [command]/usr/bin/git log -1 --format=%H
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4104099Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4502500Z ##[group]Run actions/setup-node@v4
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4503751Z with:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4504682Z   node-version: 20.x
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4505697Z   always-auth: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4506993Z   check-latest: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4517087Z   token: ***
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.4518018Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.6152118Z Attempting to download 20.x...
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.6270736Z (node:2275) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:23.6274561Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:24.4034030Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:24.8935528Z Extracting ...
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:24.9055515Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/bc5b8ea1-dec3-4d24-8d5d-0cb0d28d5f44 -f /home/runner/work/_temp/4406f5e4-7c78-4b11-bb1f-99b07dbc6c80
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:25.9325903Z Adding to the cache ...
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:27.8093285Z ##[group]Environment details
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0411473Z node: v20.20.2
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0412093Z npm: 10.8.2
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0412553Z yarn: 1.22.22
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0413345Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0656869Z ##[group]Run oven-sh/setup-bun@v2
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0657201Z with:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0657415Z   bun-version: latest
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0657644Z   no-cache: false
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0660387Z   token: ***
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.0660640Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:28.6272412Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.0973300Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/bb2ffa71-a160-4be3-b038-719984a8d93c.zip
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7185784Z [command]/home/runner/.bun/bin/bun --revision
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7243382Z 1.4.2+744846f84
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7421253Z ##[group]Run bun install
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7421635Z ^[[36;1mbun install^[[0m
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7696161Z shell: /usr/bin/bash -e {0}
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7696562Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:29.7843844Z bun install v1.4.2 (744846f84)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.1747547Z 
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.1751847Z $ husky || true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2191044Z 
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2191825Z + @changesets/cli@2.29.8
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2192341Z + eslint@9.39.2
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2192701Z + eslint-config-prettier@10.1.8
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2193052Z + eslint-plugin-prettier@5.5.4
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2193331Z + husky@9.1.7
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2193569Z + jscpd@4.0.5
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2193804Z + lint-staged@16.2.7
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2194033Z + prettier@3.7.4
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2194291Z + test-anywhere@0.8.50
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2194534Z + @octokit/rest@22.0.1
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2194764Z + fs-extra@11.3.3
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2194968Z + yargs@17.7.2
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2195084Z 
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2195319Z 325 packages installed [434.00ms]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2271260Z ##[group]Run bun run test:package
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2271609Z ^[[36;1mbun run test:package^[[0m
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2335754Z shell: /usr/bin/bash -e {0}
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2336049Z ##[endgroup]
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.2445549Z $ bun scripts/package-smoke-test.mjs
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.9174467Z 
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.9175152Z > gh-load-issue@0.3.2 prepare
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.9175730Z > husky || true
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.9175932Z 
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:30.9176259Z Testing packed artifact: gh-load-issue-0.3.2.tgz
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:32.6240922Z Verified installed gh-load-issue@0.3.2: --version and --help
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:32.6506804Z Post job cleanup.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:32.8467647Z Post job cleanup.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:32.9869252Z (node:2420) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:32.9871017Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.0089635Z Post job cleanup.
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1072184Z [command]/usr/bin/git version
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1121670Z git version 2.55.0
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1171030Z Temporarily overriding HOME='/home/runner/work/_temp/73d9129f-886e-4386-8310-2d68708dc0ff' before making global git config changes
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1172979Z Adding repository directory to the temporary git global config as a safe directory
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1177178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1227186Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1270824Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1563794Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1607295Z http.https://github.com/.extraheader
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1631243Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.1697586Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.2071220Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.2134728Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.2781187Z Cleaning up orphan processes
+Test installed npm package (Linux)	UNKNOWN STEP	2026-10-07T02:23:33.3131956Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Release	UNKNOWN STEP	﻿2026-10-07T02:24:33.7024539Z Current runner version: '2.337.0'
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7051229Z ##[group]Runner Image Provisioner
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7052570Z Hosted Compute Agent
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7053956Z Version: 20260901.588
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7054719Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7055470Z Build Date: 2026-09-01T19:56:44Z
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7056188Z Worker ID: {3a35339b-8226-416e-8551-6b9a11fb8c5f}
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7056945Z Azure Region: westus3
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7057522Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7059367Z ##[group]Operating System
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7060197Z Ubuntu
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7060755Z 24.04.5
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7061305Z LTS
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7061872Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7062417Z ##[group]Runner Image
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7063438Z Image: ubuntu-24.04
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7064040Z Version: 20260927.320.1
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7065367Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7066876Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7067938Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7069124Z ##[group]GITHUB_TOKEN Permissions
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7071150Z Contents: write
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7071754Z Metadata: read
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7072403Z PullRequests: write
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7073251Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7075371Z Secret source: Actions
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7076414Z Cache mode: write
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7077098Z Prepare workflow directory
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7482325Z Prepare all required actions
+Release	UNKNOWN STEP	2026-10-07T02:24:33.7530387Z Getting action download info
+Release	UNKNOWN STEP	2026-10-07T02:24:34.0850809Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Release	UNKNOWN STEP	2026-10-07T02:24:34.1775757Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Release	UNKNOWN STEP	2026-10-07T02:24:34.2672266Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Release	UNKNOWN STEP	2026-10-07T02:24:35.0164259Z Complete job name: Release
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1025954Z ##[group]Run actions/checkout@v4
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1026944Z with:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1027423Z   fetch-depth: 0
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1027963Z   repository: link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1032007Z   token: ***
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1032487Z   ssh-strict: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1033176Z   ssh-user: git
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1033662Z   persist-credentials: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1034190Z   clean: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1034687Z   sparse-checkout-cone-mode: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1035315Z   fetch-tags: false
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1035805Z   show-progress: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1036299Z   lfs: false
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1036760Z   submodules: false
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1037271Z   set-safe-directory: true
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1037821Z   allow-unsafe-pr-checkout: false
+Release	UNKNOWN STEP	2026-10-07T02:24:35.1038671Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2081606Z Syncing repository: link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2085115Z ##[group]Getting Git version info
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2086786Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2089020Z [command]/usr/bin/git version
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2164287Z git version 2.55.0
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2202407Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2212332Z Temporarily overriding HOME='/home/runner/work/_temp/7f0c214b-3cb4-4e18-b5b7-f33b73c97359' before making global git config changes
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2215364Z Adding repository directory to the temporary git global config as a safe directory
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2219581Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2272352Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2283152Z ##[group]Initializing the repository
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2294868Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2410327Z hint: Using 'master' as the name for the initial branch. This default branch name
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2426236Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2428625Z hint: to use in all of your new repositories, which will suppress this warning,
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2430424Z hint: call:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2431494Z hint:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2433040Z hint: 	git config --global init.defaultBranch <name>
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2435110Z hint:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2436601Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2438457Z hint: 'development'. The just-created branch can be renamed via this command:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2439854Z hint:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2441073Z hint: 	git branch -m <name>
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2442327Z hint:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2444567Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2447310Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2450642Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2485610Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2486937Z ##[group]Disabling automatic garbage collection
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2490502Z [command]/usr/bin/git config --local gc.auto 0
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2524063Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2525381Z ##[group]Setting up auth
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2531967Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2588113Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Release	UNKNOWN STEP	2026-10-07T02:24:35.2967922Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3010711Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3246056Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3285681Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3520409Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3564744Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3566515Z ##[group]Fetching the repository
+Release	UNKNOWN STEP	2026-10-07T02:24:35.3576793Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3818571Z From https://github.com/link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3820233Z  * [new branch]      issue-1-943fc4ad      -> origin/issue-1-943fc4ad
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3822118Z  * [new branch]      issue-10-f1387537ff20 -> origin/issue-10-f1387537ff20
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3824275Z  * [new branch]      issue-12-a627a2b63736 -> origin/issue-12-a627a2b63736
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3825919Z  * [new branch]      issue-14-fa014ae9c6db -> origin/issue-14-fa014ae9c6db
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3827754Z  * [new branch]      issue-16-52998c4b2eaa -> origin/issue-16-52998c4b2eaa
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3829628Z  * [new branch]      issue-18-6c2e4083cb19 -> origin/issue-18-6c2e4083cb19
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3831501Z  * [new branch]      issue-3-f4e52267e271  -> origin/issue-3-f4e52267e271
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3834132Z  * [new branch]      issue-5-19ab2f5566c6  -> origin/issue-5-19ab2f5566c6
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3836004Z  * [new branch]      issue-7-0d56eeeab7ab  -> origin/issue-7-0d56eeeab7ab
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3837607Z  * [new branch]      main                  -> origin/main
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3838993Z  * [new tag]         v0.2.0                -> v0.2.0
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3840401Z  * [new tag]         v0.2.1                -> v0.2.1
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3842197Z  * [new tag]         v0.3.0                -> v0.3.0
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3843748Z  * [new tag]         v0.3.1                -> v0.3.1
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3845048Z  * [new tag]         v0.3.2                -> v0.3.2
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3848000Z [command]/usr/bin/git branch --list --remote origin/main
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3864060Z   origin/main
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3874115Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3908617Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3915420Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3918243Z ##[group]Determining the checkout info
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3921294Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3923324Z [command]/usr/bin/git sparse-checkout disable
+Release	UNKNOWN STEP	2026-10-07T02:24:36.3975489Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4010915Z ##[group]Checking out the ref
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4013821Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4103213Z Switched to a new branch 'main'
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4108867Z branch 'main' set up to track 'origin/main'.
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4117216Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4165128Z [command]/usr/bin/git log -1 --format=%H
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4193568Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4633003Z ##[group]Run actions/setup-node@v4
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4634337Z with:
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4635185Z   node-version: 20.x
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4636228Z   registry-url: https://registry.npmjs.org
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4637468Z   always-auth: false
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4638442Z   check-latest: false
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4648170Z   token: ***
+Release	UNKNOWN STEP	2026-10-07T02:24:36.4649041Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:36.6110186Z Attempting to download 20.x...
+Release	UNKNOWN STEP	2026-10-07T02:24:36.6223998Z (node:2287) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Release	UNKNOWN STEP	2026-10-07T02:24:36.6229192Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Release	UNKNOWN STEP	2026-10-07T02:24:37.6610604Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Release	UNKNOWN STEP	2026-10-07T02:24:38.2213348Z Extracting ...
+Release	UNKNOWN STEP	2026-10-07T02:24:38.2345498Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/c34dee23-37d4-4f65-8cbd-628207f403f1 -f /home/runner/work/_temp/b9fa6362-478a-4a09-b24a-5fe636bd2906
+Release	UNKNOWN STEP	2026-10-07T02:24:39.2759516Z Adding to the cache ...
+Release	UNKNOWN STEP	2026-10-07T02:24:41.5834209Z ##[group]Environment details
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8079782Z node: v20.20.2
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8080472Z npm: 10.8.2
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8080945Z yarn: 1.22.22
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8081680Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8327332Z ##[group]Run oven-sh/setup-bun@v2
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8327666Z with:
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8327874Z   bun-version: latest
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8328101Z   no-cache: false
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8330522Z   token: ***
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8330739Z env:
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8331048Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8331404Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:41.8331700Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:42.4626486Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Release	UNKNOWN STEP	2026-10-07T02:24:42.9332691Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/a898d32c-6c00-4bec-a4d6-5178f5137ead.zip
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5356624Z [command]/home/runner/.bun/bin/bun --revision
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5413504Z 1.4.2+744846f84
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5594321Z ##[group]Run npm install
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5594812Z ^[[36;1mnpm install^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5864100Z shell: /usr/bin/bash -e {0}
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5864452Z env:
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5864766Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5865172Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:43.5865488Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:48.6663496Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.6664495Z > gh-load-issue@0.3.2 prepare
+Release	UNKNOWN STEP	2026-10-07T02:24:48.6665186Z > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:24:48.6665431Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7189706Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7190856Z added 352 packages, and audited 353 packages in 5s
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7191677Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7192284Z 76 packages are looking for funding
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7193341Z   run `npm fund` for details
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7421918Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7423603Z 28 vulnerabilities (5 moderate, 23 high)
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7424117Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7424892Z To address issues that do not require attention, run:
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7425567Z   npm audit fix
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7425842Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7426306Z To address all issues (including breaking changes), run:
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7426980Z   npm audit fix --force
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7427252Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7427450Z Run `npm audit` for details.
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7661465Z ##[group]Run node scripts/setup-npm.mjs
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7661859Z ^[[36;1mnode scripts/setup-npm.mjs^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7727686Z shell: /usr/bin/bash -e {0}
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7727948Z env:
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7728207Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7728568Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:48.7728849Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:53.1669581Z 10.8.2
+Release	UNKNOWN STEP	2026-10-07T02:24:53.1721324Z Current npm version: 10.8.2
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6879313Z npm error code EBADENGINE
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6880267Z npm error engine Unsupported engine
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6881381Z npm error engine Not compatible with your version of node/npm: npm@12.2.0
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6882711Z npm error notsup Not compatible with your version of node/npm: npm@12.2.0
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6884229Z npm error notsup Required: {"node":"^22.22.2 || ^24.15.0 || >=26.0.0"}
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6885622Z npm error notsup Actual:   {"npm":"10.8.2","node":"v20.20.2"}
+Release	UNKNOWN STEP	2026-10-07T02:24:53.6894958Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-07T02_24_53_242Z-debug-0.log
+Release	UNKNOWN STEP	2026-10-07T02:24:53.7930983Z 10.8.2
+Release	UNKNOWN STEP	2026-10-07T02:24:53.7969127Z Updated npm version: 10.8.2
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8065906Z ##[group]Run # Count changeset files (excluding README.md and config.json)
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8066502Z ^[[36;1m# Count changeset files (excluding README.md and config.json)^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8067026Z ^[[36;1mCHANGESET_COUNT=$(find .changeset -name "*.md" ! -name "README.md" | wc -l)^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8067513Z ^[[36;1mecho "Found $CHANGESET_COUNT changeset file(s)"^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8068042Z ^[[36;1mecho "has_changesets=$([[ $CHANGESET_COUNT -gt 0 ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8132181Z shell: /usr/bin/bash -e {0}
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8132438Z env:
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8132694Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8133375Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8133669Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8248260Z Found 1 changeset file(s)
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8304813Z ##[group]Run node scripts/version-and-commit.mjs --mode changeset
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8325362Z ^[[36;1mnode scripts/version-and-commit.mjs --mode changeset^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8386813Z shell: /usr/bin/bash -e {0}
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8387066Z env:
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8387323Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8387683Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:24:53.8387971Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:24:55.9174487Z Parsed configuration: { mode: 'changeset', bumpType: '', description: '(none)' }
+Release	UNKNOWN STEP	2026-10-07T02:24:55.9396700Z Checking for remote changes...
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5582176Z From https://github.com/link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5583278Z  * branch            main       -> FETCH_HEAD
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5690443Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5769794Z 73976e1caacfed46f29ed870e20446d764a9e2a9
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5781152Z Current version: 0.3.2
+Release	UNKNOWN STEP	2026-10-07T02:24:56.5781919Z Running changeset version...
+Release	UNKNOWN STEP	2026-10-07T02:24:56.6944649Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:56.6945223Z > gh-load-issue@0.3.2 changeset:version
+Release	UNKNOWN STEP	2026-10-07T02:24:56.6945747Z > bun scripts/changeset-version.mjs
+Release	UNKNOWN STEP	2026-10-07T02:24:56.6945999Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:58.0009090Z Running changeset version...
+Release	UNKNOWN STEP	2026-10-07T02:24:58.7774705Z 🦋  All files have been updated. Review them and commit at your leisure
+Release	UNKNOWN STEP	2026-10-07T02:24:58.7915766Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:58.7916669Z Synchronizing package-lock.json...
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7108517Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7109279Z > gh-load-issue@0.4.0 prepare
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7109665Z > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7109805Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7583080Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7583880Z up to date, audited 353 packages in 898ms
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7584507Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7585005Z 76 packages are looking for funding
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7585382Z   run `npm fund` for details
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7869828Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7872118Z 28 vulnerabilities (5 moderate, 23 high)
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7872442Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7872682Z To address issues that do not require attention, run:
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7873236Z   npm audit fix
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7873366Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7873601Z To address all issues (including breaking changes), run:
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7873965Z   npm audit fix --force
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7874118Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7874239Z Run `npm audit` for details.
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7975894Z 
+Release	UNKNOWN STEP	2026-10-07T02:24:59.7977224Z ✅ Version bump complete with synchronized package-lock.json
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8058062Z New version: 0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8166772Z  D .changeset/gh-cli-default.md
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8167388Z  M CHANGELOG.md
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8167859Z  M package-lock.json
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8168291Z  M package.json
+Release	UNKNOWN STEP	2026-10-07T02:24:59.8175204Z Changes detected, committing...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2698895Z ^[[33m[STARTED]^[[39m Backing up original state...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2932045Z ^[[32m[COMPLETED]^[[39m Backed up original state in git stash (b01ed2c)
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2934134Z ^[[33m[STARTED]^[[39m Running tasks for staged files...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2938251Z ^[[33m[STARTED]^[[39m package.json^[[0;90m — 3 files^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2942418Z ^[[33m[STARTED]^[[39m *.{js,mjs,cjs}^[[0;90m — 0 files^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2944267Z ^[[33m[STARTED]^[[39m *.md^[[0;90m — 1 file^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2945575Z ^[[33m[SKIPPED]^[[39m *.{js,mjs,cjs}^[[0;90m — no files^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.2946555Z ^[[33m[STARTED]^[[39m prettier --write
+Release	UNKNOWN STEP	2026-10-07T02:25:00.4657562Z ^[[32m[COMPLETED]^[[39m prettier --write
+Release	UNKNOWN STEP	2026-10-07T02:25:00.4658331Z ^[[33m[STARTED]^[[39m prettier --check
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6387367Z ^[[32m[COMPLETED]^[[39m prettier --check
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6388321Z ^[[32m[COMPLETED]^[[39m *.md^[[0;90m — 1 file^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6389157Z ^[[32m[COMPLETED]^[[39m package.json^[[0;90m — 3 files^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6389972Z ^[[32m[COMPLETED]^[[39m Running tasks for staged files...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6390687Z ^[[33m[STARTED]^[[39m Applying modifications from tasks...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6457629Z ^[[32m[COMPLETED]^[[39m Applying modifications from tasks...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6458842Z ^[[33m[STARTED]^[[39m Cleaning up temporary files...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6542153Z ^[[32m[COMPLETED]^[[39m Cleaning up temporary files...
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6849394Z [main 671340e] 0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6849830Z  4 files changed, 23 insertions(+), 24 deletions(-)
+Release	UNKNOWN STEP	2026-10-07T02:25:00.6850281Z  delete mode 100644 .changeset/gh-cli-default.md
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1068447Z To https://github.com/link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1068948Z    73976e1..671340e  main -> main
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1116159Z ✅ Version bump committed and pushed to main
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1218240Z ##[group]Run node scripts/publish-to-npm.mjs --should-pull
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1218696Z ^[[36;1mnode scripts/publish-to-npm.mjs --should-pull^[[0m
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1281929Z shell: /usr/bin/bash -e {0}
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1282176Z env:
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1282429Z   NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1283060Z   NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+Release	UNKNOWN STEP	2026-10-07T02:25:02.1283582Z ##[endgroup]
+Release	UNKNOWN STEP	2026-10-07T02:25:02.7129032Z From https://github.com/link-foundation/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:02.7129550Z  * branch            main       -> FETCH_HEAD
+Release	UNKNOWN STEP	2026-10-07T02:25:02.7187525Z Already up to date.
+Release	UNKNOWN STEP	2026-10-07T02:25:03.1949244Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:03.1949859Z > gh-load-issue@0.4.0 prepare
+Release	UNKNOWN STEP	2026-10-07T02:25:03.1950406Z > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:25:03.1950645Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:03.1956556Z Testing packed artifact: gh-load-issue-0.4.0.tgz
+Release	UNKNOWN STEP	2026-10-07T02:25:05.1992690Z Verified installed gh-load-issue@0.4.0: --version and --help
+Release	UNKNOWN STEP	2026-10-07T02:25:05.6935306Z Publish attempt 1/3: gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:05.8032222Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:05.8033191Z > gh-load-issue@0.4.0 changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:05.8033703Z > changeset publish
+Release	UNKNOWN STEP	2026-10-07T02:25:05.8033878Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:06.1451630Z 🦋  ^[[36minfo^[[39m npm info gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:06.5374629Z 🦋  ^[[36minfo^[[39m gh-load-issue is being published because our local version (0.4.0) has not been published on npm
+Release	UNKNOWN STEP	2026-10-07T02:25:06.5376319Z 🦋  ^[[36minfo^[[39m Publishing ^[[36m"gh-load-issue"^[[39m at ^[[32m"0.4.0"^[[39m
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1960368Z 🦋  ^[[31merror^[[39m an error occurred while publishing gh-load-issue: E404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found 
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1962010Z 🦋  ^[[31merror^[[39m 'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1962700Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1963687Z 🦋  ^[[31merror^[[39m Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1964578Z 🦋  ^[[31merror^[[39m tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1965206Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1965810Z 🦋  ^[[31merror^[[39m > gh-load-issue@0.4.0 prepare
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1966595Z 🦋  ^[[31merror^[[39m > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1967200Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1968880Z 🦋  ^[[31merror^[[39m npm warn publish npm auto-corrected some errors in your package.json when publishing.  Please run "npm pkg fix" to address these errors.
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1969805Z 🦋  ^[[31merror^[[39m npm warn publish errors corrected:
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1970420Z 🦋  ^[[31merror^[[39m npm warn publish "bin[gh-load-issue]" script name was cleaned
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1971215Z 🦋  ^[[31merror^[[39m npm notice Publishing to https://registry.npmjs.org with tag latest and public access
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1971795Z 🦋  ^[[31merror^[[39m npm error code E404
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1972432Z 🦋  ^[[31merror^[[39m npm error 404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1973528Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1974074Z 🦋  ^[[31merror^[[39m npm error 404  'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1974541Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1975004Z 🦋  ^[[31merror^[[39m npm error 404 Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1975561Z 🦋  ^[[31merror^[[39m npm error 404 tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1976431Z 🦋  ^[[31merror^[[39m npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-07T02_25_06_600Z-debug-0.log
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1977003Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1977347Z 🦋  ^[[31merror^[[39m packages failed to publish:
+Release	UNKNOWN STEP	2026-10-07T02:25:07.1977716Z 🦋  gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:07.2072077Z Publish failed: Command failed: npm run changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:17.2149579Z Publish attempt 2/3: gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:17.3333806Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:17.3334470Z > gh-load-issue@0.4.0 changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:17.3335571Z > changeset publish
+Release	UNKNOWN STEP	2026-10-07T02:25:17.3335895Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:17.6841092Z 🦋  ^[[36minfo^[[39m npm info gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:18.0797762Z 🦋  ^[[36minfo^[[39m gh-load-issue is being published because our local version (0.4.0) has not been published on npm
+Release	UNKNOWN STEP	2026-10-07T02:25:18.0799234Z 🦋  ^[[36minfo^[[39m Publishing ^[[36m"gh-load-issue"^[[39m at ^[[32m"0.4.0"^[[39m
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7467572Z 🦋  ^[[31merror^[[39m an error occurred while publishing gh-load-issue: E404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found 
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7469083Z 🦋  ^[[31merror^[[39m 'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7469707Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7470101Z 🦋  ^[[31merror^[[39m Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7470579Z 🦋  ^[[31merror^[[39m tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7470935Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7471277Z 🦋  ^[[31merror^[[39m > gh-load-issue@0.4.0 prepare
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7471703Z 🦋  ^[[31merror^[[39m > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7471994Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7473281Z 🦋  ^[[31merror^[[39m npm warn publish npm auto-corrected some errors in your package.json when publishing.  Please run "npm pkg fix" to address these errors.
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7474855Z 🦋  ^[[31merror^[[39m npm warn publish errors corrected:
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7476122Z 🦋  ^[[31merror^[[39m npm warn publish "bin[gh-load-issue]" script name was cleaned
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7476996Z 🦋  ^[[31merror^[[39m npm notice Publishing to https://registry.npmjs.org with tag latest and public access
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7477582Z 🦋  ^[[31merror^[[39m npm error code E404
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7478224Z 🦋  ^[[31merror^[[39m npm error 404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7478770Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7479277Z 🦋  ^[[31merror^[[39m npm error 404  'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7479750Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7480200Z 🦋  ^[[31merror^[[39m npm error 404 Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7480764Z 🦋  ^[[31merror^[[39m npm error 404 tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7481633Z 🦋  ^[[31merror^[[39m npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-07T02_25_18_144Z-debug-0.log
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7482220Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7482552Z 🦋  ^[[31merror^[[39m packages failed to publish:
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7483210Z 🦋  gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:18.7583852Z Publish failed: Command failed: npm run changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:28.7690042Z Publish attempt 3/3: gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:28.8796974Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:28.8798178Z > gh-load-issue@0.4.0 changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:28.8798834Z > changeset publish
+Release	UNKNOWN STEP	2026-10-07T02:25:28.8799109Z 
+Release	UNKNOWN STEP	2026-10-07T02:25:29.2253100Z 🦋  ^[[36minfo^[[39m npm info gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:29.6011510Z 🦋  ^[[36minfo^[[39m gh-load-issue is being published because our local version (0.4.0) has not been published on npm
+Release	UNKNOWN STEP	2026-10-07T02:25:29.6013508Z 🦋  ^[[36minfo^[[39m Publishing ^[[36m"gh-load-issue"^[[39m at ^[[32m"0.4.0"^[[39m
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2613702Z 🦋  ^[[31merror^[[39m an error occurred while publishing gh-load-issue: E404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found 
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2615507Z 🦋  ^[[31merror^[[39m 'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2616300Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2617037Z 🦋  ^[[31merror^[[39m Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2617990Z 🦋  ^[[31merror^[[39m tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2618724Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2619420Z 🦋  ^[[31merror^[[39m > gh-load-issue@0.4.0 prepare
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2620180Z 🦋  ^[[31merror^[[39m > husky || true
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2620726Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2622712Z 🦋  ^[[31merror^[[39m npm warn publish npm auto-corrected some errors in your package.json when publishing.  Please run "npm pkg fix" to address these errors.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2625323Z 🦋  ^[[31merror^[[39m npm warn publish errors corrected:
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2626316Z 🦋  ^[[31merror^[[39m npm warn publish "bin[gh-load-issue]" script name was cleaned
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2627671Z 🦋  ^[[31merror^[[39m npm notice Publishing to https://registry.npmjs.org with tag latest and public access
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2629017Z 🦋  ^[[31merror^[[39m npm error code E404
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2630061Z 🦋  ^[[31merror^[[39m npm error 404 Not Found - PUT https://registry.npmjs.org/gh-load-issue - Not found
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2630973Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2631675Z 🦋  ^[[31merror^[[39m npm error 404  'gh-load-issue@0.4.0' is not in this registry.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2632162Z 🦋  ^[[31merror^[[39m npm error 404
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2632637Z 🦋  ^[[31merror^[[39m npm error 404 Note that you can also install from a
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2633664Z 🦋  ^[[31merror^[[39m npm error 404 tarball, folder, http url, or git url.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2634547Z 🦋  ^[[31merror^[[39m npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-07T02_25_29_667Z-debug-0.log
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2635131Z 🦋  ^[[31merror^[[39m 
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2635487Z 🦋  ^[[31merror^[[39m packages failed to publish:
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2635875Z 🦋  gh-load-issue@0.4.0
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2729476Z Publication failed: Command failed: npm run changeset:publish
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2771666Z ##[error]Process completed with exit code 1.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.2914675Z Post job cleanup.
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3833859Z [command]/usr/bin/git version
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3873377Z git version 2.55.0
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3918328Z Temporarily overriding HOME='/home/runner/work/_temp/fea038d3-2e56-4f66-bd03-787cba361cb0' before making global git config changes
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3919556Z Adding repository directory to the temporary git global config as a safe directory
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3925731Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Release	UNKNOWN STEP	2026-10-07T02:25:30.3969346Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4006747Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4283115Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4315181Z http.https://github.com/.extraheader
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4350860Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4372727Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4652529Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Release	UNKNOWN STEP	2026-10-07T02:25:30.4697668Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Release	UNKNOWN STEP	2026-10-07T02:25:30.5095869Z Cleaning up orphan processes
+Release	UNKNOWN STEP	2026-10-07T02:25:30.5505851Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

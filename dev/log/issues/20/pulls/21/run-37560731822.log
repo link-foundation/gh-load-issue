@@ -1,0 +1,1171 @@
+Check for Changesets	UNKNOWN STEP	﻿2026-10-07T02:10:53.9226660Z Current runner version: '2.337.0'
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9247039Z ##[group]Runner Image Provisioner
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9247783Z Hosted Compute Agent
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9248273Z Version: 20260901.588
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9248772Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9249506Z Build Date: 2026-09-01T19:56:44Z
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9250065Z Worker ID: {151b0613-024d-4fba-90a6-60c3a6eaf4f8}
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9250847Z Azure Region: eastus
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9251438Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9253365Z ##[group]Operating System
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9253913Z Ubuntu
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9254349Z 24.04.5
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9254820Z LTS
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9255256Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9255696Z ##[group]Runner Image
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9256273Z Image: ubuntu-24.04
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9256736Z Version: 20260927.320.1
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9257799Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9259212Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9260002Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9261003Z ##[group]GITHUB_TOKEN Permissions
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9262751Z Contents: read
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9263372Z Metadata: read
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9263969Z Packages: read
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9264427Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9266185Z Secret source: Actions
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9266991Z Cache mode: write
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9267836Z Prepare workflow directory
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9548615Z Prepare all required actions
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:53.9587204Z Getting action download info
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.1384865Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.2305216Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4244413Z Complete job name: Check for Changesets
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4907063Z ##[group]Run actions/checkout@v4
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4907750Z with:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4908092Z   fetch-depth: 0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4908486Z   repository: link-foundation/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4911834Z   token: ***
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4912180Z   ssh-strict: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4912525Z   ssh-user: git
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4913012Z   persist-credentials: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4913403Z   clean: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4913762Z   sparse-checkout-cone-mode: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4914174Z   fetch-tags: false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4914525Z   show-progress: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4914885Z   lfs: false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4915207Z   submodules: false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4915557Z   set-safe-directory: true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4915947Z   allow-unsafe-pr-checkout: false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.4916493Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5707779Z Syncing repository: link-foundation/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5709761Z ##[group]Getting Git version info
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5710774Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5712083Z [command]/usr/bin/git version
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5793677Z git version 2.55.0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5813687Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5819650Z Temporarily overriding HOME='/home/runner/work/_temp/a8a143e8-6f91-4217-b012-b5949c6087ef' before making global git config changes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5821450Z Adding repository directory to the temporary git global config as a safe directory
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5823251Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5867739Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5871423Z ##[group]Initializing the repository
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5874884Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5985025Z hint: Using 'master' as the name for the initial branch. This default branch name
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5986320Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5987782Z hint: to use in all of your new repositories, which will suppress this warning,
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5988887Z hint: call:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5989373Z hint:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5989984Z hint: 	git config --global init.defaultBranch <name>
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5990732Z hint:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5991451Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5992626Z hint: 'development'. The just-created branch can be renamed via this command:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5993696Z hint:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5994220Z hint: 	git branch -m <name>
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5994812Z hint:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5995580Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5996897Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.5999043Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6043472Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6044443Z ##[group]Disabling automatic garbage collection
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6046730Z [command]/usr/bin/git config --local gc.auto 0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6072777Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6073838Z ##[group]Setting up auth
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6078418Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6108598Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6481121Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6513841Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6701573Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6731670Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6919614Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6954785Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6955785Z ##[group]Fetching the repository
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:54.6964074Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +5120e3d8cf941e116d350c7edee894bf75ec4e6a:refs/remotes/pull/19/merge
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0276084Z From https://github.com/link-foundation/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0277452Z  * [new branch]      issue-1-943fc4ad                         -> origin/issue-1-943fc4ad
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0278960Z  * [new branch]      issue-10-f1387537ff20                    -> origin/issue-10-f1387537ff20
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0280446Z  * [new branch]      issue-12-a627a2b63736                    -> origin/issue-12-a627a2b63736
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0281897Z  * [new branch]      issue-14-fa014ae9c6db                    -> origin/issue-14-fa014ae9c6db
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0283637Z  * [new branch]      issue-16-52998c4b2eaa                    -> origin/issue-16-52998c4b2eaa
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0285201Z  * [new branch]      issue-18-6c2e4083cb19                    -> origin/issue-18-6c2e4083cb19
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0286459Z  * [new branch]      issue-3-f4e52267e271                     -> origin/issue-3-f4e52267e271
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0287793Z  * [new branch]      issue-5-19ab2f5566c6                     -> origin/issue-5-19ab2f5566c6
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0288819Z  * [new branch]      issue-7-0d56eeeab7ab                     -> origin/issue-7-0d56eeeab7ab
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0289700Z  * [new branch]      main                                     -> origin/main
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0290700Z  * [new tag]         v0.2.0                                   -> v0.2.0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0291348Z  * [new tag]         v0.2.1                                   -> v0.2.1
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0291965Z  * [new tag]         v0.3.0                                   -> v0.3.0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0292634Z  * [new tag]         v0.3.1                                   -> v0.3.1
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0293451Z  * [new tag]         v0.3.2                                   -> v0.3.2
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0294142Z  * [new ref]         5120e3d8cf941e116d350c7edee894bf75ec4e6a -> pull/19/merge
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0295961Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0296617Z ##[group]Determining the checkout info
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0297338Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0297767Z [command]/usr/bin/git sparse-checkout disable
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0338603Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0366033Z ##[group]Checking out the ref
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0369012Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0435319Z Note: switching to 'refs/remotes/pull/19/merge'.
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0436040Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0436549Z You are in 'detached HEAD' state. You can look around, make experimental
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0437412Z changes and commit them, and you can discard any commits you make in this
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0438183Z state without impacting any branches by switching back to a branch.
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0438661Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0438976Z If you want to create a new branch to retain commits you create, you may
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0439682Z do so (now or later) by using -c with the switch command. Example:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0440111Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0440465Z   git switch -c <new-branch-name>
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0440962Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0441276Z Or undo this operation with:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0441767Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0442044Z   git switch -
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0442668Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0443420Z Turn off this advice by setting config variable advice.detachedHead to false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0444286Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0445221Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0448061Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0480191Z [command]/usr/bin/git log -1 --format=%H
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0502137Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0804855Z ##[group]Run oven-sh/setup-bun@v2
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0805354Z with:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0805717Z   bun-version: latest
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0806119Z   no-cache: false
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0809606Z   token: ***
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.0809982Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.4825639Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:55.6355155Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/3345982e-1668-4773-ba08-7cd0d5187f6f.zip
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.1815924Z [command]/home/runner/.bun/bin/bun --revision
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.1856814Z 1.4.2+744846f84
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.2002061Z ##[group]Run bun install
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.2002387Z ^[[36;1mbun install^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.2253855Z shell: /usr/bin/bash -e {0}
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.2254151Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.2361421Z bun install v1.4.2 (744846f84)
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.6088422Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:56.6091394Z $ husky || true
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7587640Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7588168Z + @changesets/cli@2.29.8
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7588472Z + eslint@9.39.2
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7588711Z + eslint-config-prettier@10.1.8
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7588987Z + eslint-plugin-prettier@5.5.4
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7589203Z + husky@9.1.7
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7589383Z + jscpd@4.0.5
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7589553Z + lint-staged@16.2.7
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7589741Z + prettier@3.7.4
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7589930Z + test-anywhere@0.8.50
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7590113Z + @octokit/rest@22.0.1
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7590289Z + fs-extra@11.3.3
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7590455Z + yargs@17.7.2
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7590905Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7591041Z 325 packages installed [3.52s]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7665696Z ##[group]Run # Skip changeset check for automated version PRs
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7666138Z ^[[36;1m# Skip changeset check for automated version PRs^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7666487Z ^[[36;1mif [[ "issue-18-6c2e4083cb19" == "changeset-release/"* ]]; then^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7666862Z ^[[36;1m  echo "Skipping changeset check for automated release PR"^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7667137Z ^[[36;1m  exit 0^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7667306Z ^[[36;1mfi^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7667466Z ^[[36;1m^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7667671Z ^[[36;1m# Run changeset validation script^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7667921Z ^[[36;1mbun scripts/validate-changeset.mjs^[[0m
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7725880Z shell: /usr/bin/bash -e {0}
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7726100Z ##[endgroup]
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7863019Z Found 1 changeset file(s)
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7863461Z Validating changeset: .changeset/gh-cli-default.md
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7865414Z ✅ Changeset validation passed
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7865703Z    Type: minor
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7866065Z    Description: Use gh CLI by default instead of GitHub API for issue fetching
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7866430Z 
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7866687Z - Added `fetchIssueWithGh` function to fetch issues using gh CLI directly
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7867355Z - Changed default behavior to use gh CLI when available and authenticated
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7867974Z - Added `--use-api` flag to explicitly use GitHub API instead of gh CLI
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7868614Z - Fallback to Octokit API when gh CLI is not available or when token is provided
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7869097Z - Added tests for both gh CLI and API modes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7869364Z - Both modes produce consistent output format
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.7953952Z Post job cleanup.
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.9309114Z Post job cleanup.
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:10:59.9994369Z [command]/usr/bin/git version
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0029703Z git version 2.55.0
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0064513Z Temporarily overriding HOME='/home/runner/work/_temp/201fe928-e2af-4b1c-a200-50201f320845' before making global git config changes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0065558Z Adding repository directory to the temporary git global config as a safe directory
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0069853Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0101651Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0130737Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0342597Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0366511Z http.https://github.com/.extraheader
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0376346Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0405611Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0643397Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0678185Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.0995419Z Cleaning up orphan processes
+Check for Changesets	UNKNOWN STEP	2026-10-07T02:11:00.1281335Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test (Bun on macos-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:06.8717760Z Current runner version: '2.337.0'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8732310Z ##[group]Runner Image Provisioner
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8732910Z Hosted Compute Agent
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8733290Z Version: 20260828.587
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8733860Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8734380Z Build Date: 2026-08-28T16:44:25Z
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8735000Z Worker ID: {8e96aa69-fa7b-4067-9cb4-036134d90c1d}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8735510Z Azure Region: westus
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8736020Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8736890Z ##[group]Operating System
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8737420Z macOS
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8737790Z 26.6.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8738260Z 25G83
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8738730Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8739070Z ##[group]Runner Image
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8739580Z Image: macos-26-arm64
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8740020Z Version: 20260907.0351.1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8740870Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8741880Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8742650Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8743470Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8744660Z Contents: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8745000Z Metadata: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8745530Z Packages: read
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8745950Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8747330Z Secret source: Actions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8748020Z Cache mode: write
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8748450Z Prepare workflow directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8956010Z Prepare all required actions
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8986920Z Getting action download info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:07.1752620Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:07.3590300Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.1803510Z Complete job name: Test (Bun on macos-latest)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2763490Z ##[group]Run actions/checkout@v4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2765180Z with:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2765640Z   repository: link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2769490Z   token: ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2769880Z   ssh-strict: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2770250Z   ssh-user: git
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2770620Z   persist-credentials: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2771070Z   clean: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2771500Z   sparse-checkout-cone-mode: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2772000Z   fetch-depth: 1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2772360Z   fetch-tags: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2772940Z   show-progress: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2773520Z   lfs: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2775600Z   submodules: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2777730Z   set-safe-directory: true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2779600Z   allow-unsafe-pr-checkout: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.2783360Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7753060Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7755190Z ##[group]Getting Git version info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7756020Z Working directory is '/Users/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7756950Z [command]/opt/homebrew/bin/git version
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8349730Z git version 2.55.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8555340Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8594150Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/c0e2d2b8-793c-4106-9ba3-4b4be2ab3c70/.gitconfig'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8672120Z Temporarily overriding HOME='/Users/runner/work/_temp/c0e2d2b8-793c-4106-9ba3-4b4be2ab3c70' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8674190Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8675600Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8679330Z Deleting the contents of '/Users/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8680660Z ##[group]Initializing the repository
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8681540Z [command]/opt/homebrew/bin/git init /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8978080Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8989430Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8991710Z hint: to use in all of your new repositories, which will suppress this warning,
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8992410Z hint: call:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8992830Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8993390Z hint: 	git config --global init.defaultBranch <name>
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8993920Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8994460Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8995220Z hint: 'development'. The just-created branch can be renamed via this command:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8995930Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8996450Z hint: 	git branch -m <name>
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8996920Z hint:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8997450Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.8998580Z Initialized empty Git repository in /Users/runner/work/gh-load-issue/gh-load-issue/.git/
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9002090Z [command]/opt/homebrew/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9036440Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9037360Z ##[group]Disabling automatic garbage collection
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9038340Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9127160Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9127790Z ##[group]Setting up auth
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9128620Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:08.9214550Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.0348060Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.0438200Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1224490Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1286020Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.2275170Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.2335960Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.2336560Z ##[group]Fetching the repository
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.2341840Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5120e3d8cf941e116d350c7edee894bf75ec4e6a:refs/remotes/pull/19/merge
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7365480Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7367050Z  * [new ref]         5120e3d8cf941e116d350c7edee894bf75ec4e6a -> pull/19/merge
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7369230Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7370090Z ##[group]Determining the checkout info
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7371020Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7377840Z [command]/opt/homebrew/bin/git sparse-checkout disable
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7454330Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7510490Z ##[group]Checking out the ref
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7512680Z [command]/opt/homebrew/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7656400Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7663990Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7746130Z [command]/opt/homebrew/bin/git log -1 --format=%H
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.7804080Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8125600Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8126480Z with:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8127180Z   bun-version: latest
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8127860Z   no-cache: false
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8135170Z   token: ***
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:09.8135780Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3469640Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:10.7270400Z [command]/usr/bin/unzip -o -q /Users/runner/work/_temp/5bbcefdf-974b-4737-ba2a-677a5c050d0c.zip
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.2833190Z [command]/Users/runner/.bun/bin/bun --revision
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.2950520Z 1.4.2+744846f84
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.3077900Z ##[group]Run bun install
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.3078220Z ^[[36;1mbun install^[[0m
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.3123290Z shell: /bin/bash -e {0}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.3123650Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:11.3719310Z bun install v1.4.2 (744846f84)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.2409130Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.2420750Z $ husky || true
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6633900Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6634860Z + @changesets/cli@2.29.8
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6637920Z + eslint@9.39.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6639070Z + eslint-config-prettier@10.1.8
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6662590Z + eslint-plugin-prettier@5.5.4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6668730Z + husky@9.1.7
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6670340Z + jscpd@4.0.5
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6674040Z + lint-staged@16.2.7
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6674370Z + prettier@3.7.4
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6675540Z + test-anywhere@0.8.50
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6676570Z + @octokit/rest@22.0.1
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6676970Z + fs-extra@11.3.3
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6677220Z + yargs@17.7.2
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6677370Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6677590Z 325 packages installed [1292.00ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6744510Z ##[group]Run bun test
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6745850Z ^[[36;1mbun test^[[0m
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6810520Z shell: /bin/bash -e {0}
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6810940Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.7603190Z bun test v1.4.2 (744846f84)
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.7665900Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:12.7670450Z ##[group]tests/test-e2e.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:14.1466530Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [1347.15ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6695560Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [522.93ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:15.3424730Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [672.94ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:15.9216940Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [579.17ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:16.5815780Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [659.72ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:17.0048590Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [423.47ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:17.4211750Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [416.26ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:17.7163320Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [295.22ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.0773440Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [361.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.5292900Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [451.90ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.8831110Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [353.80ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.9240300Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [40.92ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.9631980Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [39.17ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:18.9971810Z (pass) CLI Options Verification > Help Option > should display comprehensive help [33.98ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:19.0312310Z (pass) CLI Options Verification > Version Option > should display version in semver format [34.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:19.3761230Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [344.86ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:19.7303540Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [354.24ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4365050Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [706.13ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4366150Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4367000Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4367160Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4367420Z ##[group]tests/test-library.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4614870Z (pass) Library API > Module Imports > should export loadIssue function [23.41ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4615450Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.07ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4616030Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4616510Z (pass) Library API > Module Imports > should export issueToJson function [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4617160Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4617830Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.09ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4618290Z (pass) Library API > parseIssueUrl > should parse short format [0.05ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4618710Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4620050Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4620760Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.09ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621280Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.04ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4621770Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622330Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4622840Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4660590Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [3.90ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662030Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.21ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4662830Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.08ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4663930Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.10ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.4666240Z (pass) Library API > loadIssue > should throw error for invalid URL [0.21ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.6614330Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [194.71ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.9703840Z GET /repos/link-foundation/gh-load-issue/issues/1/comments - 403 with id B24E:34EB24:40A97C:496EE9:6AC5AA49 in 21ms
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.9704780Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [309.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:20.9705500Z Skipping API mode test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0980650Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id B24E:34EB24:40A996:496F01:6AC5AA49 in 21ms
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0981350Z Skipping consistency test - authentication may be required
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0982010Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [127.66ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0982330Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0982830Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0983040Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0983500Z ##[group]tests/test-image-extraction.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0997660Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.61ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0998800Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0999410Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.0999950Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1000980Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1001860Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1002460Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1002980Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1003510Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1013750Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [1.44ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1014300Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.02ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1015560Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.01ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1016170Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1023690Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.90ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1025040Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.07ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1034390Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1035020Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1035180Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1035400Z ##[group]tests/test-all.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1053480Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1054050Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.03ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1440680Z (pass) gh-load-issue CLI > Help command > should display help information [38.62ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.1787730Z (pass) gh-load-issue CLI > Version command > should display version number [34.73ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3936430Z Skipping real issue test - gh CLI may not be authenticated
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3940520Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [215.30ms]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3942070Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3943030Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3943200Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3943590Z ##[group]tests/test-basic.test.mjs:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3943760Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3944080Z ##[endgroup]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3944280Z 
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3944380Z  60 pass
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3944600Z  0 fail
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.3944770Z Ran 60 tests across 5 files. [8.63s]
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.4034370Z Post job cleanup.
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.6178740Z Post job cleanup.
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7040510Z [command]/opt/homebrew/bin/git version
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7114830Z git version 2.55.0
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7132310Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/0441f061-cfe5-4d9d-b950-3169bb945811/.gitconfig'
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7138600Z Temporarily overriding HOME='/Users/runner/work/_temp/0441f061-cfe5-4d9d-b950-3169bb945811' before making global git config changes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7139470Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7142510Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7211130Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.7267280Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8051690Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8099800Z http.https://github.com/.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8107050Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8161080Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8778000Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.8843650Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:21.9612780Z Cleaning up orphan processes
+Test (Bun on macos-latest)	UNKNOWN STEP	2026-10-07T02:11:22.2078590Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint and Format Check	UNKNOWN STEP	﻿2026-10-07T02:11:04.3784676Z Current runner version: '2.337.0'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3805643Z ##[group]Runner Image Provisioner
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3806886Z Hosted Compute Agent
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3807606Z Version: 20260901.588
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3808369Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3809370Z Build Date: 2026-09-01T19:56:44Z
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3810220Z Worker ID: {5bffad0d-aab1-4118-a126-0f8c7aa0545b}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3811190Z Azure Region: westus3
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3811903Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3813450Z ##[group]Operating System
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3814467Z Ubuntu
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3815120Z 24.04.5
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3815806Z LTS
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3816938Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3817630Z ##[group]Runner Image
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3818462Z Image: ubuntu-24.04
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3819164Z Version: 20260927.320.1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3820797Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3822659Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3823931Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3825406Z ##[group]GITHUB_TOKEN Permissions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3827735Z Contents: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3828514Z Metadata: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3829239Z Packages: read
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3829752Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3831493Z Secret source: Actions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3832380Z Cache mode: write
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.3832956Z Prepare workflow directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.4168309Z Prepare all required actions
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.4206777Z Getting action download info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.7203370Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:04.9428515Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.7421830Z Complete job name: Lint and Format Check
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8063858Z ##[group]Run actions/checkout@v4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8064572Z with:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8064981Z   repository: link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8068309Z   token: ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8068691Z   ssh-strict: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8069074Z   ssh-user: git
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8069459Z   persist-credentials: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8069876Z   clean: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8070258Z   sparse-checkout-cone-mode: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8070696Z   fetch-depth: 1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8071067Z   fetch-tags: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8071452Z   show-progress: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8071844Z   lfs: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8072211Z   submodules: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8072603Z   set-safe-directory: true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8073035Z   allow-unsafe-pr-checkout: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8073637Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8886286Z Syncing repository: link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8888805Z ##[group]Getting Git version info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8890034Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8891529Z [command]/usr/bin/git version
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8940803Z git version 2.55.0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8958516Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8971246Z Temporarily overriding HOME='/home/runner/work/_temp/59c2e42e-e2a4-45fb-af0e-6ee8e43f58d3' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8973759Z Adding repository directory to the temporary git global config as a safe directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.8977156Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9036922Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9040749Z ##[group]Initializing the repository
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9051094Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9140215Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9141682Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9143250Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9144301Z hint: call:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9144876Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9145562Z hint: 	git config --global init.defaultBranch <name>
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9146590Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9147451Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9148777Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9149820Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9150386Z hint: 	git branch -m <name>
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9151043Z hint:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9151895Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9153413Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9155844Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9232717Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9233752Z ##[group]Disabling automatic garbage collection
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9236287Z [command]/usr/bin/git config --local gc.auto 0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9300156Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9301122Z ##[group]Setting up auth
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9302101Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9333011Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9656307Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9690724Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9878580Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:05.9908181Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.0098481Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.0346667Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.0347584Z ##[group]Fetching the repository
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.0354136Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5120e3d8cf941e116d350c7edee894bf75ec4e6a:refs/remotes/pull/19/merge
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6895813Z From https://github.com/link-foundation/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6897480Z  * [new ref]         5120e3d8cf941e116d350c7edee894bf75ec4e6a -> pull/19/merge
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6900470Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6901690Z ##[group]Determining the checkout info
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6903514Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.6910564Z [command]/usr/bin/git sparse-checkout disable
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.8087744Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.8134877Z ##[group]Checking out the ref
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.8137764Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9370999Z Note: switching to 'refs/remotes/pull/19/merge'.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9372088Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9373058Z You are in 'detached HEAD' state. You can look around, make experimental
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9374761Z changes and commit them, and you can discard any commits you make in this
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9376686Z state without impacting any branches by switching back to a branch.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9377698Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9378356Z If you want to create a new branch to retain commits you create, you may
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9379978Z do so (now or later) by using -c with the switch command. Example:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9381585Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9382111Z   git switch -c <new-branch-name>
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9382959Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9383430Z Or undo this operation with:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9384178Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9384619Z   git switch -
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9385225Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9386437Z Turn off this advice by setting config variable advice.detachedHead to false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9387715Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9388944Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9392821Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9765612Z [command]/usr/bin/git log -1 --format=%H
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:06.9790226Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0690655Z ##[group]Run oven-sh/setup-bun@v2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0691596Z with:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0692301Z   bun-version: latest
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0693073Z   no-cache: false
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0699988Z   token: ***
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.0700688Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:07.6501236Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.0759256Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/87023956-967a-4dde-8782-e821dbe67d06.zip
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.5996859Z [command]/home/runner/.bun/bin/bun --revision
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6039797Z 1.4.2+744846f84
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6189502Z ##[group]Run bun install
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6189811Z ^[[36;1mbun install^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6389808Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6390090Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.6499209Z bun install v1.4.2 (744846f84)
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.9917319Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:08.9919416Z $ husky || true
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1161228Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1161736Z + @changesets/cli@2.29.8
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1176941Z + eslint@9.39.2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1177385Z + eslint-config-prettier@10.1.8
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1177730Z + eslint-plugin-prettier@5.5.4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1178081Z + husky@9.1.7
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1178362Z + jscpd@4.0.5
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1178620Z + lint-staged@16.2.7
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1178845Z + prettier@3.7.4
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179034Z + test-anywhere@0.8.50
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179221Z + @octokit/rest@22.0.1
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179395Z + fs-extra@11.3.3
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179563Z + yargs@17.7.2
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179666Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1179803Z 325 packages installed [467.00ms]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1211464Z ##[group]Run bun run lint
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1211695Z ^[[36;1mbun run lint^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1268911Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1269140Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:09.1353084Z $ eslint .
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.1528651Z ##[group]Run bun run format:check
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.1528931Z ^[[36;1mbun run format:check^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.1583594Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.1583834Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.1668132Z $ prettier --check .
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.2326131Z Checking formatting...
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7607884Z All matched files use Prettier code style!
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7791934Z ##[group]Run bun run check:file-size
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7792212Z ^[[36;1mbun run check:file-size^[[0m
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7847807Z shell: /usr/bin/bash -e {0}
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7848045Z ##[endgroup]
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.7934493Z $ bun scripts/check-file-size.mjs
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8017012Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8017587Z Checking JavaScript files for maximum 1100 lines...
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8017962Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8054241Z ✓ All files are within the line limit
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8054575Z 
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.8142271Z Post job cleanup.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:10.9541747Z Post job cleanup.
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0246760Z [command]/usr/bin/git version
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0281721Z git version 2.55.0
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0313465Z Temporarily overriding HOME='/home/runner/work/_temp/b9d4a479-23f0-490b-a923-0ff38842e481' before making global git config changes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0314486Z Adding repository directory to the temporary git global config as a safe directory
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0318169Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0351138Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0379945Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0588904Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0611501Z http.https://github.com/.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0620644Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0650421Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0855581Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.0891469Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.1206812Z Cleaning up orphan processes
+Lint and Format Check	UNKNOWN STEP	2026-10-07T02:11:11.1444332Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:04.1758227Z Current runner version: '2.337.0'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1791162Z ##[group]Runner Image Provisioner
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1792553Z Hosted Compute Agent
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1793546Z Version: 20260901.588
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1794636Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1795813Z Build Date: 2026-09-01T19:56:44Z
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1796938Z Worker ID: {eb105cdf-7fb6-4a36-b96e-b3cfed3f10d4}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1798301Z Azure Region: eastus
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1799232Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1801820Z ##[group]Operating System
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1802815Z Ubuntu
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1803641Z 24.04.5
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1804617Z LTS
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1805409Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1806344Z ##[group]Runner Image
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1807521Z Image: ubuntu-24.04
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1808403Z Version: 20260927.320.1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1810904Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1813661Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1815334Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1817374Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1820261Z Contents: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1821401Z Metadata: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1822301Z Packages: read
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1823131Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1826092Z Secret source: Actions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1827540Z Cache mode: write
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.1828905Z Prepare workflow directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.2299290Z Prepare all required actions
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.2372047Z Getting action download info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.4514952Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5446831Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.7733465Z Complete job name: Test (Bun on ubuntu-latest)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8498669Z ##[group]Run actions/checkout@v4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8499768Z with:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8500257Z   repository: link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8504409Z   token: ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8504850Z   ssh-strict: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8505286Z   ssh-user: git
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8505739Z   persist-credentials: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8506230Z   clean: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8506772Z   sparse-checkout-cone-mode: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8507301Z   fetch-depth: 1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8507725Z   fetch-tags: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8508171Z   show-progress: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8508618Z   lfs: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8509036Z   submodules: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8509731Z   set-safe-directory: true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8510474Z   allow-unsafe-pr-checkout: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8511358Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9530625Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9533143Z ##[group]Getting Git version info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9534042Z Working directory is '/home/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9535599Z [command]/usr/bin/git version
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9603673Z git version 2.55.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9627461Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9645682Z Temporarily overriding HOME='/home/runner/work/_temp/b203460c-0cf2-4c27-94fc-c83a749fdc3d' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9648303Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9652239Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9706928Z Deleting the contents of '/home/runner/work/gh-load-issue/gh-load-issue'
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9716319Z ##[group]Initializing the repository
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9720995Z [command]/usr/bin/git init /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9821967Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9823470Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9825372Z hint: to use in all of your new repositories, which will suppress this warning,
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9826868Z hint: call:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9827641Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9828581Z hint: 	git config --global init.defaultBranch <name>
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9829992Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9831076Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9832800Z hint: 'development'. The just-created branch can be renamed via this command:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9834146Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9834881Z hint: 	git branch -m <name>
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9835700Z hint:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9836839Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9839117Z Initialized empty Git repository in /home/runner/work/gh-load-issue/gh-load-issue/.git/
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9842536Z [command]/usr/bin/git remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9896242Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9897801Z ##[group]Disabling automatic garbage collection
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9900289Z [command]/usr/bin/git config --local gc.auto 0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9935830Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9936650Z ##[group]Setting up auth
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9945056Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9981594Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0351329Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0398180Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0635429Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0673504Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0897945Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0940437Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0941281Z ##[group]Fetching the repository
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.0950939Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5120e3d8cf941e116d350c7edee894bf75ec4e6a:refs/remotes/pull/19/merge
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3110447Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3111749Z  * [new ref]         5120e3d8cf941e116d350c7edee894bf75ec4e6a -> pull/19/merge
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3115905Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3116860Z ##[group]Determining the checkout info
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3118669Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3125060Z [command]/usr/bin/git sparse-checkout disable
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3179982Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3212487Z ##[group]Checking out the ref
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3216308Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3295495Z Note: switching to 'refs/remotes/pull/19/merge'.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3296115Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3296911Z You are in 'detached HEAD' state. You can look around, make experimental
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3298867Z changes and commit them, and you can discard any commits you make in this
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3301355Z state without impacting any branches by switching back to a branch.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3302428Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3303179Z If you want to create a new branch to retain commits you create, you may
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3304429Z do so (now or later) by using -c with the switch command. Example:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3305186Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3305429Z   git switch -c <new-branch-name>
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3306164Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3306593Z Or undo this operation with:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307020Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307239Z   git switch -
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307537Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3307969Z Turn off this advice by setting config variable advice.detachedHead to false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3308577Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3309260Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3311779Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3348024Z [command]/usr/bin/git log -1 --format=%H
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3375191Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3674394Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3675050Z with:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3675511Z   bun-version: latest
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3676023Z   no-cache: false
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3681171Z   token: ***
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.3681714Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:05.8647719Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1163339Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/8f90be24-7855-4a2c-b427-f0563d309af0.zip
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:06.7772837Z [command]/home/runner/.bun/bin/bun --revision
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:06.7828711Z 1.4.2+744846f84
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8042924Z ##[group]Run bun install
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:06.8043331Z ^[[36;1mbun install^[[0m
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:07.3693652Z shell: /usr/bin/bash -e {0}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:07.3693982Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:07.3818617Z bun install v1.4.2 (744846f84)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:07.8118543Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:07.8121580Z $ husky || true
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0098596Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0100212Z + @changesets/cli@2.29.8
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0130305Z + eslint@9.39.2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0136270Z + eslint-config-prettier@10.1.8
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0136764Z + eslint-plugin-prettier@5.5.4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0137215Z + husky@9.1.7
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0137598Z + jscpd@4.0.5
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0138128Z + lint-staged@16.2.7
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0138547Z + prettier@3.7.4
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0139995Z + test-anywhere@0.8.50
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0140552Z + @octokit/rest@22.0.1
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0140934Z + fs-extra@11.3.3
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0141274Z + yargs@17.7.2
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0141478Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0141656Z 325 packages installed [628.00ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0187753Z ##[group]Run bun test
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0188042Z ^[[36;1mbun test^[[0m
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0249258Z shell: /usr/bin/bash -e {0}
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0249834Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0343898Z bun test v1.4.2 (744846f84)
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0399979Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.0400972Z ##[group]tests/test-e2e.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:08.7444576Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [696.73ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:09.0871918Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [342.72ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:09.6786765Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [591.50ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:09.9951668Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [316.49ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3173948Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [322.18ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6424574Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [325.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:10.9714591Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [328.95ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:11.1848709Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [213.37ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:11.5108801Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [326.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:11.8373618Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [326.43ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.1666270Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [329.27ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.2286893Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [62.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.2894245Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [60.72ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.3409034Z (pass) CLI Options Verification > Help Option > should display comprehensive help [51.48ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.3922340Z (pass) CLI Options Verification > Version Option > should display version in semver format [51.32ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.6008367Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [208.55ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:12.9256733Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [324.90ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4548146Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [529.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4548890Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4550090Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4550319Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4550780Z ##[group]tests/test-all.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4563915Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.04ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4565128Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.5085004Z (pass) gh-load-issue CLI > Help command > should display help information [51.95ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.5615685Z (pass) gh-load-issue CLI > Version command > should display version number [53.06ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8902231Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [328.58ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8904277Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.34ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8905515Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.06ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8906991Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8908230Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8909873Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.04ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8910989Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8912088Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8913311Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.04ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8914438Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8915551Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [0.48ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8916622Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8917634Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.05ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8918643Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.04ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8920269Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.19ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8921498Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.11ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8922183Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8923148Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8923362Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8923860Z ##[group]tests/test-image-extraction.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8924234Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8924635Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8924831Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.8925283Z ##[group]tests/test-library.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9328922Z (pass) Library API > Module Imports > should export loadIssue function [39.21ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9330407Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9331614Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9332572Z (pass) Library API > Module Imports > should export issueToJson function [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9333571Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9334546Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.17ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9335374Z (pass) Library API > parseIssueUrl > should parse short format [0.13ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9336345Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.11ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9337389Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.10ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9339018Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.15ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9340562Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.13ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9341636Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.09ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9342650Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9343604Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9415556Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [7.17ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9417620Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.23ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9419522Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.18ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9422582Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.26ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:13.9426341Z (pass) Library API > loadIssue > should throw error for invalid URL [0.38ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.0823667Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [139.57ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.3223931Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [240.08ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6834767Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [361.07ms]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6835580Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6836305Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6836532Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6836830Z ##[group]tests/test-basic.test.mjs:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837018Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837283Z ##[endgroup]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837402Z 
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837478Z  60 pass
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837663Z  0 fail
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6837862Z Ran 60 tests across 5 files. [6.65s]
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.6966565Z Post job cleanup.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.8758010Z Post job cleanup.
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9638303Z [command]/usr/bin/git version
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9681731Z git version 2.55.0
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9721405Z Temporarily overriding HOME='/home/runner/work/_temp/c450fee8-556c-4bdc-93a9-7999a65758a8' before making global git config changes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9722712Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9727242Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gh-load-issue/gh-load-issue
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9764919Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:14.9801750Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0054936Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0084054Z http.https://github.com/.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0096518Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0134013Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0393955Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0434443Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.0814968Z Cleaning up orphan processes
+Test (Bun on ubuntu-latest)	UNKNOWN STEP	2026-10-07T02:11:15.1176241Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test (Bun on windows-latest)	UNKNOWN STEP	﻿2026-10-07T02:11:04.5184592Z Current runner version: '2.337.0'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5216307Z ##[group]Runner Image Provisioner
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5217231Z Hosted Compute Agent
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5217815Z Version: 20260901.588
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5218407Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5219148Z Build Date: 2026-09-01T19:56:44Z
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5219846Z Worker ID: {7bced7d6-7fcb-4f10-ae90-13d77269d1ff}
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5220537Z Azure Region: centralus
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5221184Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5222743Z ##[group]Operating System
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5223450Z Microsoft Windows Server 2025
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5224036Z 10.0.26100
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5224525Z Datacenter
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5225058Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5225562Z ##[group]Runner Image
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5226133Z Image: windows-2025-vs2026
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5226719Z Version: 20260925.250.1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5228853Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260925.250/images/windows/Windows2025-VS2026-Readme.md
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5230598Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260925.250
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5231586Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5232796Z ##[group]GITHUB_TOKEN Permissions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5234843Z Contents: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5235518Z Metadata: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5236155Z Packages: read
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5236708Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5238967Z Secret source: Actions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5240113Z Cache mode: write
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5240907Z Prepare workflow directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5639993Z Prepare all required actions
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.5701792Z Getting action download info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.8165908Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:04.9660593Z Download action repository 'oven-sh/setup-bun@v2' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.4181429Z Complete job name: Test (Bun on windows-latest)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5704865Z ##[group]Run actions/checkout@v4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5705928Z with:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5706380Z   repository: link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5710181Z   token: ***
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5710591Z   ssh-strict: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5710993Z   ssh-user: git
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5711406Z   persist-credentials: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5711860Z   clean: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5712282Z   sparse-checkout-cone-mode: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5712773Z   fetch-depth: 1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5713170Z   fetch-tags: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5713585Z   show-progress: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5713990Z   lfs: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5714368Z   submodules: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5714779Z   set-safe-directory: true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5715247Z   allow-unsafe-pr-checkout: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.5716019Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.7343884Z Syncing repository: link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.7345868Z ##[group]Getting Git version info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.7346557Z Working directory is 'D:\a\gh-load-issue\gh-load-issue'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:05.8342141Z [command]"C:\Program Files\Git\bin\git.exe" version
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1630450Z git version 2.55.0.windows.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1681769Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1701983Z Temporarily overriding HOME='D:\a\_temp\b5e29986-84bb-4a10-a678-34305e6eaceb' before making global git config changes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1703857Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.1713195Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.2373053Z Deleting the contents of 'D:\a\gh-load-issue\gh-load-issue'
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.2379688Z ##[group]Initializing the repository
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.2390317Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.3246467Z Initialized empty Git repository in D:/a/gh-load-issue/gh-load-issue/.git/
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.3299781Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.3929544Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.3931188Z ##[group]Disabling automatic garbage collection
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.3938327Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.4259835Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.4261409Z ##[group]Setting up auth
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.4271959Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:06.4606838Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:07.9163487Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:07.9483097Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:08.5242532Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:08.5567583Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1490983Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1832598Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1833638Z ##[group]Fetching the repository
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:09.1850715Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5120e3d8cf941e116d350c7edee894bf75ec4e6a:refs/remotes/pull/19/merge
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3520697Z From https://github.com/link-foundation/gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3521732Z  * [new ref]         5120e3d8cf941e116d350c7edee894bf75ec4e6a -> pull/19/merge
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3578575Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3579226Z ##[group]Determining the checkout info
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3581170Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.3591729Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.4058123Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.4384111Z ##[group]Checking out the ref
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.4384729Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/19/merge
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5111797Z Note: switching to 'refs/remotes/pull/19/merge'.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5112128Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5112626Z You are in 'detached HEAD' state. You can look around, make experimental
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5113438Z changes and commit them, and you can discard any commits you make in this
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5114188Z state without impacting any branches by switching back to a branch.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5114989Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5115348Z If you want to create a new branch to retain commits you create, you may
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5116458Z do so (now or later) by using -c with the switch command. Example:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5116800Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5116955Z   git switch -c <new-branch-name>
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117161Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117297Z Or undo this operation with:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117489Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117588Z   git switch -
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117720Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5117985Z Turn off this advice by setting config variable advice.detachedHead to false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5118360Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5118814Z HEAD is now at 5120e3d Merge 57b84cf95b0f8557002c6cfcc3677e2e252f2514 into e9b963b28832f05b859c378b1c24fc3be6888277
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5253565Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5696741Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.5986998Z 5120e3d8cf941e116d350c7edee894bf75ec4e6a
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6489832Z ##[group]Run oven-sh/setup-bun@v2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6490178Z with:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6490365Z   bun-version: latest
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6490589Z   no-cache: false
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6492949Z   token: ***
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:10.6493139Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:11.2782200Z Downloading a new version of Bun: https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64.zip
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:11.8360738Z [command]"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { [System.IO.Compression.ZipFile]::ExtractToDirectory('D:\a\_temp\76e0dbe2-965a-4875-9568-80661eef9b94.zip', 'D:\a\_temp\1fa4413f-fe34-450e-8b76-bc1f632ade13', $true) } catch { if (($_.Exception.GetType().FullName -eq 'System.Management.Automation.MethodException') -or ($_.Exception.GetType().FullName -eq 'System.Management.Automation.RuntimeException') ){ Expand-Archive -LiteralPath 'D:\a\_temp\76e0dbe2-965a-4875-9568-80661eef9b94.zip' -DestinationPath 'D:\a\_temp\1fa4413f-fe34-450e-8b76-bc1f632ade13' -Force } else { throw $_ } } ;"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:12.5823250Z [command]C:\Users\runneradmin\.bun\bin\bun.exe --revision
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.0502092Z 1.4.2+744846f84
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.0905153Z ##[group]Run bun install
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.0905526Z ^[[36;1mbun install^[[0m
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.1407904Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.1408385Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:13.4564595Z bun install v1.4.2 (744846f84)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:22.5766745Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:22.5902868Z $ husky || true
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1798763Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1800702Z + @changesets/cli@2.29.8
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1804550Z + eslint@9.39.2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1805131Z + eslint-config-prettier@10.1.8
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1805591Z + eslint-plugin-prettier@5.5.4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1805939Z + husky@9.1.7
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1806140Z + jscpd@4.0.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1806337Z + lint-staged@16.2.7
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1806552Z + prettier@3.7.4
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1806759Z + test-anywhere@0.8.50
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1806983Z + @octokit/rest@22.0.1
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1807194Z + fs-extra@11.3.3
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1807389Z + yargs@17.7.2
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1807582Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.1807677Z 325 packages installed [11.72s]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.3161203Z ##[group]Run bun test
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.3161507Z ^[[36;1mbun test^[[0m
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.3241544Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.3241923Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.6143524Z bun test v1.4.2 (744846f84)
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.6228449Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.6229439Z ##[group]tests\test-all.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.6389686Z (pass) gh-load-issue CLI > Script accessibility > should exist and be accessible [0.22ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.6390967Z (pass) gh-load-issue CLI > Script accessibility > should be executable on non-Windows platforms [0.12ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.7680513Z (pass) gh-load-issue CLI > Help command > should display help information [128.97ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:25.8602051Z (pass) gh-load-issue CLI > Version command > should display version number [92.12ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1484805Z (pass) gh-load-issue CLI > Real issue download > should download a real issue when authenticated [4288.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1488441Z (pass) Image Extraction > Markdown image extraction > should extract simple markdown image [0.39ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1489979Z (pass) Image Extraction > Markdown image extraction > should extract image without alt text [0.06ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1491258Z (pass) Image Extraction > Markdown image extraction > should extract image with title [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1493004Z (pass) Image Extraction > Markdown image extraction > should extract multiple images from text [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1494335Z (pass) Image Extraction > Markdown image extraction > should extract GitHub user-images URLs [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1495809Z (pass) Image Extraction > HTML image extraction > should extract self-closing img tag [0.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1496957Z (pass) Image Extraction > HTML image extraction > should extract img tag with alt attribute [0.06ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1498169Z (pass) Image Extraction > HTML image extraction > should extract img tag with single quotes [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1499335Z (pass) Image Extraction > HTML image extraction > should extract multiple img tags [0.06ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1500468Z (pass) Image Extraction > Magic bytes validation > should detect PNG magic bytes [0.51ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1501550Z (pass) Image Extraction > Magic bytes validation > should detect JPEG magic bytes [0.07ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1502607Z (pass) Image Extraction > Magic bytes validation > should detect GIF magic bytes [0.05ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1503654Z (pass) Image Extraction > Magic bytes validation > should detect HTML error pages [0.06ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1504882Z (pass) Image Extraction > URL replacement in markdown > should replace URL with local path [0.26ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1508047Z (pass) Image Extraction > File extension mapping > should have correct extension format [0.21ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1508733Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1509483Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1509664Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1510151Z ##[group]tests\test-basic.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1510456Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1510785Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1510958Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.1511322Z ##[group]tests\test-e2e.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:30.8320416Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should download a simple issue to markdown [676.20ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:31.4952966Z (pass) E2E Tests: GitHub Issue Loading > Simple Issue Download > should support short format input [663.25ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:32.3886581Z (pass) E2E Tests: GitHub Issue Loading > Detailed Issue Download > should download an issue with full body content [893.27ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:33.0325934Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should export issue as JSON [643.96ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:33.6811192Z (pass) E2E Tests: GitHub Issue Loading > JSON Output Format > should include metadata in JSON output [648.49ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:34.3858537Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should create output directory if it does not exist [704.38ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:35.0919930Z (pass) E2E Tests: GitHub Issue Loading > Output Directory Handling > should use default filename when directory is specified [706.38ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:35.5662533Z (pass) E2E Tests: GitHub Issue Loading > No Image Download Option > should skip image download when --no-download-images is set [474.24ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.0507135Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.0509051Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should produce valid markdown structure [484.73ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.4508090Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.4510927Z (pass) E2E Tests: GitHub Issue Loading > Markdown Content Verification > should not contain raw HTML in body (except embedded img tags) [400.13ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.8491487Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.8494334Z (pass) E2E Tests: GitHub Issue Loading > Offline Availability > should create self-contained output with local image references [398.31ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:36.9520624Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error for invalid URL [102.57ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:37.0494930Z (pass) E2E Tests: GitHub Issue Loading > Error Handling > should provide clear error when no URL is provided [97.40ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:37.1359920Z (pass) CLI Options Verification > Help Option > should display comprehensive help [86.50ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:37.2233532Z (pass) CLI Options Verification > Version Option > should display version in semver format [87.32ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:37.6242384Z (pass) Authentication Mode Tests > gh CLI Mode (default) > should download issue using gh CLI by default [400.89ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:37.6243006Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.1906253Z (pass) Authentication Mode Tests > API Mode > should download issue using API when --use-api is specified [566.36ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.1907310Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5742001Z (pass) Authentication Mode Tests > API Mode > should produce same content in both modes [383.54ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5742732Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5743780Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5744168Z Skipping test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5744595Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5745028Z ##[group]tests\test-image-extraction.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5745416Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5745774Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5745960Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.5746365Z ##[group]tests\test-library.test.mjs:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6304240Z (pass) Library API > Module Imports > should export loadIssue function [51.32ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6305294Z (pass) Library API > Module Imports > should export parseIssueUrl function [0.12ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6306160Z (pass) Library API > Module Imports > should export issueToMarkdown function [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6307875Z (pass) Library API > Module Imports > should export issueToJson function [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6308958Z (pass) Library API > Module Imports > should export extractImagesFromMarkdown function [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6311199Z (pass) Library API > parseIssueUrl > should parse full GitHub URL [0.24ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6313260Z (pass) Library API > parseIssueUrl > should parse short format [0.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6314760Z (pass) Library API > parseIssueUrl > should return null for invalid URL [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6317351Z (pass) Library API > parseIssueUrl > should handle URLs with dashes in owner/repo [0.17ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6319726Z (pass) Library API > extractImagesFromMarkdown > should extract markdown image syntax [0.22ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6320928Z (pass) Library API > extractImagesFromMarkdown > should extract HTML img tags [0.14ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6322060Z (pass) Library API > extractImagesFromMarkdown > should extract multiple images [0.11ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6324676Z (pass) Library API > extractImagesFromMarkdown > should handle empty content [0.10ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6325821Z (pass) Library API > extractImagesFromMarkdown > should handle null content [0.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6416057Z (pass) Library API > issueToMarkdown > should generate markdown from issue data [9.08ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6419617Z (pass) Library API > issueToMarkdown > should include comments in markdown [0.34ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6422453Z (pass) Library API > issueToMarkdown > should include labels in markdown [0.26ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6424892Z (pass) Library API > issueToJson > should generate JSON structure from issue data [0.25ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.6429349Z (pass) Library API > loadIssue > should throw error for invalid URL [0.42ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.9270185Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id 9405:CFE81:DB2A66:2D01DDA:6AC5AA5A in 94ms
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.9272348Z (pass) Library API > loadIssue > should load a real issue using gh CLI by default (if authenticated) [284.16ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:38.9273140Z Skipping loadIssue test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.3331414Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id 9405:CFE81:DB2C20:2D023BD:6AC5AA5A in 28ms
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.3333133Z (pass) Library API > loadIssue > should load a real issue using API mode (if token available) [406.01ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.3335710Z Skipping API mode test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5494611Z GET /repos/link-foundation/gh-load-issue/issues/1 - 403 with id 9405:CFE81:DB2D17:2D026DE:6AC5AA5B in 29ms
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5496472Z (pass) Library API > loadIssue > should produce consistent results between gh CLI and API modes [216.30ms]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5497355Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5498257Z ##[endgroup]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5498510Z 
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5498613Z  60 pass
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5498925Z  0 fail
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5499248Z Ran 60 tests across 5 files. [13.94s]
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.5500478Z Skipping consistency test - authentication may be required
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.6866101Z Post job cleanup.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:39.9372030Z Post job cleanup.
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.1693851Z [command]"C:\Program Files\Git\bin\git.exe" version
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2000031Z git version 2.55.0.windows.5
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2084937Z Temporarily overriding HOME='D:\a\_temp\8b643c72-8f5c-4330-9414-83b804baa509' before making global git config changes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2086252Z Adding repository directory to the temporary git global config as a safe directory
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2100296Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\gh-load-issue\gh-load-issue
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2480847Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.2845575Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.8656038Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.8930770Z http.https://github.com/.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.8981340Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:40.9307627Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:41.4874286Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:41.5198214Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:42.1199721Z Cleaning up orphan processes
+Test (Bun on windows-latest)	UNKNOWN STEP	2026-10-07T02:11:42.1240715Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

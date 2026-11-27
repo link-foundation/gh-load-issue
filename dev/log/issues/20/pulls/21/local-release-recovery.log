@@ -1,0 +1,29 @@
+
+added 381 packages in 7s
+
+> gh-load-issue@0.4.0 changeset:version
+> bun scripts/changeset-version.mjs
+
+🦋  All files have been updated. Review them and commit at your leisure
+
+up to date in 924ms
+bun install v1.4.5 (a7733435c)
+
+Done! Checked 352 packages (no changes) [11.00ms]
+Testing packed artifact: gh-load-issue-0.4.1.tgz
+Verified installed gh-load-issue@0.4.1: --version and --help
+[main b48e48d] 0.4.1
+ 4 files changed, 9 insertions(+), 8 deletions(-)
+ delete mode 100644 .changeset/reliable-ci-release.md
+To /tmp/tmp.UUNBRlUCvp/remote.git
+   be4900c..b48e48d  HEAD -> main
+Release 0.4.1 from b48e48d0a616e99dd5820630297360c45279a19a.
+bun install v1.4.5 (a7733435c)
+
+19 packages installed [81.00ms]
+Previous HEAD position was be4900c release trigger
+HEAD is now at b48e48d 0.4.1
+Resuming release of committed version 0.4.1.
+Release 0.4.1 from b48e48d0a616e99dd5820630297360c45279a19a.
+Release 0.4.1 from b48e48d0a616e99dd5820630297360c45279a19a.
+Verified version 0.4.1, retry and recovery at the same commit b48e48d0a616e99dd5820630297360c45279a19a
