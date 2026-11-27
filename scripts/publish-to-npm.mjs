@@ -1,18 +1,56 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 
-// Publish using npm OIDC, and report success only after consumer verification.
-// Usage: node scripts/publish-to-npm.mjs [--should-pull]
 import { execFileSync } from 'node:child_process';
-import { readFileSync, appendFileSync } from 'node:fs';
-import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import yargs from 'yargs';
-import { hideBin } from 'yargs/helpers';
 import { NPM_REGISTRY, packAndSmokeTest } from './package-smoke-test.mjs';
 import { sleep, verifyNpmRelease } from './verify-npm-release.mjs';
 
+const npmError = (error) => `${error.message}\n${error.stderr || ''}`;
+const transient =
+  /\b(?:E429|E50[0234]|ECONNRESET|ECONNREFUSED|EAI_AGAIN|ETIMEDOUT)\b/;
+
+async function publishTarball(spec, tarball, { run, wait, attempts, delay }) {
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    console.log(`Publish attempt ${attempt}/${attempts}: ${spec}`);
+    try {
+      run(
+        'npm',
+        [
+          'publish',
+          tarball,
+          '--access',
+          'public',
+          '--provenance',
+          '--registry',
+          NPM_REGISTRY,
+        ],
+        { stdio: 'pipe' }
+      );
+      return false;
+    } catch (error) {
+      const details = npmError(error);
+      if (/\b(?:E401|E403|E404|ENEEDAUTH)\b/.test(details)) {
+        throw new Error(
+          `npm refused to publish ${spec}. Confirm the trusted publisher allows publishing from release.yml and matches this repository.`,
+          { cause: error }
+        );
+      }
+      if (/\b(?:E409|EPUBLISHCONFLICT)\b/.test(details)) {
+        return true;
+      }
+      if (attempt === attempts || !transient.test(details)) {
+        throw error;
+      }
+      console.log(`Transient npm failure while publishing ${spec}. Retrying.`);
+      await wait(delay);
+    }
+  }
+  throw new Error('No npm publish attempts configured.');
+}
+
 export async function publishToNpm(
   manifest,
+  tarball,
   {
     run = execFileSync,
     verify = verifyNpmRelease,
@@ -36,66 +74,39 @@ export async function publishToNpm(
     }
     alreadyPublished = true;
   } catch (error) {
-    // Authentication and connection errors must not be mistaken for E404.
-    if (!`${error.message}\n${error.stderr || ''}`.includes('E404')) {
+    if (!/\bE404\b/.test(npmError(error))) {
       throw error;
     }
   }
 
   if (!alreadyPublished) {
-    for (let attempt = 1; attempt <= attempts; attempt++) {
-      console.log(`Publish attempt ${attempt}/${attempts}: ${spec}`);
-      try {
-        // execFileSync throws for nonzero exits; command-stream did not.
-        run('npm', ['run', 'changeset:publish'], { stdio: 'inherit' });
-        break;
-      } catch (error) {
-        if (attempt === attempts) {
-          throw error;
-        }
-        console.log(`Publish failed: ${error.message}`);
-        await wait(delay);
-      }
-    }
+    alreadyPublished = await publishTarball(spec, tarball, {
+      run,
+      wait,
+      attempts,
+      delay,
+    });
   }
-
-  // Also verify reruns of releases that are already in the registry.
   await verify(manifest);
   return { alreadyPublished };
 }
 
-function setOutput(key, value) {
-  if (process.env.GITHUB_OUTPUT) {
-    appendFileSync(process.env.GITHUB_OUTPUT, `${key}=${value}\n`);
-  }
-}
-
-async function main() {
-  const { shouldPull } = yargs(hideBin(process.argv))
-    .option('should-pull', {
-      type: 'boolean',
-      default: process.env.SHOULD_PULL === 'true',
-      describe: 'Pull latest changes before publishing',
-    })
-    .parse();
-  if (shouldPull) {
-    execFileSync('git', ['pull', 'origin', 'main'], { stdio: 'inherit' });
-  }
-  packAndSmokeTest();
-  const { name, version } = JSON.parse(readFileSync('./package.json', 'utf8'));
-  const result = await publishToNpm({ name, version });
-  setOutput('published', 'true');
-  setOutput('published_version', version);
-  setOutput('already_published', String(result.alreadyPublished));
-  console.log(`✅ Verified ${name}@${version} published to npm`);
-}
-
 if (
   process.argv[1] &&
-  pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url
+  pathToFileURL(process.argv[1]).href === import.meta.url
 ) {
-  main().catch((error) => {
+  try {
+    await packAndSmokeTest((tarball, manifest) =>
+      publishToNpm(manifest, tarball)
+    );
+  } catch (error) {
     console.error('Publication failed:', error.message);
+    if (process.env.RELEASE_DEBUG === '1') {
+      const code = npmError(error.cause || error).match(
+        /\b(?:E[A-Z][A-Z_]+|E\d{3})\b/
+      )?.[0];
+      console.error(`npm error code: ${code || 'unavailable'}`);
+    }
     process.exitCode = 1;
-  });
+  }
 }

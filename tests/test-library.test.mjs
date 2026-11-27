@@ -6,6 +6,7 @@
  * These tests verify that the module can be imported and used programmatically.
  */
 
+import assert from 'node:assert/strict';
 import { describe, it, expect, setDefaultTimeout } from 'test-anywhere';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -276,98 +277,82 @@ describe('Library API', () => {
     it('should throw error for invalid URL', async () => {
       const { loadIssue } = await import(modulePath);
 
-      try {
-        await loadIssue({ issueUrl: 'invalid-url' });
-        expect(true).toBe(false); // Should not reach here
-      } catch (error) {
-        expect(error.message).toContain('Invalid issue URL');
-      }
+      await assert.rejects(
+        loadIssue({ issueUrl: 'invalid-url' }),
+        /Invalid issue URL/
+      );
     });
 
-    it('should load a real issue using gh CLI by default (if authenticated)', async () => {
+    it('should load a real issue using gh CLI by default', async () => {
       const { loadIssue } = await import(modulePath);
 
-      try {
-        const result = await loadIssue({
-          issueUrl: 'link-foundation/gh-load-issue#1',
-          quiet: true,
-        });
+      const result = await loadIssue({
+        issueUrl: 'link-foundation/gh-load-issue#1',
+        quiet: true,
+      });
 
-        // Verify structure
-        expect(result.owner).not.toBe(undefined);
-        expect(result.repo).not.toBe(undefined);
-        expect(result.issueNumber).not.toBe(undefined);
-        expect(result.issue).not.toBe(undefined);
-        expect(result.comments).not.toBe(undefined);
-        expect(result.markdown).not.toBe(undefined);
-        expect(result.json).not.toBe(undefined);
+      // Verify structure
+      expect(result.owner).not.toBe(undefined);
+      expect(result.repo).not.toBe(undefined);
+      expect(result.issueNumber).not.toBe(undefined);
+      expect(result.issue).not.toBe(undefined);
+      expect(result.comments).not.toBe(undefined);
+      expect(result.markdown).not.toBe(undefined);
+      expect(result.json).not.toBe(undefined);
 
-        // Verify content
-        expect(result.owner).toBe('link-foundation');
-        expect(result.repo).toBe('gh-load-issue');
-        expect(result.issueNumber).toBe(1);
-        expect(result.markdown).toContain('# ');
-      } catch (_error) {
-        console.log('Skipping loadIssue test - authentication may be required');
-      }
+      // Verify content
+      expect(result.owner).toBe('link-foundation');
+      expect(result.repo).toBe('gh-load-issue');
+      expect(result.issueNumber).toBe(1);
+      expect(result.markdown).toContain('# ');
     });
 
-    it('should load a real issue using API mode (if token available)', async () => {
+    it('should load a real issue using API mode', async () => {
       const { loadIssue } = await import(modulePath);
 
-      try {
-        const result = await loadIssue({
-          issueUrl: 'link-foundation/gh-load-issue#1',
-          quiet: true,
-          useApi: true,
-        });
+      const result = await loadIssue({
+        issueUrl: 'link-foundation/gh-load-issue#1',
+        quiet: true,
+        useApi: true,
+      });
 
-        // Verify structure
-        expect(result.owner).not.toBe(undefined);
-        expect(result.repo).not.toBe(undefined);
-        expect(result.issueNumber).not.toBe(undefined);
-        expect(result.issue).not.toBe(undefined);
-        expect(result.comments).not.toBe(undefined);
-        expect(result.markdown).not.toBe(undefined);
-        expect(result.json).not.toBe(undefined);
+      // Verify structure
+      expect(result.owner).not.toBe(undefined);
+      expect(result.repo).not.toBe(undefined);
+      expect(result.issueNumber).not.toBe(undefined);
+      expect(result.issue).not.toBe(undefined);
+      expect(result.comments).not.toBe(undefined);
+      expect(result.markdown).not.toBe(undefined);
+      expect(result.json).not.toBe(undefined);
 
-        // Verify content matches gh CLI mode
-        expect(result.owner).toBe('link-foundation');
-        expect(result.repo).toBe('gh-load-issue');
-        expect(result.issueNumber).toBe(1);
-        expect(result.markdown).toContain('# ');
-      } catch (_error) {
-        console.log('Skipping API mode test - authentication may be required');
-      }
+      // Verify content matches gh CLI mode
+      expect(result.owner).toBe('link-foundation');
+      expect(result.repo).toBe('gh-load-issue');
+      expect(result.issueNumber).toBe(1);
+      expect(result.markdown).toContain('# ');
     });
 
     it('should produce consistent results between gh CLI and API modes', async () => {
       const { loadIssue } = await import(modulePath);
 
-      try {
-        const ghResult = await loadIssue({
-          issueUrl: 'link-foundation/gh-load-issue#1',
-          quiet: true,
-          useApi: false,
-        });
+      const ghResult = await loadIssue({
+        issueUrl: 'link-foundation/gh-load-issue#1',
+        quiet: true,
+        useApi: false,
+      });
 
-        const apiResult = await loadIssue({
-          issueUrl: 'link-foundation/gh-load-issue#1',
-          quiet: true,
-          useApi: true,
-        });
+      const apiResult = await loadIssue({
+        issueUrl: 'link-foundation/gh-load-issue#1',
+        quiet: true,
+        useApi: true,
+      });
 
-        // Verify both produce the same key data
-        expect(ghResult.issue.number).toBe(apiResult.issue.number);
-        expect(ghResult.issue.title).toBe(apiResult.issue.title);
-        expect(ghResult.issue.state).toBe(apiResult.issue.state);
-        expect(ghResult.issue.user.login).toBe(apiResult.issue.user.login);
-        expect(ghResult.comments.length).toBe(apiResult.comments.length);
-      } catch (_error) {
-        console.log(
-          'Skipping consistency test - authentication may be required'
-        );
-      }
+      // Verify both produce the same key data
+      expect(ghResult.issue.number).toBe(apiResult.issue.number);
+      expect(ghResult.issue.title).toBe(apiResult.issue.title);
+      expect(ghResult.issue.state).toBe(apiResult.issue.state);
+      expect(ghResult.issue.user.login).toBe(apiResult.issue.user.login);
+      expect(ghResult.comments.length).toBe(apiResult.comments.length);
     });
   });
 });

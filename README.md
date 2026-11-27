@@ -286,6 +286,21 @@ the registry package before creating a GitHub release.
 - **Authenticated**: 5,000 requests per hour (includes private issues)
 - Authentication is automatically handled if GitHub CLI is set up
 
+## CI and releases
+
+PR updates and ready-for-review events check GitHub's proposed merge result. Documentation-only changes skip the cross-platform test matrix. Source, dependency, and pipeline changes use a changeset. Run `bun run changeset` to add one.
+
+The workflow publishes from `main` after the required checks pass. The npm package owner must configure a GitHub Actions trusted publisher for `link-foundation/gh-load-issue`, workflow `release.yml`, with no environment and with **Allow npm publish** enabled. The preflight checks the workflow identity and package mapping. npm checks permission to publish directly when it receives the archive.
+
+The **Run workflow** menu offers these modes.
+
+- **checks** validates the selected revision without publishing.
+- **instant** validates `main` and publishes the requested version bump.
+- **changeset-pr** opens a draft changeset PR. Set the repository secret `RELEASE_PR_TOKEN` to a repository-scoped credential with write access to Contents and Pull requests, or add the changeset in a regular PR.
+- **recover** publishes the current version on `main` without another version bump. Use it when a version was already committed but publication did not finish. Rerunning a failed release also resumes the same version when its version commit is still at the tip of `main`.
+
+Use the workflow's **verbose** option or set `RELEASE_DEBUG=1` locally to show release diagnostics. The workflow keeps that option off by default.
+
 ## License
 
 This project is released into the public domain under The Unlicense - see [LICENSE](LICENSE) file for details.

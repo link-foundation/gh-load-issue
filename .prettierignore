@@ -4,3 +4,7 @@ dist
 *.min.js
 package-lock.json
 .eslintcache
+
+# Historical CI evidence is preserved in its original format.
+dev/log/**
+!dev/log/**/README.md

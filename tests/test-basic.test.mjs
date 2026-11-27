@@ -4,14 +4,9 @@
  * Basic integration tests for gh-load-issue
  */
 
-import {
-  describe,
-  it,
-  expect,
-  afterEach,
-  setDefaultTimeout,
-} from 'test-anywhere';
-import { execSync } from 'child_process';
+import { describe, it, expect, setDefaultTimeout } from 'test-anywhere';
+import { execFileSync } from 'node:child_process';
+import { tmpdir } from 'node:os';
 import fs, { promises as fsPromises } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -46,7 +41,7 @@ describe('gh-load-issue CLI', () => {
 
   describe('Help command', () => {
     it('should display help information', () => {
-      const output = execSync(`bun ${scriptPath} --help`, {
+      const output = execFileSync(process.execPath, [scriptPath, '--help'], {
         encoding: 'utf8',
       });
       expect(output).toContain('--help');
@@ -56,7 +51,7 @@ describe('gh-load-issue CLI', () => {
 
   describe('Version command', () => {
     it('should display version number', () => {
-      const output = execSync(`bun ${scriptPath} --version`, {
+      const output = execFileSync(process.execPath, [scriptPath, '--version'], {
         encoding: 'utf8',
       });
       expect(output).toMatch(/\d+\.\d+\.\d+/);
@@ -64,27 +59,23 @@ describe('gh-load-issue CLI', () => {
   });
 
   describe('Real issue download', () => {
-    const testOutputPath = path.join(__dirname, 'test-output.md');
-
-    afterEach(async () => {
-      // Clean up test output file
+    it('should download a real issue', async () => {
+      const dir = await fsPromises.mkdtemp(
+        path.join(tmpdir(), 'gh-load-issue-basic-')
+      );
+      const testOutputPath = path.join(dir, 'issue.md');
       try {
-        await fsPromises.access(testOutputPath);
-        await fsPromises.unlink(testOutputPath);
-      } catch (_error) {
-        // File doesn't exist, which is fine
-      }
-    });
+        const issueUrl =
+          'https://github.com/link-foundation/gh-load-issue/issues/1';
 
-    it('should download a real issue when authenticated', async () => {
-      const issueUrl =
-        'https://github.com/link-foundation/gh-load-issue/issues/1';
-
-      try {
-        execSync(`bun ${scriptPath} ${issueUrl} -o ${testOutputPath}`, {
-          encoding: 'utf8',
-          stdio: 'pipe',
-        });
+        execFileSync(
+          process.execPath,
+          [scriptPath, issueUrl, '-o', testOutputPath, '--no-download-images'],
+          {
+            encoding: 'utf8',
+            stdio: 'pipe',
+          }
+        );
 
         // Check if file was created
         await fsPromises.access(testOutputPath);
@@ -92,11 +83,8 @@ describe('gh-load-issue CLI', () => {
 
         expect(content).toContain('# ');
         expect(content).toContain('**Issue:**');
-      } catch (_error) {
-        // Test is skipped if not authenticated - this is expected in CI without credentials
-        console.log(
-          'Skipping real issue test - gh CLI may not be authenticated'
-        );
+      } finally {
+        await fsPromises.rm(dir, { recursive: true, force: true });
       }
     });
   });
